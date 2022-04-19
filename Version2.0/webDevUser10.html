@@ -20,7 +20,56 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
 
-    <style></style>
+    <style>div#face {
+      width: 40vw;
+      height: 40vw;
+      max-width: 400px;
+      max-height: 400px;
+      margin: 0 auto;
+      position: relative;
+      background: rgb(255, 255, 255);
+      margin-top: 2rem;
+  }
+  
+  div#face, div#face * {
+      border-radius: 50%;
+  }
+  
+  .eye {
+      width: 25%;
+      height: 25%;
+      background: rgb(0, 0, 0);
+      position: absolute;
+      top: 20%;
+  }
+  
+  .left.eye {
+      left: 20%;
+  }
+  
+  .right.eye {
+      right: 8%;
+  }
+  
+  .pupil {
+      background: rgb(61, 230, 5);
+      width: 50%;
+      height: 50%;
+      position: relative;
+      left: 25%;
+      transform-origin: bottom;
+  }
+  
+  #mouth {
+      position: relative;
+      width: 60%;
+      left: 20%;
+      height: 25%;
+      border: 1vw solid transparent;
+      border-radius: 50%;
+      top: 50%;
+      border-bottom-color: rgb(255, 0, 0);
+  }</style>
   </head>
 
   <body>
@@ -47,24 +96,28 @@
         <h2>Examples of "Other" HTML elements</h2>
 
         <!-- Put your 8 examples of other elements ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-        <del>Carter</del> Into the <del>Carter</del>verse
-        <ins>GO TIMBERWOLVES!</ins>
-        <sub>IDK what this is lol</sub>
-        <sup>I still Don't Know what this is</sup>
-        <small>I work at mcdonalds</small>
-        <progress> value="40" max="50"</progress>
-        <hr />
-        <abbr title= "UNIVERSITY OF MINNESOTA" > UofM </abbr>
+        <div id="banner">ur mom<style>#banner{
+          border: 5px outset red;
+          background-color: lightblue;
+          text-align: center;
+      }</style></div>
         <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
       </div>
       <div id="banner"></div>
-      <div id="face"></div>
-    </main>
-
+      <div id="face"><div class="left eye">
+        <div class="pupil">
+        </div>
+   </div>
+   <div class="right eye">
+        <div class="pupil">
+        </div>
+   </div>
+   <div id="mouth">
+   </div><div>
     <footer>
       <p>
         <center>
-          Webpage made by <a href="#" target="_blank">[your name]</a>
+          Webpage made by <a href="#" target="_blank">Lucas</a>
         </center>
       </p>
     </footer>
