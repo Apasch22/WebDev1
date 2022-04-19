@@ -26,6 +26,95 @@
         body{
             background-color: rgb(79, 79, 79);
         }
+        #banner{
+            border: 5px outset red;
+            background-color: lightblue;
+            text-align: center;
+        }
+        h1{
+            color:rgb(255, 255, 255)
+        }
+        h2{
+            color:rgb(252, 134, 232)
+        }
+        h3{
+            color:rgb(220, 164, 247)
+        }
+        h4{
+            color:rgb(164, 214, 247)
+        }
+        p{
+            color:rgb(255, 255, 255)
+        }
+        del{
+            color:rgb(255, 255, 255)
+        }
+        ins{
+            color:rgb(252, 134, 232)
+        }
+        sub{
+            color:rgb(220, 164, 247)
+        }
+        sup{
+            color:rgb(164, 214, 247)
+        }
+        small{
+            color:rgb(252, 203, 134)
+        }
+        abbr{
+            color:rgb(255, 255, 255)
+        }
+
+        div#face {
+    width: 40vw;
+    height: 40vw;
+    max-width: 800px;
+    max-height: 400px;
+    margin: 0 auto;
+    position: relative;
+    background: rgb(220, 164, 247);
+    margin-top: 2rem;
+}
+
+div#face, div#face * {
+    border-radius: 50%;
+}
+
+.eye {
+    width: 80%;
+    height: 25%;
+    background: #fff;
+    position: absolute;
+    top: 20%;
+}
+
+.left.eye {
+    left: 65%;
+}
+
+.right.eye {
+    right: 65%;
+}
+
+.pupil {
+    background: #000;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    left: 25%;
+    transform-origin: center;
+}
+
+#mouth {
+    position: relative;
+    width: 90%;
+    left: 20%;
+    height: 40%;
+    border: 1vw solid transparent;
+    border-radius: 50%;
+    top: 50%;
+    border-bottom-color: #000;
+}
     </style>
 </head>
 
@@ -34,7 +123,18 @@
 
         <!-- Your 1st Heading-->
         <h1>Me v.s. The Patriarchy pt.1</h1>
-    
+       
+        <h1>Hi</h1>
+        <section>
+            <h2>Welcome to my website</h2>
+            <p>In my Web Development class we're being introduced to the structure of websites.</p>
+        </section>
+        
+        <section>
+            <h2>You will see that I have done a few extra things here.</h2>
+            <p>Nothing too crazy my sister just wanted to introduce me to her feild and I experimented.</p>
+        </section>
+      
         <div id="tags">
             <p>
                 This is my first webpage! I was able to code all the HTML and CSS in order to make it.
@@ -66,9 +166,19 @@
             <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
         </div>
         <div id="banner">
+            <ins>Hello</ins>
         </div>
         <div id="face">
-
+            <div class="left eye">
+                <div class="pupil">
+                </div>
+           </div>
+           <div class="right eye">
+                <div class="pupil">
+                </div>
+           </div>
+           <div id="mouth">
+           </div>
         </div>
     </main>
 
@@ -76,7 +186,7 @@
     <footer>
 
         <p>
-            <center> Webpage made by <a href="#" target="_blank">[Lydia Mesfin]</a></center>
+            <center> Webpage made by <a href="#" target="_blank">[Lydia]</a></center>
         </p>
 
     </footer>
