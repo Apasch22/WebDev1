@@ -19,7 +19,58 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
+      div#face {
+        width: 50vw;
+        height: 50vw;
+        max-width: 400px;
+        max-height: 400px;
+        margin: 0 auto;
+        position: relative;
+        background: rgb(0, 208, 255);
+        margin-top: 2rem;
+      }
 
+      div#face,
+      div#face * {
+        border-radius: 25%;
+      }
+
+      .eye {
+        width: 25%;
+        height: 25%;
+        background: rgb(254, 254, 254);
+        position: absolute;
+        top: 20%;
+      }
+
+      .left.eye {
+        left: 25%;
+      }
+
+      .right.eye {
+        right: 25%;
+      }
+      .pupil {
+        background: rgb(8, 8, 8);
+        width: 50%;
+        height: 50%;
+        position: relative;
+        left: 25%;
+        top: 25%;
+        transform-origin: bottom;
+      }
+
+      #mouth {
+        position: relative;
+        width: 75%;
+        left: 10%;
+        height: 25%;
+        border: 1vw solid transparent;
+        border-radius: 50%;
+        top: 50%;
+        border-bottom-color: #000;
+      }
+    </style>
     </style>
 </head>
 
