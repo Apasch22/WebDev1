@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 2.0
-        Name:
-        Date Completed:
+        Name: Isabelle
+        Date Completed: 
     -->
 
 <head>
@@ -19,7 +19,61 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
+ #banner{
+    border: 5px outset red;
+    background-color: lightblue;
+    text-align: center;
+}
+div#face {
+    width: 40vw;
+    height: 40vw;
+    max-width: 400px;
+    max-height: 400px;
+    margin: 0 auto;
+    position: relative;
+    background: pink;
+    margin-top: 2rem;
+}
 
+div#face, div#face * {
+    border-radius: 50%;
+}
+
+.eye {
+    width: 25%;
+    height: 25%;
+    background: #fff;
+    position: absolute;
+    top: 20%;
+}
+
+.left.eye {
+    left: 20%;
+}
+
+.right.eye {
+    right: 20%;
+}
+
+.pupil {
+    background: #000;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    left: 25%;
+    transform-origin: bottom;
+}
+
+#mouth {
+    position: relative;
+    width: 60%;
+    left: 18%;
+    height: 25%;
+    border: 1vw solid transparent;
+    border-radius: 50%;
+    top: 50%;
+    border-bottom-color: #000;
+}
     </style>
 </head>
 
@@ -53,14 +107,34 @@
             <small>*swears on your minecraft server*</small>
             <progress value="22" max="100" > </progress >
             <hr> 
-            <abbr title="World Health Organization" > WHO </abbr>
+            <abbr title="why would you need to know?" > SCP </abbr>
             <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
         </div>
         <div id="banner">
-        </div>
+            According to all known laws of aviation, there is no way that a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyway because bees don't care what humans think is impossible. </div>
         <div id="face">
-
+            <div class="left eye">
+                <div class="pupil">
+                </div>
+           </div>
+           <div class="right eye">
+                <div class="pupil">
+                </div>
+           </div>
+           <div id="mouth">
+           </div>
         </div>
+
+        <h1>According to all known laws of aviatio</h1>
+        <section>
+         <h2>There is no way a bee should be able to fly</h2>
+         <p>Its wings are too small to get its fat little body off the ground.</p>
+        </section>
+
+        <section>
+        <h2>The bee, of course, flies anyway</h2>
+        <p>because bees don't care what humans think is impossible</p>
+        </section>
     </main>
 
 
