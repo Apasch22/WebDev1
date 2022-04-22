@@ -2,7 +2,7 @@
 <html lang="en">
   <!--Version 3.0
         Name: William Baker
-        Date Completed: 4/20/22
+        Date Completed: 4/21/22
     -->
 
   <head>
@@ -26,12 +26,9 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="https://iconifier.net/iconified/20220422234053_IMG-1503/favicon.ico"
-    />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="icon" type="image/x-icon" href="https://iconifier.net/iconified/20220422234053_IMG-1503/favicon.ico" />
+
     <!-- JavaScript -->
     <!-- These are needed to get the responsive menu to work -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -71,12 +68,13 @@
 
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav">
-            <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+            <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
             <a href="index.html" class="nav-item nav-link active">Home</a>
             <a href="aboutMe.html" class="nav-item nav-link active">About Me</a>
             <a href="Favorites.html" class="nav-item nav-link active"
               >Favorites</a
             >
+
             <a href="list.html" class="nav-item nav-link active">Lists</a>
             <a href="#" class="nav-item nav-link disabled" tabindex="-1"
               >Games</a
@@ -87,7 +85,7 @@
               tabindex="-1"
               >Contact</a
             >
-            <!---------------------------------- Edit These Items in your Menu ^ ------------->
+            <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
           </div>
           <div class="navbar-nav ml-auto">
             <a href="#" class="nav-item nav-link disabled">Login</a>
@@ -98,25 +96,41 @@
     <!---------------------------------- End the nav-bar ------------->
 
     <main class="wideMargin">
-      <h1 class="text-left my-3">Home</h1>
+      <h1 class="text-left my-3">My Lists</h1>
       <!-- Edit this line for the title of your page -->
 
       <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-      <p>
-        This is my first webpage! I was able to code all the HTML and CSS in
-        order to make it. Watch out world of web design here I come!
-      </p>
-      <p>
-        I can use my skills here to create websites for my business, my friends
-        and family, my C.V, blog or articles. As well as any games or more
-        experiment stuff (which is what the web is really all about).
-      </p>
+      <h3>Top Places I want to visit</h3>
+      <ol>
+        <style>
+          ol {
+            background-color: rgb(251, 1, 1);
+          }
+        </style>
+        <li>Japan</li>
+        <li>Finland</li>
+        <li>Iceland</li>
+        <li>Italy</li>
+      </ol>
+      <style>
+        ul {
+          list-style-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHt9wXQPFd6CKSos_GNDkuMKAVtNjcQQM9EaRY7_ZxJdrxuiX9NkCAZjbaQ_GSJIoIxOs:https://i.pinimg.com/originals/28/f8/2c/28f82c1560e544acb8fbbad95c83b194.png&usqp=CAU);
+          list-style-position: inside;
+        }
+      </style>
+      <p>My Classes for the quarter</p>
+      <ul class="inside">
+        <li>Web Development</li>
+        <li>Pre-Calc</li>
+        <li>Japanese 3</li>
+        <li>U.S. History</li>
+      </ul>
+      <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
     </main>
-    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
 
     <!---------------------------------- Begin the footer ------------->
     <footer class="wideMargin">
-      <p>Webpage made by <a href="#" target="_blank">[William Baker]</a></p>
+      <div>Webpage made by <a href="#" target="_blank">[William Baker]</a></div>
     </footer>
     <!---------------------------------- End the footer ------------->
   </body>
