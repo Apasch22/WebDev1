@@ -1,3 +1,4 @@
+
 table {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
 	color: #003366;
@@ -20,6 +21,14 @@ th {
 	background-color: #003366;
 }
 
-body{
-	background-color: green;
+body {
+	background: linear-gradient(rgb(226, 226, 236), rgb(203, 240, 203));
+}
+
+ol {
+	background-color: rgb(217, 201, 245);
+}
+
+ul {
+	font-family: "Times New Roman";
 }
