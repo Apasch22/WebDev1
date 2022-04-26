@@ -71,8 +71,8 @@ h6 {
 	background-color:#4caf50;
 }
 
-.buttonbadfont {
-	font-family: "Comic Sans MS";
+.buttonfontsize {
+	font-size: 1.5rem;
 }
 
 .buttonugly {
@@ -110,5 +110,5 @@ h6 {
   }
 
   *{
-	border: 5px dashed #ff0000;
+	font-family: "Comic Sans MS";
   }
