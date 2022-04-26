@@ -86,3 +86,5 @@ h5,
 h6 {
   text-align: center;
 }
+
+git config pull.ff only       # fast-forward only
