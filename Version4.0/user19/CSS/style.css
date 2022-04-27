@@ -170,11 +170,11 @@ table{
 	text-decoration:none;
 }
 
-*{
+/**{
     text-align:center;
     background-color: orange;
-	/* This is horrible, I love it */
-}
+	This is horrible, I love it 
+}*/
 
 h1, h2, h3, h4, h5, h6{
 	text-align:center;
