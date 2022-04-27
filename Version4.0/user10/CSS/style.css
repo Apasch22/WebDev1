@@ -19,3 +19,38 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
+.button1 {
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s; /* Safari */
+}
+
+.button:hover {
+    background-color: #dfee11;
+    color: rgb(0, 195, 255);
+}
+.button1 {
+    box-shadow: 0 9px 17px 0 rgba(0,0,0,0.3), 0 7px 21px 0 rgba(0,0,0,0.20);
+}
+.button2:hover {
+    box-shadow: 0 13px 17px 0 rgba(0,0,0,0.25), 0 18px 51px 0 rgba(0,0,0,0.20);
+}
+.title{
+	color: red;
+	font-family: 'Trebuchet MS', sans-serif; 
+  }
+  
+  .title-large {
+	font-size: 2rem;
+  }
+  
+  .title-small {
+	font-size: .5rem;
+  }
+  #morecontent {
+	background-color: yellow;
+  }*{
+    text-align:right;
+    border: 2px solid black;
+}
+}*{
+    text-decoration-color: aquamarine;
