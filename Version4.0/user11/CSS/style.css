@@ -105,3 +105,7 @@ table id="hireButtons">
     text-align:right;
     border: 2px solid black;
 } 
+.card{
+      width: 33%;
+	 display: inline-block;
+}
