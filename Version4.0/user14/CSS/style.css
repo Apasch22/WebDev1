@@ -1,3 +1,5 @@
+@import url(rainbow.css);
+
 table {
   font-family: "Marker Felt", "Comic Sans MS", fantasy;
   color: #003366;
@@ -111,4 +113,8 @@ h6 {
 
   *{
 	font-family: "Comic Sans MS";
+  }
+
+  #knowledge > * {
+    border: 3px solid red;
   }
