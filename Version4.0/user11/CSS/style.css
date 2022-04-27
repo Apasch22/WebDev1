@@ -1,5 +1,5 @@
 .button {
-	background-color: #4caf50;
+	background-color: #4CAF50;
 	border: none;
 	color: white;
 	padding: 20px;
@@ -10,7 +10,6 @@
 	margin: 4px 2px;
 	cursor: pointer;
 }
-
 .button1 {
 	border-radius: 8px;
 }
@@ -23,16 +22,55 @@
 	background-color: #ff0000;
 }
 
-.button {
+.purple {
+	display: inline-block;
+	padding: 17px 27px;
+	font-size: 16px;
+	cursor: pointer;
+	color: white;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	background-color: purple;
+	border: none;
+	border-radius: 8px;
+	box-shadow: 0 10px #998;
+}
+  
+.purple:active {
+	background-color: #8842d5;
+	box-shadow: 0 6px #667;
+	transform: translateY(5px);
+}
+
+.hover {
     transition-duration: 0.5s;
     -webkit-transition-duration: 0.5s; /* Safari */
 }
 
-.button:hover {
+.hover:hover {
     background-color: #41caf4;
     color: red;
 }
+.button3 {
+	background-color: #4c75af;
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
 
+.button4 {
+    width: 100px;
+    height: 50px;
+    background-color: pink;
+    color: red;
+    border: 3px solid coral;
+}
 td{
 	padding:20px;
 }
@@ -45,3 +83,25 @@ table{
 h1, h2, h3, h4, h5, h6{
 	text-align:center;
 }
+.title{
+	color: red;
+	font-family: 'Trebuchet MS', sans-serif; 
+ }
+  
+  .title-large {
+	font-size: 4rem;
+  }
+  
+  .title-small {
+	font-size: .5rem;
+  }
+  #morecontent {
+	background-color: yellow;
+  }
+table id="hireButtons">
+
+<table id="footerTable">
+*{
+    text-align:right;
+    border: 2px solid black;
+} 
