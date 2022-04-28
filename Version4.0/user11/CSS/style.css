@@ -1,3 +1,4 @@
+@import url(rainbow.css);
 .button {
 	background-color: #4CAF50;
 	border: none;
@@ -48,8 +49,7 @@
 }
 
 .hover:hover {
-    background-color: #41caf4;
-    color: red;
+    background-color: #f44141;
 }
 .button3 {
 	background-color: #4c75af;
@@ -108,4 +108,17 @@ table id="hireButtons">
 .card{
       width: 33%;
 	 display: inline-block;
+}
+#knowledge > * {
+	border: 3px red solid;
+}
+p + * {
+	background-color: #00eeff;
+}
+
+li::marker {
+    color: green;   
+}
+td:hover {
+	background-color: rgb(165, 42, 42);
 }
