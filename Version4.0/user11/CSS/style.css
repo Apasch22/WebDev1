@@ -115,7 +115,6 @@ table id="hireButtons">
 p + * {
 	background-color: #00eeff;
 }
-
 li::marker {
     color: green;   
 }

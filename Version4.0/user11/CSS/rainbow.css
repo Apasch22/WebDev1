@@ -26,5 +26,29 @@
     background-color: violet;
 }
 .highlight:hover {
-    color: #00e5ff;
+    background-color: #00e5ff;
+    color: #ff0000;
 }
+.red-input:focus {
+    background: yellow;
+    color: red;
+}
+  
+  .blue-input:focus {
+    background: yellow;
+    color: blue;
+}
+/* unvisited link */
+a:link {
+    color: #FF0000;
+}
+   
+  /* mouse over link */
+a:hover {
+    color: #FF00FF;
+}
+ 
+  /* selected link */
+a:active {
+    color: #ddff00;
+}  
