@@ -144,9 +144,3 @@ h5,
 h6 {
   text-align: center;
 }
-.card{
-	width: 33%;
-	display: inline-block;
-	border-image-width: 33%;
-	border-image-height: 33%;
-}
