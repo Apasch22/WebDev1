@@ -1,66 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--Version 2.0
+  <!--Version 2.0
         Name:
         Date Completed:
     -->
 
-<head>
-
-    <title>User ## Version 2.0 </title>
+  <head>
+    <title>User ## Version 2.0</title>
 
     <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="SHS WebDev Tags and DIV's">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="SHS WebDev Tags and DIV's" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
-    <style>
+    <style>#banner{
+      border: 5px outset green;
+      background-color: teal;
+      text-align: center;
+  }div#face {
+    width: 1000vw;
+    height: 40vw;
+    max-width: 700px;
+    max-height: 400px;
+    margin: 0 auto;
+    position: relative;
+    background: yellowgreen;
+    margin-top: 2rem;
+}
 
-    </style>
-</head>
+div#face, div#face * {
+    border-radius: 50%;
+}
 
-<body>
+.eye {
+    width: 25%;
+    height: 25%;
+    background: #fff;
+    position: absolute;
+    top: 20%;
+}
+
+.left.eye {
+    left: 40%;
+}
+
+.right.eye {
+    right: 35%;
+}
+
+.pupil {
+    background: rgb(255, 0, 0);
+    width: 50%;
+    height: 100%;
+    position: relative;
+    left: 25%;
+    transform-origin: bottom;
+}
+
+#mouth {
+    position: relative;
+    width: 60%;
+    left: 20%;
+    height: 0%;
+    border: 1vw solid transparent;
+    border-radius: 50%;
+    top: 50%;
+    border-bottom-color: #000;
+}</style>
+  </head>
+
+  <body>
     <main class="wideMargin">
-
-        <!-- Your 1st Heading-->
-        <h1>About Me</h1>
-        <div id="tags">
-            <p>
-                This is my first webpage! I was able to code all the HTML and CSS in order to make it.
-                Watch out world of web design here I come!
-            </p>
-
-            <h2>Heading Examples</h2>
-
-            <!-- Put your Headings ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-
-            <!-- Put your Headings ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
-
-            <h2>Examples of "Other" HTML elements</h2>
-
-            <!-- Put your 8 examples of other elements ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-
-            <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
-        </div>
-        <div id="banner">
-        </div>
-        <div id="face">
-
-        </div>
-    </main>
-
-
-    <footer>
-
+      <!-- Your 1st Heading-->
+      <h1>About Me</h1>
+      <div id="tags">
         <p>
-            <center> Webpage made by <a href="#" target="_blank">[your name]</a></center>
+          This is my first webpage! I was able to code all the HTML and CSS in
+          order to make it. Watch out world of web design here I come!
         </p>
 
-    </footer>
-</body>
+        <h2>Heading Examples</h2>
 
+        <!-- Put your Headings ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
+        <h1>Why modern carmakers disapoint</h1>
+        <h2>1. They're obsessed with SUVs</h2>
+        <h3>2. US regulations ruin cars</h3>
+        <h4>3. They're too dense</h4>
+        <h5>4. They mad greedy</h5>
+        <h6>5. They have too much tech</h6>
+        <!-- Put your Headings ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
+
+        <h2>Examples of "Other" HTML elements</h2>
+
+        <!-- Put your 8 examples of other elements ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
+Clarkson <del>didn't</del> deserve to be sacked.
+Clarkson I know it's you insufferable oaf I'm on the <ins>bloody throne</ins>.
+Clarkson where's my <sub>roof</sub>.
+Clarkson you <sup>infintille pillock</sup>.
+Clarkson you <small>muppet</small>.
+<abbr title="Jeremy Clarkson, James May, Richard Hammond" > JC,JM,RH </abbr> -- used to show acronyms
+<hr>Cheese creation in progress
+<progress value="17" max="50"
+        <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
+      </div>
+      <div id="banner"></div>
+      <div id="face">  <div class="left eye">
+         <div class="pupil">
+         </div>
+    </div>
+    <div class="right eye">
+         <div class="pupil">
+         </div>
+    </div>
+    <div id="mouth">
+    </div></div>
+    </main>
+
+    <footer>
+      <p>
+        <center>
+          Webpage made by <a href="#" target="_blank">[your name]</a>
+        </center>
+      </p>
+    </footer>
+  </body>
 </html>
