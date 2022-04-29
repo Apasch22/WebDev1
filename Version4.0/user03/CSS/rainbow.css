@@ -32,7 +32,8 @@ table td:hover {
     color: #ff0000;
   }
   q:lang(no) {
-    quotes: "~" "~";}
+    quotes: "~" "~";
+}
   footer table td:hover {
     background-color: blue;
   }
