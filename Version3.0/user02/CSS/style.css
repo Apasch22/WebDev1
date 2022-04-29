@@ -1,36 +1,29 @@
 table {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
 	color: #0a53fc;
 	margin-left: auto;
 	margin-right: auto;
-	text-align: left;
 	text-align: center;
 	border-collapse: collapse;
-	cellspacing: 0px;
 	letter-spacing: 0px;
 }
 
 tr {
-	border: 1px solid #ffffff;
 	border: 1px solid #000000;
 	text-align: center;
-	background-color:#9FB6CD; 
 	background-color:#00ff5e7a; 
 }
 
 th {
 	text-align: center;
 	color: #ffffff;
-	background-color: #003366;
-}	background-color: #02f23e;
 	background-color: #02f23e;
 }
 ul {
-	list-style-image: url(https://media.wired.com/photos/5a0a38c1d07f6824ff44221b/master/w_2560%2Cc_limit/twitterlists-TA.jpg)
+	list-style-image: image-set(Bagel)
   }
 ol {
-    list-style-image: url(https://www.akc.org/wp-content/uploads/2016/06/Beagle-standing-in-a-frosty-field-on-a-cold-morning.jpg) 
+    list-style-image: url(https://www.akc.org/wp-content/uploads/2016/06/Beagle-standing-in-a-frosty-field-on-a-cold-morning.jpg); style:"width:100px;height:100px;"
 }
 p {   
 	padding: 20px 10px;  /* Vertical  Horizontal */
