@@ -1,3 +1,5 @@
+@import url(rainbow.css);
+
 #morecontent {
 	background-color: yellow;
   }
@@ -175,6 +177,38 @@ table{
     background-color: orange;
 	This is horrible, I love it 
 }*/
+
+p + * {
+	background-color: #FFFF00;
+}
+
+.background-red:hover {
+	background-color: darkred;
+  }
+
+.background-orange:hover {
+	background-color: rgb(209, 136, 0);
+  }
+
+.background-yellow:hover {
+	background-color: rgb(169, 169, 0);
+  }
+
+.background-green:hover {
+	background-color: darkgreen;
+  }
+
+.background-blue:hover {
+	background-color: darkblue;
+  }
+
+.background-indigo:hover {
+	background-color: rgb(42, 0, 71);
+  }
+
+.background-violet:hover {
+	background-color: darkviolet;
+  }
 
 h1, h2, h3, h4, h5, h6{
 	text-align:center;
