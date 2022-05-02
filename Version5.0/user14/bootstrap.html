@@ -61,6 +61,20 @@
       table-striped tbody tr:nth-of-type(odd) {
         background-color: rgb(255, 0, 40);
       }
+
+      footer {
+        background-color: lightslategray;
+        font-family: "Times New Roman";
+      }
+
+      .footerimage {
+        width: 50px;
+        height: auto;
+      }
+
+      .footerlinktext {
+        color:black;
+      }
     </style>
   </head>
 
@@ -187,5 +201,127 @@
         </a>
       </div>
     </div>
+
+    <!--Spacer-->
+    <p style="height: 50px"></p>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small blue pt-4">
+      <!-- UPPER FOOTER -->
+      <div class="container">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-md-6 mb-4">
+            <!-- Form -->
+            <form class="form-inline">
+              <input
+                class="form-control form-control-sm mr-3 w-75"
+                type="text"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <i class="fas fa-search" aria-hidden="true"></i>
+            </form>
+            <!-- Form -->
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-6 mb-4">
+            <form class="input-group">
+              <input
+                type="text"
+                class="form-control form-control-sm"
+                placeholder="Your email"
+                aria-label="Your email"
+                aria-describedby="basic-addon2"
+              />
+              <div class="input-group-append">
+                <button
+                  class="btn btn-sm btn-outline-white my-0"
+                  style="background-color: darkgray"
+                  type="button"
+                >
+                  Sign up to get spammed with emails
+                </button>
+              </div>
+            </form>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+
+      <!-- Footer Links -->
+      <div class="container-fluid text-center text-md-left">
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-6 mt-md-0 mt-3">
+            <!-- Content -->
+            <h5 class="text-uppercase">What we're about</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="clearfix w-100 d-md-none pb-3" />
+
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+            <!-- Links -->
+            <h5 class="text-uppercase">Navigate</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a class = "footerlinktext" href="#!">Home</a>
+              </li>
+              <li>
+                <a class = "footerlinktext" href="#!">About Us</a>
+              </li>
+              <li>
+                <a class = "footerlinktext" href="#!">Shop</a>
+              </li>
+              <li>
+                <a class = "footerlinktext" href="#!">Membership</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+            <!-- Links -->
+            <h5 class="text-uppercase">Follow Us</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">
+                  <img class="footerimage" src="/Version5.0/user14/images/facebooklogo.png"></a>
+              </li>
+              <li>
+                <a href="#!">
+                  <img class="footerimage" src="/Version5.0/user14/images/instragramlogo.png">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+      <!-- Footer Links -->
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">
+        © 2022 Copyright:
+        <a class="footerlinktext" href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
   </body>
 </html>
