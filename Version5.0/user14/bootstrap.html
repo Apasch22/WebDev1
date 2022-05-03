@@ -73,7 +73,32 @@
       }
 
       .footerlinktext {
-        color:black;
+        color: black;
+      }
+
+      #navbar {
+        padding: 20px 25px 20px 25px;
+        border: 1px solid black;
+        margin: 10px 10px 10px 10px;
+        background-color: slategrey;
+        text-align: center;
+      }
+
+      .navbartext {
+        color: lightgray;
+        font-weight: 500;
+      }
+
+      .navbaritem {
+        padding: 5px 5px;
+        border: 1px solid black;
+        margin: 0px 10px;
+        background-color: black;
+      }
+
+      .navbar-expand-md {
+        flex-wrap: row;
+        justify-content: space-evenly;
       }
     </style>
   </head>
@@ -201,10 +226,35 @@
         </a>
       </div>
     </div>
-
     <!--Spacer-->
     <p style="height: 50px"></p>
-
+    <!--Nav-->
+    <div class="navbar-expand-md">
+      <nav id="navbar">
+        <a
+          href="https://www.mcdonalds.com/us/en-us.html"
+          class="navbartext navbaritem"
+          >Nav Bar Item 1</a
+        >
+        <a
+          href="https://www.mcdonalds.com/us/en-us.html"
+          class="navbartext navbaritem"
+          >Nav Bar Item 2</a
+        >
+        <a
+          href="https://www.mcdonalds.com/us/en-us.html"
+          class="navbartext navbaritem"
+          >Nav Bar Item 3</a
+        >
+        <a
+          href="https://www.mcdonalds.com/us/en-us.html"
+          class="navbartext navbaritem"
+          >Nav Bar Item 4</a
+        >
+      </nav>
+    </div>
+    <!--Spacer-->
+    <p style="height: 50px"></p>
     <!-- Footer -->
     <footer class="page-footer font-small blue pt-4">
       <!-- UPPER FOOTER -->
@@ -277,16 +327,16 @@
 
             <ul class="list-unstyled">
               <li>
-                <a class = "footerlinktext" href="#!">Home</a>
+                <a class="footerlinktext" href="#!">Home</a>
               </li>
               <li>
-                <a class = "footerlinktext" href="#!">About Us</a>
+                <a class="footerlinktext" href="#!">About Us</a>
               </li>
               <li>
-                <a class = "footerlinktext" href="#!">Shop</a>
+                <a class="footerlinktext" href="#!">Shop</a>
               </li>
               <li>
-                <a class = "footerlinktext" href="#!">Membership</a>
+                <a class="footerlinktext" href="#!">Membership</a>
               </li>
             </ul>
           </div>
@@ -300,11 +350,17 @@
             <ul class="list-unstyled">
               <li>
                 <a href="#!">
-                  <img class="footerimage" src="/Version5.0/user14/images/facebooklogo.png"></a>
+                  <img
+                    class="footerimage"
+                    src="/Version5.0/user14/images/facebooklogo.png"
+                /></a>
               </li>
               <li>
                 <a href="#!">
-                  <img class="footerimage" src="/Version5.0/user14/images/instragramlogo.png">
+                  <img
+                    class="footerimage"
+                    src="/Version5.0/user14/images/instragramlogo.png"
+                  />
                 </a>
               </li>
             </ul>
@@ -318,7 +374,9 @@
       <!-- Copyright -->
       <div class="footer-copyright text-center py-3">
         © 2022 Copyright:
-        <a class="footerlinktext" href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+        <a class="footerlinktext" href="https://mdbootstrap.com/">
+          MDBootstrap.com</a
+        >
       </div>
       <!-- Copyright -->
     </footer>
