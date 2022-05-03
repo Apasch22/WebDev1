@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!--Version 3.0
+  <!--Version 4.0
         Name:
         Date Completed:
     -->
 
   <head>
-    <title>Web Dev User 04</title>
+    <title>My Work as a Web Developer</title>
 
     <!-- Meta -->
     <meta charset="utf-8" />
@@ -15,7 +15,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta name="description" content="SHS WebDev Version 3.0" />
+    <meta name="description" content="WebDev Version 4.0" />
 
     <!-- CSS -->
     <link
@@ -50,36 +50,46 @@
         text-align: center;
       }
 
-      h3 {
-        padding: 50px;
-        background-color: lavender;
-        display: inline-block;
-        border: 1px solid #5d6063;
-        border-bottom: 1px solid #5d6063;
-        border-right: 3px dotted #0000ff;
-        border-top: 5px inset;
-        border-left: 3px dashed #e9e9e9;
+      #rainbow {
+        width: 100%;
       }
 
-      p {
-        padding-top: 5px;
-        padding-bottom: 50px;
-        padding-left: 30px;
-        padding-right: 5px;
-        background-color: lavender;
-        margin-top: 25px;
-        margin-bottom: 50px; /* Add this */
+      #knowledge > * {
+        border: 3px red solid;
       }
 
-      strong {
-        padding: 50px;
-        background-color: lightblue;
+      p + * {
+        background-color: #ffff00;
+      }
+
+      #list::marker {
+        color: red;
+      }
+
+      ul li::marker {
+        content: "😜 ";
+      }
+
+      #rainbow :hover {
+        background-color: black;
+      }
+
+      ul:hover {
+        font-size: 3vw;
+      }
+
+      strong:hover {
+        background: linear-gradient(pink, rgb(178, 178, 215));
+      }
+
+      u:hover {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
       }
     </style>
   </head>
 
   <body>
-    <!---------------------------------- Begin the nav-bar ------------------------------------------>
+    <!---------------------------------- Begin the nav-bar ------------->
     <menu>
       <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
@@ -91,19 +101,16 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav">
             <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
             <a href="index.html" class="nav-item nav-link">Home</a>
-            <a href="aboutMe.html" class="nav-item nav-link active">About Me</a>
-            <a href="music.html" class="nav-item nav-link">Music</a>
-            <a href="list.html" class="nav-item nav-link">Lists</a>
-            <a
-              href="mailto:sample@gmail.com?Subject=Hello"
-              class="nav-item nav-link disabled"
-              tabindex="-1"
-              >Contact</a
+            <a href="display.html" class="nav-item nav-link">Display</a>
+            <a href="portfolio.html" class="nav-item nav-link active"
+              >Portfolio</a
             >
+            <a href="gallery.html" class="nav-item nav-link">Gallery</a>
             <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
           </div>
           <div class="navbar-nav ml-auto">
@@ -111,32 +118,73 @@
           </div>
         </div>
       </nav>
-      <!---------------------------------- End the nav-bar ------------------------------------->
     </menu>
+    <!---------------------------------- End the nav-bar ------------------------------------->
 
     <main class="wideMargin">
-      <h1 class="text-left my-3">About Me</h1>
+      <h1 class="text-left my-3 title" tabindex="0">Check out my work!</h1>
       <!-- Edit this line for the title of your page -->
 
       <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-      <h3>Headings Are Block Elements</h3>
-
+      <h3 id="topHeading">I'm a Web Developer</h3>
+      <div id="knowledge">
+        <li id="list">
+          CSS
+          <ul>
+            <li>Classes</li>
+            <li>Selectors</li>
+            <li>ID's</li>
+          </ul>
+        </li>
+        <li id="list">
+          HTML
+          <ul>
+            <li>Tables</li>
+            <li>DIV's</li>
+            <li>Nav Bar</li>
+          </ul>
+        </li>
+      </div>
       <p>
-        paragraphs are blocks, too.<em>However</em>, &lt;em&gt; and
-        &lt;strong&gt; elements are not. They are
-        <strong>inline</strong> elements.
+        These are the things I know in the <strong>WEB DEVELOPMENT</strong>
+        <u>world</u>.
       </p>
-      <div style='padding-top: 1px'></div>
       <p>
-        Block elements define the flow of the HTML document, while inline
-        elements do not.
+        I will use my knowledge to create an amazing website for you and your
+        needs.
       </p>
-      <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+      <div>
+        <table id="rainbow">
+          <tr>
+            <td class="background-red"></td>
+            <td class="background-orange"></td>
+            <td class="background-yellow"></td>
+            <td class="background-green"></td>
+            <td class="background-blue"></td>
+            <td class="background-indigo"></td>
+            <td class="background-violet"></td>
+          </tr>
+        </table>
+      </div>
+      <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
     </main>
 
     <!---------------------------------- Begin the footer ------------->
-    <footer class="wideMargin">
-      <div>Webpage made by <a href="#" target="_blank">Lydia Mesfin</a></div>
+    <footer>
+      <span class="title">Example of a Footer Title</span>
+      <table id="footerTable">
+        <tr>
+          <td>
+            <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
+          </td>
+          <td>
+            <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+          </td>
+          <td>
+            <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+          </td>
+        </tr>
+      </table>
     </footer>
     <!---------------------------------- End the footer ------------->
   </body>
