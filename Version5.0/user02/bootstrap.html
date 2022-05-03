@@ -6,6 +6,29 @@
 -->
 
 <head>
+  
+  <div class="menu"> 
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" 
+                data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">       
+                <a href="#" class="nav-item nav-link active">Home</a>
+                <a href="aboutMe.html" class="nav-item nav-link">About Me</a>
+                <a href="music.html" class="nav-item nav-link disabled" tabindex="-1">Music</a>
+                <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled" 
+                         tabindex="-1">Contact</a>
+            </div>
+            <div class="navbar-nav ml-auto">
+                <a href="#" class="nav-item nav-link disabled">Login</a>
+            </div>
+        </div>
+    </nav>
+</div>
+
     <title>My Bootstrap Sample</title>
 
     <!-- Bootstrap meta data -->
@@ -45,13 +68,24 @@
         .bs-example {
             margin: 20px;
         }
+        footer{ background-color: lightblue; text-align: center; } 
+        #container {
+      display: flex;
+    justify-content: space-between; /* Can be changed in the live sample */
+  }
+
+#container > div {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(-45deg, #788cff, #b4c8ff);
+}
     </style>
 </head>
 
 <body>
     <div class="jumbotron">
         <h4> Bootstrap Examples</h4>
-        <p class="lead"> Let's look at the man different examples of how we can use bootstrap and what bootstrap can do!
+        <p class="lead"> Let's look at the main different examples of how we can use bootstrap and what bootstrap can do!
         </p>
     </div>
 
@@ -176,7 +210,131 @@
             <a href="form.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Form Page</a>
         </div>
     </div>
+<!-- Footer -->
+<footer class="page-footer font-small indigo">
 
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+  
+      <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+  
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Imporatnt E-mails</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">238369@shakopeeschools.com</a>
+            </li>
+            <li>
+              <a href="#!">ThisIsATotallyRealEmail@gmail.com</a>
+            </li>
+            <li>
+              <a href="#!">SpidermansWorstEnemy@hotmail.com</a>
+            </li>
+            <li>
+              <a href="#!">ChimiChongaLover43@icloud.com</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+  
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Names</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Duncan Brockway</a>
+            </li>
+            <li>
+              <a href="#!">John Doe</a>
+            </li>
+            <li>
+              <a href="#!">J. Jonah Jameson</a>
+            </li>
+            <li>
+              <a href="#!">Wade Wilson</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+  
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Possition</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">CEO of Absolutly Nothing</a>
+            </li>
+            <li>
+              <a href="#!">Definatly the Boss</a>
+            </li>
+            <li>
+              <a href="#!">Bringer of Justice</a>
+            </li>
+            <li>
+              <a href="#!">Some Guy that Walked in</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+  
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Important Locations</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">100 17th Ave W, Shakopee, MN</a>
+            </li>
+            <li>
+              <a href="#!">3215 S Rancho Dr, Las Vegas, NV</a>
+            </li>
+            <li>
+              <a href="#!">1722 St Marys Ave, Omaha, NE</a>
+            </li>
+            <li>
+              <a href="#!">1600 Pennsylvania Avenue NW, Washington, DC</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="/"> MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
 
 
 
