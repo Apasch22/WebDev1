@@ -52,7 +52,7 @@
     </style>
   </head>
 
-  <body onmousedown="isKeyPressed(event)">
+  <body onmousedown="isKeyPressed(event)" onresize="resizeWindow()">
     <!---------------------------------- Begin the nav-bar ------------->
     <div class="menu">
       <nav class="navbar navbar-expand-md navbar-dark bg-dark">
@@ -123,32 +123,84 @@
         </div>
       </div>
     </div>
-    <center>
-      <p>Click around this text to check if you're holding shift</p>
-    </center>
-    <center><p id="shift">Shift Check</p></center>
-    <center><p id="date">Click the button to display the date</p></center>
-    <center>
-      <button type="button" onclick="displayDate()">Display Date</button>
-    </center>
-    <center>
-      <p
-        onmousedown="clickDownUp(this,'red')"
-        onmouseup="clickDownUp(this,'green')"
-      >
-        Click and hold this text to change it's color
-      </p>
-    </center>
-    <center>
-        <input type="text" onfocus="focusBox(this)" id="fname" onblur="outFocusBox()" onselect="boxSelect()">
-    </center>
-    <center><p id="textSelect">Select the text in the text box above</p></center>
+    <!--Custom-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12" style="background-color: lightgray">
+          <center>
+            <p>Click around this text to check if you're holding shift</p>
+          </center>
+          <center><p id="shift">Shift Check</p></center>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12" style="background-color: gray">
+          <center><p id="date">Click the button to display the date</p></center>
+          <center>
+            <button type="button" onclick="displayDate()">Display Date</button>
+          </center>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12" style="background-color: lightgray">
+          <center>
+            <p
+              onmousedown="clickDownUp(this,'red')"
+              onmouseup="clickDownUp(this,'green')"
+            >
+              Click and hold this text to change it's color
+            </p>
+          </center>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12" style="background-color: gray">
+          <center>
+            Enter your name:
+            <input
+              type="text"
+              onfocus="focusBox(this)"
+              id="fname"
+              onblur="outFocusBox()"
+              onselect="boxSelect()"
+            />
+          </center>
+          <center>
+            <p id="textSelect">Select the text in the text box above</p>
+          </center>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12" style="background-color: lightgray">
+          <center><button onclick="buttonPressed()">Click me</button></center>
+          <center>
+            <p id="buttonPress">Press the button above to change the text</p>
+          </center>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12" style="background-color: gray">
+          <center>
+            <p ondblclick="doubleClick()" id="doubleClickText">
+              Doubleclick this sentence
+            </p>
+          </center>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12" style="background-color: lightgray">
+          <center><p>Try to resize the browser window.</p></center>
+          <center><p id="resizeText">Window size will appear here</p></center>
+        </div>
+      </div>
+    </div>
     <!--↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑-->
 
     <!---------------------------------- Begin the footer ------------->
     <div class="wideMargin" id="footer">
       <p>
-        Webpage made by <a href="index.html" target="_blank">Derrick Damjanovic</a>
+        Webpage made by
+        <a href="index.html" target="_blank">Derrick Damjanovic</a>
       </p>
     </div>
     <!---------------------------------- End the footer ------------->

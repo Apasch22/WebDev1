@@ -4,8 +4,10 @@ https://www.w3schools.com/js/tryit.asp?filename=tryjs_events
 https://www.w3schools.com/js/tryit.asp?filename=tryjs_events_onmousedown
 https://www.w3schools.com/js/tryit.asp?filename=tryjs_events_onfocus
 https://www.w3schools.com/js/tryit.asp?filename=tryjs_events_onblur
-https://www.w3schools.com/js/tryit.asp?filename=tryjs_events_onsubmit
-https://www.w3schools.com/js/tryit.asp?filename=tryjs_events_onselect **
+https://www.w3schools.com/js/tryit.asp?filename=tryjs_events_onclick
+https://www.w3schools.com/js/tryit.asp?filename=tryjs_events_onselect
+https://www.w3schools.com/js/tryit.asp?filename=tryjs_events_ondblclick
+https://www.w3schools.com/js/tryit.asp?filename=tryjs_events_onresize
 */
 
 function changeText() {
@@ -53,3 +55,18 @@ function isKeyPressed(event) {
   function boxSelect() {
     document.getElementById("textSelect").innerHTML = "You selected some text";
   }
+
+  function buttonPressed() {
+    document.getElementById("buttonPress").innerHTML = "Hello World";
+  }
+
+  function doubleClick() {
+    document.getElementById("doubleClickText").innerHTML = "Hello World";
+  }
+
+  function resizeWindow() {
+  var w = window.outerWidth;
+  var h = window.outerHeight;
+  var txt = "Window size: width=" + w + ", height=" + h;
+  document.getElementById("resizeText").innerHTML = txt;
+}
