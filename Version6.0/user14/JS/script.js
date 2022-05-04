@@ -8,7 +8,7 @@ https://www.w3schools.com/js/tryit.asp?filename=tryjs_events_onclick
 https://www.w3schools.com/js/tryit.asp?filename=tryjs_events_onselect
 https://www.w3schools.com/js/tryit.asp?filename=tryjs_events_ondblclick
 https://www.w3schools.com/js/tryit.asp?filename=tryjs_events_onresize
-https://www.w3schools.com/js/tryit.asp?filename=tryjs_events_srcelement
+https://www.w3schools.com/js/tryit.asp?filename=tryjs_events_dropdown
 */
 
 function changeText() {
@@ -72,17 +72,7 @@ function isKeyPressed(event) {
   document.getElementById("resizeText").innerHTML = txt;
 }
 
-function whichElement(e) {
-  var targ;
-  if (!e) {
-    var e = window.event;
-  }
-  if (e.target) {
-    targ=e.target;
-  } else if (e.srcElement) {
-    targ=e.srcElement;
-  }
-  var tname;
-  tname = targ.tagName;
-  alert("You clicked on a " + tname + " element.");
+function preferedColor() {
+  prefer = document.forms[0].colors.value;
+  alert("You prefer the color " + prefer);
 }
