@@ -60,6 +60,13 @@
       document.getElementById("demo").innerHTML = "X= " + event.clientX + "<br>Y= " + event.clientY;
     }
     </script>
+
+
+<script type="text/javascript">  
+    function msg(){  
+     alert("Hello Javatpoint");  
+    }  
+    </script>  
     <!-- Custom styles for this template -->
     <style type="text/css">
         .menu {
@@ -122,7 +129,36 @@
     <div class="wideMargin" id="content">
     <div class="container-fluid">
     <div class="row">
-    <div class="col-sm-3"> </div>
+    <div class="col-sm-3">
+        <title>Multiplication Table</title>
+        <script type="text/javascript">
+          var rows = prompt("How many rows for your multiplication table?");
+          var cols = prompt("How many columns for your multiplication table?");
+          if(rows == "" || rows == null)
+                  rows = 10;
+          if(cols== "" || cols== null)
+                  cols = 10;
+          createTable(rows, cols);
+          function createTable(rows, cols)
+          {
+            var j=1;
+            var output = "<table border='1' width='500' cellspacing='0'cellpadding='5'>";
+            for(i=1;i<=rows;i++)
+            {
+              output = output + "<tr>";
+              while(j<=cols)
+              {
+                  output = output + "<td>" + i*j + "</td>";
+                   j = j+1;
+                 }
+                  output = output + "</tr>";
+                  j = 1;
+          }
+          output = output + "</table>";
+          document.write(output);
+          }
+        </script>    
+    </div>
     <div class="col-sm-3"> 
         <body style="margin:0px;">
             <div id="coordiv" style="width:199px;height:99px;border:1px solid" onmousemove="myFunction(event)" onmouseout="clearCoor()"></div>
@@ -130,6 +166,7 @@
             <p id="demo"></p>
             </body>
 
+           
             
     </div>
     <div class="col-sm-3">
@@ -139,7 +176,52 @@
             <p id="demo"></p>
 
 <button type="button" onclick="displayDate()">Display Date</button>
-    </div>
+    
+
+<p>Welcome to JavaScript</p>  
+<form>  
+<input type="button" value="click" onclick="msg()"/>  
+</form>  
+
+
+<title>My Example</title>
+
+
+<time id="date"></time>
+
+<script>
+  /* 
+  Create a JavaScript Date object for the current date and time,
+  then extract the desired parts, then join them again in the desired format.
+  */
+  var currentDate = new Date(),
+      month = currentDate.getMonth() + 1,
+      day = currentDate.getDate(),
+      year = currentDate.getFullYear(),
+      date = month + "/" + day + "/" + year;
+      
+  // Output the date to the above HTML element
+  document.getElementById("date").innerHTML = date;
+</script>
+
+
+<title>My Example</title>
+
+
+<time id="msg"></time>
+
+<script>
+  // Create a JavaScript Date object for the current date and time, and set the desired options.
+  var date = new Date(),
+      options = { weekday: "long", month: "long", day: "numeric", year: "numeric" };
+ 
+  // Convert to locale string and add a locale and the options
+  date = date.toLocaleString( "en-US", options );
+ 
+  // Output the date to the above HTML element
+  document.getElementById("msg").innerHTML = date;
+</script>
+</div>
     <div class="col-sm-3"> 
         <body onkeyup="whichButton(event)">
 
@@ -151,6 +233,7 @@
             
             </body>
     </div>
+    
     <!---------------------------------- Begin the footer ------------->
     <div class="wideMargin" id="footer">
         <p>
@@ -165,5 +248,9 @@
     </div>
     <!---------------------------------- End the footer ------------->
 </body>
+<!-- Websites used for the 8 features-->
+<!-- https://www.guru99.com/practical-code-examples-using-javascript.html -->
+<!--https://www.javatpoint.com/javascript-example -->
+<!-- https://www.quackit.com/javascript/examples/-->
 
 </html>
