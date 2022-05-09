@@ -12,7 +12,7 @@
 }
 
 .nav-activepage {
-    color:azure;
+    color: azure;
 }
 
 .maintext {
@@ -45,4 +45,10 @@
 
 .footer-text{
     color:aliceblue;
+    font-size: large;
+}
+
+.footer-header{
+    font-size: x-large;
+    font-weight: 400;
 }
