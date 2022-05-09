@@ -1,5 +1,5 @@
  function changeText() {
-    document.getElementsByClass('textChange').innerHTML = "Hey";
+    document.getElementById('textChange').innerHTML = "Hey";
    }
 
    var space = "";
