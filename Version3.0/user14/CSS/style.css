@@ -19,3 +19,13 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
+
+ul {
+	color:#003366;
+	background-color: #F5F4DC;
+}
+
+ol {
+	color:#F5F4DC;
+	background-color: #003366;
+}
