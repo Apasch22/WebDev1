@@ -6,7 +6,7 @@
 -->
 
 <head>
-    <title>Dynamic Webpage</title>
+    <title>NBA Ranked</title>
 
     <!-- Bootstrap meta data -->
     <meta charset="utf-8">
@@ -32,194 +32,272 @@
     <style>
         /* Internal Styling Here */
     </style>
+    <link rel="stylesheet" href="CSS/style.css" />
 
-</head>
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-<body>
-    <main>
-        <div id="built-in-functions">
-            <!-- ALERT-->
-            <script>
-                alert('Go Sabers!');
-            </script>
-            <!--PRINT-->
-            <script>
-                function printWindow(){
-                    window.print();
-                }
-            </script>
-            <!--LENGTH-->
-            <script>
-                function getLength() {
-                    document.getElementById("length").innerHTML = document.title.length;
-                }
-            </script>
-            <!-- FOCUS-->
-            <script>
-                function getFocus() {
-                    document.getElementById("focusButton").focus();
-                }
-            </script>
-            <!-- CLICK-->
-            <script>
-                function clickSimulation() {
-                    document.getElementById("Check").click();
-                }
-            </script>
-            <script>
-                function getDate() {
-                    document.getElementById("date").innerHTML = Date();
-                }
-            </script>
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+      menu {
+        margin: 0;
+        padding: 0;
+      }
 
-            <div class="container-fluid mt-3 mb-3">
-                <div class="row">
-                    <!--PRINT-->
-                    <div class="col-md-1">
-                        <button class="btn btn-dark btn-md" value="print this page" onclick="printWindow()">Print this
-                            page</button>
-                    </div>
-                    <!--LENGTH-->
-                    <div class="col-md-3">
-                        <button class="btn btn-dark btn-md" onclick="getLength()">The title has this many
-                            characters</button>
-                    </div>
-                    <div class="col-md-1">
-                        <p id="length"></p>
-                    </div>
-                    <!--FOCUS-->
-                    <div class="col-md-1">
-                        <button class="btn btn-dark btn-md" onclick="getFocus()">Focus</button>
-                    </div>
-                    <!-- CLICK-->
-                    <div class="col-md-1">
-                        <form>
-                            <input type="checkbox" id="Check" onmouseover="clickSimulation()">
-                            <input type="checkbox" id="Check" onmouseover="clickSimulation()">
-                        </form>
-                    </div>
-                    <!--DATE-->
-                    <div class="col-md-1">
-                        <button class="btn btn-dark btn-md" onclick="getDate()">Get Date</button>
-                    </div>
-                    <div class="col-md-3">
-                        <p id="date"></p>
-                    </div>
-                </div>
-            </div>
+      .wideMargin {
+        margin: 15px;
+      }
+      td {
+     color: #ff9d00;
+    }
+ 
+      footer {
+        font-size: 12px;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!---------------------------------- Begin the nav-bar ------------->
+    <menu>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a href="http://shakonet.isd720.com" class="navbar-brand">NBA Site</a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav">
+            <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+            <a href="index.html" class="nav-item nav-link">Home</a>
+            <a href="aboutMe.html" class="nav-item nav-link">About Me</a>
+            <a href="Ranked.html" class="nav-item nav-link active">NBA Ranked</a>
+            <a href="list.html" class="nav-item nav-link">Lists</a>
+            <a
+              href="mailto:240143@shakopeeschools.org?Subject=Hello"
+              class="nav-item nav-link active"
+              tabindex="-1"
+              >Contact Me</a
+            
+            <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+          </div>
+          <div class="navbar-nav ml-auto">
+            <a href="https://forms.gle/m6uKtqZ2gAaheYvc9" class="nav-item nav-link active">Small Poll</a>
+          </div>
         </div>
-        <hr>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-5">
-                    <h1>Heading for a long list</h1>
-                    <ol>
-                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                        <li>Aliquam tincidunt mauris eu risus.</li>
-                        <li>Vestibulum auctor dapibus neque.
-                            <ol>
-                                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                                <li>Aliquam tincidunt mauris eu risus.
-                                    <ol>
-                                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                            <ol>
-                                                <li>Lorem ipsum dolor sit amet, consectetuer.</li>
-                                            </ol>
-                                        </li>
-                                        <li>Aliquam tincidunt mauris eu risus.</li>
-                                        <li>Vestibulum auctor dapibus neque.</li>
-                                    </ol>
-                                </li>
-                                <li>Vestibulum auctor dapibus neque.</li>
-                                <li>Aliquam tincidunt mauris eu risus.</li>
-                            </ol>
-                        </li>
-                        <li>Aliquam tincidunt mauris eu risus.</li>
-                        <li>Vestibulum auctor dapibus neque.</li>
-                    </ol>
+      </nav>
+    </menu>
+    <!---------------------------------- End the nav-bar ------------------------------------->
 
-                </div>
+    <main class="wideMargin">
+      <h1 class="text-left my-3" tabindex="0">NBA</h1>
+      <!-- Edit this line for the title of your page -->
 
-                <div class="col-md-2 text-center">
-                    <button class="btn btn-danger btn-lg mt-3 container" onclick="firstSelector()">Try it
-                        1</button>
-
-                    <button class="btn btn-info btn-lg mt-3 container" onclick="secondSelector()">Try it
-                        2</button>
-
-                    <button class="btn btn-secondary btn-lg mt-3 container" onclick="thirdSelector()">Try it
-                        3</button>
-
-                    <button class="btn btn-primary btn-lg mt-3 container" onclick="window.location.reload()">Try
-                        it
-                        4</button>
-                </div>
-
-                <div class="col-md-5">
-                    <h1>My shopping list</h1>
-
-                    <div>
-                        <label for="item">Enter a new item:</label>
-                        <input type="text" name="item" id="item">
-                        <button id="aggregating-list">Add item</button>
-                    </div>
-
-                    <ul>
-
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-        <script id="lists">
-            function firstSelector() {
-                document.querySelector("li").style.backgroundColor = "#dc3545";
-            }
-            function secondSelector() {
-                var x = document.querySelectorAll("li");
-                var i;
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.backgroundColor = "#17a2b8";
-                }
-            }
-            function thirdSelector() {
-                document.querySelector("ol ol li").style.backgroundColor = "#6c757d";
-            }
-        </script>
-        <script id="shopping">
-            const list = document.querySelector('ul');
-            const input = document.querySelector('input');
-            const button = document.getElementById('aggregating-list');
-
-            button.onclick = function () {
-                let myItem = input.value;
-                input.value = '';
-
-                const listItem = document.createElement('li');
-                const listText = document.createElement('span');
-                const listBtn = document.createElement('button');
-
-                listItem.appendChild(listText);
-                listText.textContent = myItem;
-                listItem.appendChild(listBtn);
-                listBtn.textContent = 'Delete';
-                list.appendChild(listItem);
-
-                listBtn.onclick = function (e) {
-                    list.removeChild(listItem);
-                }
-
-                input.focus();
-            }
-        </script>
-    </main>
-    <div id="container" style="height: 3000px; width: 1000px;">
-        <a href="#"><button type="button" id="focusButton" style="margin-top: 3000px;">You focused on me!</button></a>
-    </div>
+      <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+      <h2>All 30 Nba Teams Ranked Favorite to Least Favorite</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>City</th>
+            <th>Team</th>
+            <th>Logo</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>1</td>
+          <td>Minnesota</td>
+          <td>Timberwolves</td>
+          <td><img src="minnesota_timberwolves_logo.jpg" style="width:70px;height:70px;"></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Portland</td>
+          <td>Trail-Blazers</td>
+          <td><img src="Portland_Trail_Blazers_logo.jpg" style="width:70px;height:60px;"></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Atlanta</td>
+          <td>Hawks</td>
+          <td><img src="Hawkslogo.png" style="width:70px;height:70px";></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Sacramento</td>
+          <td>Kings</td>
+          <td><Img src="Kingslogo.png" style="width:110px;height:70px";></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Miluakee</td>
+          <td>Bucks</td>
+          <td><img src="Buckslogo.png" style="width:70px;height:70px";></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Phoenix</td>
+            <td>Suns</td>
+            <td><img src="Sunslogo.png" style="width:70px;height:70px";></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Golden State</td>
+            <td>Warriors</td>
+            <td><img src="Warriorslogo.png" style="width:70px;height:80px";></td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Miami</td>
+            <td>Heat</td>
+            <td><img src="Heatlogo.png" style="width:70px;height:70px";></td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Utah</td>
+            <td>Jazz</td>
+            <td><img src="Jazzlogo.png" style="width:70px;height:70px";></td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>San Antonio</td>
+            <td>Spurs</td>
+            <td><img src="Spurslogo.png" style="width:90px;height:70px";></td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>Indiana</td>
+            <td>Pacers</td>
+            <td><img src="Pacerslogo.png" style="width:70px;height:70px";></td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>Charloette</td>
+            <td>Hornets</td>
+            <td><img src="Hornetslogo.png" style="width:70px;height:70px";></td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>Chicago</td>
+            <td>Bulls</td>
+            <td><img src="Bullslogo.png" style="width:90px;height:70px";></td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>Dallas</td>
+            <td>Mavericks</td>
+            <td><img src="Maverickslogo.png" style="width:70px;height:70px";></td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>Philadelphia</td>
+            <td>76ers</td>
+            <td><img src="76erslogo.png" style="width:70px;height:70px";></td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td>Clevland</td>
+            <td>Cavaliers</td>
+            <td><img src="Cavalierslogo.png" style="width:70px;height:70px";></td>
+          </tr>
+          <tr>
+            <td>17</td>
+            <td>Washington</td>
+            <td>Wizards</td>
+            <td><img src="Wizardslogo.png" style="width:90px;height:70px";></td>
+          </tr>       
+           <tr>
+            <td>18</td>
+            <td>Houston</td>
+            <td>Rockets</td>
+            <td><img src="Rocketslogo.png" style="width:70px;height:70px";></td>
+          </tr>      
+            <tr>
+            <td>19</td>
+            <td>Denver</td>
+            <td>Nuggets</td>
+            <td><img src="Nuggetslogo.png" style="width:70px;height:70px";></td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td>Toronto</td>
+            <td>Raptors</td>
+            <td><img src="Raptorslogo.png" style="width:70px;height:70px";></td>
+          </tr>
+          <tr>
+            <td>21</td>
+            <td>Detroit</td>
+            <td>Pistons</td>
+            <td><img src="Pistonslogo.png" style="width:70px;height:70px";></td>
+          </tr>
+          <tr>
+            <td>22</td>
+            <td>Oklahoma City</td>
+            <td>Thunder</td>
+            <td><img src="Thunderlogo.png" style="width:70px;height:70px";></td>
+          </tr>
+          <tr>
+            <td>23</td>
+            <td>Boston</td>
+            <td>Celtics</td>
+            <td><img src="Celticslogo.png" style="width:70px;height:70px";></td>
+          </tr>
+          <tr>
+            <td>24</td>
+            <td>Los Angeles</td>
+            <td>Clippers</td>
+            <td><img src="Clipperslogo.png" style="width:70px;height:70px";></td>
+          </tr>
+          <tr>
+            <td>25</td>
+            <td>New Orleans</td>
+            <td>Pelicans</td>
+            <td><img src="Pelicanslogo.png" style="width:70px;height:70px";></td>
+          </tr>
+          <tr>
+            <td>26</td>
+            <td>Memphis</td>
+            <td>Grizzlies</td>
+            <td><img src="Grizzlieslogo.png" style="width:70px;height:70px";></td>
+          </tr>
+          <tr>
+            <td>27</td>
+            <td>New Yorks</td>
+            <td>Knicks</td>
+            <td><img src="Knickslogo.png" style="width:70px;height:70px";></td>
+          </tr>
+          <tr>
+            <td>28</td>
+            <td>Orlando</td>
+            <td>Magic</td>
+            <td><img src="Magiclogo.png" style="width:70px;height:70px";></td>
+          </tr>
+          <tr>
+            <td>29</td>
+            <td>Brooklyns</td>
+            <td>Nets</td>
+            <td><img src="Netslogo.png" style="width:70px;height:70px";></td>
+          </tr>
+          <tr>
+            <td>30</td>
+            <td>Los Angeles</td>
+            <td>Lakers</td>
+            <td><img src="Lakerslogo.png" style="width:70px;height:70px";></td>
+          </tr>
+      </table>
         <!-- Footer -->
 <footer class="page-footer font-small blue pt-4">
     <style>.page-footer{
-        background-color:rgb(66, 250, 20);
+        background-color:rgb(255, 103, 227);
     }</style>
     <!-- Footer Links -->
     <div class="container-fluid text-center text-md-left">
@@ -231,8 +309,8 @@
         <div class="col-md-6 mt-md-0 mt-3">
   
           <!-- Content -->
-          <h5 class="text-uppercase">Join The Gang</h5>
-          <p>Join me in my mission to be cool!</p>
+          <h5 class="text-uppercase">Do you Love the NBA?</h5>
+          <p>If you do you can find hundreds of other websites shows and newsletters to enjoy the game! As cool and this website is it's not your only source for NBA content so please enjoy these links!</p>
   
         </div>
         <!-- Grid column -->
@@ -243,20 +321,20 @@
         <div class="col-md-3 mb-md-0 mb-3">
   
           <!-- Links -->
-          <h5 class="text-uppercase">Sports Links</h5>
+          <h5 class="text-uppercase">NBA Links</h5>
   
           <ul class="list-unstyled">
             <li>
-              <a href="#!"https://www.nba.com/>NBA.com</a>
+              <a href="https://www.nba.com">NBA.com</a>
             </li>
             <li>
-              <a href="#!">NHL.com</a>
+              <a href="https://open.spotify.com/show/5vMLIaAcXeWUpXRpUt5qXY?si=aacd144a2df64d9e">NBA Podcast</a>
             </li>
             <li>
-              <a href="#!">MLB.com</a>
+              <a href="https://bleacherreport.com/nba">Bleacher Report</a>
             </li>
             <li>
-              <a href="#!">NFL.com</a>
+              <a href="https://www.espn.com/nba/">Espn</a>
             </li>
           </ul>
   
@@ -267,20 +345,20 @@
         <div class="col-md-3 mb-md-0 mb-3">
   
           <!-- Links -->
-          <h5 class="text-uppercase">My Links</h5>
+          <h5 class="text-uppercase">Other Leagues</h5>
   
           <ul class="list-unstyled">
             <li>
-              <a href="#!">My Youtube</a>
+              <a href="https://www.nhl.com/">NHL.com</a>
             </li>
             <li>
-              <a href="#!">My Twitch</a>
+              <a href="https://www.mlb.com/">MLB.com</a>
             </li>
             <li>
-              <a href="#!">My Twitter</a>
+              <a href="https://www.nfl.com/">NFL.com</a>
             </li>
             <li>
-              <a href="#!">My Instagram</a>
+              <a href="https://www.wnba.com/">WNBA.com</a>
             </li>
           </ul>
   
@@ -294,8 +372,8 @@
     <!-- Footer Links -->
   
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2020 Copyright:
-      <a href="/"> MDBootstrap.com</a>
+    <div class="footer-copyright text-center py-3">© 2022 Copyright:
+      <a href="https://twitter.com/SHSIMHoops/status/1494132115444797441?s=20&t=iFYVezANlgSB1cTYtqhb-g">Lucas Hoekstra</a>
     </div>
     <!-- Copyright -->
   

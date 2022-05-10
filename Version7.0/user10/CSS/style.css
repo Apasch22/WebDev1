@@ -41,3 +41,24 @@ h1 {
     border-bottom: 1px solid black;
     margin-bottom: 1em;
 }
+table {
+	font-family: "Marker Felt", "Comic Sans MS", fantasy;
+	color: #003366;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	border-collapse: collapse;
+	cellspacing: 0px;
+}
+
+tr {
+	border: 1px solid #000000;
+	text-align: center;
+	background-color:#00ff9d; 
+}
+
+th {
+	text-align: center;
+	color: #ff7b00;
+	background-color: #000000;
+} 
