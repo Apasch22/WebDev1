@@ -6,11 +6,15 @@ ul li a{
 }
 .navbar-custom {
     background-color: rgb(255, 0, 0);
+    align-self: stretch;
+   
+    
 }
-.leftnav {
-    align-content: left;
+*{
+    padding: 0;
+    margin: 0;
 }
-.split {
+.container {
     height: 100vh;
     background: linear-gradient(
     to right,
@@ -19,4 +23,9 @@ ul li a{
     yellow 50%
     yellow 100%
     );
+}
+
+.vs {
+    text-align: center;
+    text-size-adjust: 500px;
 }
