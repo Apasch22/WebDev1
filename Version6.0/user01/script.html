@@ -99,7 +99,7 @@
     <!---------------------------------- Begin the footer ------------->
     <div class="wideMargin" id="footer">
         <p>
-            Webpage made by <a href="index.html" target="_blank">[your name]</a>
+            Webpage made by <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Sean</a>
         </p>
     </div>
     <!---------------------------------- End the footer ------------->
@@ -124,7 +124,7 @@
         </script>
 
         <script>
-            function openWin() {
+            function openWind() {
             window.open("https://www.youtube.com/watch?v=A6XiOlDUN-g");
             }
         </script>
@@ -157,30 +157,42 @@
     
     <body>
 
-        <form>
-            <input type="button" value="Open Window" onclick="openWin()">
-        </form>
+        <div class="col-sm-15" style="background-color:yellow;">
+            <form>
+                <input type="button" value="Open Window" onclick="openWind()">
+            </form>
+        </div>
 
-        <img src="jeremyclarkson.webp" onload="loadImage()" width="145" height="126" alt="jeremyclarkson" usemap="#jeremy" />
+        <div class="col-sm-15" style="background-color:orange;">
+            <img src="jeremyclarkson.webp" onload="loadImage()" width="145" height="126" alt="jeremyclarkson" usemap="#jeremy" />
+        </div>
 
-        <map name="jeremy">
-            <area shape="rect" coords="0,0,82,126"
-                onmouseover="writeText('Jeremy Clarkson was sacked due to him punching a producer, claiming the food he recieved was cold.')"
-                href="jeremy.htm" target="_blank" alt="face" />
+        <div class="col-sm-15" style="background-color:yellow;">
+            <map name="jeremy">
+                <area shape="rect" coords="0,0,82,126"
+                    onmouseover="writeText('Jeremy Clarkson was sacked due to him punching a producer, claiming the food he recieved was cold.')"
+                    href="jeremy.htm" target="_blank" alt="face" />
 
-            <p id="desc">Hover over Clarkson's face to figure out why he is no longer in the BBC.</p>
+                <p id="desc">Hover over Clarkson's face to figure out why he is no longer in the BBC.</p>
 
+                
+            </map>
+        </div>
+        
+        <div class="col-sm-15" style="background-color:orange;">
+            <input type="button" value="Feel free to screenshot" onclick="openWin()" />
+            <input type="button" value="finish" onclick="closeWin()" />
+        </div>
+       
+        <div class="col-sm-15" style="background-color:yellow;">
             <p onmousedown="myFunction(this,'orange')" onmouseup="myFunction(this,'yellow')">
                 Is it color or colour?
             </p>
-        </map>
+        </div>
 
-        <input type="button" value="Feel free to screenshot" onclick="openWin()" />
-        <input type="button" value="finish" onclick="closeWin()" />
-
-        
-        
-        Enter what you witnessed: <input type="text" id="fname" onblur="myFunction()">
+        <div class="col-sm-15" style="background-color:orange;">
+            Enter what you witnessed: <input type="text" id="fname" onblur="myFunction()">
+        </div>
 
     </body>
 
@@ -192,14 +204,17 @@
         </script>
     </head>
 
-    <body onkeyup="whichButton(event)">
+    <body  onkeyup="whichButton(event)"></body>
+        <div class="col-sm-15" style="background-color:yellow;">
+           
 
-        <p><b>Note:</b> Make sure the right frame has focus when trying this example!</p>
-        
-        <p>Click on this page, and press a key on your keyboard.</p>
-        
-        <p id="demo"></p>
-        
+            <p><b>Note:</b> Make sure the right frame has focus when trying this example!</p>
+            
+            <p>Click on this page, and press a key on your keyboard.</p>
+            
+            <p id="demo"></p>
+        </div>
+
     </body>
 </div>
 
