@@ -14,18 +14,40 @@ ul li a{
     padding: 0;
     margin: 0;
 }
-.container {
-    height: 100vh;
-    background: linear-gradient(
-    to right,
-    red 0%
-    red 50%
-    yellow 50%
-    yellow 100%
-    );
+
+#topHeading {
+    text-align: center;
+    font-size: 45px;
+    color: white;
+    -webkit-text-stroke: 0px black;
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     3px 3px 0 #000;
 }
 
-.vs {
-    text-align: center;
-    text-size-adjust: 500px;
-}
+*{
+    padding: 0;
+    margin: 0;
+  }
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(
+      to right,
+      red 0%,
+      red 50%,
+      yellow 50%,
+      yellow 100%
+    );
+  }
+
+  #lebron {
+      width: 715px;
+      align-content: left;
+  }
+  #TheBest {
+      text-align: center;
+  }
