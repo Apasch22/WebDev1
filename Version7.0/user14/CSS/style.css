@@ -99,3 +99,17 @@
 .spacer {
     padding: 10px 0px;
 }
+
+.smallimage {
+    height: 10vw;
+    width: auto;
+    margin: 0px 10px;
+}
+
+.imageholder {
+    background-color:white;
+    padding: 20px 20px;
+    border: 1px solid black;
+    margin: 50px 0px;
+    text-align: center;
+  }
