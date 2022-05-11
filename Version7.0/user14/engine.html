@@ -47,6 +47,27 @@
 
 <!--Internal Styles-->
     <style>
+      #quiztitle {
+        color:beige;
+        background-color:steelblue;
+        padding: 20px;
+        border: 1px solid black;
+        margin: 30px 0px;
+        font-weight: 500;
+        text-align: center;
+      }
+
+      .grid-border{
+      border: 1px solid black;
+      }
+
+      .answerholder{
+        background-color:steelblue;
+        padding: 10px;
+        border: 1px solid black;
+        margin: 50px 0px;
+        text-align: center;
+      }
     </style>
     </head>
     <body>
@@ -71,7 +92,7 @@
           <p class="spacer"></p>
           <h1 class="section-header">Engines</h1>
           <div class="textholder">
-            <p class="maintext">There are quite a few different types of engines found in cars. The engines we will go over are the v engine, inline engine and boxer engine.</p>
+            <p class="maintext">There are quite a few different types of engines found in cars. The engines we will go over are the V engine, inline engine and boxer engine.</p>
           </div>
           <p class="spacer"></p>
           <!--Bootstrap Element-->
@@ -86,6 +107,7 @@
           </center>
           </figure>
         </article>
+        <hr>
         <p class="spacer"></p>
         <article>
           <h1 class="section-header">What do engines do?</h1>
@@ -108,37 +130,67 @@
            <p class="smalltext">Note that this explanation doesn't perfectly apply to all engines, such a diesel engines for example, which doesn't need spark plugs.</p>
           </div>
         </article>
+        <hr>
         <p class="spacer"></p>
         <article>
           <h1 class="section-header">The V Engine</h1>
           <div class="textholder">
-          <p class="maintext-black">V engines got their name because they're shaped like a V. The engine's cylinder banks are set up in a V shape creating either a 60 or 90 degree angle. The first V engine was created by Wilhelm Mayback in 1889.</p>
+          <p class="maintext">V engines got their name because they're shaped like a V. The engine's cylinder banks are set up in a V shape creating either a 60 or 90 degree angle. The first V engine was created by Wilhelm Mayback in 1889.</p>
           </div>
           <center>
-          <img class ="largeimage" src="images/v8engineanimated.gif" alt="Animated V8 Engine">
+          <img class ="largeimage rounded" src="images/v8engineanimated.gif" alt="Animated V8 Engine">
           </center>
         </article>
+        <hr>
         <p class="spacer"></p>
         <article>
           <h1 class="section-header">The Inline Engine</h1>
           <div class="textholder">
-            <p class="maintext-black">Inline engines (also known as straight engines) are engines where all of the pistons and cylinders are set up in a straight row. Inline engines are usually more balanced and quiter than V engines, but have a higher center of gravity.</p>
+            <p class="maintext">Inline engines (also known as straight engines) are engines where all of the pistons and cylinders are set up in a straight row. Inline engines are usually more balanced and quiter than V engines, but have a higher center of gravity.</p>
           </div>
           <center>
-            <img class="largeimage" src="images/inline6animated.gif" alt="Animated Inline 6 Engine">
+            <img class="largeimage rounded" src="images/inline6animated.gif" alt="Animated Inline 6 Engine">
           </center>
         </article>
+        <hr>
         <p class="spacer"></p>
         <article>
           <h1 class="section-header">The Boxer Engine</h1>
           <div class="textholder">
-            <p class="maintext-black">Boxer engines are a type of flat engine, so they have pistons that are parallel to the ground. However, it's important to note that not every flat engine is a boxer engine. The boxer engine gets its name because the motion of the pistons resemble the motion of a boxer punching. Pistons are attached to a crank pin so pairs of pistons move inverse to each other. For example, when one piston goes out, the other piston moves out as well. Boxer engines have better balance and increase fluid rotation.</p>
+            <p class="maintext">Boxer engines are a type of flat engine, so they have pistons that are parallel to the ground. However, it's important to note that not every flat engine is a boxer engine. The boxer engine gets its name because the motion of the pistons resemble the motion of a boxer punching. Pistons are attached to a crank pin so pairs of pistons move inverse to each other. For example, when one piston goes out, the piston on the other side moves out as well. Boxer engines have better balance and increase fluid rotation.</p>
           </div>
           <center>
-            <img class="largeimage" src="images/boxeranimated.gif" alt="Animated Boxer Engine">
+            <img class="largeimage rounded" src="images/boxeranimated.gif" alt="Animated Boxer Engine">
           </center>
         </article>
       </section>
+      <p class="spacer"></p>
+      <!--Interactive Quiz-->
+      <h1 id="quiztitle">Quiz Time</h1>
+      <p class="maintext-black">Question 1:</p>
+      <p class="maintext-black">Which engine is flat and has pistons parallel to the ground?</p>
+      <!--Bootstrap-->
+      <div class="container maintext textholder" style="text-align: center;">
+        <div class="row">
+          <div class="col" onclick="engineQuiz1()">
+            Inline Engine
+          </div>
+          <div class="col" onclick="engineQuiz1()">
+            Boxer Engine
+          </div>
+        </div>
+        <div class="row">
+          <div class="col" onclick="engineQuiz1()">
+            V Engine
+          </div>
+          <div class="col" onclick="engineQuiz1()">
+            Diesel Engine
+         </div>
+        </div>
+      </div>
+      <div class="answerholder">
+      <p id="answerText1" class="smalltext">Click on an option to see the answer</p>
+      </div>
     </main>
     <!--Main Content End-->
     <!--Footer Start-->
