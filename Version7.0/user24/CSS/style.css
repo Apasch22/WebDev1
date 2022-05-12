@@ -7,8 +7,6 @@ ul li a{
 .navbar-custom {
     background-color: rgb(255, 0, 0);
     align-self: stretch;
-   
-    
 }
 *{
     padding: 0;
@@ -32,7 +30,7 @@ ul li a{
     margin: 0;
   }
 
-body{
+.page{
     width: 100%;
     min-height: 100vh;
     background: linear-gradient(
@@ -49,5 +47,39 @@ body{
       align-content: left;
   }
   #TheBest {
+      padding: 25px;
+      font-size: 45px;
+      color:rgb(255, 255, 255);
+      -webkit-text-stroke: 1.5px black;
       text-align: center;
+      font-family: Impact;
+      
+  }
+
+  .mjpage{
+      background-color: red;
+  }
+
+  #mj{
+      padding-left: 50px;
+      width: 600px;
+  }
+  #ofheading{
+      text-align: center;
+      color: rgb(255, 255, 255);
+      -webkit-text-stroke: 1.5px black;
+      font-family:Impact;
+      font-size: 60px;
+      text-shadow:
+      -1px -1px 0 #000,  
+       1px -1px 0 #000,
+       -1px 1px 0 #000,
+        3px 3px 0 #000;
+  }
+  #mjpara{
+    font-size: 20px;
+    text-align: right;
+    text-align: top;
+    padding-right: 50px;
+    color: white;
   }
