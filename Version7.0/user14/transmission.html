@@ -46,8 +46,21 @@
     <script src="/Version7.0/user14/JS/JavaScript.js"></script>
 
 <!--Internal Styles-->
-    <style></style>
+    <style>
+    .textholder-blue {
+    background-color:steelblue;
+    margin: 50px 0px;
+    border: 1px black solid;
+    padding: 10px 10px;
+    }
 
+    .maintext-beige {
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    color:beige;
+    }
+    </style>
     </head>
     <body>
         <!--Navbar Start-->
@@ -66,7 +79,41 @@
       <!--Navbar End-->
       <!--Main Content Start-->
     <main class="widemargin">
-      
+      <section>
+        <article>
+          <p class="spacer"></p>
+          <h1 class="section-header">Transmissions</h1>
+          <div class="textholder-blue">
+            <p class="maintext-beige">Many types of transmissions are found in cars. The transmissions you will learn about are the manual, automatic, sequential and dual clutch transmissions.</p>
+          </div>
+          <!--Bootstrap-->
+          <div class="imageholder" style="margin-bottom: 5px;">
+            <div class="row">
+              <div class="col">
+                <img class="mediumimage" src="images/automatictransmission2.png" alt="Automatic Transmission">
+                <img class="mediumimage" src="images/manualtransmission.png" alt="Manual Transmission">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <img class="mediumimage" src="images/sequentialtransmission.jpg" alt="Sequential Transmission">
+                <img class="mediumimage" src="images/dualclutchtransmission.png" alt="Dual Clutch Transmission">
+              </div>
+            </div>
+          </div>
+          <center>
+          <p id="imageHoverText" class="smalltext-black" >Hover over an image above to see which transmission it is.</p>
+          </center>
+        </article>
+        <p class="spacer"></p>
+        <article>
+          <!--https://www.jdpower.com/cars/shopping-guides/what-is-a-transmission-in-a-car-->
+          <h1 class="section-header">What do transmissions do?</h1>
+          <div class="textholder-blue">
+            <p class="maintext-beige">Transmissions are needed in cars because without it, the engine would turn too fast and destroy itself. Transmissions change gears based on your acceleration and speed.</p>
+          </div>
+        </article>
+      </section>
     </main>
     <!--Main Content End-->
     <!--Footer Start-->

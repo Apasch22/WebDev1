@@ -30,3 +30,7 @@ function engineQuiz3() {
     document.getElementById("answerText3").innerHTML
     = "The answer is Air and Fuel"
 }
+
+function imageHover() {
+
+}

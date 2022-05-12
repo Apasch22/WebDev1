@@ -113,3 +113,9 @@
     margin: 50px 0px;
     text-align: center;
   }
+
+  .mediumimage {
+      height: 15vw;
+      width: auto;
+      margin: 0px 10px;
+  }
