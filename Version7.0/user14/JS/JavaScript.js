@@ -20,3 +20,13 @@ function engineQuiz1() {
     document.getElementById("answerText1").innerHTML
     = "The answer is Boxer Engine"
 }
+
+function engineQuiz2() {
+    document.getElementById("answerText2").innerHTML
+    = "The answer is"
+}
+
+function engineQuiz3() {
+    document.getElementById("answerText3").innerHTML
+    = "The answer is"
+}
