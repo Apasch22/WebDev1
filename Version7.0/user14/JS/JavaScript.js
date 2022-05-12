@@ -31,6 +31,27 @@ function engineQuiz3() {
     = "The answer is Air and Fuel"
 }
 
-function imageHover() {
+function imageHoverAutomatic() {
+    document.getElementById("imageHoverText").innerHTML
+    = "This is an automatic transmission."
+}
 
+function imageHoverManual() {
+    document.getElementById("imageHoverText").innerHTML
+    = "This is a manual transmission."
+}
+
+function imageHoverSequential() {
+    document.getElementById("imageHoverText").innerHTML
+    = "This is a sequential transmission."
+}
+
+function imageHoverDCT() {
+    document.getElementById("imageHoverText").innerHTML
+    = "This is a dual clutch transmission."
+}
+
+function clearImageHoverText() {
+    document.getElementById("imageHoverText").innerHTML
+    = "Hover over an image above to see which transmission it is."
 }
