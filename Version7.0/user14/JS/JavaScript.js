@@ -23,10 +23,10 @@ function engineQuiz1() {
 
 function engineQuiz2() {
     document.getElementById("answerText2").innerHTML
-    = "The answer is"
+    = "The answer is Exhaust"
 }
 
 function engineQuiz3() {
     document.getElementById("answerText3").innerHTML
-    = "The answer is"
+    = "The answer is Air and Fuel"
 }
