@@ -125,7 +125,7 @@
       </div>
 
       <p>Write something in the space below</p>
-      Enter your name: <input type="text" id="fname" onkeyup="myFunction()" />
+      Enter your name: <input type="text" id="fname" onkeyup="myFunction1()" />
 
       <div
         id="coordiv"
@@ -160,24 +160,39 @@
         </select>
       </form>
 
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNrEPuwyMmRFM8uqWm_GIgL71Oidnwb02jtdsKcdL9Tcb4SJ8VvG2IA91ntsDt1NGvq7o:https://i.imgflip.com/3x1fd6.jpg&usqp=CAU" onload="loadImage()" width="200" height="250" class="mt-4">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNrEPuwyMmRFM8uqWm_GIgL71Oidnwb02jtdsKcdL9Tcb4SJ8VvG2IA91ntsDt1NGvq7o:https://i.imgflip.com/3x1fd6.jpg&usqp=CAU"
+        onload="loadImage()"
+        width="200"
+        height="250"
+        class="mt-4"
+      />
 
-      <form onsubmit="confirmInput()" action="https://sites.google.com/site/sikepage/" class="mt-4">
-        Enter your name: <input id="fname" type="text" size="20">
-        <input type="submit">
+      <form
+        onsubmit="confirmInput()"
+        action="https://sites.google.com/site/sikepage/"
+        class="mt-4"
+      >
+        Enter your name: <input id="fname" type="text" size="20" />
+        <input type="submit" />
       </form>
 
-      <p onmousedown="myFunction(this,'red')" onmouseup="myFunction(this,'green')" class="mt-4">
-        Click the text to change the color. A function, with parameters, is triggered when the mouse button is pressed down, and again, with other parameters, when the mouse button is released.
-        </p>
+      <p ondblclick="myFunction3()">
+        Doubleclick this paragraph to trigger a function.
+      </p>
+
+      <p id="demo1"></p>
+
+      <p
+        onmousedown="myFunction(this,'red')"
+        onmouseup="myFunction(this,'green')"
+        class="mt-4"
+      >
+        Click the text to change the color. A function, with parameters, is
+        triggered when the mouse button is pressed down, and again, with other
+        parameters, when the mouse button is released.
+      </p>
     </div>
-
-    <body onmousedown="whichElement(event)">
-
-      <p>Click somewhere in the document. An alert box will alert the name of the element you clicked on.</p>
-      <h3>This is a heading</h3>
-      <img border="0" src="https://static01.nyt.com/images/2016/03/13/opinion/sunday/13butcher/13butcher-articleLarge.jpg?quality=75&auto=webp&disable=upscale" alt="buff" width="170" height="100">
-      <p>This is a paragraph.</p>
     <!--↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑-->
 
     <!---------------------------------- Begin the footer ------------->

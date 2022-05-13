@@ -16,7 +16,7 @@ function changeText() {
    }
    Scroll();
    
-   function myFunction() {
+   function myFunction1() {
     var x = document.getElementById("fname");
     x.value = x.value.toUpperCase();
   }
@@ -61,21 +61,10 @@ function changeText() {
     alert("Hello " + fname + "! You will now be redirected to www.w3Schools.com");
   }
 
+  function myFunction3() {
+    document.getElementById("demo1").innerHTML = "Hello World";
+  }
+  
   function myFunction(elmnt, clr) {
     elmnt.style.color = clr;
-  }
-
-  function whichElement(e) {
-    var targ;
-    if (!e) {
-      var e = window.event;
-    }
-    if (e.target) {
-      targ=e.target;
-    } else if (e.srcElement) {
-      targ=e.srcElement;
-    }
-    var tname;
-    tname = targ.tagName;
-    alert("You clicked on a " + tname + " element.");
   }
