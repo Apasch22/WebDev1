@@ -77,9 +77,53 @@ ul li a{
         3px 3px 0 #000;
   }
   #mjpara{
-    font-size: 20px;
-    text-align: right;
+    font-size: 25px;
+    text-align: left;
     text-align: top;
     padding-right: 50px;
     color: white;
+    float: right;
+  }
+
+  #tabletop {
+    width: 700px;
+    float: right;
+    
+
+  }
+  .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+    background-color: gray
+  }
+
+  #Clutch {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1.5px black;
+    font-family:Impact;
+    font-size: 60px;
+    text-shadow:
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+     -1px 1px 0 #000,
+      3px 3px 0 #000;
+  }
+
+  #champ {
+      background-color: red;
+  }
+
+  #mjj {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+  }
+
+  #james {
+    background-color: yellow;
+  }
+  #jahamez {
+    width: 625px;
+    padding-left: 20px;
+    padding-top: 5px;
   }
