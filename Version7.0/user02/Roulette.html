@@ -1,0 +1,110 @@
+<head>
+  <title>Home</title>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <meta name="description" content="Home Page" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <style>
+    body {
+    background-color:#9dff0083;
+         }
+  </style>
+</head>
+
+<body>
+  
+  <div class="menu">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+      <button
+        type="button"
+        class="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav">
+          <a href="index.html" class="nav-item nav-link">Home</a>
+          <a href="TikTakToe.html" class="nav-item nav-link">TikTacToe</a>
+          <a href="Hangman.html" class="nav-item nav-link">Hangman</a>
+          <a href="Roulette.html" class="nav-item nav-link active">Russian Roulette</a>
+          <a href="Numbers.html" class="nav-item nav-link">Guess the Number</a>
+          <a href="Story.html" class="nav-item nav-link">Story Creator</a>
+          <a href="VudooHudoo.html" class="nav-item nav-link">Magic</a>
+        </div>
+        <div class="navbar-nav ml-auto">
+          <a href="Info.html" class="nav-item nav-link">Info</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <h1>Russian Roulette</h1>
+  <center>
+  <table border="0" width="350" cellspacing="0" cellpadding="0">
+    <tr>
+      <td>
+        <img border="0" src="images/roulette.jpg" width="152" height="216" />
+      </td>
+      <td>
+        <form name="fire">
+          Load number of bullets (1-6):<br /><input
+            name="bullets"
+            type="text"
+            size="3"
+            value="1"
+          /><br />
+
+          <p>
+            <input
+              name="message"
+              type="button"
+              value="Play Roulette!"
+              onClick="fireit()"
+            />
+          </p>
+        </form>
+
+        <script>
+          //Russian Roulette Game- by javascriptkit.com
+          //Visit JavaScript Kit (http://javascriptkit.com) for script
+          //Credit must stay intact for use
+
+          function fireit() {
+            var theone = Math.floor(Math.random() * 6);
+
+            if (theone <= document.fire.bullets.value - 1) alert("Bang");
+            else {
+              document.fire.message.value = "Lucky Shot";
+              setTimeout("document.fire.message.value='Play Roulette'", 500);
+            }
+          }
+        </script>
+        <p align="center">
+          This free script provided by<br />
+          <a href="http://javascriptkit.com">JavaScript Kit</a>
+        </p>
+      </td>
+    </tr>
+  </table>
+  </center>
+</body>

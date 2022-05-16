@@ -1,0 +1,145 @@
+<head>
+  <title>Home</title>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <meta name="description" content="Home Page" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <style>
+    body {
+    background-color:#9dff0083;
+         }
+  </style>
+
+  <script>
+    function myFunction() {
+      document.getElementById("demo").innerHTML = "Guess half of the total from the smallest to the largest then continue doing that until you have the answer";
+    }
+    </script>
+</head>
+
+<body>
+  <div class="menu">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+      <button
+        type="button"
+        class="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav">
+          <a href="index.html" class="nav-item nav-link">Home</a>
+          <a href="TikTakToe.html" class="nav-item nav-link">TikTacToe</a>
+          <a href="Hangman.html" class="nav-item nav-link">Hangman</a>
+          <a href="Roulette.html" class="nav-item nav-link">Russian Roulette</a>
+          <a href="Numbers.html" class="nav-item nav-link active">Guess the Number</a>
+          <a href="Story.html" class="nav-item nav-link">Story Creator</a>
+          <a href="VudooHudoo.html" class="nav-item nav-link">Magic</a>
+        </div>
+        <div class="navbar-nav ml-auto">
+          <a href="Info.html" class="nav-item nav-link">Info</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <h1>Number Guessing Game</h1>
+  <script language="JavaScript">
+    // numberguess is by Lancer - written 4 Jan 1999
+    // lancer@kp.planet.gen.nz
+
+    var guessme = Math.round(Math.random() * 99 + 1);
+    var speech = "Guess my number (from 1 to 100)";
+
+    function process(mystery) {
+      var guess = document.forms.guessquiz.guess.value;
+      var speech = '"' + guess + '" does not make sense to me.';
+      document.forms.guessquiz.guess.value = "";
+
+      if (guess == mystery) {
+        document.forms.guessquiz.prompt.value =
+          "Congratulations! " + mystery + " is correct!";
+        alert(
+          "Well done - the mystery number is " +
+            mystery +
+            "! \n\nPress this button to reload the page for another game."
+        );
+        speech = "";
+        document.location = document.location;
+      }
+
+      if (mystery < guess) {
+        speech = "Less than " + guess;
+      }
+
+      if (mystery > guess) {
+        speech = "Greater than " + guess;
+      }
+
+      if (guess == "") {
+        speech = "You didn't guess anything!";
+      }
+
+      document.forms.guessquiz.prompt.value = speech;
+      document.forms.guessquiz.guess.focus();
+    }
+
+    // end hide -->
+  </script>
+
+  <form onSubmit="" name="guessquiz">
+    <center>
+      <table align="CENTER" bgcolor="#888888" border="3" cellpadding="5">
+        <tr>
+          <td bgcolor="#004080">
+            <font color="#ffffff" face="Arial"
+              ><b>GUESS MY NUMBER (1 - 100)</b></font
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <center>
+              <input
+                type="text"
+                name="prompt"
+                size="31"
+                maxlength="40"
+                value="Guess my number (from 1 to 100)"
+              /><br />
+              <input type="text" name="guess" size="3" maxlength="3" value="" />
+              <input type="button" value="Guess" onClick="process(guessme)" />
+            </center>
+          </td>
+        </tr>
+      </table>
+    </center>
+  </form>
+<center>
+<h4>
+<button onclick="myFunction()">Hint</button>
+</h4>
+<p id="demo"></p>
+</center>
+
+</body>

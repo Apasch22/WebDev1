@@ -4,218 +4,198 @@
     Name:  
     Date Completed: 
 -->
-
 <head>
-    <title>Dynamic Webpage</title>
+    <title>Home</title>
 
-    <!-- Bootstrap meta data -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Introduction to JavaScript">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <!-- Animate -->
-    <link rel="stylesheet" href="CSS/style.css">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Home Page">
 
-    <!-- JavaScript -->
-    <!-- These are needed to get the responsive menu to work -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <style>
-        /* Internal Styling Here */
-    </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
-    <main>
-        <div id="built-in-functions">
-            <!-- ALERT-->
-            <script>
-                alert('Go Sabers!');
-            </script>
-            <!--PRINT-->
-            <script>
-                function printWindow(){
-                    window.print();
-                }
-            </script>
-            <!--LENGTH-->
-            <script>
-                function getLength() {
-                    document.getElementById("length").innerHTML = document.title.length;
-                }
-            </script>
-            <!-- FOCUS-->
-            <script>
-                function getFocus() {
-                    document.getElementById("focusButton").focus();
-                }
-            </script>
-            <!-- CLICK-->
-            <script>
-                function clickSimulation() {
-                    document.getElementById("Check").click();
-                }
-            </script>
-            <script>
-                function getDate() {
-                    document.getElementById("date").innerHTML = Date();
-                }
-            </script>
-
-            <div class="container-fluid mt-3 mb-3">
-                <div class="row">
-                    <!--PRINT-->
-                    <div class="col-md-1">
-                        <button class="btn btn-dark btn-md" value="print this page" onclick="printWindow()">Print this
-                            page</button>
-                    </div>
-                    <!--LENGTH-->
-                    <div class="col-md-3">
-                        <button class="btn btn-dark btn-md" onclick="getLength()">The title has this many
-                            characters</button>
-                    </div>
-                    <div class="col-md-1">
-                        <p id="length"></p>
-                    </div>
-                    <!--FOCUS-->
-                    <div class="col-md-1">
-                        <button class="btn btn-dark btn-md" onclick="getFocus()">Focus</button>
-                    </div>
-                    <!-- CLICK-->
-                    <div class="col-md-1">
-                        <form>
-                            <input type="checkbox" id="Check" onmouseover="clickSimulation()">
-                            <input type="checkbox" id="Check" onmouseover="clickSimulation()">
-                        </form>
-                    </div>
-                    <!--DATE-->
-                    <div class="col-md-1">
-                        <button class="btn btn-dark btn-md" onclick="getDate()">Get Date</button>
-                    </div>
-                    <div class="col-md-3">
-                        <p id="date"></p>
-                    </div>
+    <div class="menu">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+              
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="TikTakToe.html" class="nav-item nav-link">TikTacToe</a>
+                    <a href="Hangman.html" class="nav-item nav-link">Hangman</a>
+                    <a href="Roulette.html" class="nav-item nav-link">Russian Roulette</a>
+                    <a href="Numbers.html" class="nav-item nav-link">Guess the Number</a>
+                    <a href="Story.html" class="nav-item nav-link">Story Creator</a>
+                    <a href="VudooHudoo.html" class="nav-item nav-link">Magic</a>
+                 
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a href="Info.html" class="nav-item nav-link">Info</a>
                 </div>
             </div>
+        </nav>
+    </div>
+    <center>
+    <h1>A Little Game Website</h1>
+<script language="JavaScript">
+    
+        // response time test, created by Jasper van Zandbeek
+        // e-mail: jasperz@net-v.com
+    
+    var startTime=new Date();
+    var endTime=new Date();
+    var startPressed=false;
+    var bgChangeStarted=false;
+    var maxWait=20;
+    var timerID;
+    
+    function startTest()
+    {
+        document.body.style.background=document.response.bgColorChange.options[document.response.bgColorChange.selectedIndex].text;
+        bgChangeStarted=true;
+        startTime=new Date();
+    }
+    
+    function remark(responseTime)
+    {
+        var responseString="";
+        if (responseTime < 0.10)
+            responseString="Well done!";
+        if (responseTime >= 0.10 && responseTime < 0.20)
+            responseString="Nice!";
+        if (responseTime >=0.20 && responseTime < 0.30)
+            responseString="Could be better...";
+        if (responseTime >=0.30 && responseTime < 0.60)
+            responseString="Keep practising!";
+        if (responseTime >=0.60 && responseTime < 1)
+            responseString="Have you been drinking?";
+        if (responseTime >=1)
+            responseString="Did you fall asleep?";
+    
+        return responseString;
+    }
+    
+    function stopTest()
+    {
+        if(bgChangeStarted)
+        {
+            endTime=new Date();
+            var responseTime=(endTime.getTime()-startTime.getTime())/1000;
+    
+            document.body.style.background="white";       
+            alert("Your response time is: " + responseTime + " seconds " + "\n" + remark(responseTime));
+            startPressed=false;
+            bgChangeStarted=false;
+        }
+        else
+        {
+            if (!startPressed)
+            {
+                alert("press start first to start test");
+            }
+            else
+            {       
+                clearTimeout(timerID);
+                startPressed=false;             
+                alert("cheater! you pressed too early!");
+            }               
+        }
+    }
+    
+    var randMULTIPLIER=0x015a4e35;
+    var randINCREMENT=1;
+    var today=new Date();
+    var randSeed=today.getSeconds();
+    function randNumber()
+    {
+        randSeed = (randMULTIPLIER * randSeed + randINCREMENT) % (1 << 31);
+        return((randSeed >> 15) & 0x7fff) / 32767;
+    }
+    
+    function startit()
+    {
+        if(startPressed)
+        {
+            alert("Already started. Press stop to stop");
+            return;
+        }
+        else
+        {
+            startPressed=true; 
+            timerID=setTimeout('startTest()', 6000*randNumber());
+        }
+    }
+    // --> 
+    </script>
+    <p>Test your Response time!</p>
+    Click on "Start" first, and wait until the background color changes. As soon as it changes, hit "stop!"
+    
+    
+    <form name="response">
+    Change background color in: 
+    <select name="bgColorChange">
+    <option selected>deeppink
+    <option>aliceblue
+    <option>crimson
+    <option>darkkhaki
+    <option>cadetblue
+    <option>darkorchid
+    <option>coral
+    <option>chocolate
+    <option>mediumslateblue
+    <option>tomato
+    <option>darkslategray
+    <option>limegreen
+    <option>cornflowerblue
+    <option>darkolivegreen
+    </select>
+    <input type="button" value="start" onClick="startit()">
+    <input type="button" value="stop" onClick="stopTest()">
+    </form>
+    
+    <p <font face="arial" size="-5">This free script provided by</font><br>
+    <font face="arial, helvetica" size="-5"><a href="http://javascriptkit.com">JavaScript
+    Kit</a></font></p>
+    </center>
+    <div class="container mt-3">
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action active">
+                <i class="fa fa-gamepad" aria-hidden="true"></i> Games
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fa fa-list-alt" aria-hidden="true"></i> Hangman <span class="badge badge-pill badge-primary pull-right">5,230,000 plays</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fa fa-hashtag" aria-hidden="true"></i> TicTacToe <span class="badge badge-pill badge-primary pull-right">4,148,000 plays</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Story Creater <span class="badge badge-pill badge-primary pull-right">2,520,000 plays</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fa fa-magic" aria-hidden="true"></i> Magic "Games" <span class="badge badge-pill badge-primary pull-right">1,945,000 plays</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fa fa-sort-numeric-desc" aria-hidden="true"></i> Number Guessing <span class="badge badge-pill badge-primary pull-right">872,000 plays</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fa fa-hand-o-right" aria-hidden="true"></i> Russian Roulette <span class="badge badge-pill badge-primary pull-right">382,000 plays</span>
+            </a>
+            <a href="#" class="btn btn-primary btn-lg disabled" role="button" aria-pressed="true">(these numbers are fabricated)</a>
         </div>
-        <hr>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-5">
-                    <h1>Heading for a long list</h1>
-                    <ol>
-                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                        <li>Aliquam tincidunt mauris eu risus.</li>
-                        <li>Vestibulum auctor dapibus neque.
-                            <ol>
-                                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                                <li>Aliquam tincidunt mauris eu risus.
-                                    <ol>
-                                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                            <ol>
-                                                <li>Lorem ipsum dolor sit amet, consectetuer.</li>
-                                            </ol>
-                                        </li>
-                                        <li>Aliquam tincidunt mauris eu risus.</li>
-                                        <li>Vestibulum auctor dapibus neque.</li>
-                                    </ol>
-                                </li>
-                                <li>Vestibulum auctor dapibus neque.</li>
-                                <li>Aliquam tincidunt mauris eu risus.</li>
-                            </ol>
-                        </li>
-                        <li>Aliquam tincidunt mauris eu risus.</li>
-                        <li>Vestibulum auctor dapibus neque.</li>
-                    </ol>
-
-                </div>
-
-                <div class="col-md-2 text-center">
-                    <button class="btn btn-danger btn-lg mt-3 container" onclick="firstSelector()">Try it
-                        1</button>
-
-                    <button class="btn btn-info btn-lg mt-3 container" onclick="secondSelector()">Try it
-                        2</button>
-
-                    <button class="btn btn-secondary btn-lg mt-3 container" onclick="thirdSelector()">Try it
-                        3</button>
-
-                    <button class="btn btn-primary btn-lg mt-3 container" onclick="window.location.reload()">Try
-                        it
-                        4</button>
-                </div>
-
-                <div class="col-md-5">
-                    <h1>My shopping list</h1>
-
-                    <div>
-                        <label for="item">Enter a new item:</label>
-                        <input type="text" name="item" id="item">
-                        <button id="aggregating-list">Add item</button>
-                    </div>
-
-                    <ul>
-
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-        <script id="lists">
-            function firstSelector() {
-                document.querySelector("li").style.backgroundColor = "#dc3545";
-            }
-            function secondSelector() {
-                var x = document.querySelectorAll("li");
-                var i;
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.backgroundColor = "#17a2b8";
-                }
-            }
-            function thirdSelector() {
-                document.querySelector("ol ol li").style.backgroundColor = "#6c757d";
-            }
-        </script>
-        <script id="shopping">
-            const list = document.querySelector('ul');
-            const input = document.querySelector('input');
-            const button = document.getElementById('aggregating-list');
-
-            button.onclick = function () {
-                let myItem = input.value;
-                input.value = '';
-
-                const listItem = document.createElement('li');
-                const listText = document.createElement('span');
-                const listBtn = document.createElement('button');
-
-                listItem.appendChild(listText);
-                listText.textContent = myItem;
-                listItem.appendChild(listBtn);
-                listBtn.textContent = 'Delete';
-                list.appendChild(listItem);
-
-                listBtn.onclick = function (e) {
-                    list.removeChild(listItem);
-                }
-
-                input.focus();
-            }
-        </script>
-    </main>
-    <div id="container" style="height: 3000px; width: 1000px;">
-        <a href="#"><button type="button" id="focusButton" style="margin-top: 3000px;">You focused on me!</button></a>
     </div>
 </body>
-
-</html>
