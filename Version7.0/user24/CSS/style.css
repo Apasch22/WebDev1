@@ -1,43 +1,129 @@
-.body-wideMargin {
-    margin: 50px;
-    font-size: 100%;
-    line-height: 1.5;
-    font-family: Roboto;
+.social-part .fa{
+    padding-right:20px;
+}
+ul li a{
+    margin-right: 20px;
+}
+.navbar-custom {
+    background-color: rgb(255, 0, 0);
+    align-self: stretch;
+}
+*{
+    padding: 0;
+    margin: 0;
 }
 
-button {
-    padding: 5px;
+#topHeading {
+    text-align: center;
+    font-size: 45px;
+    color: white;
+    -webkit-text-stroke: 0px black;
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     3px 3px 0 #000;
 }
 
-ol {
-    list-style-type: decimal-leading-zero;
-}
+*{
+    padding: 0;
+    margin: 0;
+  }
 
-ol ol {
-    margin-left: 0.9em;
-}
+.page{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(
+      to right,
+      red 0%,
+      red 50%,
+      yellow 50%,
+      yellow 100%
+    );
+  }
 
-ol li {
-    line-height: 1.5;
-}
+  #lebron {
+      width: 715px;
+      align-content: left;
+  }
+  #TheBest {
+      padding: 25px;
+      font-size: 45px;
+      color:rgb(255, 255, 255);
+      -webkit-text-stroke: 1.5px black;
+      text-align: center;
+      font-family: Impact;
+      
+  }
 
-li li {
-    list-style-type: lower-alpha;
-}
+  .mjpage{
+      background-color: red;
+  }
 
-li li li {
-    list-style-type: square;
-}
+  #mj{
+      padding-left: 50px;
+      width: 600px;
+  }
+  #ofheading{
+      text-align: center;
+      color: rgb(255, 255, 255);
+      -webkit-text-stroke: 1.5px black;
+      font-family:Impact;
+      font-size: 60px;
+      text-shadow:
+      -1px -1px 0 #000,  
+       1px -1px 0 #000,
+       -1px 1px 0 #000,
+        3px 3px 0 #000;
+  }
+  #mjpara{
+    font-size: 25px;
+    text-align: left;
+    text-align: top;
+    padding-right: 50px;
+    color: white;
+    float: right;
+  }
 
-li li li li {
-    list-style-type: circle;
-}
+  #tabletop {
+    width: 700px;
+    float: right;
+    
 
-h1 {
-    font-family: "Fjalla One", sans-serif;
-    font-size: 2em;
-    text-transform: uppercase;
-    font-weight: 400;
-    border-bottom: 1px solid black;
-    margin-bottom: 1em;
-}
+  }
+  .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+    background-color: gray
+  }
+
+  #Clutch {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1.5px black;
+    font-family:Impact;
+    font-size: 60px;
+    text-shadow:
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+     -1px 1px 0 #000,
+      3px 3px 0 #000;
+  }
+
+  #champ {
+      background-color: red;
+  }
+
+  #mjj {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+  }
+
+  #james {
+    background-color: yellow;
+  }
+  #jahamez {
+    width: 625px;
+    padding-left: 20px;
+    padding-top: 5px;
+  }
