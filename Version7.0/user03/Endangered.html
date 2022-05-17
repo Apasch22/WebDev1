@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Dynamic Webpage</title>
+    <title>Endangered Species</title>
     
     <!-- Bootstrap meta data -->
     <meta charset="utf-8">
@@ -24,7 +24,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
    
-   
+    <script>
+        function myFunction(elmnt, clr) {
+          elmnt.style.color = clr;
+        }
+        </script>
 
     <style>
         /* Internal Styling Here */
@@ -51,12 +55,12 @@
 <h3>Blue Whale</h3>
 <image src="images/Blue Whale.jpeg">
     
-    <h5>Habitat</h5>
-    <p>live there</p>
+    <h5 onmousedown="myFunction(this,'yellow')" onmouseup="myFunction(this,'purple')">Habitat</h5>
+    <p>Oceans</p>
 
                     <image src="images/Blue Whale 6.jpeg">
-                        <h5>Why they matter</h5>
-                        <p>Foodchain</p>  
+                        <h5 onmousedown="myFunction(this,'orange')" onmouseup="myFunction(this,'turquoise')">Why they matter</h5>
+                        <p>Top of the foodchain in the marine life and control that</p>  
 <!-- Footer -->
 <footer class="page-footer">
     <style>

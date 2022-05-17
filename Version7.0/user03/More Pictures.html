@@ -6,7 +6,7 @@
 -->
 
 <head>
-    <title>Dynamic Webpage</title>
+    <title>Endangered Species</title>
 
     <!-- Bootstrap meta data -->
     <meta charset="utf-8">
@@ -29,13 +29,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
    
-   
+    <script>
+        function bigImg(x) {
+          x.style.height = "375px";
+          x.style.width = "400px";
+        }
+        
+        function normalImg(x) {
+          x.style.height = "225px";
+          x.style.width = "250px";
+        }
+        </script>
 
     <style>
         /* Internal Styling Here */
         img {
     display: block;
-    max-width: 250px;
+    height: 150px;
+    width: 250px;
 }
     </style>
 </head>
@@ -57,47 +68,48 @@
     <!-- Navbar --> 
 
    <h4>Amur Leopard</h4>
-   <image src="images/Amur Leopard.jpeg">
 
-    <image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0KF_5BivJSBHSLfbGiHjYpkBTBouPuEVBTA&usqp=CAU">
+   <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/Amur Leopard.jpeg">
+
+    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0KF_5BivJSBHSLfbGiHjYpkBTBouPuEVBTA&usqp=CAU">
     
-    <image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUb5EDlEgTYeSQlsrr_FZPphe7RZEvV37BPQ&usqp=CAU">
+    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUb5EDlEgTYeSQlsrr_FZPphe7RZEvV37BPQ&usqp=CAU">
 
    <h4>Blue Whale</h4>
-   <image src="images/Blue Whale 2.jpeg">
+   <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/Blue Whale 2.jpeg">
 
-    <image src="images/Blue Whale 3.jpeg">
+   <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/Blue Whale 3.jpeg">
 
-        <image src="images/Blue Whale 4.jpeg">
+   <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/Blue Whale 4.jpeg">
 
-            <image src="images/Blue Whale 5.jpeg">
+   <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/Blue Whale 5.jpeg">
    <h4>Giant Panda</h4>
-   <image src="images/Giant Panda 3.jpg"
+   <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/Giant Panda 3.jpg"
    width="30%">
 
-       <image src="images/Giant Panda 4.jpg"
+   <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/Giant Panda 4.jpg"
        width="20%">
 
-                   <image src="images/Giant panda.jpeg">
+       <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/Giant panda.jpeg">
    <h4>White Rhino</h4>
-   <image src="images/White rhino 3.jpg"
+   <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/White rhino 3.jpg"
    width="30%">
    
-       <image src="images/White rhino 4.jpg"
+   <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/White rhino 4.jpg"
    width="30%">
    
-       <image src="images/White rhino 5.jpg"
+   <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/White rhino 5.jpg"
    width="30%">
    
-       <image src="images/White rhino.jpeg">
+   <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/White rhino.jpeg">
    <h4>Arctic Wolf</h4>
-   <image src="images/Arctic Wolf 3.jpg"
+   <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/Arctic Wolf 3.jpg"
    width="30%">
    
-       <image src="images/Arctic Wolf 4.jpg"
+   <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/Arctic Wolf 4.jpg"
    width="30%">
    
-   <image src="images/Arctic Wolf.jpeg">
+   <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/Arctic Wolf.jpeg">
 <!-- Footer -->
     <footer class="page-footer">
         <style>
