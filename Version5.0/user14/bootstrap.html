@@ -41,6 +41,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="JS/SampleJS.js"></script>
 
     <style>
       .demo-content {
@@ -100,10 +101,83 @@
         flex-wrap: row;
         justify-content: space-evenly;
       }
-    </style>
+
+      .hidden {
+    display: none;
+}
+
+a.skip-main {
+    left: -999px;
+    position: absolute;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -999;
+}
+
+a.skip-nav {
+    left: -999px;
+    position: absolute;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -999;
+}
+
+a.skip-main:focus,a.skip-main:active {
+    color: #fff;
+    background-color: #000;
+    left: auto;
+    top: auto;
+    width: 30%;
+    height: auto;
+    overflow: auto;
+    margin: 10px 35%;
+    padding: 5px;
+    border-radius: 15px;
+    border: 4px solid red;
+    text-align: center;
+    font-size: 1.2em;
+    z-index: 999;
+}
+
+a.skip-nav:focus,a.skip-nav:active {
+    color: #fff;
+    background-color: #000;
+    left: auto;
+    top: auto;
+    width: 30%;
+    height: auto;
+    overflow: auto;
+    margin: 10px 35%;
+    padding: 5px;
+    border-radius: 15px;
+    border: 4px solid red;
+    text-align: center;
+    font-size: 1.2em;
+    z-index: 999;
+}
+  </style>
   </head>
 
   <body>
+    <a class="skip-main" tabindex="0" href="#main">Skip to main content</a>
+    <a class="skip-nav" tabindex="0" href="#nav">Skip to the navigation bar</a>
+    <center>
+    <form method="post" class="navmenu">
+      <label for="navmenu"><b><u>Navigate by topic</u></b></label>
+      <select name="navmenu" id="navmenu">
+        <option value="1">Columns</option>
+        <option value="2">Form Button</option>
+        <option value="3">Lists</option>
+        <option value="4">Main Content</option>
+        <option value="5">Footer</option>
+      </select>
+      <input type="submit" value="Go">
+    </form>
+  </center>
     <div class="jumbotron">
       <h4>Bootstrap Examples</h4>
       <p class="lead">
@@ -111,7 +185,6 @@
         and what bootstrap can do!
       </p>
     </div>
-
     <!---------Three Column Layouts--------->
     <div class="container mt-3">
       <!--Row with two equal columns-->
@@ -229,6 +302,7 @@
     <!--Spacer-->
     <p style="height: 50px"></p>
     <!--Nav-->
+    <div id="nav" class="hidden" tabindex="-1"></div>
     <div class="navbar-expand-md">
       <nav id="navbar">
         <a
@@ -253,6 +327,20 @@
         >
       </nav>
     </div>
+    <div id="main" class="hidden" tabindex="-1"></div>
+    <p style="height: 50px"></p>
+    <main>
+      <center>
+      <h1>Main Content</h1>
+      </center>
+      <div style="margin: 2vw 4vw;">
+      <span style="font-size: large; font-weight: 500;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod elementum nisi quis eleifend quam adipiscing. Sit amet facilisis magna etiam.</span>
+      <a href="https://www.mcdonalds.com/us/en-us.html" style="color:darkcyan; font-weight: 550; font-size:large;">Link</a>
+      </div>
+      <center>
+      <img src="https://www.almanac.com/sites/default/files/styles/large/public/image_nodes/aloe-vera-white-pot_sunwand24-ss_edit.jpg?itok=6dE5RWDP" alt="Aloe Vera plant outside in a white pot" tabindex="0">
+    </center>
+    </main>
     <!--Spacer-->
     <p style="height: 50px"></p>
     <!-- Footer -->
