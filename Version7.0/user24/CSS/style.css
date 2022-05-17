@@ -31,6 +31,7 @@ ul li a{
   }
 
 .page{
+    min-width: 1000px;
     width: 100%;
     min-height: 100vh;
     background: linear-gradient(
@@ -216,3 +217,4 @@ ul li a{
 footer{
   float: center;
 }
+
