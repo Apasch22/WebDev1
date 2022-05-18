@@ -1,221 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--Version 7.0 
-    Name:  
-    Date Completed: 
+  <!--Version 7.0 
+    Name: Derrick Damjanovic
+    Date Completed: May 9 2022
 -->
 
-<head>
-    <title>Dynamic Webpage</title>
+  <head>
+    <title>Components of Cars: Home</title>
 
     <!-- Bootstrap meta data -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Introduction to JavaScript">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="Components of Cars" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- Animate -->
-    <link rel="stylesheet" href="CSS/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <!-- Styles -->
+    <link rel="stylesheet" href="CSS/style.css" />
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="images/v8engine.ico" />
 
     <!-- JavaScript -->
     <!-- These are needed to get the responsive menu to work -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="/Version7.0/user14/JS/JavaScript.js"></script>
 
+    <!--Internal Styles-->
     <style>
-        /* Internal Styling Here */
+      .dropdown {
+        padding: 10px 10px;
+        border: 1px solid black;
+        margin: 50px 100px;
+        background-color: steelblue;
+      }
     </style>
+  </head>
 
-</head>
-
-<body>
-    <main>
-        <div id="built-in-functions">
-            <!-- ALERT-->
-            <script>
-                alert('Go Sabers!');
-            </script>
-            <!--PRINT-->
-            <script>
-                function printWindow(){
-                    window.print();
-                }
-            </script>
-            <!--LENGTH-->
-            <script>
-                function getLength() {
-                    document.getElementById("length").innerHTML = document.title.length;
-                }
-            </script>
-            <!-- FOCUS-->
-            <script>
-                function getFocus() {
-                    document.getElementById("focusButton").focus();
-                }
-            </script>
-            <!-- CLICK-->
-            <script>
-                function clickSimulation() {
-                    document.getElementById("Check").click();
-                }
-            </script>
-            <script>
-                function getDate() {
-                    document.getElementById("date").innerHTML = Date();
-                }
-            </script>
-
-            <div class="container-fluid mt-3 mb-3">
-                <div class="row">
-                    <!--PRINT-->
-                    <div class="col-md-1">
-                        <button class="btn btn-dark btn-md" value="print this page" onclick="printWindow()">Print this
-                            page</button>
-                    </div>
-                    <!--LENGTH-->
-                    <div class="col-md-3">
-                        <button class="btn btn-dark btn-md" onclick="getLength()">The title has this many
-                            characters</button>
-                    </div>
-                    <div class="col-md-1">
-                        <p id="length"></p>
-                    </div>
-                    <!--FOCUS-->
-                    <div class="col-md-1">
-                        <button class="btn btn-dark btn-md" onclick="getFocus()">Focus</button>
-                    </div>
-                    <!-- CLICK-->
-                    <div class="col-md-1">
-                        <form>
-                            <input type="checkbox" id="Check" onmouseover="clickSimulation()">
-                            <input type="checkbox" id="Check" onmouseover="clickSimulation()">
-                        </form>
-                    </div>
-                    <!--DATE-->
-                    <div class="col-md-1">
-                        <button class="btn btn-dark btn-md" onclick="getDate()">Get Date</button>
-                    </div>
-                    <div class="col-md-3">
-                        <p id="date"></p>
-                    </div>
-                </div>
-            </div>
+  <body>
+    <!--Navbar Start-->
+    <!--Bootstrap Element-->
+    <div class="menu">
+      <nav class="navbar navbar-expand-md navbar-custom">
+        <div class="navbar-nav">
+          <a href="#" class="navtext nav-item nav-link nav-activepage">Home</a>
+          <a href="overview.html" class="navtext nav-item nav-link">Overview</a>
+          <a href="engine.html" class="navtext nav-item nav-link">Engines</a>
+          <a href="transmission.html" class="navtext nav-item nav-link"
+            >Transmissions</a
+          >
         </div>
-        <hr>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-5">
-                    <h1>Heading for a long list</h1>
-                    <ol>
-                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                        <li>Aliquam tincidunt mauris eu risus.</li>
-                        <li>Vestibulum auctor dapibus neque.
-                            <ol>
-                                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                                <li>Aliquam tincidunt mauris eu risus.
-                                    <ol>
-                                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                            <ol>
-                                                <li>Lorem ipsum dolor sit amet, consectetuer.</li>
-                                            </ol>
-                                        </li>
-                                        <li>Aliquam tincidunt mauris eu risus.</li>
-                                        <li>Vestibulum auctor dapibus neque.</li>
-                                    </ol>
-                                </li>
-                                <li>Vestibulum auctor dapibus neque.</li>
-                                <li>Aliquam tincidunt mauris eu risus.</li>
-                            </ol>
-                        </li>
-                        <li>Aliquam tincidunt mauris eu risus.</li>
-                        <li>Vestibulum auctor dapibus neque.</li>
-                    </ol>
-
-                </div>
-
-                <div class="col-md-2 text-center">
-                    <button class="btn btn-danger btn-lg mt-3 container" onclick="firstSelector()">Try it
-                        1</button>
-
-                    <button class="btn btn-info btn-lg mt-3 container" onclick="secondSelector()">Try it
-                        2</button>
-
-                    <button class="btn btn-secondary btn-lg mt-3 container" onclick="thirdSelector()">Try it
-                        3</button>
-
-                    <button class="btn btn-primary btn-lg mt-3 container" onclick="window.location.reload()">Try
-                        it
-                        4</button>
-                </div>
-
-                <div class="col-md-5">
-                    <h1>My shopping list</h1>
-
-                    <div>
-                        <label for="item">Enter a new item:</label>
-                        <input type="text" name="item" id="item">
-                        <button id="aggregating-list">Add item</button>
-                    </div>
-
-                    <ul>
-
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-        <script id="lists">
-            function firstSelector() {
-                document.querySelector("li").style.backgroundColor = "#dc3545";
-            }
-            function secondSelector() {
-                var x = document.querySelectorAll("li");
-                var i;
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.backgroundColor = "#17a2b8";
-                }
-            }
-            function thirdSelector() {
-                document.querySelector("ol ol li").style.backgroundColor = "#6c757d";
-            }
-        </script>
-        <script id="shopping">
-            const list = document.querySelector('ul');
-            const input = document.querySelector('input');
-            const button = document.getElementById('aggregating-list');
-
-            button.onclick = function () {
-                let myItem = input.value;
-                input.value = '';
-
-                const listItem = document.createElement('li');
-                const listText = document.createElement('span');
-                const listBtn = document.createElement('button');
-
-                listItem.appendChild(listText);
-                listText.textContent = myItem;
-                listItem.appendChild(listBtn);
-                listBtn.textContent = 'Delete';
-                list.appendChild(listItem);
-
-                listBtn.onclick = function (e) {
-                    list.removeChild(listItem);
-                }
-
-                input.focus();
-            }
-        </script>
-    </main>
-    <div id="container" style="height: 3000px; width: 1000px;">
-        <a href="#"><button type="button" id="focusButton" style="margin-top: 3000px;">You focused on me!</button></a>
+      </nav>
     </div>
-</body>
-
+    <!--Navbar End-->
+    <!--Main Content Start-->
+    <main class="widemargin">
+      <center>
+      <img class="largeimage rounded" src="images/carparts.jpeg" alt="Car Components">
+      </center>
+      <div class="textholder" style="margin-top: 0px">
+        <p class="maintext">
+          Welcome to my website. This website will look at different components
+          of cars and explain a few elements more in-depth, such as the engine
+          and transmission.
+        </p>
+        <p class="smalltext">
+          In the overview page, we will look at some of the main parts of a car
+          and briefly cover each one.
+        </p>
+        <p class="smalltext">
+          In the engines page, we will look at the basics of how engines work
+          and some of the different types of engines found in cars.
+        </p>
+        <p class="smalltext">
+          In the transmissions page, we will look at the basics of transmissions
+          and look at different types of transmissions.
+        </p>
+      </div>
+      <!--Dropdown Interactive Start-->
+      <div class="dropdown">
+        <form class="maintext" style="color: beige;">
+          Choose from the dropdown menu to learn about a car manufacturer:
+          <select id="brands" class="smalltext" style="color:black" onchange="chosenBrand()">
+            <option value="Ford">Ford</option>
+            <option value="Porsche">Porsche</option>
+            <option value="Toyota">Toyota</option>
+          </select>
+        </form>
+        <p id="dropdowntext" class="smalltext" style="color: beige;">
+          Pick a brand above to learn about it.
+        </p>
+      </div>
+      <!--Dropdown Interactive End-->
+    </main>
+    <!--Main Content End-->
+    <!--Footer Start-->
+    <!--Bootstrap Element-->
+    <footer id="footer" class="pt-4">
+      <div class="container-fluid text-center text-md-left">
+        <div class="row">
+          <div class="col-md-5 mb-md-0 mb-5">
+            <h5 class="footer-text footer-header">Social Media & Contact Information</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="https://www.instagram.com/?hl=en" class="footer-text"
+                  >Instagram
+                  <img
+                    class="footer-image"
+                    src="/version7.0/user14/images/instagramlogo2.png"
+                    alt="Instagram"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/" class="footer-text"
+                  >Facebook
+                  <img
+                    class="footer-image"
+                    src="/version7.0/user14/images/facebooklogo2.png"
+                    alt="Facebook"
+                /></a>
+              </li>
+              <li>
+                <span class="footer-text"
+                  >302494@shakopeeschools.org<img
+                    class="footer-image"
+                    src="/version7.0/user14/images/gmailicon.png"
+                    alt="Gmail"
+                /></span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-md-0 mb-4">
+            <h5 class="footer-text footer-header">Navigation</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="footer-text">Home</a>
+              </li>
+              <li>
+                <a href="overview.html" class="footer-text">Overview</a>
+              </li>
+              <li>
+                <a href="engine.html" class="footer-text">Engines</a>
+              </li>
+              <li>
+                <a href="transmission.html" class="footer-text"
+                  >Transmissions</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-md-0 mb-3">
+            <p class="footer-text">Created May 9th 2022</p>
+            <p class="footer-text">WebDev14</p>
+              <p class="footer-text footer-text-copyright">© 2022 Copyright:
+              <a class="footer-text footer-text-copyright" href="https://mdbootstrap.com/">
+              MDBootstrap.com</a
+              >
+              </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--Footer End-->
+  </body>
 </html>
