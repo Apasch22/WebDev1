@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!--Version 7.0
+  <!--Version 3.0
         Name: William Baker
-        Date Completed: 4/20/22
+        Date Completed: 4/21/22
     -->
 
   <head>
@@ -15,7 +15,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta name="description" content="SHS WebDev Version 7.0" />
+    <meta name="description" content="SHS WebDev Version 3.0" />
 
     <!-- CSS -->
     <link
@@ -32,6 +32,7 @@
       type="image/x-icon"
       href="https://iconifier.net/iconified/20220511235938_IMG-1503/favicon.ico"
     />
+
     <!-- JavaScript -->
     <!-- These are needed to get the responsive menu to work -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -51,9 +52,8 @@
         font-size: 16px;
         text-align: center;
         background-color: rgb(202, 195, 195);
-        position: absolute;
-        bottom: 0%;
       }
+
     </style>
   </head>
 
@@ -100,46 +100,34 @@
     <!---------------------------------- End the nav-bar ------------->
 
     <main class="wideMargin">
-      <h1 class="text-left my-3">Home</h1>
+      <h1 class="text-left my-3">My Lists</h1>
       <!-- Edit this line for the title of your page -->
 
       <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-      <p>
-        This is my first webpage! I was able to code all the HTML and CSS in
-        order to make it. Watch out world of web design here I come!
-      </p>
-      <p>
-        I can use my skills here to create websites for my business, my friends
-        and family, my C.V, blog or articles. As well as any games or more
-        experiment stuff (which is what the web is really all about).
-      </p>
-      <div class="container mt-3">
-        <div class="list-group">
-          <a
-            href="index.html"
-            class="list-group-item list-group-item-action active"
-          >
-            <i class="fa fa-home"></i> Home
-          </a>
-          <a href="hobbies.html" class="list-group-item list-group-item-action">
-            <i class="fa fa-address-book"></i> Hobbies
-            <a
-              href="Favorites.html"
-              class="list-group-item list-group-item-action"
-            >
-              <i class="fa fa-thumbs-up"></i> Favorites
-            </a>
-            <a href="games.html" class="list-group-item list-group-item-action">
-              <i class="fa fa-gamepad"></i> Games
-            </a>
-            <a href="login.html" class="list-group-item list-group-item-action">
-              <i class="fa fa-address-card"></i> Login
-            </a>
-          </a>
-        </div>
-      </div>
+      <h2>Top Places I want to visit</h2>
+      <ol>
+        <style></style>
+        <li>Japan</li>
+        <li>Finland</li>
+        <li>Iceland</li>
+        <li>Italy</li>
+      </ol>
+      <h2 id="FR">My Favorite Restaurants</h2>
+      <ul id="places">
+        <li id="Olive">Olive Garden</li>
+        <li id="Sapporo">Sapporo</li>
+        <li id="Kyoto">Kyoto Sushi</li>
+        <li id="Apple">Applebee's</li>
+      </ul>
+      <h2 id="FF">My Favorite Foods</h2>
+      <ul id="Foods">
+        <li id="sushi">Sushi</li>
+        <li id="spaghetti">Spaghetti</li>
+        <li id="fries">French Fries</li>
+        <li id="pizza">Pizza</li>
+      </ul>
+      <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
     </main>
-    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
 
     <!---------------------------------- Begin the footer ------------->
     <footer class="page-footer font-small blue pt-4">

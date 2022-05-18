@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!--Version 7.0
+  <!--Version 3.0
         Name: William Baker
         Date Completed: 4/20/22
     -->
 
   <head>
-    <title>Web Dev User 08</title>
+    <title>Favorites for Web Dev User 08</title>
 
     <!-- Meta -->
     <meta charset="utf-8" />
@@ -15,7 +15,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta name="description" content="SHS WebDev Version 7.0" />
+    <meta name="description" content="My Favorite Music" />
 
     <!-- CSS -->
     <link
@@ -40,8 +40,9 @@
     <script src="JS/Script.js"></script>
     <!-- Custom styles for this template -->
     <style type="text/css">
-      .menu {
-        margin: 0px;
+      menu {
+        margin: 0;
+        padding: 0;
       }
 
       .wideMargin {
@@ -51,8 +52,13 @@
         font-size: 16px;
         text-align: center;
         background-color: rgb(202, 195, 195);
-        position: absolute;
-        bottom: 0%;
+      }
+
+      td {
+        color: #000000;
+      }
+      .jumbotron {
+        background-color: rgb(202, 195, 195);
       }
     </style>
   </head>
@@ -73,7 +79,7 @@
 
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav">
-            <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+            <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
             <a href="index.html" class="nav-item nav-link active">Home</a>
 
             <a href="Favorites.html" class="nav-item nav-link active"
@@ -89,7 +95,7 @@
               tabindex="-1"
               >My Hobbies</a
             >
-            <!---------------------------------- Edit These Items in your Menu ^ ------------->
+            <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
           </div>
           <div class="navbar-nav ml-auto">
             <a href="login.html" class="nav-item nav-link active">Login</a>
@@ -100,44 +106,103 @@
     <!---------------------------------- End the nav-bar ------------->
 
     <main class="wideMargin">
-      <h1 class="text-left my-3">Home</h1>
-      <!-- Edit this line for the title of your page -->
-
-      <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-      <p>
-        This is my first webpage! I was able to code all the HTML and CSS in
-        order to make it. Watch out world of web design here I come!
-      </p>
-      <p>
-        I can use my skills here to create websites for my business, my friends
-        and family, my C.V, blog or articles. As well as any games or more
-        experiment stuff (which is what the web is really all about).
-      </p>
-      <div class="container mt-3">
-        <div class="list-group">
-          <a
-            href="index.html"
-            class="list-group-item list-group-item-action active"
-          >
-            <i class="fa fa-home"></i> Home
-          </a>
-          <a href="hobbies.html" class="list-group-item list-group-item-action">
-            <i class="fa fa-address-book"></i> Hobbies
-            <a
-              href="Favorites.html"
-              class="list-group-item list-group-item-action"
-            >
-              <i class="fa fa-thumbs-up"></i> Favorites
-            </a>
-            <a href="games.html" class="list-group-item list-group-item-action">
-              <i class="fa fa-gamepad"></i> Games
-            </a>
-            <a href="login.html" class="list-group-item list-group-item-action">
-              <i class="fa fa-address-card"></i> Login
-            </a>
-          </a>
-        </div>
+      <div class="jumbotron">
+        <h1 class="text-left my-3">Video Games</h1>
+        <h2>My Top 5 Favorite Video Games</h2>
       </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Creator</th>
+            <th>Game</th>
+            <th>Game Art</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>1</td>
+          <td>FromSoftware</td>
+          <td>Elden Ring</td>
+          <td>
+            <img
+              onmouseover="bigImg(this)"
+              onmouseout="normalImg(this)"
+              border="0"
+              src="images/EldenRing.jpg"
+              alt="Elden Ring Front cover with a man on the ground with a sword and giant rings in the sky"
+              style="width: 175px; height: 150px"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Mojang</td>
+          <td>Minecraft</td>
+          <td>
+            <img
+              onmouseover="bigImg(this)"
+              onmouseout="normalImg(this)"
+              border="0"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwCqZBBVImvlMwm6V-bMElI5nWFvkiK2tlWAnHPZW1JlibrfsiD8ezrlzvYH2VooPFsVI:https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png&usqp=CAU.jpg"
+              alt="Minecraft front cover-blocky man running with a pickaxe and animals in the background"
+              style="width: 175px; height: 150px"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Game Freak</td>
+          <td>Pokemon Red</td>
+          <td>
+            <img
+              onmouseover="bigImg(this)"
+              onmouseout="normalImg(this)"
+              border="0"
+              src="images/Pokemon Red.jpg"
+              alt="Pokemon Red cover-contains a pokemon (charizard)"
+              style="width: 175px; height: 150px"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Treyarch</td>
+          <td>Call of Duty Cold War</td>
+          <td>
+            <img
+              onmouseover="bigImg(this)"
+              onmouseout="normalImg(this)"
+              border="0"
+              src="images/Cold War COD.jpg"
+              alt="Cold war COD cover-Contains a person that has two sides to them"
+              style="width: 175px; height: 150px"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td
+            onmousedown="mouseclicking(this,'blue')"
+            onmouseup="mouseclicking(this,'black')"
+          >
+            Ubisoft
+          </td>
+          <td onmouseover="style.color='blue'" onmouseout="style.color='black'">
+            Rainbow Six Siege
+          </td>
+          <td>
+            <img
+              onmouseover="bigImg(this)"
+              onmouseout="normalImg(this)"
+              border="0"
+              src="images/R6 Siege.jpg"
+              alt="Rainbow Six Siege cover-Man has a sledge hammer and is about to swing it"
+              style="width: 175px; height: 150px"
+            />
+          </td>
+        </tr>
+      </table>
     </main>
     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
 
