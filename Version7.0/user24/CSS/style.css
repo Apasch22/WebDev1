@@ -31,6 +31,7 @@ ul li a{
   }
 
 .page{
+    min-width: 1000px;
     width: 100%;
     min-height: 100vh;
     background: linear-gradient(
@@ -88,8 +89,8 @@ ul li a{
   #tabletop {
     width: 700px;
     float: right;
-    
-
+    padding-right: 150px;
+    padding-top: 25px;
   }
   .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
     background-color: gray
@@ -114,16 +115,106 @@ ul li a{
 
   #mjj {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 400px;
+    
+    padding-left: 80px;
+    width: 475px;
   }
 
   #james {
     background-color: yellow;
   }
   #jahamez {
-    width: 625px;
+    width: 550px;
     padding-left: 20px;
     padding-top: 5px;
   }
+
+  #mjclutch{
+    font-size: 27px;
+    text-align: left;
+    text-align: top;
+    padding-left: 30px;
+    color: white;
+    float: left;
+    text-align: center;
+    margin-bottom: 50px;
+    
+  }
+  
+  #mjpoll{
+    font-size: 27px;
+    text-align: right;
+    text-align: top;
+    padding-right: 50px;
+    color: white;
+    float: right;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  #lbstats{
+    font-size: 27px;
+    color: rgb(0, 0, 0);
+    float: right;
+    text-align: left;
+    padding-right: 20px;
+  }
+
+  #mjbetter{
+    font-size: 27px;
+    color: rgb(255, 255, 255);
+    float: right;
+    text-align: center;
+    padding-right: 44px;
+    background-color: red;
+    background-position: center;
+    padding-top: 10px;
+    padding-bottom: 55px;
+  }
+
+  #container {
+
+    position: static;
+    background-color: #00bbee;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 7%;
+    margin-bottom: 15%;
+    border: 2px solid red;
+
+
+}
+
+#navbar  ul{
+
+    list-style: none;
+}
+
+#foot {
+  width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(
+      to right,
+      red 0%,
+      red 50%,
+      yellow 50%,
+      yellow 100%
+    );
+}
+
+#mjfoot {
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  -webkit-text-stroke: 0px black;
+  text-shadow:
+ -1px -1px 0 #000,  
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+   1px 2px 0 #000;
+}
+
+footer{
+  float: center;
+}
+
