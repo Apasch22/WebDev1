@@ -25,6 +25,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script scr="https://ajax.googleapis.com/ajax/lib/jquery/1.7.1/jquery.mim.js"></script>
 
 
 
@@ -40,6 +41,19 @@
 
         footer {
             font-size: 12px;
+            text-align: center;
+        }
+
+        article {
+            width: 600px;
+            margin: auto;
+        }
+
+        blockquote.co {
+            float: right;
+            background: #e3e3e3 ;
+            font-size: 2em;
+            width: 35%;
             text-align: center;
         }
     </style>
@@ -79,16 +93,62 @@
         <h1 class="text-left my-3">Home</h1><!-- Edit this line for the title of your page -->
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+        <article>
+        <h4>
+            This is my post.
+        </h4>
         <p>
 
             This is my first webpage! I was able to code all the HTML and CSS in order to make it. Watch out world of
             web design here I come!
         </p>
+
         <p>
 
             I can use my skills here to create websites for my business, my friends and family, my C.V, blog or
             articles. As well as any games or more experiment stuff (which is what the web is really all about).
         </p>
+
+        <p>
+            Lorem ipsum dolor sit amet, 
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Tempor commodo ullamcorper a lacus vestibulum sed arcu non. Lorem ipsum dolor sit amet. Tortor id aliquet lectus proin nibh.
+            <span class="co">Text callout 1</span>
+        </p>
+
+        <p>
+            Viverra tellus in hac habitasse platea dictumst. 
+            Est sit amet facilisis magna etiam tempor orci eu lobortis. 
+            Ullamcorper malesuada proin libero nunc. Interdum velit laoreet id donec ultrices. 
+            Nisl condimentum id venenatis a condimentum vitae sapien.
+            <span class="co">Text callout 2</span>
+        </p>
+
+        <p>
+            Odio euismod lacinia at quis risus sed. 
+            Est sit amet facilisis magna etiam tempor. Adipiscing elit ut aliquam purus. 
+            In vitae turpis massa sed elementum. Etiam dignissim diam quis enim lobortis scelerisque fermentum. 
+            Sit amet justo donec enim diam. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus.
+            <span class="co">Text callout 3</span> 
+        </p>
+
+        <td>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAhAPGUR-KfyPqbOmkjxSSCYV5Wy6aFQjIKV0MVmjDG0OCXnP1_zW4EyjVwyHonkscLWo:https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png&usqp=CAU" alt="Picture of image" width="100%"/></td>
+        </td>
+
+    </article>
+    <script>
+        (function() {
+           var co = $('span.co').each(function() {
+               var $this = $(this);
+
+               $('<blockquote></blockquote>' , {
+                   class: 'co' , 
+                   text: $this.text()
+               }).prependTo( $this.closest('p') );
+            });
+        })();
+    </script>
     </main>
     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
 
