@@ -25,6 +25,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script scr="https://ajax.googleapis.com/ajax/lib/jquery/1.7.1/jquery.mim.js"></script>
+
+
+
 
     <!-- Custom styles for this template -->
     <style type="text/css">
@@ -93,35 +97,44 @@
             <tr>
                 <td style="color: #00FF00; background-color:sienna;">1</td> 
                 <td style="color: #00fbff; background-color: sienna;width: auto;height: auto;">Nami Nakagawa</td>
-                <td style="color: red; background-color: sienna;width: auto;height: auto;">Kamado Tanjirou</td>
-                <td><img src="images/kamadotanjirou_by_naminakagawa.jpeg" alt="Picture of Kamado Tanjirou" width="100%" height="100%" /></td>
+                <td style="color: red; background-color: sienna;width: auto;height: auto;">Kamado Tanjirou no Uta</td>
+                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYyrCwyK5v7nIwG2rwWnI3PmHZ_5-YXboakbc1wk-anO6N7i_jnLAQb9v1HQAY7QIU164:https://i.ytimg.com/vi/Nq5MPsZiyyk/maxresdefault.jpg&usqp=CAU" alt="Picture of Kamado Tanjirou" width="50%" height="50%" /></td>
             </tr>
             <tr>
                 <td>2</td>
                 <td>Lil Nas X - Katy Perry</td>
                 <td>Industry Baby</td>
-                <td><img src="images/industrybaby_by_lilnasx.jpg" alt="Picture of Industry baby" width="100%" height="100%" /></td>
+                <td><img src="images/industrybaby_by_lilnasx.jpg" alt="Picture of Industry baby" width="50%" height="50%" /></td>
             </tr>
             <tr>
                 <td>3</td>
                 <td>John Elton</td>
                 <td>Country Road</td>
-                <td><img src="images/countryroad_by_eltonjohn.jpeg" alt="Picture of Country Road" width="100%" height="100%" /></td>
+                <td><img src="images/countryroad_by_eltonjohn.jpeg" alt="Picture of Country Road" width="50%" height="50%" /></td>
             </tr>
             <tr>
                 <td>4</td>
                 <td>John Elton</td>
                 <td>Can you feel the love tonight</td>
-                <td><img src="images/cyftlt_by_eltonjohn.jpeg" alt="Picture of Can you feel the love tonight" width="100%" height="100%" /></td>
+                <td><img src="images/cyftlt_by_eltonjohn.jpeg" alt="Picture of Can you feel the love tonight" width="50%" height="50%" /></td>
             </tr>
             <tr>
                 <td>5</td>
                 <td>Alan Walker</td>
                 <td>Play</td>
-                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBnLKIThd2Ls2FvpeeGRrm9fQcs5rLlIsJDxjcjp7QlqgKG19D7syiXG-nSZfcsMcWoGA:https://i.ytimg.com/vi/YQRHrco73g4/maxresdefault.jpg&usqp=CAU" alt="Picture of Play"></td>
+                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBnLKIThd2Ls2FvpeeGRrm9fQcs5rLlIsJDxjcjp7QlqgKG19D7syiXG-nSZfcsMcWoGA:https://i.ytimg.com/vi/YQRHrco73g4/maxresdefault.jpg&usqp=CAU" alt="Picture of Play"  width="50%" height="50%" /></td>
             </tr>
         </table>
     </main>
+    <script>
+        (function() {
+            $('img').on("click", function(){
+                console.log('clicked');
+                var cloned =$(this).clone();
+               $(this).clone(true).appendTo('body')
+            });
+        })();
+    </script>
     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
 
 
