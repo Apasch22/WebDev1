@@ -41,6 +41,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="JS/SampleJS.js"></script>
 
     <style>
@@ -188,6 +189,12 @@ a.skip-lists:focus,a.skip-lists:active {
 
 * {
   font-family: "sans-serif";
+}
+
+blockquote.co{
+  float: right;
+  background:#e3e3e3;
+  font-size: x-large;
 }
   </style>
   </head>
@@ -359,7 +366,42 @@ a.skip-lists:focus,a.skip-lists:active {
       <center>
       <img src="https://www.almanac.com/sites/default/files/styles/large/public/image_nodes/aloe-vera-white-pot_sunwand24-ss_edit.jpg?itok=6dE5RWDP" alt="Aloe Vera plant outside in a white pot" tabindex="0">
     </center>
+    <div class="append"></div>
     </main>
+    <script>
+      (function () {
+        $("img").on("click", function () {
+          console.log("Image Clicked");
+          $(this).clone(true).appendTo(".append");
+        });
+      })();
+    </script>
+
+<section>
+  <article style="margin: 0px 40px;">
+    <h1>Blog</h1>
+    <p> <span class="co">Blog content blog content blog content blog content blog content blog content blog content blog content blog content blog content.</span></p>
+    <p> <span class="co">Blog content 2 blog content 2 blog content 2 blog content 2 blog content 2 blog content 2 blog content 2 blog content 2 blog content 2.</span></p>
+    <p> <span class="co">Blog content 3 blog content 3 blog content 3 blog content 3 blog content 3 blog content 3 blog content 3 blog content 3 blog content 3.</span></p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvjQAsnv0qUAgOo8yWb5VgRQ54wjN8Ia0Ky_jt0UHXPWKvhd9WvP-Svfq_x8fxuRtoMtI:https://colmanandcompany.com/blog/wp-content/uploads/2014/04/blog-word-cloud1.jpg&usqp=CAU">
+  </article>
+</section>
+
+<script>
+  (function () {
+
+    var co = $('span.co').each(function() {
+      var $this = $(this);
+
+      $('<blockquote></blockquote>', {
+        class: 'co',
+        text: $this.text()
+      }).prependTo( $this.closest('p') );
+
+    })
+
+})();
+</script>
     <!--Spacer-->
     <p style="height: 50px"></p>
     <!-- Footer -->
