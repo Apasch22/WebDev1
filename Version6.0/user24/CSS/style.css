@@ -31,3 +31,15 @@
     border-bottom: 1px solid black;
     margin-bottom: 1em;
   }
+
+  #para {
+    text-align: center;
+    font-size: 50px;
+  }
+
+  #new_div_3 {
+    margin: 0 auto;
+    position: relative;
+    width: 60%;
+    display: none;
+  }

@@ -1,32 +1,79 @@
 <html>
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
     <article>
-    <p>
-        Hello I have no idea what to say
+    <p style="text-align: center; font-size: 25px;">
+        Hello I have no idea what to say but this is <br> still my article
+        and my form button project<br>Hello I have no idea what to say but this is <br> still my article
+        and my form button project <br> Hello I have no idea what to say but this is <br> still my article
+        and my form button project
     </p>
 </article>
 <script>
+ (function() {
+ $('html').addClass('js');
 
-    (function() {
+ var contactForm = {
+    container: $('new_div_3'),
 
-       var co = $('article') span.co').each(function) {
-           var $this = $(this);
+    init: function() {
+        $('<button></button>', {
+            text: 'Contact me'
+        })
+            .insertAfter('article')
+            .on('click', this.show );
 
-           $('blockquote></blockquote>', {
-               class: 'co'
-               text: $this.text()
-           }).prependTo( $this.closest('p') );
-           
-    })();
+    },
+    show: funcution() {
+        contactForm.close.call(contactForm.container);
+        contactForm.container.show();
+    },
+    close: function() {
+        var $this = $(this);
+        $('<span class=close>X</span>')
+            .prependTo(this)
+            .on('click', function() {
+                $this.hide();
+            })
+    }
+ };
+ contactForm.init();
 
+ })();
 </script>
 
-
-
+<div id="new_div_3">
+    <form class="contact_form" action="#" method="post" name="contact_form">
+        <ul>
+            <li>
+                <h2>Contact Us</h2>
+            </li>
+            <li>
+                <label for="name">Name:</label>
+                <input type="text"  placeholder="John Doe" required />
+            </li>
+            <li>
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="john_doe@example.com" required />
+            </li>
+            <li>
+                <label for="website">Website:</label>
+                <input type="url" name="website" placeholder="http://johndoe.com" required pattern="(http|https)://.+"/>
+            </li>
+            <li>
+                <label for="message">Message:</label>
+                <textarea name="message" cols="40" rows="6" required ></textarea>
+            </li>
+            <li>
+                <button class="submit" type="submit">Submit Form</button>
+            </li>
+        </ul>
+    </form>
+</div>
 </body>
 
 
