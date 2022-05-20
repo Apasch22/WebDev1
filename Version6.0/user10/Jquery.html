@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<h2>Click Me
+</h2>
+<h2>Click Me
+</h2>
+<h2>Click Me
+</h2>
+<h2>Click Me
+</h2>
+<script>src="http://ajax.googleapis.com/ajax/libs/jquery.com/1.7.1/jquery.min.js"></script>
+
+<script>
+    (function() {
+
+        $('div.container').delegate('h2','click' , function() {
+      console.log('clicked');
+    $(this).clone().appendTo('.container');
+    
+    });
+
+    })();
+
+</script>
+
+<article>
+<h1>My Awesome Post</h1>
+<p>nsdif asnfusbfgind asdfjosdnfos fajfo sfijq apa jsiandai wnqdnofm wmond
+    efhiuef ifejiaodjiasni wd winwiuqnd foinwofnwjgn mlWIDwjd 
+</p>
+<p>
+    <span  class=co>nsdif asnfusbfgind asdfjosdnfos fajfo sfijq apa jsiandai wnqdnofm wmond
+        efhiuef ifejiaodjiasni wd winwiuqnd foinwofnwjgn mlWIDwjd</span>nsdif asnfusbfgind asdfjosdnfos fajfo sfijq apa jsiandai wnqdnofm wmond
+        efhiuef ifejiaodjiasni wd winwiuqnd foinwofnwjgn mlWIDwjdnsdif asnfusbfgind asdfjosdnfos fajfo sfijq apa jsiandai wnqdnofm wmond
+        efhiuef ifejiaodjiasni wd winwiuqnd foinwofnwjgn mlWIDwjdnsdif asnfusbfgind asdfjosdnfos fajfo sfijq apa jsiandai wnqdnofm wmond
+        efhiuef ifejiaodjiasni wd winwiuqnd foinwofnwjgn mlWIDwjdnsdif asnfusbfgind asdfjosdnfos fajfo sfijq apa jsiandai wnqdnofm wmond
+        efhiuef ifejiaodjiasni wd winwiuqnd foinwofnwjgn mlWIDwjd
+</p>
+<p>nsdif asnfusbfgind asdfjosdnfos fajfo sfijq apa jsiandai wnqdnofm wmond
+    efhiuef ifejiaodjiasni wd winwiuqnd foinwofnwjgn mlWIDwjd </p>
+</article>
+
+<script>
+  
+  (function() {
+
+$('p').eq(0).after( $('h1') );
+
+})();
+
+</script>
+
+
+
+
+</head>
+</html>
