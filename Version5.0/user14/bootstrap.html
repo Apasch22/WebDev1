@@ -104,99 +104,121 @@
       }
 
       .hidden {
-    display: none;
-}
+        display: none;
+      }
 
-a.skip-main {
-    left: -999px;
-    position: absolute;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    z-index: -999;
-}
+      a.skip-main {
+        left: -999px;
+        position: absolute;
+        top: auto;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        z-index: -999;
+      }
 
-a.skip-nav {
-    left: -999px;
-    position: absolute;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    z-index: -999;
-}
+      a.skip-nav {
+        left: -999px;
+        position: absolute;
+        top: auto;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        z-index: -999;
+      }
 
-a.skip-lists {
-    left: -999px;
-    position: absolute;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    z-index: -999;
-}
+      a.skip-lists {
+        left: -999px;
+        position: absolute;
+        top: auto;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        z-index: -999;
+      }
 
-a.skip-main:focus,a.skip-main:active {
-    color: #fff;
-    background-color: #000;
-    left: auto;
-    top: auto;
-    width: 30%;
-    height: auto;
-    overflow: auto;
-    margin: 10px 35%;
-    padding: 5px;
-    border-radius: 15px;
-    border: 4px solid red;
-    text-align: center;
-    font-size: 1.2em;
-    z-index: 999;
-}
+      a.skip-main:focus,
+      a.skip-main:active {
+        color: #fff;
+        background-color: #000;
+        left: auto;
+        top: auto;
+        width: 30%;
+        height: auto;
+        overflow: auto;
+        margin: 10px 35%;
+        padding: 5px;
+        border-radius: 15px;
+        border: 4px solid red;
+        text-align: center;
+        font-size: 1.2em;
+        z-index: 999;
+      }
 
-a.skip-nav:focus,a.skip-nav:active {
-    color: #fff;
-    background-color: #000;
-    left: auto;
-    top: auto;
-    width: 30%;
-    height: auto;
-    overflow: auto;
-    margin: 10px 35%;
-    padding: 5px;
-    border-radius: 15px;
-    border: 4px solid red;
-    text-align: center;
-    font-size: 1.2em;
-    z-index: 999;
-}
-a.skip-lists:focus,a.skip-lists:active {
-    color: #fff;
-    background-color: #000;
-    left: auto;
-    top: auto;
-    width: 30%;
-    height: auto;
-    overflow: auto;
-    margin: 10px 35%;
-    padding: 5px;
-    border-radius: 15px;
-    border: 4px solid red;
-    text-align: center;
-    font-size: 1.2em;
-    z-index: 999;
-}
+      a.skip-nav:focus,
+      a.skip-nav:active {
+        color: #fff;
+        background-color: #000;
+        left: auto;
+        top: auto;
+        width: 30%;
+        height: auto;
+        overflow: auto;
+        margin: 10px 35%;
+        padding: 5px;
+        border-radius: 15px;
+        border: 4px solid red;
+        text-align: center;
+        font-size: 1.2em;
+        z-index: 999;
+      }
+      a.skip-lists:focus,
+      a.skip-lists:active {
+        color: #fff;
+        background-color: #000;
+        left: auto;
+        top: auto;
+        width: 30%;
+        height: auto;
+        overflow: auto;
+        margin: 10px 35%;
+        padding: 5px;
+        border-radius: 15px;
+        border: 4px solid red;
+        text-align: center;
+        font-size: 1.2em;
+        z-index: 999;
+      }
 
-* {
-  font-family: "sans-serif";
-}
+      * {
+        font-family: "sans-serif";
+      }
 
-blockquote.co{
-  float: right;
-  background:#e3e3e3;
-  font-size: x-large;
-}
-  </style>
+      blockquote.co {
+        float: right;
+        background: #e3e3e3;
+        font-size: x-large;
+      }
+
+      #contact {
+        background-color: #e3e3e3;
+        padding: 1em 2em;
+      }
+
+      .js #contact {
+        position: absolute;
+        width: inherit();
+        display: none;
+      }
+
+      .close {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    </style>
   </head>
 
   <body>
@@ -357,16 +379,30 @@ blockquote.co{
     <p style="height: 50px"></p>
     <main>
       <center>
-      <h1>Main Content</h1>
+        <h1>Main Content</h1>
       </center>
-      <div style="margin: 2vw 4vw;">
-      <span style="font-size: 25px; font-weight: 500;" tabindex="0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod elementum nisi quis eleifend quam adipiscing. Sit amet facilisis magna etiam.</span>
-      <a href="https://www.mcdonalds.com/us/en-us.html" style="color:darkcyan; font-weight: 550; font-size:25px;" alt="Link to McDonalds"><u>Link</u></a>
+      <div style="margin: 2vw 4vw">
+        <span style="font-size: 25px; font-weight: 500" tabindex="0"
+          >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod
+          elementum nisi quis eleifend quam adipiscing. Sit amet facilisis magna
+          etiam.</span
+        >
+        <a
+          href="https://www.mcdonalds.com/us/en-us.html"
+          style="color: darkcyan; font-weight: 550; font-size: 25px"
+          alt="Link to McDonalds"
+          ><u>Link</u></a
+        >
       </div>
       <center>
-      <img src="https://www.almanac.com/sites/default/files/styles/large/public/image_nodes/aloe-vera-white-pot_sunwand24-ss_edit.jpg?itok=6dE5RWDP" alt="Aloe Vera plant outside in a white pot" tabindex="0">
-    </center>
-    <div class="append"></div>
+        <img
+          src="https://www.almanac.com/sites/default/files/styles/large/public/image_nodes/aloe-vera-white-pot_sunwand24-ss_edit.jpg?itok=6dE5RWDP"
+          alt="Aloe Vera plant outside in a white pot"
+          tabindex="0"
+        />
+      </center>
+      <div class="append"></div>
     </main>
     <script>
       (function () {
@@ -377,33 +413,121 @@ blockquote.co{
       })();
     </script>
 
-<section>
-  <article style="margin: 0px 40px;">
-    <h1>Blog</h1>
-    <p> <span class="co">Blog content blog content blog content blog content blog content blog content blog content blog content blog content blog content.</span></p>
-    <p> <span class="co">Blog content 2 blog content 2 blog content 2 blog content 2 blog content 2 blog content 2 blog content 2 blog content 2 blog content 2.</span></p>
-    <p> <span class="co">Blog content 3 blog content 3 blog content 3 blog content 3 blog content 3 blog content 3 blog content 3 blog content 3 blog content 3.</span></p>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvjQAsnv0qUAgOo8yWb5VgRQ54wjN8Ia0Ky_jt0UHXPWKvhd9WvP-Svfq_x8fxuRtoMtI:https://colmanandcompany.com/blog/wp-content/uploads/2014/04/blog-word-cloud1.jpg&usqp=CAU">
-  </article>
-</section>
+    <section>
+      <article style="margin: 0px 40px">
+        <h1>Blog</h1>
+        <p>
+          <span class="co"
+            >Blog content blog content blog content blog content blog content
+            blog content blog content blog content blog content blog
+            content.</span
+          >
+        </p>
+        <p>
+          <span class="co"
+            >Blog content 2 blog content 2 blog content 2 blog content 2 blog
+            content 2 blog content 2 blog content 2 blog content 2 blog content
+            2.</span
+          >
+        </p>
+        <p>
+          <span class="co"
+            >Blog content 3 blog content 3 blog content 3 blog content 3 blog
+            content 3 blog content 3 blog content 3 blog content 3 blog content
+            3.</span
+          >
+        </p>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvjQAsnv0qUAgOo8yWb5VgRQ54wjN8Ia0Ky_jt0UHXPWKvhd9WvP-Svfq_x8fxuRtoMtI:https://colmanandcompany.com/blog/wp-content/uploads/2014/04/blog-word-cloud1.jpg&usqp=CAU"
+        />
+      </article>
+    </section>
 
-<script>
-  (function () {
+    <div id="contact">
+      <h2>Contact Me</h2>
+      <form action="#">
+        <ul>
+          <li>
+            <label for="name">Name: </label>
+            <input name="name" id="name">
+          </li>
+          <li>
+            <label for="email">Email Address: </label>
+            <input name="email" id="email"></li>
+          <li>
+            <label for="content">Content: </label>
+            <textarea name="content" id="content" cols="30" rows="10"></textarea>
+          </li>
+          <li>
+            <input type="submit" value="Submit">
+          </li>
+        </ul>
+      </form>
+    </div>
 
-    var co = $('span.co').each(function() {
-      var $this = $(this);
+    <script>
+      (function () {
+        var co = $("span.co").each(function () {
+          var $this = $(this);
 
-      $('<blockquote></blockquote>', {
-        class: 'co',
-        text: $this.text()
-      }).prependTo( $this.closest('p') );
+          $("<blockquote></blockquote>", {
+            class: "co",
+            text: $this.text(),
+          }).prependTo($this.closest("p"));
+        });
+      })();
+    </script>
+    
+    <script>
+      (function () {
+    $("html").addClass("js");
 
-    })
+    var contactForm = {
+      container: $('#contact'),
 
+      config: {
+        effect: 'slideToggle',
+        speed: 500
+      },
+
+      init: function(config) {
+        $.extend(this.config, config);
+        $('<button></button>', {
+            text: 'Contact Me'
+        })
+          .insertAfter('article')
+          .on('click', this.show);
+      },
+
+      show: function() {
+        var cf = contactForm,
+        container = cf.container,
+        config = cf.config;
+
+        if (container.is(':hidden'))
+        contactForm.close.call(contactForm.container);
+        contactForm.container[contactForm.config.effect](500);
+      },
+
+      close: function() {
+        var $this = $(this);
+
+        $('<span class="close">X</span>')
+        .prependTo(this)
+        .on('click', function() {
+          $this[contactForm.config.effect](contactForm.config.speed);
+        })
+      }
+    };
+
+    contactForm.init({
+    effect: 'fadeToggle',
+    speed: 500
+    });
 })();
-</script>
+    </script>
     <!--Spacer-->
-    <p style="height: 50px"></p>
+    <p style="height: 500px"></p>
     <!-- Footer -->
     <footer class="page-footer font-small blue pt-4">
       <!-- UPPER FOOTER -->
@@ -476,16 +600,30 @@ blockquote.co{
 
             <ul class="list-unstyled">
               <li>
-                <a class="footerlinktext" href="#!" alt="Link to the home page">Home</a>
+                <a class="footerlinktext" href="#!" alt="Link to the home page"
+                  >Home</a
+                >
               </li>
               <li>
-                <a class="footerlinktext" href="#!" alt="Link to the about us page">About Us</a>
+                <a
+                  class="footerlinktext"
+                  href="#!"
+                  alt="Link to the about us page"
+                  >About Us</a
+                >
               </li>
               <li>
-                <a class="footerlinktext" href="#!" alt="Link to our shop page">Shop</a>
+                <a class="footerlinktext" href="#!" alt="Link to our shop page"
+                  >Shop</a
+                >
               </li>
               <li>
-                <a class="footerlinktext" href="#!" alt="Link to our membership page">Membership</a>
+                <a
+                  class="footerlinktext"
+                  href="#!"
+                  alt="Link to our membership page"
+                  >Membership</a
+                >
               </li>
             </ul>
           </div>
@@ -523,7 +661,11 @@ blockquote.co{
       <!-- Copyright -->
       <div class="footer-copyright text-center py-3">
         © 2022 Copyright:
-        <a class="footerlinktext" href="https://mdbootstrap.com/" alt="Copyright">
+        <a
+          class="footerlinktext"
+          href="https://mdbootstrap.com/"
+          alt="Copyright"
+        >
           MDBootstrap.com</a
         >
       </div>
