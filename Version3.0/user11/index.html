@@ -26,19 +26,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script scr="https://ajax.googleapis.com/ajax/lib/jquery/1.7.1/jquery.mim.js"></script>
-
-
-
     <!-- Custom styles for this template -->
-    <style type="text/css">
-        .menu {
-            margin: 0px;
-        }
-
-        .wideMargin {
-            margin: 15px;
-        }
-
+    <style>
         footer {
             font-size: 12px;
             text-align: center;
@@ -47,15 +36,43 @@
         article {
             width: 600px;
             margin: auto;
+            font-family: sans-serif;
         }
 
-        blockquote.co {
-            float: right;
-            background: #e3e3e3 ;
-            font-size: 2em;
-            width: 35%;
-            text-align: center;
+        #contact {
+            background: #e3e3e3;
+            padding: 1em 2em;
+            position: relative;
         }
+
+        .js #contact {
+            position: absolute;
+            top: 0;
+            width: inherit;
+            display: none;
+        }
+
+        #contact h2 {margin-top: 0; }
+        #contact ul { padding: 0; }
+        #contact li {
+            list-style: none;
+            margin-bottom: 1em;
+        }
+
+        /* Close button on form */
+        .close {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            font-weight: bold;
+            font-family: sans-serif;
+            cursor: pointer;
+        }
+
+        /*f Form inputs */
+        input, textarea { width: 100%; line-height: 2em;}
+        input[type=submit] {width: auto; }
+        label { display: block;  text-align: left; }
     </style>
 </head>
 
@@ -88,7 +105,7 @@
     </div>
     <!---------------------------------- End the nav-bar ------------->
 
-    <main class="wideMargin">
+<main class="wideMargin">
 
         <h1 class="text-left my-3">Home</h1><!-- Edit this line for the title of your page -->
 
@@ -113,7 +130,7 @@
             Lorem ipsum dolor sit amet, 
             consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
             Tempor commodo ullamcorper a lacus vestibulum sed arcu non. Lorem ipsum dolor sit amet. Tortor id aliquet lectus proin nibh.
-            <span class="co">Text callout 1</span>
+            
         </p>
 
         <p>
@@ -121,7 +138,7 @@
             Est sit amet facilisis magna etiam tempor orci eu lobortis. 
             Ullamcorper malesuada proin libero nunc. Interdum velit laoreet id donec ultrices. 
             Nisl condimentum id venenatis a condimentum vitae sapien.
-            <span class="co">Text callout 2</span>
+            
         </p>
 
         <p>
@@ -129,27 +146,88 @@
             Est sit amet facilisis magna etiam tempor. Adipiscing elit ut aliquam purus. 
             In vitae turpis massa sed elementum. Etiam dignissim diam quis enim lobortis scelerisque fermentum. 
             Sit amet justo donec enim diam. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus.
-            <span class="co">Text callout 3</span> 
+ 
         </p>
 
-        <td>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAhAPGUR-KfyPqbOmkjxSSCYV5Wy6aFQjIKV0MVmjDG0OCXnP1_zW4EyjVwyHonkscLWo:https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png&usqp=CAU" alt="Picture of image" width="100%"/></td>
-        </td>
-
+        <div id="contact">
+            <h2>Contact Me</h2>
+            <form action="#">
+                <ul>
+                    <li>
+                        <label for="name">Name: </label>
+                        <input name="name" id="name">
+                    </li>
+    
+                    <li>
+                        <label for="email">Email Address: </label>
+                        <input name="email" id="email">
+                    </li>
+    
+                    <li>
+                        <label for="comments">What question do you have?</label>
+                        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                    </li>
+    
+                    <li>
+                        <input type="submit" value="Send"> 
+                    </li>
+                </ul>
+            </form>
+        </div>
     </article>
-    <script>
-        (function() {
-           var co = $('span.co').each(function() {
-               var $this = $(this);
 
-               $('<blockquote></blockquote>' , {
-                   class: 'co' , 
-                   text: $this.text()
-               }).prependTo( $this.closest('p') );
-            });
-        })();
+    <script>
+        $('html').addClass('js');
+        
+        var contactForm = {
+            container: $('#contact'),
+            config: {
+                effect: 'slideToggle',
+                speed: 500
+            },
+            
+            init: function(config) {
+                $.extend(this.config, config);
+    
+                $( '<button></button>', {
+                    text: 'Contact Me'
+                })
+                    .insertAfter( 'article:first' )
+                    .on( 'click', this.show );
+            },
+
+            show: function () {
+                var cf = contactForm,
+                    container = cf.container,
+                    config = cf.config;
+    
+                if ( container.is(' :hidden') ) {
+                contactForm.close.call(container);
+                container[config.effect](config.speed);
+            }
+            },
+
+            close: function () {
+                var $this = $(this); // #contact
+    
+                if ( $this.find('span.close').length ) return;
+    
+                $('<span class=close>X</span>')
+                    .prependTo(this)
+                    .on('click', function() {
+                        // this = span
+                        $this[contactForm.config.effect](contactForm.config.speed);
+                    })
+            }
+        };
+        
+        contactForm.init({
+            effect: 'fadeToggle',
+            speed: 280
+        });
     </script>
-    </main>
+
+</main>
     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
 
 
