@@ -16,7 +16,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta name="description" content="My Favorite Music" />
-    <meta charset=utf-8/>
+    <meta charset="utf-8" />
     <!-- CSS -->
     <link rel="icon" type="image/x-icon" href="images/icon.ico" />
     <link
@@ -54,10 +54,11 @@
         text-align: center;
       }
       blockquote.big {
-        float: right ;
+        float: right;
         font-size: 2em;
-        width: auto;
-        
+        width: 100px;
+        height: 100px;
+
       }
     </style>
   </head>
@@ -104,7 +105,7 @@
       <!-- Edit this line for the title of your page -->
 
       <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-      <h2><span class="big"></span>My Top 5 Favorite Songs</h2>
+      <h2>My Top 5 Favorite Songs</h2>
       <table>
         <thead>
           <tr>
@@ -142,9 +143,9 @@
               width: 10%;
               height: auto;
             "
-          >
+          ><span class=big>
             Trouble
-          </td>
+          </span></td>
           <td>
             <img
               src="images/Trouble_by_Avicii.jpg"
@@ -212,9 +213,9 @@
               width: auto;
               height: auto;
             "
-          ><span class="big">
-            Kygo
-          </span></td>
+          >
+            <span class=big> Kygo </span>
+          </td>
           <td
             style="
               color: #00ff00;
@@ -222,16 +223,16 @@
               width: 10%;
               height: auto;
             "
-          ><span class="big">
-          
-            Happy Now
-          </span></td>
-          <td><span calss="big">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/en/e/e6/HappyNow-KygofeaturingSandroCavazza.png"
-              alt="Picture of Happy Now - Kygo"
-              width="30%"
-              height="30%"
+          >
+            <span class=big> Happy Now </span>
+          </td>
+          <td>
+            <span class=big>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/e/e6/HappyNow-KygofeaturingSandroCavazza.png"
+                alt="Picture of Happy Now - Kygo"
+                width="30%"
+                height="30%"
             /></span>
           </td>
         </tr>
@@ -319,21 +320,23 @@
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script>
-      (function() {
-        $('img').on('click', function () {
-          console.log('Image clicked');
-          $(this).clone(true).appendTo('body');
+      (function () {
+        $("img").on("click", function () {
+          console.log("Image clicked");
+          $(this).clone(false).appendTo("body");
         });
       })();
 
-      (function() {
-          var big = $('span.big').each(function(){
-            var $this = $(this);
-            $('<blckquote></blockquote>', {
-              class: 'big',
-            text:$(this.text()
-            )}).prependTo( $this.closes('td') );
-          });
+      (function () {
+        var big = $('span.big').each(function () {
+          var $this = $(this);
+          $('<blockquote></blockquote>', {
+            class: 'big',
+            text: $this.text(),
+          }).prependTo( $this.closest('td') );
+          
+        });
+
       })();
     </script>
     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
