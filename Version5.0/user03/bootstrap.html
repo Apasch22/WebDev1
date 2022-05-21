@@ -93,7 +93,7 @@
         padding: 1em 2em;
         position: relative;
       }
-      .js#contact {
+      .js #contact {
         position: absolute;
         top: 0;
         width: inherit;
@@ -276,24 +276,24 @@
           container: $('#contact'),
           
 config: {
-  effect:'slideToggle',
+  effect: 'slideToggle',
   speed: 400
 },
 
           init: function(config) {
-            $.extend(this.config,config)
+            $.extend(this.config, config)
 
             $('<button></button>', {
               text: 'Contact Author'
             })
-            .insertAfter('h4')
-            .on( 'click', this.show );
+            .insertAfter( 'p')
+            .on( 'click', this.show);
           },
 
           show: function() {
-            var cf = contactFrom
-            container = cf.container
-            config = cf.config
+            var cf = contactFrom,
+            container = cf.container,
+            config = cf.config;
 
           if ( container.is(':hidden') ) {
             contactFrom.close.call(container);
@@ -305,13 +305,16 @@ config: {
 
             if( $this.find('span.close').length ) return;
 
-            $('<span class=clase>X</span>')
+            $('<span class=close>X</span>')
             .prependTo(this)
             .on('click', function() {
               $this[contactFrom.config.effect](contactFrom.config.speed);
             })
-          }
+          },
         };
+
+contactFrom.init();
+
       })();
     </script>
   </body>
