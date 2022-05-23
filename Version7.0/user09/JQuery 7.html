@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Appending Content</title>
+        <style>
+            article{
+                width: 600px;
+                margin: auto;
+            }
+            blockquote.co {
+                float: right;
+                background: #e3e3e3;
+                font-size: 2em;
+                width: 35%;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <article>
+            <h1>My Awsome Post</h1>
+            <img src="images/1200px-Flag_of_the_United_States.svg.webp" alt="US" width="150" height="100"/> 
+            <p>
+                She patiently waited for his number to be called. She had no desire to be there, but her mom had insisted that she go. She's resisted at first, but over time she realized it was simply easier to appease her and go. Mom tended to be that way. She would keep insisting until you wore down and did what she wanted. So, here she sat, patiently waiting for her number to be called.
+            </p>
+            <p>
+                <span class="co"> Were only two ways to get out of this mess if they all worked together.</span> The problem was that neither was all that appealing. One would likely cause everyone a huge amount of physical pain while the other would likely end up with everyone in jail. In Sam's mind, there was only one thing to do. He threw everyone else under the bus and he secretly sprinted away leaving the others to take the fall without him.
+            </p>
+            <p>
+            We recollect that my first exploit in squirrel-shooting was in a grove of tall walnut-trees that shades one side of the valley. I had wandered into it at noontime, when all nature is peculiarly quiet, and was startled by the roar of my own gun, as it broke the Sabbath stillness around and was prolonged and reverberated by the angry echoes. <span class="co">"It was so great to hear from you today and it was such weird timing"</span>
+            </p>
+            <p>
+                <span class="co"> Love isn't always a ray of sunshine.</span> Her hair was a tangled mess which she tried to make presentable by putting in a lump on the top of her head. It didn't really work although it was a valiant attempt. While most people simply noticed the tangled mess on top of her head, what most people failed to understand that within the tangles mess was an entirely new year. That was her secret. She kept worlds on top of her head.
+            </p>
+        </article>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+        <script>
+            (function() {
+                var co = $('span.co').each(function() {
+                    var $this = $(this)
+                    $('<blockquote></blockquote>', {
+                        class: 'co',
+                        text: $this.text()
+                    }).prependTo($this.closest('p'));
+                });
+            })();
+        </script>
