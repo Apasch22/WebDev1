@@ -122,6 +122,27 @@
             }
         </script>
 
+<h5>
+    Click here 
+</h5>
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9maIq7rkcCULTtegNpb1Kr9dzKQZZSBY0PGdSL0gQT--TjtXrSqSAgzR5w7GI6igf9eU:https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg&usqp=CAU" alt="Picture of the Tree" width="50%" height="50%">
+<script>
+    (function() {
+     var img = $('img').hide();
+     jQuery.fn.flash = function( speed,easing, callback ) {
+         var $this = $(this);
+         
+         return $this.fadeIn(500, function() {
+             $this.delay(3000).fadeOut(500);
+         });
+     };
+     $('h5').on('click', function() {
+         img.flash();
+     });
+     })();
+ </script>
+
             
         <!---------------------------------- Begin the footer ------------->
     <footer class="wideMargin">
