@@ -123,13 +123,16 @@
   </head>
 
   <body>
+    <h1>Click Me</h1>
+    <h2>Click Me Too</h2>
+    <div class="content">
     <div class="jumbotron">
       <h4>Bootstrap Examples</h4>
       <p class="lead">
         Let's look at the man different examples of how we can use bootstrap and
         what bootstrap can do!
       </p>
-    </div>
+    </div></div>
     <a
       href="form.html"
       class="btn btn-primary btn-lg active"
@@ -140,37 +143,38 @@
 
     <div class="bs-example">
       <table class="table table-striped">
-        <thead>
+        <thead><div class="slide">
           <tr>
-            <th>Row</th>
+            <div class="content"><th>Row</th></div>
             <th>First Name</th>
             <th>Last Name</th>
             <th>Email</th>
           </tr>
-        </thead>
-        <tbody>
-          <tr>
+        </div></thead>
+        <tbody><div class="content"></div>
+          <tr><div class="slide">
             <td>1</td>
             <td>Clark</td>
             <td>Kent</td>
             <td>clarkkent@mail.com</td>
-          </tr>
-          <tr>
+          </div></tr>
+          <tr><div class="slide">
             <td>2</td>
             <td>John</td>
             <td>Carter</td>
             <td>johncarter@mail.com</td>
-          </tr>
-          <tr>
+          </div></tr>
+          <tr><div class="slide">
             <td>3</td>
             <td>Peter</td>
             <td>Parker</td>
             <td>peterparker@mail.com</td>
-          </tr>
-        </tbody>
+          </div></tr>
+        </div></tbody>
       </table>
     </div>
 
+    <div class="slide">
     <div class="container mt-4">
       <div class="list-group">
         <a href="#" class="list-group-item list-group-item-action active">
@@ -315,6 +319,51 @@ config: {
 
 contactFrom.init();
 
+      })();
+
+      (function() {
+        var content = $('div.content').hide();
+
+        jQuery.fn.flash = function( speed, easing, callback ) {
+          var $this = $(this);
+        
+        return $this.slideDown(500, function(){
+          $this.delay(3000).slideUp(500);
+        });
+      };
+
+      $('h1').on('click',function() {
+        content.flash();
+      });
+      })();
+
+      (function() {
+        var slide = $('div.slide').hide();
+            w = $(window).width() / 2 - slide.outerWidth() / 2
+            w = $(window).height() / 2 - slide.outerHeight() / 2
+
+        jQuery.fn.flash = function( speed, easing, callback ) {
+          var $this = $(this);
+        
+        return $this.slideDown(500, function(){
+          $this.delay(2000).slideUp(500);
+        });
+      };
+
+      $('h2').on('click',function() {
+        slide.flash();
+        slide.animate({
+          'fontSize': '+=5'
+
+        }, {
+          duration: 1000,
+        })
+        .css ('color','green')
+        .animate({
+          'fontSize': '-=2'
+        })
+       
+      });
       })();
     </script>
   </body>
