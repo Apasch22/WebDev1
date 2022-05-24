@@ -1,0 +1,26 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+
+<div class="container">
+<h2>MamaMia</h2>
+<h2><image src="images/chihuahua.jpg" style="width:100px;height:100px;"></image></h2>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>
+    (function() {
+        $('div.container').delegate('h2', 'click', function() {
+            console.log('clicked');
+            $(this).clone().appendTo('.container');
+        });
+    })();
+</script>
+    </body>
+</html>
+
+
+
