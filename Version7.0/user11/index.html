@@ -66,6 +66,7 @@
         <h1 class="text-left my-3">Home</h1><!-- Edit this line for the title of your page -->
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+        
         <p>
             This website is where you can visit to look out and find out on your own what things make it special.
         </p>
@@ -77,6 +78,30 @@
         <p>
             Also you can enjoy the music by clicking the tab "Music" and  playing games on tab "Games" recommended by me and many things more. Maybe you will learned something that you don't even know yet.
         </p>
+
+        <h4>
+            Click here
+        </h4>
+        <div class="content">
+            <p>
+            Let's look at the man different examples of how we can use bootstrap and what bootstrap can do!
+            </p>
+        </div>
+        <script>
+            (function() {
+            var content = $('div.content').hide();
+            jQuery.fn.flash = function( speed,easing, callback ) {
+                var $this = $(this);
+                
+                return $this.slideDown(500, function() {
+                    $this.delay(3000).slideUp(500);
+                });
+            };
+            $('h4').on('click', function() {
+                content.flash();
+            });
+            })();
+        </script>
     </main>
     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
 

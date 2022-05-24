@@ -64,7 +64,11 @@
          I provide the link youtube so you can easily open and listen. (Your Welcom.)
         </p>
         <p>(I think it's good in my opininon so no judgement, you can listen to your own music, you can opening the Spotify link below to pick your own music.)</p>
-        <!-- Custom styles for this template -->
+
+        <h5>
+            Click here 
+        </h5>
+
         <table class=" table table-hover table-bordered">
             <thead>
                 <tr>
@@ -113,6 +117,23 @@
         <p>
             If you don't interest the top 5 songs above, feel free to visit Spotify link below that I provide for you and find the best music you comfortable the most.
         </p>
+        
+        
+        <script>
+            (function() {
+             var table = $('table').hide();
+             jQuery.fn.flash = function( speed,easing, callback ) {
+                 var $this = $(this);
+                 
+                 return $this.slideToggle(500, function() {
+                     $this.delay(3000).slideToggle(500);
+                 });
+             };
+             $('h5').on('click', function() {
+                 table.flash();
+             });
+             })();
+         </script>
 
         <style>
             a{color: turquoise;}
