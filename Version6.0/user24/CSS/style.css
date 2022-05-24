@@ -43,3 +43,29 @@
     width: 60%;
     display: none;
   }
+
+  #paraa {
+    display: inline;
+  }
+
+  body {
+    background: #333;
+  }
+  #options {
+    position: absolute;
+    bottom: 20px;
+    color: #fff;
+    font-size: 150%;
+    border: 1px dotted #ddd;
+    padding: 5px;
+  }
+  #options input {
+    display: block;
+  }
+  #options input#makeAnimation {
+    display: inline;
+  }
+  #options label span {
+    color: #ddd; font-weight: bold;
+  }
+  
