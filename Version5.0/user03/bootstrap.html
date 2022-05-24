@@ -16,7 +16,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta name="description" content="SHS WebDev Bootstrap sample" />
-
+    <meta charset=utf-8>
     <!-- CSS -->
     <link
       rel="stylesheet"
@@ -88,17 +88,51 @@
       .bs-example {
         margin: 20px;
       }
+      #contact {
+        background:#e3e3e3;
+        padding: 1em 2em;
+        position: relative;
+      }
+      .js #contact {
+        position: absolute;
+        top: 0;
+        width: inherit;
+        display: none;
+      }
+      #contact h2{ margin-top: 0; }
+
+      #contact ul { padding: 0; }
+
+      #contact li {
+        list-style: none;
+        margin-bottom: 1em;
+      }
+
+      .close{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        font-weight: bold;
+        font-family: sans-serif;
+        cursor: pointer;
+      }
+      input, textarea { width: 100%; line-height: 2em;}
+      input[type=submit] {width: auto;  }
+      label {display: block; text-align: left; }
     </style>
   </head>
 
   <body>
+    <h1>Click Me</h1>
+    <h2>Click Me Too</h2>
+    <div class="content">
     <div class="jumbotron">
       <h4>Bootstrap Examples</h4>
       <p class="lead">
         Let's look at the man different examples of how we can use bootstrap and
         what bootstrap can do!
       </p>
-    </div>
+    </div></div>
     <a
       href="form.html"
       class="btn btn-primary btn-lg active"
@@ -109,37 +143,38 @@
 
     <div class="bs-example">
       <table class="table table-striped">
-        <thead>
+        <thead><div class="slide">
           <tr>
-            <th>Row</th>
+            <div class="content"><th>Row</th></div>
             <th>First Name</th>
             <th>Last Name</th>
             <th>Email</th>
           </tr>
-        </thead>
-        <tbody>
-          <tr>
+        </div></thead>
+        <tbody><div class="content"></div>
+          <tr><div class="slide">
             <td>1</td>
             <td>Clark</td>
             <td>Kent</td>
             <td>clarkkent@mail.com</td>
-          </tr>
-          <tr>
+          </div></tr>
+          <tr><div class="slide">
             <td>2</td>
             <td>John</td>
             <td>Carter</td>
             <td>johncarter@mail.com</td>
-          </tr>
-          <tr>
+          </div></tr>
+          <tr><div class="slide">
             <td>3</td>
             <td>Peter</td>
             <td>Parker</td>
             <td>peterparker@mail.com</td>
-          </tr>
-        </tbody>
+          </div></tr>
+        </div></tbody>
       </table>
     </div>
 
+    <div class="slide">
     <div class="container mt-4">
       <div class="list-group">
         <a href="#" class="list-group-item list-group-item-action active">
@@ -162,6 +197,24 @@
           <span class="badge badge-pill badge-primary pull-right">3</span>
         </a>
       </div>
+    </div>
+    <div id="contact">
+      <h2>Contact Author</h2>
+      <form action="#">
+        <ul>
+          <li>
+            <lable for="email">Email Adress</lable>
+            <input name="email" id="email">
+          </li> 
+          <li>
+            <lable for="comments">What's the problem</lable>
+            <textarea name="comments" id="comments" cols="30" rows ="10"></textarea>
+          </li> 
+          <li>
+            <input type="submit" value="Submit">
+          </li>
+        </ul>
+      </form>
     </div>
     <!---------Three Column Layouts--------->
     <div class="container mt-3">
@@ -216,6 +269,103 @@
         </div>
       </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>
+      (function() {
+
+        $('html').addClass('js');
+
+        var contactFrom = {
+
+          container: $('#contact'),
+          
+config: {
+  effect: 'slideToggle',
+  speed: 400
+},
+
+          init: function(config) {
+            $.extend(this.config, config)
+
+            $('<button></button>', {
+              text: 'Contact Author'
+            })
+            .insertAfter( 'p')
+            .on( 'click', this.show);
+          },
+
+          show: function() {
+            var cf = contactFrom,
+            container = cf.container,
+            config = cf.config;
+
+          if ( container.is(':hidden') ) {
+            contactFrom.close.call(container);
+            container[config.effect](config.speed);
+          } 
+          },
+          close: function() {
+            var $this = $(this);
+
+            if( $this.find('span.close').length ) return;
+
+            $('<span class=close>X</span>')
+            .prependTo(this)
+            .on('click', function() {
+              $this[contactFrom.config.effect](contactFrom.config.speed);
+            })
+          },
+        };
+
+contactFrom.init();
+
+      })();
+
+      (function() {
+        var content = $('div.content').hide();
+
+        jQuery.fn.flash = function( speed, easing, callback ) {
+          var $this = $(this);
+        
+        return $this.slideDown(500, function(){
+          $this.delay(3000).slideUp(500);
+        });
+      };
+
+      $('h1').on('click',function() {
+        content.flash();
+      });
+      })();
+
+      (function() {
+        var slide = $('div.slide').hide();
+            w = $(window).width() / 2 - slide.outerWidth() / 2
+            w = $(window).height() / 2 - slide.outerHeight() / 2
+
+        jQuery.fn.flash = function( speed, easing, callback ) {
+          var $this = $(this);
+        
+        return $this.slideDown(500, function(){
+          $this.delay(2000).slideUp(500);
+        });
+      };
+
+      $('h2').on('click',function() {
+        slide.flash();
+        slide.animate({
+          'fontSize': '+=5'
+
+        }, {
+          duration: 1000,
+        })
+        .css ('color','green')
+        .animate({
+          'fontSize': '-=2'
+        })
+       
+      });
+      })();
+    </script>
   </body>
   <footer>
     <!-- Footer -->
