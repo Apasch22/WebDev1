@@ -42,6 +42,34 @@
         .spacer {
             padding: 12.5vw 0px;
         }
+
+        .slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 70%; 
+  height: 25px;
+  background: #d3d3d3; 
+  outline: none;
+  opacity: 0.6;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1; 
+}
+
+        .slider::-webkit-slider-thumb {
+  -webkit-appearance: none; 
+  appearance: none;
+  width: 50px; 
+  height: 25px; 
+  background:cornflowerblue; 
+  cursor: pointer; 
+}
+.slidecontainer {
+  width: 100%; 
+}
     </style>
 </head>
 
@@ -74,6 +102,13 @@
         </nav>
     </div>
     
+<center>
+    <h1 style="margin-top: 50px;">Slider</h1>
+    <div class="slidecontainer">
+    <input type="range" min="1" max="100" value="50" class="slider" id="myRange" style="margin-bottom: 150px; margin-top: 50px;">
+    </div>
+</center>
+
     <h1 style="text-align:center;">The 7 Continents</h1>
 
     <h4 style="text-align:center;">&#10148; Click on the dots</h4>
