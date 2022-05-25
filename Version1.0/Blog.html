@@ -13,28 +13,28 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
     <script>
-                    (function() {
-        var content = [
-            {
-                title: 'The coolest animals'
-                thumbnail: ''
-            },
-            {
-                title: 'The rarest animals'
-                thumbnail: ''
-            },
-            {
-                title: 'The flufiest animals'
-                thumbnail: ''
-            },
-        ],
-        template = $.trim( $('#blogTemplate').html() );
-            $.each(content, function( index, obj){
-                var temp =
-                template.replace( /{{title}}/ig, obj.thumbnail );
-$(document.body).append(temp)
-            });
-      })();
+                          (function() {
+              var content = [
+                  {
+                      title: 'The coolest animals'
+                     
+                  },
+                  {
+                      title: 'The rarest animals'
+                      
+                  },
+                  {
+                      title: 'The flufiest animals'
+                     
+                  },
+              ],
+              template = $.trim( $('#blogTemplate').html() );
+                  $.each(content, function( index, obj) {
+                      var temp =
+                      template.replace( /{{title}}/ig, obj.title );
+      $(document.body).append(temp)
+                  });
+            })();
     </script>
   </body>
 </html>
