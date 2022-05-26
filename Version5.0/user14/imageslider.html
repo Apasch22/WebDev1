@@ -23,11 +23,11 @@
         }
 
         .slider ul {
-            width: 600px;
+            width: 10000px;
             list-style: none;
         }
 
-        slider li {
+        .slider li {
             float: left;
         }
 
@@ -42,7 +42,7 @@
         }
 
         .image {
-            width: 500px;
+            width: 600px;
             height: auto;
         }
     </style>
@@ -82,7 +82,7 @@
                 if (current == 0) {
                     current = imgsLen;
                     loc = totalImgsWidth - imgWidth;
-                    direction == 'next';
+                    direction = 'next';
                 } else if (current - 1 == imgsLen) {
                     current = 1;
                     loc = 0;
