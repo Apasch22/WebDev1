@@ -9,6 +9,7 @@
     <title>My Bootstrap Sample</title>
 
     <!-- Bootstrap meta data -->
+    <a class="skip-main" tabindex="0" href="#main">Skip to main content</a>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
@@ -75,10 +76,38 @@
         background-color: rgb(39, 133, 255);
         color:#ffffff
       }
+
+      #skip-main {
+    left: -999px;
+    position: absolute;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -999;
+}
+
+#skip-main:focus, #skip-main:active {
+    color: #fff;
+    background-color: #000;
+    left: auto;
+    top: auto;
+    width: 30%;
+    height: auto;
+    overflow: auto;
+    margin: 10px 35%;
+    padding: 5px;
+    border-radius: 15px;
+    border: 4px solid red;
+    text-align: center;
+    font-size: 1.2em;
+    z-index: 999;
+}
     </style>
   </head>
 
   <body>
+    <div id="main" class="hidden" tabindex="-1"></div>
     <div class="jumbotron">
       <h4>Bootstrap Examples</h4>
       <p class="lead">
