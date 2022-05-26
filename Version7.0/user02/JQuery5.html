@@ -1,0 +1,86 @@
+<html>
+<head>
+    <meta charset=utf-8>
+    <title>AAAAAAAAAAAAAH</title>
+    <style>
+        p { margin-top: 0;}
+    </style>
+</head>
+<body>
+<h1>button</h1>
+<div class=content>
+<p>
+    Greg? Mmm. Greg? What? Greg ! Huh? What? What are you doing? Get up! Mom and Dad have been calling you for an hour.
+     You're about to be late for your first day of middle school. What? Oh, geez! How did that happen? Go, go, go! 
+     Mom's about to flip out! She sent me to get you while she waits in the car! What are you doing? What's going on? 
+     Getting ready for. . . . . .school. Are you insane? School doesn't start till next week. And, FYl, school doesn't 
+     start at 4:00 in the morning ! You woke up Manny. And if he doesn't go back down. . . Good morning ! There is no 
+     way he is going back down. l just wanted to sleep till 6:00. Bubby! Go to bed. l got him. Greg, what are you doing 
+     up making all this noise? lt was Rodrick! He woke me up! He changed my clock! But l swear, he was just. . . Go to bed. 
+     What is that smell? l can't even identify it. Bubby! Happy Birthday! Here, Bubby. Wow! Look at the size of that flamethrower! 
+     Okay, first of all, let me get something straight. This is a journal, not a diary. Yeah, l know what it says on the cover. 
+     But when my mom went out to buy this thing, l specifically told her not to buy one that said "diary" on it. 
+     This just proves Mom doesn't understand anything about kids my age. Huh? Sissy! The only reason l agreed to write 
+     in this thing is because when l'm rich and famous l'll have better things to do than answer people's stupid 
+     questions all day long. Gregory, tell us about your childhood ! Were you always so smart and handsome? Here's 
+     my journal. Now, shoo, shoo. That's our boy up there. Why did l ever say no to him?
+
+</p>
+<p>
+    Mom got me this thing so l could write down my feelings about starting middle school. But l'm gonna be fine. 
+    lt's my best friend, Rowley Jefferson, l'm worried about. He's definitely not middle school ready. Geronimo! 
+    He's not quite clear on the concept of growing up. l want a puppy, a kitty, a gumball machine. . . But anyway, 
+    this is about me, not Rowley. l always figured they'd make a movie about my life. But l didn't think they'd start the story 
+    here. Because, seriously, who wants to see a movie about a kid who's stuck in middle school with a bunch of morons? Three 
+    days, no shower. Smell the love! Let me go, Rodrick! Come on. We're just having some fun, right? No, okay. So, look. Mom asked me 
+    to give you some advice about middle school. lt's real simple. Don't talk to anyone. Don't look at anyone. Don't go anywhere. 
+    Don't sit down. Don't raise your hand. Don't go to the bathroom. Don't get noticed. Don't choose the wrong locker. Don't. . . 
+    Who am l kidding? You'll be dead or homeschooled by the end of the year, anyway. And don't be seen with Rowley. Manny, 
+    stop it! Mom ! Thanks for the eggs, Mom. Frank? Greg? l think it's gross and undignified that l have to eat breakfast next 
+    to him on the potty. Okay, well, it's your fault he's still potty training. Don't look down, Manny. The potty monster doesn't 
+    like it when you look at him. l was just joking with him. Okay. Kiss him you're sorry and then let's get a move on. Can't be 
+    late for your first day of school. Let me just say for the record that I think middle school may be the dumbest idea ever invented. 
+    You got kids like me who haven't hit their growth spurt yet mixed in with gorillas who have to shave twice a day. There's 
+    juvenile delinquents and weirdos. I'm smaIIer than about 95% of the kids at my school...
+
+</p>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script>
+ (function() {
+     var content = $('div.content').hide();
+
+        jQuery.fn.flash = function( speed, easing, callback ) {
+            var $this = $(this);
+
+        return $this.slideDown(1000, function() {
+            $this.delay(1000).slideUp(100);
+        });
+    };
+
+    $('h1').on('click', function() {
+        content.flash();
+    });
+ })();
+</script>
+
+<div class="container">
+    <h2>Image</h2>
+    <h2><image src="images/chihuahua.jpg" style="width:100px;height:100px;"></image></h2>
+    
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>
+        (function() {
+            $('div.container').delegate('h2', 'click', function() {
+                console.log('clicked');
+                $(this).clone().appendTo('.container');
+            });
+        })();
+    </script>
+</body>
+</html>
