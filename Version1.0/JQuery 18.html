@@ -18,7 +18,7 @@
       </script>
     </ul>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="http://cloud.github.com/downloads/wycats/handlebars.js/handlebars-1.0.0.beta.6.js"></script>
+    <script src="Downloads/handlebars-v4.7.7.js"></script>
 
     <script>
       (function () {
@@ -26,11 +26,12 @@
           {
             author: { first: "Tim", last: "Latzelsberger", age: 18 },
             tweet: "18th day of learning jQuery",
-            age: 18,
+            story: "The best thing in the world is food",
           },
           {
             author: { first: "Kevin", last: "Strong", age: 20 },
             tweet: "<strong>18th day</strong> of learning jQuery",
+            story: "The best thing in the world is food",
           },
         ];
 
@@ -40,7 +41,8 @@
         var template = Handlebars.compile($("#template").html());
         $("ul.tweets").append(template(data));
         var content = 
-        {story: "The best thing in the world is food"
+        {
+          story: "The best thing in the world is food"
         };
 
       })();
