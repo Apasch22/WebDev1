@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>Q&A</title>
+</head>
+<body>
+   <script id=blogTemplate type=tuts/template>
+       <h2> {{title}} </h2>
+       img src={{thumbnail}} alt={{title}}.
+   </script>
+ 
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+ 
+   <script>
+       (function() {
+           var content = [
+               {
+               title: 'My awesome blog post',
+               thumbnail: 'http://friendssjrosegarden.org/wp-content/uploads/2012/11/Volunteer-Day-Editorial1.jpg',
+           },
+           {
+               title: 'My awesome second blog post',
+               thumbnail: 'https://images.pexels.com/photos/302743/pexels-photo-302743.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+           },
+           {
+               title: 'My awesome third blog post',
+               thumbnail: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUUtLRjmC_LmiaPjhKq_mSL8nmRr5bJMi5_KlOwSIhXu5vV60aIKgC1o9LmDm6C92o73c:https://images.pexels.com/photos/1280162/pexels-photo-1280162.jpeg%3Fcs%3Dsrgb%26dl%3Dpexels-jeswin-thomas-1280162.jpg%26fm%3Djpg&usqp=CAU',
+           },
+       ];
+           template = $.trim( $('#blogTemplate').html() ),
+           frag = '';
+  
+ 
+           $.each( content, function( index, obj ) {
+               frag +=
+               template.replace( /{{title}}/ig, obj.title)
+                       .replace( /{{thumbnail}}/ig, obj.thumbnail);
+           });
+           $('body').append(frag);
+       })();
+   </script>
+</body>
+</html>
+ 
+
