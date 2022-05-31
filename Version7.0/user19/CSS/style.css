@@ -2,7 +2,8 @@
     margin: 50px;
     font-size: 100%;
     line-height: 1.5;
-    font-family: Roboto;
+    font-family: "Comic Sans MS";
+    color: blue;
 }
 
 button {
@@ -34,10 +35,42 @@ li li li li {
 }
 
 h1 {
-    font-family: "Fjalla One", sans-serif;
+    font-family: "Comic Sans MS";
     font-size: 2em;
     text-transform: uppercase;
     font-weight: 400;
     border-bottom: 1px solid black;
     margin-bottom: 1em;
+    color: blue;
 }
+
+body {
+  background-image: url(http://24.media.tumblr.com/tumblr_ltuhtjmASH1r532ffo1_250.gif);
+}
+
+p {
+    font-family: "Comic Sans MS";
+    color: blue;
+}
+
+h2 {
+    font-family: "Comic Sans MS";
+    color: blue;
+}
+
+h3 {
+    font-family: "Comic Sans MS";
+    color: blue;
+}
+    
+table {
+    font-family: "Comic Sans MS";
+    color: blue;
+    
+}
+
+ul {
+    font-family: "Comic Sans MS";
+    color: blue;
+}
+
