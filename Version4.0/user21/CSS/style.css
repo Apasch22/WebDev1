@@ -1,3 +1,5 @@
+@import url(rainbow.css);
+
 table {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
 	color: #003366;
@@ -202,15 +204,39 @@ h6 {
 	background-color: yellow;
 }
 
-#hireButtons{
+#hireButtons {
 	background-color: rgb(56, 255, 228);
 }
 
-#footerTable{
+#footerTable {
 	background-color: #9b14b3;
 }
 
-*{
-color: darkslateblue;
-background-color: rgb(163, 207, 243);
+* {
+	color: darkslateblue;
+	background-color: rgb(163, 207, 243);
 }
+
+#knowledge>* {
+	border: 3px red solid;
+}
+
+p+* {
+	background-color: #FFFF00;
+}
+
+div li::marker {
+	color: red;
+}
+
+div li::marker {
+	content: "😜 ";
+}
+
+div li::marker>* {
+	content: "-"
+}
+
+td:hover {
+	background-color: black;
+  }
