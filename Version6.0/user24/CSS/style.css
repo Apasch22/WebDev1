@@ -31,3 +31,41 @@
     border-bottom: 1px solid black;
     margin-bottom: 1em;
   }
+
+  #para {
+    text-align: center;
+    font-size: 50px;
+  }
+
+  #new_div_3 {
+    margin: 0 auto;
+    position: relative;
+    width: 60%;
+    display: none;
+  }
+
+  #paraa {
+    display: inline;
+  }
+
+  body {
+    background: #333;
+  }
+  #options {
+    position: absolute;
+    bottom: 20px;
+    color: #fff;
+    font-size: 150%;
+    border: 1px dotted #ddd;
+    padding: 5px;
+  }
+  #options input {
+    display: block;
+  }
+  #options input#makeAnimation {
+    display: inline;
+  }
+  #options label span {
+    color: #ddd; font-weight: bold;
+  }
+  

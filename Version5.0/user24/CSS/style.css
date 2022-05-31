@@ -43,3 +43,16 @@ a.skip-main:focus,a.skip-main:active {
     font-size: 1.2em;
     z-index: 999;
 }
+.parallax {
+  /* The image used */
+  background-image: url("mountains.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
