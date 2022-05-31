@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JQuery 23</title>
+  </head>
+  <body>
+    <h1>Save your Username and Password</h1>
+    <form action="#">
+      <textarea name="content" id="content" cols="30" rows="10"></textarea>
+    </form>
+    <p><button type="submit">Save</button></p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <script>
+      $.post("load.php", function (data) {
+        if (data) {
+          $("#content").val(data);
+        }
+      });
+
+      $("form").on("submit", function (e) {
+        $.post("Save.php", $(this).serialize, function (data) {
+          alert(response);
+        });
+
+        e.preventDefault();
+      });
+    </script>
+  </body>
+</html>
