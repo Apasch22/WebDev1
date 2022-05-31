@@ -173,15 +173,16 @@ span.min-temperature {
     </div>
 </center>
 <script>
-    if ($temp <= 40); {
+  var temp = <?php $data->main->temp_max; ?>
+    if (temp <= 40); {
     $('.report-container').css = 'background-color' = 'black';
-} elseif ($temp <= 50 && $temp >= 41); {
+} elseif (temp <= 50 && temp >= 41); {
     $('.report-container').css = 'background-color' = 'darkblue';
-} elseif ($temp <= 60 && $temp >= 51); {
+} elseif (temp <= 60 && temp >= 51); {
     $('.report-container').css = 'background-color' = 'blue';
-} elseif ($temp <= 70 && $temp >= 61); {
+} elseif (temp <= 70 && temp >= 61); {
     $('.report-container').css = 'background-color' = 'lightblue';
-} elseif ($temp >= 71); {
+} elseif (temp >= 71); {
     $('.report-container').css = 'background-color' = 'white';
 }
 </script>
