@@ -1,0 +1,81 @@
+<!DOCTYPE = html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Mustache</title>
+    <script src="JS/handlebars-v4.7.7.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <style>
+        h2 span {
+            color: gray;
+            font-size: large;
+        }
+
+        body {
+            background-color:lightgray;
+        }
+
+        ul li {
+            background-color: beige;
+            list-style: none;
+        }
+
+        li p {
+            color: red;
+        }
+
+        .list-item {
+            margin-top: 40px;
+        }
+    </style>
+  </head>
+  <body>
+
+<ul class="tweets">
+<script id="template" type="text/x-handlebars-template">
+    {{#each this}}
+    <li class="list-item">
+        <h2>{{fullName author}} {{#if age}}<span>- {{age}}</span>{{/if}}</h2>
+        <p>{{tweet}}</p>
+
+        {{#if quote}}
+        <h5>{{quote}}</h5>
+        {{else}}
+        <h5>Author does not have a quote</h5>
+        {{/if}}
+    </li>
+    {{/each}}
+</script>
+</ul>
+
+<script>
+(function() {
+    var data = [
+    {
+        author: { first: 'Jeffrey', last: 'Way', age: '22'},
+        tweet: 'I am learning jQuery.'
+    },
+    {
+        author: { first: 'John', last: 'Way', age: '19'},
+        tweet: 'I am also learning jQuery.',
+        quote: 'This is a quote'
+    },
+    {
+        author: { first: 'Jim', last: 'Way', age: '14'},
+        tweet: 'I am not learning jQuery.',
+        quote: 'This is another quote'
+    }
+];
+
+Handlebars.registerHelper('fullName', function( author ) {
+    return author.first + ' ' + author.last + ' - ' + author.age;
+});
+
+    var template = Handlebars.compile($('#template').html());
+    
+    $('ul.tweets').append(template(data));
+
+})();
+</script>
+  </body>
+</html>
