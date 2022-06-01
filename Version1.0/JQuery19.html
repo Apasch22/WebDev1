@@ -6,7 +6,11 @@
     </head>
     <body>
         <ul class="tweets">
-
+<script id="tweets-template" type=""text/x-handlebars-template>
+<li>
+    <img scr="" alt=""
+</li>
+</script>
         </ul>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -15,11 +19,32 @@
 
 <script>
     (function() {
+        
         var Tweitter = {
             init: function() {
-                this.url ='search.twiter.com'
+                this.url ='search.twiter.com/search.json?q=tutspremium';
+                this.fetch();
+
+            },
+
+            fetch: function() {
+                var self = this;
+
+                $.getJSON( this.url, function( data ){
+                    var tweets = $.map (data.results, function(tweet){
+                        return {
+                            author: tweet.from_user,
+                            tweet: tweet.text,
+                            thumb: tweet.profile_image_url,
+                            url: 'http://twitter.com/' +tweet.from_user + '/status/' + tweet.id_str
+
+                        };
+                    });
+                    self.attachTemplate()
+                });
             }
-        }
+        };
+        Twiter.init();
     })();
 </script>
 
