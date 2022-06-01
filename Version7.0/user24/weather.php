@@ -8,8 +8,6 @@ if ($units == 'metric'){//Changes the $temp varaible to match
 else {
     $temp = "F";
 }
-
-
 $googleApiUrl = "http://api.openweathermap.org/data/2.5/weather?id=" . $cityId . "&lang=en&units=" . $units . "&APPID=" . $apiKey;
 
 $ch = curl_init();
