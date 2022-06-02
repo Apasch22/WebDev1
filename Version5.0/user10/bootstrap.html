@@ -7,6 +7,27 @@
 
 <head>
     <title>My Bootstrap Sample</title>
+    <div class="menu">
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+          <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+          <button type="button" class="navbar-toggler" data-toggle="collapse" 
+                  data-target="#navbarCollapse">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+              <div class="navbar-nav">       
+                  <a href="#" class="nav-item nav-link active">Home</a>
+                  <a href="aboutMe.html" class="nav-item nav-link">About Me</a>
+                  <a href="music.html" class="nav-item nav-link disabled" tabindex="-1">Music</a>
+                  <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled" 
+                           tabindex="-1">Contact</a>
+              </div>
+              <div class="navbar-nav ml-auto">
+                  <a href="#" class="nav-item nav-link disabled">Login</a>
+              </div>
+          </div>
+      </nav>
+  </div>
 
     <!-- Bootstrap meta data -->
     <meta charset="utf-8">
@@ -31,6 +52,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <style>
+        .table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(255, 0, 0, 0.3);
+}
         .demo-content {
             padding: 15px;
             font-size: 18px;
@@ -54,6 +78,7 @@
         <p class="lead"> Let's look at the man different examples of how we can use bootstrap and what bootstrap can do!
         </p>
     </div>
+    <a href="form.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Form Page</a>
 
     <!---------Three Column Layouts--------->
     <div class="container mt-3">
@@ -83,8 +108,7 @@
             <div class="col-md-9">
                 <div class="demo-content bg-alt">.col-md-9</div>
             </div>
-        </div>
-
+        </div>      
         <!---------Auto Layout Columns--------->
         <div class="row">
             <div class="col demo-content">Column one</div>
@@ -105,10 +129,110 @@
             </div>
             <div class="col-md-12 col-lg-3">
                 <div class="demo-content">.col-md-12 .col-lg-3</div>
+                <div class="container mt-3">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action active">
+                            <i class="fa fa-home"></i> Home
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <i class="fa fa-camera"></i> Pictures <span class="badge badge-pill badge-primary pull-right">145</span>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <i class="fa fa-music"></i> Music <span class="badge badge-pill badge-primary pull-right">50</span>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <i class="fa fa-film"></i> Videos <span class="badge badge-pill badge-primary pull-right">8</span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
+    <!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
+    <style>.page-footer{
+        background-color:rgb(66, 250, 20);
+    }</style>
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+  
+      <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+  
+          <!-- Content -->
+          <h5 class="text-uppercase">Join The Gang</h5>
+          <p>Join me in my mission to be cool!</p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none pb-3">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+  
+          <!-- Links -->
+          <h5 class="text-uppercase">Sports Links</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!"https://www.nba.com/>NBA.com</a>
+            </li>
+            <li>
+              <a href="#!">NHL.com</a>
+            </li>
+            <li>
+              <a href="#!">MLB.com</a>
+            </li>
+            <li>
+              <a href="#!">NFL.com</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+  
+          <!-- Links -->
+          <h5 class="text-uppercase">My Links</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">My Youtube</a>
+            </li>
+            <li>
+              <a href="#!">My Twitch</a>
+            </li>
+            <li>
+              <a href="#!">My Twitter</a>
+            </li>
+            <li>
+              <a href="#!">My Instagram</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="/"> MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
 </body>
 
 </html>
