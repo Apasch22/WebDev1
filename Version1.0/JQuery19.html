@@ -8,8 +8,11 @@
         <ul class="tweets">
 <script id="tweets-template" type=""text/x-handlebars-template>
 <li>
-    <img scr="" alt=""
+    {{#each this}}
+    <img scr="{{thumb}}" alt="{{author}}">
+    <p><a href="{{url}}">{{tweet}}</a></p>
 </li>
+{{/each}}
 </script>
         </ul>
 
@@ -21,9 +24,18 @@
     (function() {
         
         var Tweitter = {
-            init: function() {
-                this.url ='search.twiter.com/search.json?q=tutspremium';
+            init: function( config ) {
+                this.url ='http://search.twitter.com/search.json?q=' +config.query +'&callback=?';
+                
+                this.template = config.template;
+                this.container = config.container;
                 this.fetch();
+
+            },
+            attachTemplate: function(){
+                var template = Handlebars.compile( this.template);
+
+                this.container.append((this.tweets));
 
             },
 
@@ -44,7 +56,11 @@
                 });
             }
         };
-        Twiter.init();
+        Twiter.init({
+            template: $('#tweets-template').html(),
+        container: $('ul.tweets'),
+        query: 'Justin Bieber'
+        });
     })();
 </script>
 
