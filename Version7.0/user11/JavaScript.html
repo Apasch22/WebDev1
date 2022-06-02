@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 7.0
+        Name: QUang Vinh Vo 
+        Date Completed: 05/09/2022
+    -->
+
+ <head>
+
+    <title>Web Dev User 11 </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <style>
+        footer {
+            font-size: 15px;
+            text-align: center;
+        }
+        footer div{background-color: #0d47a1}
+    </style>
+ </head>
+
+ <body>
+    <!---------------------------------- Begin the nav-bar ------------->
+    <div class="menu">
+        <nav class="navbar navbar-expand-md-flex-flow: row nowrap navbar-dark bg-dark">
+            <a href="http://shakonet.isd720.com" class="navbar-brand">Menu</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="aboutThem.html" class="nav-item nav-link active">About them</a>
+                    <a href="footballMatches.html" class="nav-item nav-link active">Matches</a>
+                    <a href="Salary.html" class="nav-item nav-link active">Salary</a>
+                    <a href="games.html" class="nav-item nav-link active">Games</a>
+                    <a href="music.html" class="nav-item nav-link active">Music</a>
+                    <a href="JavaScript.html" class="nav-item nav-link active">JavaScript</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!---------------------------------- End the nav-bar ------------->
+
+    <main class="wideMargin">
+
+        <h1 class="text-left my-3">JavaScript</h1><!-- Edit this line for the title of your page -->
+
+        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+
+        <h4>
+            The First
+        </h4>
+        <script>
+            function writeMessage() {
+              document.forms[0].mySecondInput.value = document.forms[0].myInput.value;
+            }
+            </script>
+            
+            <p>Type some text on the left box and you will see some changes.</p>
+            
+            <form>
+              Enter your name:
+              <input type="text" name="myInput" onkeyup="writeMessage()" size="20">
+              <input type="text" name="mySecondInput" size="20">
+            </form>
+        
+        <h4>
+            The second
+        </h4>
+
+        <script>
+            function changeBorder(id) {
+              document.getElementById(id).style.border = "5px solid";
+            }
+            </script>
+            <table style="border:1px solid black" id="myTable">
+              <tr>
+                <td>100</td>
+                <td>200</td>
+              </tr>
+              <tr>
+                <td>300</td>
+                <td>400</td>
+              </tr>
+            </table>
+            
+            <p>
+            <input type="button" onclick="changeBorder('myTable')" value="Change Border">
+        </p>
+            
+
+        <h4>
+            The third
+        </h4>
+
+        <iframe id="myframe" src="demo_iframe.htm">
+            <p>Your browser does not support iframes.</p>
+            </iframe>
+            
+            <p>Click the button to change the background color of the document in the iframe.</p>
+            
+            <p id="demo"></p>
+            
+            <button onclick="myFunction()">Try it</button>
+            
+            <script>
+            function myFunction() {
+              var x = document.getElementById("myframe");
+              x.style.backgroundColor = "red";
+            }
+        </script>
+
+<h5>
+    Click here 
+</h5>
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9maIq7rkcCULTtegNpb1Kr9dzKQZZSBY0PGdSL0gQT--TjtXrSqSAgzR5w7GI6igf9eU:https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg&usqp=CAU" alt="Picture of the Tree" width="50%" height="50%">
+<script>
+    (function() {
+     var img = $('img').hide();
+     jQuery.fn.flash = function( speed,easing, callback ) {
+         var $this = $(this);
+         
+         return $this.fadeIn(500, function() {
+             $this.delay(3000).fadeOut(500);
+         });
+     };
+     $('h5').on('click', function() {
+         img.flash();
+     });
+     })();
+ </script>
+
+            
+        <!---------------------------------- Begin the footer ------------->
+    <footer class="wideMargin">
+        <p>
+            Webpage made by <a href="#" target="_blank">[Quang Vinh Vo]</a>
+        </p>
+    </footer>
+    <!---------------------------------- End the footer ------------->
+</body>
+
+</html>
+
+
+     
+  
+
+        

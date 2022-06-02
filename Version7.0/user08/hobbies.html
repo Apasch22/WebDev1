@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--Version 3.0
+        Name: William Baker
+        Date Completed: 4/21/22
+    -->
+
+  <head>
+    <title>Web Dev User 08</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="SHS WebDev Version 3.0" />
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://iconifier.net/iconified/20220511235938_IMG-1503/favicon.ico"
+    />
+
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="JS/Script.js"></script>
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+      .menu {
+        margin: 0px;
+      }
+
+      .wideMargin {
+        margin: 15px;
+      }
+      footer {
+        font-size: 16px;
+        text-align: center;
+        background-color: rgb(202, 195, 195);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!---------------------------------- Begin the nav-bar ------------->
+    <div class="menu">
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav">
+            <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+            <a href="index.html" class="nav-item nav-link active">Home</a>
+
+            <a href="Favorites.html" class="nav-item nav-link active"
+              >Favorites</a
+            >
+
+            <a href="games.html" class="nav-item nav-link active" tabindex="-1"
+              >Games</a
+            >
+            <a
+              href="hobbies.html"
+              class="nav-item nav-link active"
+              tabindex="-1"
+              >My Hobbies</a
+            >
+            <!---------------------------------- Edit These Items in your Menu ^ ------------->
+          </div>
+          <div class="navbar-nav ml-auto">
+            <a href="login.html" class="nav-item nav-link active">Login</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <h2>My Hobbies include...</h2>
+    <div class="row">
+      <div
+        onmouseover="style.color='red'"
+        onmouseout="style.color='black'"
+        class="col demo-content"
+      >
+        Playing Video Games.
+      </div>
+      <div
+        onmouseover="style.color='blue'"
+        onmouseout="style.color='black'"
+        class="col demo-content bg-alt"
+      >
+        Going outside to throw around some balls (football, baseball, etc).
+      </div>
+      <div
+        onmouseover="style.color='red'"
+        onmouseout="style.color='black'"
+        class="col demo-content"
+      >
+        Going to the lake to fish every once in a while.
+      </div>
+      <div
+        onmouseover="style.color='blue'"
+        onmouseout="style.color='black'"
+        class="col demo-content bg-alt"
+      >
+        Watching sports (mainly football).
+      </div>
+      <div
+        onmouseover="style.color='red'"
+        onmouseout="style.color='black'"
+        class="col demo-content"
+      >
+        Hanging out with friends after school.
+      </div>
+      <div
+        onmouseover="style.color='blue'"
+        onmouseout="style.color='black'"
+        class="col demo-content bg-alt"
+      >
+        Collecting Pokemon Cards.
+      </div>
+    </div>
+    <div class="row">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4v1gyGWl4Y7SGrO7IVPrHTRbjZLbVPN_EE7G7Pr3b7Pm29cHzwWnQP_1Llq-lCCw6wcw:https://s17189.pcdn.co/blog/wp-content/uploads/2018/04/jeshoots-com-250229-unsplash.jpg&usqp=CAU"
+      />
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT6_piqn1MTdmoElo_ywXqiRUZfcAlCNm8c5ZGxdVtmj6NrcbGVcUXRmR4YEk9OczloLU:https://www.liveabout.com/thmb/_5KZ3Au2b_1Ewm9rdb-BrzJ02_s%3D/4715x3536/smart/filters:no_upscale()/usa--florida--jupiter--young-men-playing-football-on-beach-545866779-59b9c7ee845b3400100c8e39.jpg&usqp=CAU"
+      />
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO3fEKt8FUM6Pq_ba3wj4iYE0dfdten3KIBOQavV5a1mnq8jA9Rs_qbJPiTjWsxbLUlpE:https://freshwatervacationrentals.com/wp-content/uploads/2020/06/fishing.jpg&usqp=CAU"
+      />
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbZTyPCIAGdxcBK-DTSn74tZMYZmP38jsBzFU8HJOHbIafNSKbb_OgOnNY7JqfYbuHLt0:https://merriam-webster.com/assets/mw/images/article/art-wap-landing-mp-lg/man-watching-football-at-home-7033-84d73545782891fd80ad66ac9559144a%401x.jpg&usqp=CAU"
+      />
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdEG_ImUD38Yc-b2xNBU5x7NBCPXF7Eh0VacdW44Ty2UMEjPwLNf3VxlcLIEeaCSFOA80:https://riverview.org/blog/wp-content/uploads/2017/07/social-health-300x200.jpg&usqp=CAU"
+      />
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqIjdRdmBP5d01UkmZrOS9Sh3MwuoB4_EELm_WmGG7qyXWcY804V-f-8GShow2s0zJRP8:https://content.api.news/v3/images/bin/03ceefa6be066f6daf97a0f53a52ac80&usqp=CAU"
+      />
+    </div>
+    <footer class="page-footer font-small blue pt-4">
+      <!-- Footer Links -->
+      <div class="container-fluid text-center text-md-left">
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-6 mt-md-0 mt-3">
+            <!-- Content -->
+            <h4 class="text-uppercase">About Me</h4>
+            <p>
+              Hello! My name is William Baker and this is my first "real"
+              website and there are a few things that I can improve on, but I'm
+              working on it. I use a variety of social medias, which are located
+              on this footer, but that is not all of them. If you have any
+              further questions contact me using one of the contact informations
+              that are given or use one of the social medias provided.
+            </p>
+          </div>
+
+          <!-- Grid column -->
+
+          <hr class="clearfix w-100 d-md-none pb-3" />
+
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+            <!-- Links -->
+            <h5 class="text-uppercase">Social Media</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="https://www.instagram.com/willsaroun_2/">Instagram</a>
+                <i class="fa fa-instagram"></i>
+              </li>
+              <li>
+                <a href="#!">Facebook</a>
+                <i class="fa fa-facebook"></i>
+              </li>
+              <li>
+                <a href="#!">Twitter</a>
+                <i class="fa fa-twitter"></i>
+              </li>
+              <li>
+                <a href="https://m.twitch.tv/willsaroun">Twitch</a>
+                <i class="fa fa-twitch"></i>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+            <!-- Links -->
+            <h5 class="text-uppercase">Contact Me</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a>231143@shakopeeschools.org</a>
+              </li>
+              <li>
+                <a>Mail-address</a>
+              </li>
+              <li>
+                <a>Homeexample@example.com</a>
+              </li>
+              <li>
+                <a>763-596-7000 (not actual number)</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+      <!-- Footer Links -->
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">
+        © 2022 Copyright:
+        <a href="index.html"> William Baker</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+  </body>
+</html>

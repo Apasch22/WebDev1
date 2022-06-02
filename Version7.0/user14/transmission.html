@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--Version 7.0 
+    Name: Derrick Damjanovic
+    Date Completed: May 9 2022
+-->
+
+  <head>
+    <title>Components of Cars: Transmissions</title>
+
+    <!-- Bootstrap meta data -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="Components of Cars" />
+
+    <!-- CSS -->
+    <!--Bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <!-- Styles -->
+    <link rel="stylesheet" href="CSS/style.css" />
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="images/v8engine.ico" />
+
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="/Version7.0/user14/JS/JavaScript.js"></script>
+
+<!--Internal Styles-->
+    <style>
+    .textholder-blue {
+    background-color:steelblue;
+    margin: 50px 0px;
+    border: 1px black solid;
+    padding: 10px 10px;
+    }
+
+    .maintext-beige {
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    color:beige;
+    }
+
+    .table-text {
+      font-weight: 350;
+      font-size: x-large;
+    }
+
+    .table-text-bold{
+      font-weight: 600;
+      font-size: x-large;
+    }
+    </style>
+    </head>
+    <body>
+        <!--Navbar Start-->
+    <div class="menu">
+        <nav class="navbar navbar-expand-md navbar-custom">
+          <div class="navbar-nav">
+            <a href="index.html" class="navtext nav-item nav-link">Home</a>
+            <a href="overview.html" class="navtext nav-item nav-link">Overview</a>
+            <a href="engine.html" class="navtext nav-item nav-link">Engines</a>
+            <a href="#" class="navtext nav-item nav-link nav-activepage"
+              >Transmissions</a
+            >
+          </div>
+        </nav>
+      </div>
+      <!--Navbar End-->
+      <!--Main Content Start-->
+    <main class="widemargin">
+      <section>
+        <article>
+          <p class="spacer"></p>
+          <h1 class="section-header">Transmissions</h1>
+          <div class="textholder-blue">
+            <p class="maintext-beige">Many types of transmissions are found in cars. The transmissions you will learn about are the manual, automatic, sequential and dual clutch transmissions.</p>
+          </div>
+          <!--Bootstrap-->
+          <div class="imageholder" style="margin-bottom: 5px;">
+            <div class="row">
+              <div class="col">
+                <img onmousemove="imageHoverAutomatic()" onmouseout="clearImageHoverText()" class="mediumimage" src="images/automatictransmission2.png" alt="Automatic Transmission">
+                <img onmousemove="imageHoverManual()" onmouseout="clearImageHoverText()" class="mediumimage" src="images/manualtransmission.png" alt="Manual Transmission">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <img onmousemove="imageHoverSequential()" onmouseout="clearImageHoverText()" class="mediumimage" src="images/sequentialtransmission.jpg" alt="Sequential Transmission">
+                <img onmousemove="imageHoverDCT()" onmouseout="clearImageHoverText()" class="mediumimage" src="images/dualclutchtransmission2.jpeg" alt="Dual Clutch Transmission">
+              </div>
+            </div>
+          </div>
+          <center>
+          <p id="imageHoverText" class="smalltext-black" >Hover over an image above to see which transmission it is.</p>
+          </center>
+        </article>
+        <p class="spacer"></p>
+        <article>
+          <!--https://www.jdpower.com/cars/shopping-guides/what-is-a-transmission-in-a-car-->
+          <h1 class="section-header">What do transmissions do?</h1>
+          <div class="textholder-blue">
+            <p class="maintext-beige">Transmissions help you control how much power is being delivered to your car so your engine isn't spinning to fast or too slow. Transmissions are needed in cars because without it, the engine would destroy itself. Transmissions have different gears and can change those gears based on your acceleration and speed. </p>
+          </div>
+        </article>
+        <hr>
+        <p class="spacer"></p>
+        <article>
+          <h1 class="section-header">Automatic Transmissions</h1>
+          <div class="textholder-blue">
+            <p class="maintext-beige">Automatic transmissions don't require human input to change gears. Instead, automatic transmissions use sensors and processors to automatically shift gears. The engine is always rotating, but the rotation from the engine needs to be disconnected from the transmission so it can shift properly. To solve this, automatic transmissions use torque converters to help the transmission shift correctly and prevent the engine from stalling.</p>
+          </div>
+          <center>
+          <img class="largeimage rounded" src="images/automatictransmission.png" alt="Automatic Transmission">
+          </center>
+        </article>
+        <hr>
+        <p class="spacer"></p>
+        <article>
+          <h1 class="section-header">Manual Transmissions</h1>
+          <div class="textholder-blue">
+            <p class="maintext-beige">Manual transmissions require human input to shift gears. Drivers use a gear stick to affect how gears on the input shaft interact with the output shaft's gears. Drivers usually go through an H pattern to shift (shown below). Similar to how automatic transmissions use torque converters, manual transmissions use clutches to help disconnect the rotation of the engine from the transmission.</p>
+          </div>
+          <center>
+            <img class="largeimage rounded" src="images/manualtransmissionanimated.gif" alt="Manual Transmission Animated">
+          </center>
+        </article>
+        <hr>
+        <p class="spacer"></p>
+        <article>
+          <h1 class="section-header">Sequential Transmissions</h1>
+          <div class="textholder-blue">
+            <p class="maintext-beige">Sequential transmissions are a type of manual transmission. Unlike a regular manual transmission, drivers can only go forward and back to shift rather than going through an H pattern. This means you can only shift one gear up or one gear down from your current gear. These transmissions are faster than regular manual transmissions and are usually found in race cars.</p>
+          </div>
+          <center>
+            <img class="largeimage rounded" src="images/sequentialtransmissionanimated.gif" alt="Sequential Transmission Animated">
+          </center>
+        </article>
+        <hr>
+        <p class="spacer"></p>
+        <article>
+          <h1 class="section-header">Dual Clutch Transmissions</h1>
+          <div class="textholder-blue">
+            <p class="maintext-beige">Dual clutch transmissions (also called DCTs) work somewhat like manual transmissions but have two clutches and no shift pedal to operate. Usually, the two clutches house either the odd numbered gears or the even numbered gears. Unlike a regular manual transmission, the clutch engagement is controlled by electronics rather than the driver. These transmissions can shift very quickly because when one gear is selected, the next gear is already set up for the next shift. DCTs can also act as both an automatic and a manual transmission. In automatic mode, the next gear is pre-selected and the transmission will automatically change gears. In manual mode, the driver can select the next gear, usually by using paddle shifters.</p>
+          </div>
+          <center>
+            <img class="largeimage rounded" src="images/dualclutchtransmission.png" alt="Dual Clutch Transmission">
+          </center>
+        </article>
+      </section>
+      <p class="spacer"></p>
+      <!--Bootstrap-->
+      <!--Summary Table Start-->
+      <h1 class="section-header">Summary</h1>
+      <p class="spacer"></p>
+      <table class="table smalltext-black table-text">
+        <thead>
+          <tr>
+            <th scope="col" class="table-text-bold">Name</th>
+            <th scope="col" class="table-text-bold">Function</th>
+            <th scope="col" class="table-text-bold">Advantage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" class="table-text">Automatic</th>
+            <td>Does not require driver input to shift gears</td>
+            <td>Easy to use</td>
+          </tr>
+          <tr>
+            <th scope="row" class="table-text">Manual</th>
+            <td>Requires input from the driver to shift gears</td>
+            <td>Better control</td>
+          </tr>
+          <tr>
+            <th scope="row" class="table-text">Sequential</th>
+            <td>Similar to manual but slightly different input and only shifts up or down one gear</td>
+            <td>Fast shift time</td>
+          </tr>
+          <tr>
+            <th scope="row" class="table-text">Dual Clutch</th>
+            <td>Has two clutches and no clutch pedal</td>
+            <td>Fast shift time and fuel economy</td>
+          </tr>
+      </table>
+      <!--Summary Table End-->
+    </main>
+    <!--Main Content End-->
+    <!--Footer Start-->
+    <footer id="footer" class="pt-4">
+        <div class="container-fluid text-center text-md-left">
+          <div class="row">
+            <div class="col-md-5 mb-md-0 mb-5">
+              <h5 class="footer-text footer-header">Social Media & Contact Information</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="https://www.instagram.com/?hl=en" class="footer-text"
+                    >Instagram
+                    <img
+                      class="footer-image"
+                      src="/version7.0/user14/images/instagramlogo2.png"
+                      alt="Instagram"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/" class="footer-text"
+                    >Facebook
+                    <img
+                      class="footer-image"
+                      src="/version7.0/user14/images/facebooklogo2.png"
+                      alt="Facebook"
+                  /></a>
+                </li>
+                <li>
+                  <span class="footer-text"
+                    >302494@shakopeeschools.org<img
+                      class="footer-image"
+                      src="/version7.0/user14/images/gmailicon.png"
+                      alt="Gmail"
+                  /></span>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4 mb-md-0 mb-4">
+              <h5 class="footer-text footer-header">Navigation</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="index.html" class="footer-text">Home</a>
+                </li>
+                <li>
+                  <a href="overview.html" class="footer-text">Overview</a>
+                </li>
+                <li>
+                  <a href="engine.html" class="footer-text">Engines</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-text"
+                    >Transmissions</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3 mb-md-0 mb-3">
+              <p class="footer-text">Created May 9th 2022</p>
+              <p class="footer-text">WebDev14</p>
+                <p class="footer-text footer-text-copyright">© 2022 Copyright:
+                <a class="footer-text footer-text-copyright" href="https://mdbootstrap.com/">
+                MDBootstrap.com</a
+                >
+                </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </body>
+    </html>

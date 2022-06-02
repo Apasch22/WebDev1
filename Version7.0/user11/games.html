@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 7.0
+        Name: QUang Vinh Vo 
+        Date Completed: 05/09/2022
+    -->
+
+<head>
+
+    <title>Web Dev User 11 </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <style>
+        footer {
+            font-size: 15px;
+            text-align: center;
+        }
+        footer div{background-color: #0d47a1}
+    </style>
+</head>
+
+<body>
+    <!---------------------------------- Begin the nav-bar ------------->
+    <div class="menu">
+        <nav class="navbar navbar-expand-md-flex-flow: row nowrap navbar-dark bg-dark">
+            <a href="http://shakonet.isd720.com" class="navbar-brand">Menu</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="aboutThem.html" class="nav-item nav-link active">About them</a>
+                    <a href="footballMatches.html" class="nav-item nav-link active">Matches</a>
+                    <a href="Salary.html" class="nav-item nav-link active">Salary</a>
+                    <a href="games.html" class="nav-item nav-link active">Games</a>
+                    <a href="music.html" class="nav-item nav-link active">Music</a>
+                    <a href="JavaScript.html" class="nav-item nav-link active">JavaScript</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!---------------------------------- End the nav-bar ------------->
+
+    <main class="wideMargin">
+
+        <h1 class="text-left my-3">Games</h1><!-- Edit this line for the title of your page -->
+
+        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+        <p>
+          After done playing around, we play some games, shall we?
+        </p>
+        <p>
+         The first game below is you can ask anything and depend your question is, it will answer differently, basically this is just like you asking "Siri" but more cooler I would say.
+        </p>
+    </main>
+    <!-- Custom styles for this template -->
+    <style>
+        footer div{background-color: #0d47a1}
+    </style>
+    <table border="0" bgcolor="#3F729B" cellspacing="0" cellpadding="3">
+      <tr>
+      <td width="100%">
+      <p>Crystal Ball</p>
+      
+      <p>Please enter a yes/no question and it will respond</p>
+      <p>Warning: the crystal ball has a tendency to be sarcastic!</p>
+      <table width="40%" border="0">
+      <tr>
+      <td>
+      <form name="input1" method="post">
+      <input name="textfield" size=63>
+      </form>
+      </td>
+      </tr>
+      </table>
+      <table width="8%" border="0">
+      <tr>
+      <td>
+      <form method="post">
+      <input type="button" name="button1" value="Ask Me!"
+      onClick="getAnswers()">
+      </form>
+      </td>
+      </tr>
+      </table>
+      
+      <script language="JavaScript">
+      
+      //Crystal Ball Script - By Michael McDermott (mcdemf1@wfu.edu)
+      //http://www.wfu.edu/~mcdemf1
+      //Visit JavaScript Kit (http://javascriptkit.com) for script
+      
+      
+      function getAnswers() {
+      
+      time = new Date()
+      randominteger = time.getSeconds()
+      
+      if (document.input1.textfield.value == "") { 
+      alert("You dummy! You didn't enter anything into the Crystal Ball!!!")
+      return
+      }
+      
+      if (randominteger <= 3) answer="Did you really think so? Hahaha, I'm laughing now at your pitiful chances."
+      if ((randominteger >= 4) && (randominteger <= 6)) answer ="Yeah, it it's got a 65% chance of happening."
+      if ((randominteger >= 7) && (randominteger <= 9)) answer ="Oh come on! No way!"
+      if ((randominteger >= 10) && (randominteger <= 12)) answer ="As sure as I'm made of glass, this is likely to happen."
+      if ((randominteger >= 13) && (randominteger <= 15)) answer ="Why are you asking A CRYSTAL BALL? Do you really believe the answers?"
+      if ((randominteger >= 16) && (randominteger <= 18)) answer ="Give me a break, give me a break, break me off a piece of that NO!"
+      if ((randominteger >= 19) && (randominteger <= 21)) answer ="Good chances lie on the horizon."
+      if ((randominteger >= 22) && (randominteger <= 24)) answer ="Ask me again, I am restless and overworked."
+      if ((randominteger >= 25) && (randominteger <= 27)) answer ="Do you know how the Crystal Ball works? There's your answer."
+      if ((randominteger >= 28) && (randominteger <= 30)) answer ="As the sun is hot, your answer is YES."
+      if ((randominteger >= 31) && (randominteger <= 33)) answer ="Did you get drunk last weekend? There's your answer."
+      if ((randominteger >= 34) && (randominteger <= 36)) answer ="Forget about it"
+      if ((randominteger >= 37) && (randominteger <= 39)) answer ="Yeah, it could happen. 80% chance."
+      if ((randominteger >= 40) && (randominteger <= 42)) answer ="Hitler has a better chance of raising from the dead."
+      if ((randominteger >= 43) && (randominteger <= 45)) answer ="If you really think so, then it shall be."
+      if ((randominteger >= 46) && (randominteger <= 48)) answer ="Who said ambiguous answers were bad? Not me, so YES!"
+      if ((randominteger >= 49) && (randominteger <= 51)) answer ="You think I'm going to answer that after a day of hard work? Ask again later."
+      if ((randominteger >= 52) && (randominteger <= 54)) answer ="If you own a pet, yes. Otherwise, no."
+      if ((randominteger >= 55) && (randominteger <= 57)) answer ="The sun will rise in the east and set in the west. Thank you Captain Obvious. YES!"
+      if ((randominteger >= 58) && (randominteger <= 60)) answer ="I'm laughing hard, very hard. You'd better ask again."
+      
+      var newWindow = window.open("","Results","width=300,height=300")
+      newWindow.document.write("<html><body bgcolor='#000000' text='#FFFFCC' link='#00FFFF' alink='#000066' vlink='#6666FF'>")
+      newWindow.document.write("<P align='center'>Your Question:</P><P></P>")
+      newWindow.document.write("<P align='center'>" + document.input1.textfield.value + "</P>")
+      newWindow.document.write("<P></P><P></P><P></P><P align='center'>The Great Crystal Ball Has Answered:</P><P></P>")
+      newWindow.document.write("")
+      newWindow.document.write("<P align='center'>" + answer + "</P>")
+      newWindow.document.write("<P></P><P></P><P align='center'><A HREF='javascript:window.close()'>Close Me</A></P>")
+      }
+      
+      </script>
+      
+      </td>
+      </tr>
+    </table>
+    </div>
+
+    <p>
+        The second game is guessing a word, this will test your memory and vocabs words you learned, and be careful press wrong word you may have to play again. 
+    </p>
+    <SCRIPT LANGUAGE="javascript">
+        /*
+        Script by Mike Mcgrath- http://website.lineone.net/~mike_mcgrath
+        Featured on JavaScript Kit (http://javascriptkit.com)
+        For this and over 400+ free scripts, visit http://javascriptkit.com
+        */
+        
+        var alpha=new Array();
+        var alpha_index=0;
+        
+        var bravo=new Array();
+        var bravo_index=0;
+        
+        var running=0;
+        var failnum=0;
+        var advising=0;
+        
+        function pick()
+        {
+          var choice="";
+          var blank=0;
+         
+          for (i=0; i<words[index].length; i++)
+          {
+            t=0;
+            for(j=0; j<=alpha_index; j++) 
+            if(words[index].charAt(i)==alpha[j] || words[index].charAt(i)==alpha[j].toLowerCase()) t=1;
+            
+            if (t) choice+=words[index].charAt(i)+" ";
+            else 
+            {
+              choice+="_ ";
+              blank=1;
+            }
+          }   
+            
+          document.f.word.value=choice;
+            
+          if (!blank)
+          {
+            document.f.tried.value="   === You Win! ===";
+            document.f.score.value++;
+            running=0;
+          }
+        } 
+        
+        
+        function new_word(form)
+        {
+          if(!running)
+          {
+            running=1;
+            failnum=0;
+            form.lives.value=failnum;
+            form.tried.value="";
+            form.word.value="";
+            index=Math.round(Math.random()*10000) % 100;
+            alpha[0]=words[index].charAt(0);
+            alpha[1]=words[index].charAt(words[index].length-1);
+            alpha_index=1;
+            bravo[0]=words[index].charAt(0);
+            bravo[1]=words[index].charAt(words[index].length-1);
+            bravo_index=1;
+            pick();
+          }
+          else advise("A word is already in play!");
+        }
+        
+        function seek(letter)
+        {
+          if (!running) advise(".....Click GO to start !");
+          else
+          {
+            t=0;
+            for (i=0; i<=bravo_index; i++)
+            {
+              if (bravo[i]==letter || bravo[i]==letter.toLowerCase()) t=1;
+            }
+        
+            if (!t) 
+              {
+                document.f.tried.value+=letter+" "
+                bravo_index++;
+                bravo[bravo_index]=letter;
+                
+              for(i=0;i<words[index].length;i++)
+                 if(words[index].charAt(i)==letter || words[index].charAt(i)==letter.toLowerCase()) t=1;
+                
+              if(t)
+              {
+                  alpha_index++;
+                  alpha[alpha_index]=letter;
+                }
+                else failnum++;
+            
+              document.f.lives.value=failnum;
+                if (failnum==6) 
+              {
+                document.f.tried.value="You lose - Try again!";
+                document.f.word.value=words[index];
+                document.f.score.value--;
+                running=0;
+              }
+                    else pick();
+              }
+              else advise("Letter "+letter+" is already used!");
+          }
+        }
+        
+        function advise(msg)
+        {
+          if (!advising)
+          {
+            advising=-1;
+            savetext=document.f.tried.value;  
+            document.f.tried.value=msg;
+            window.setTimeout("document.f.tried.value=savetext; advising=0;",1000);
+          }
+        }
+        
+        var words = new Array("","acrimonious","allegiance","ameliorate","annihilate","antiseptic","articulate","authoritative","benefactor","boisterous","breakthrough","carcinogenic","censorious","chivalrous","collarbone","commendable","compendium","comprehensive","conclusive","conscientious","considerate","deferential","denouement","determinate","diffidence","disruption","earthenware","elliptical","entanglement","escutcheon","extinguish","extradition","fastidious","flamboyant","forethought","forthright","gregarious","handmaiden","honeysuckle","hypocritical","illustrious","infallible","lumberjack","mischievous","mollycoddle","nimbleness","nonplussed","obliterate","obsequious","obstreperous","opalescent","ostensible","pandemonium","paraphernalia","pawnbroker","pedestrian","peremptory","perfunctory","pernicious","perpetrate","personable","pickpocket","poltergeist","precipitous","predicament","preposterous","presumptuous","prevaricate","propensity","provisional","pugnacious","ramshackle","rattlesnake","reciprocate","recrimination","redoubtable","relinquish","remonstrate","repository","reprehensible","resolution","resplendent","restitution","retaliation","retribution","saccharine","salubrious","skulduggery","skyscraper","soothsayer","tearjerker","transcribe","turpentine","unassuming","underscore","undertaker","underwrite","unobtrusive","vernacular","waterfront","watertight");
+        
+        </SCRIPT>
+        
+        
+        <FORM NAME="f">
+        
+        <TABLE BGCOLOR=#C0C0C0 BORDER=1>
+         <TR>
+          <TD COLSPAN=4 ALIGN=RIGHT>
+           Score : <INPUT TYPE=TEXT NAME="score" VALUE="0" onfocus="score.blur();" SIZE=2>
+           <BR>
+           Fails (0): <INPUT TYPE=TEXT NAME="lives" VALUE="0" onfocus="lives.blur();" SIZE=2>  
+          </TD>
+          <TD COLSPAN=7 ALIGN=CENTER>
+           <INPUT TYPE=TEXT NAME="word" VALUE="    --- Hangman ---" onfocus="word.blur();" SIZE=25> 
+            <BR>
+           <INPUT TYPE=TEXT NAME="tried" VALUE="Click GO to get a word." onfocus="tried.blur();" SIZE=25>  
+          </TD>
+          <TD COLSPAN=2 ALIGN=CENTER>
+           <INPUT TYPE=BUTTON onclick="new_word(this.form);" VALUE=" GO ">   
+          </TD>
+         </TR>
+         <TR>
+          <TD><INPUT TYPE=BUTTON VALUE=" A "   onclick="seek('A');"></TD>
+          <TD><INPUT TYPE=BUTTON VALUE=" B "   onclick="seek('B');"></TD>
+          <TD><INPUT TYPE=BUTTON VALUE=" C "   onclick="seek('C');"></TD>
+          <TD><INPUT TYPE=BUTTON VALUE=" D "   onclick="seek('D');"></TD>
+          <TD><INPUT TYPE=BUTTON VALUE=" E "   onclick="seek('E');"></TD>
+          <TD><INPUT TYPE=BUTTON VALUE=" F "   onclick="seek('F');"></TD>
+          <TD><INPUT TYPE=BUTTON VALUE=" G "   onclick="seek('G');"></TD>
+          <TD><INPUT TYPE=BUTTON VALUE=" H "   onclick="seek('H');"></TD>
+          <TD><INPUT TYPE=BUTTON VALUE=" I   " onclick="seek('I');"></TD>
+          <TD><INPUT TYPE=BUTTON VALUE=" J  "  onclick="seek('J');"></TD>
+          <TD><INPUT TYPE=BUTTON VALUE=" K "   onclick="seek('K');"></TD>
+          <TD><INPUT TYPE=BUTTON VALUE=" L  "  onclick="seek('L');"></TD>
+          <TD><INPUT TYPE=BUTTON VALUE=" M "   onclick="seek('M');"></TD>
+         </TR>
+         <TR>
+          <TD><INPUT TYPE=BUTTON VALUE=" N "   onclick="seek('N');"></TD>
+          <TD><INPUT TYPE=BUTTON VALUE=" O "   onclick="seek('O');"></TD>
+          <TD><INPUT TYPE=BUTTON VALUE=" P "   onclick="seek('P');"></TD>
+          <TD><INPUT TYPE=BUTTON VALUE=" Q "   onclick="seek('Q');"></TD>
+          <TD><INPUT TYPE=BUTTON VALUE=" R "   onclick="seek('R');"></TD>
+          <TD><INPUT TYPE=BUTTON VALUE=" S "   onclick="seek('S');"></TD>
+          <TD><INPUT TYPE=BUTTON VALUE=" T "   onclick="seek('T');"></TD>
+          <TD><INPUT TYPE=BUTTON VALUE=" U "   onclick="seek('U');"></TD>
+          <TD><INPUT TYPE=BUTTON VALUE=" V "   onclick="seek('V');"></TD>
+          <TD><INPUT TYPE=BUTTON VALUE=" W "   onclick="seek('W');"></TD>
+          <TD><INPUT TYPE=BUTTON VALUE=" X  "  onclick="seek('X');"></TD>
+          <TD><INPUT TYPE=BUTTON VALUE=" Y "   onclick="seek('Y');"></TD>
+          <TD><INPUT TYPE=BUTTON VALUE=" Z  "  onclick="seek('Z');"></TD>
+         </TR>
+         </TABLE>
+    </div>
+
+    <p>
+        The last game is Tic Tac Toe, you can with you friend.
+    </p>
+    <p>
+        Note; Player 1 is "X", Player 2 is "O".
+    </p>
+
+    <SCRIPT name = "JavaScript">
+        function variables(){
+            t = 1;
+            change = 1;    
+            empty1 = -1;
+            empty2 = -1;
+            empty3 = -1;
+            empty4 = -1;
+            empty5 = -1;
+            empty6 = -1;
+            empty7 = -1;
+            empty8 = -1;
+            empty9 = -1;
+            return;
+            whogoesnow = "Tour joueur 1"
+        }
+        
+        function win(){
+          if   (empty1==empty2 && empty2==empty3 && empty3==0 ||
+        empty4==empty5 && empty5==empty6 && empty6==0 ||    
+                empty7==empty8 && empty8==empty9 && empty9==0 ||
+                empty1==empty4 && empty4==empty7 && empty7==0 ||
+                empty2==empty5 && empty5==empty8 && empty8==0 ||
+                empty3==empty6 && empty6==empty9 && empty9==0 ||
+                empty1==empty5 && empty5==empty9 && empty9==0 ||
+                empty3==empty5 && empty5==empty7 && empty7==0 ){
+                alert ("Congratulations! Player 2 win.");          
+                history.go(0)  
+          }
+          if   (empty1==empty2 && empty2==empty3 && empty3==1 ||
+        empty4==empty5 && empty5==empty6 && empty6==1 ||    
+                empty7==empty8 && empty8==empty9 && empty9==1 ||
+                empty1==empty4 && empty4==empty7 && empty7==1 ||
+                empty2==empty5 && empty5==empty8 && empty8==1 ||
+                empty3==empty6 && empty6==empty9 && empty9==1 ||
+                empty1==empty5 && empty5==empty9 && empty9==1 ||
+                empty3==empty5 && empty5==empty7 && empty7==1 ){
+                alert ("Congratulations! Player 1 win.");
+            history.go(0)
+          }
+        }
+        
+        function turnchange(t){
+          if (change == 1)  {
+            if (t == 0){
+                t = 1;
+                whogoesnow = "Turn : Player " + 1
+            }
+            else {
+                t = 0;
+            whogoesnow = "Turn : Player " + 2
+            }
+            
+          }
+          else {
+            t = t;
+          }
+          change = 1  
+          return (t); 
+        }
+        
+        function changing(clicked){
+        if (clicked == 1){            
+           spot = empty1 ;}
+        if (clicked == 2){
+           spot = empty2 ;}
+        if (clicked == 3){
+           spot = empty3 ;}
+        if (clicked == 4){
+           spot = empty4 ;}
+        if (clicked == 5){
+           spot = empty5 ;}
+        if (clicked == 6){
+           spot = empty6 ;}
+        if (clicked == 7){
+           spot = empty7 ;}
+        if (clicked == 8){
+           spot = empty8 ;}
+        if (clicked == 9){
+           spot = empty9 ;}
+        
+        if (spot == -1){
+           if (t == 0){
+              xo = "  O  " ;	       	          
+              spot = 0             
+           }
+           else {
+              xo = "  X  "  ;              
+              spot = 1	     
+           }                              
+           if (clicked == 1){            
+              empty1 = spot;}
+           if (clicked == 2){
+              empty2 = spot ;}
+           if (clicked == 3){
+              empty3 = spot ;}
+           if (clicked == 4){
+              empty4 = spot ;}
+           if (clicked == 5){
+              empty5 = spot ;}
+           if (clicked == 6){
+              empty6 = spot ;}
+           if (clicked == 7){
+              empty7 = spot ;}
+           if (clicked == 8){
+              empty8 = spot ;}
+           if (clicked == 9){
+              empty9 = spot ;}
+        } 
+        else {
+           if (spot == 0){
+               xo = "  O  ";}
+           if (spot == 1){
+               xo = "  X  ";}
+           change = 0
+        }
+        return (xo) ;
+        }
+        
+        function change_b1(form){	
+            clicked = 1;    
+            changing(clicked) ;     
+            t = turnchange(t) ;  
+            form.b1.value = xo; 
+            form.whoseturn.value = whogoesnow        
+            win(); 
+           return;
+        }
+        function change_b2(form){	
+            clicked = 2;
+            changing(clicked) ;   
+            form.b2.value = xo;    
+            t = turnchange(t) ;
+            form.whoseturn.value = whogoesnow      
+            win();
+            return;
+        }
+        
+        function change_b3(form){	
+            clicked = 3;
+            changing(clicked) ;
+            form.b3.value = xo;         
+            t = turnchange(t) ;    
+            form.whoseturn.value = whogoesnow 
+            win();
+            return;   
+        }
+        
+        function change_b4(form){	
+            clicked = 4;
+            changing(clicked) ;
+            form.b4.value = xo;    
+            t = turnchange(t) ;    
+            form.whoseturn.value = whogoesnow     
+            win();
+            return;
+        }
+        
+        function change_b5(form){	
+            clicked = 5;
+            changing(clicked) ;
+            form.b5.value = xo;    
+            t = turnchange(t) ;
+            form.whoseturn.value = whogoesnow     
+            win();     
+            return;
+        }
+        
+        function change_b6(form){	
+            clicked = 6;
+            changing(clicked) ;
+            form.b6.value = xo;    
+            t = turnchange(t) ;
+            form.whoseturn.value = whogoesnow     
+            win();
+            return;
+        }
+        
+        function change_b7(form){	
+            clicked = 7;
+            changing(clicked) ;
+            form.b7.value = xo;    
+            t = turnchange(t) ; 
+            form.whoseturn.value = whogoesnow    
+            win();
+            return;
+        }
+        
+        function change_b8(form){	
+            clicked = 8;
+            changing(clicked) ;    
+            form.b8.value = xo;    
+            t = turnchange(t) ;
+            form.whoseturn.value = whogoesnow 
+            win();    
+            return;
+        }
+        
+        function change_b9(form){	
+            clicked = 9;
+            changing(clicked) ;
+            form.b9.value = xo;    
+            t = turnchange(t) ;
+            form.whoseturn.value = whogoesnow  
+            win();
+            return;
+        }
+        </SCRIPT>
+        
+        
+        <SCRIPT name = "JavaScript">
+        variables();
+        </SCRIPT>
+        
+        <FORM>
+        <input type = "button" name = "whoseturn" 
+         value = "Turn: Player  1">	 
+        <br><br><br><br>
+        <table>
+        <tr><td><input type = "button" name = "b1" value = "      "		 onClick =
+        change_b1(this.form)>  
+            <td><input type = "button" name = "b2" value = "      "		 onClick = change_b2(this.form)> 
+            <td><input type = "button" name = "b3" value = "      "		 onClick =
+        change_b3(this.form)> 
+        <tr><td><input type = "button" name = "b4" value = "      "		 onClick =
+        change_b4(this.form)> 
+            <td><input type = "button" name = "b5" value = "      "		 onClick = change_b5(this.form)> 
+            <td><input type = "button" name = "b6" value = "      "		 onClick =
+        change_b6(this.form)> 
+        <tr><td><input type = "button" name = "b7" value = "      "		 onClick =
+        change_b7(this.form)> 
+            <td><input type = "button" name = "b8" value = "      "		 onClick = change_b8(this.form)>   
+            <td><input type = "button" name = "b9" value = "      "
+        onClick = change_b9(this.form)> 
+        </table>
+        <br><br>
+        
+        <INPUT TYPE="button" VALUE="Reset" onClick="history.go(0)">
+        </script>
+    </body>
+    <p>
+        The 3 games above is I take from the website below. You can visit and can play more games they provide for you.
+    </p>
+    <p align="center">This free script provided by<br />
+       <a href=" http://www.javascriptkit.com/script/cutindex22.shtml">JavaScript
+    Kit</a></p>       
+   <!---------------------------------- Begin the footer ------------->
+   <footer class="wideMargin">
+    <p>
+        Webpage made by <a href="#" target="_blank">[Quang Vinh Vo]</a>
+    </p>
+</footer>
+<!---------------------------------- End the footer ------------->
+</body>
+
+</html>

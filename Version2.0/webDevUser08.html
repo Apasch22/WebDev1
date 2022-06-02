@@ -84,6 +84,39 @@
     <main class="wideMargin">
       <!-- Your 1st Heading-->
       <h1>About Me</h1>
+      <select
+        name="clr"
+        onchange="document.bgColor=this.options[this.selectedIndex].value"
+        size="1"
+      >
+        <br />
+        <option value="black">black</option>
+        <option value="orange">orange</option>
+        <option value="flamingred">fuschia</option>
+        <option value="lightyellow">light yellow</option>
+        <option value="green">green</option>
+        <option value="cyan">cyan</option>
+        <option value="yellow">yellow</option>
+        <option value="red">red</option>
+        <option value="white">white</option></select
+      >&nbsp;&nbsp;Background Color
+      <br />
+      <select
+        name="clr"
+        onchange="document.fgColor=this.options[this.selectedIndex].value"
+        size="1"
+      >
+        <br />
+        <option value="black">black</option>
+        <option value="orange">orange</option>
+        <option value="flamingred">fuschia</option>
+        <option value="lightyellow">light yellow</option>
+        <option value="cyan">cyan</option>
+        <option value="yellow">yellow</option>
+        <option value="red">red</option>
+        <option value="white">white</option></select
+      >&nbsp;&nbsp;Text Color
+
       <div id="tags">
         <p>
           This is my first webpage! I was able to code all the HTML and CSS in
@@ -93,6 +126,12 @@
         <h2>Heading Examples</h2>
 
         <!-- Put your Headings ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
+        <h2>To-Do List</h2>
+        <ul contenteditable="true">
+          <li>Break mechanical cab driver.</li>
+          <li>Drive to abandoned factory</li>
+          <li>Watch video of self</li>
+        </ul>
         <h1>Knock knock</h1>
         <h2>Whos there?</h2>
         <h3>Something funny</h3>

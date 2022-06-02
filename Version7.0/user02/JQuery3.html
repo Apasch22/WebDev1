@@ -1,0 +1,133 @@
+<html>
+<head>
+  <meta charset=utf-8>
+  <title>Coding Text</title>
+  <style>
+  body {
+      width: 600px;
+      margin: auto;
+    font-family: sans-serif;
+  }
+ 
+  #contact {
+      background: #e3e3e3;
+      padding: 1em 2em;
+      position: relative;
+   }
+ 
+   .js #contact {
+      position: absolute;
+      top: 0;
+      width: inherit;
+      display: inherit;
+   }
+ 
+   #contact h2 { margin-top: 0;}
+ 
+   #contact ul { padding: 0;}
+ 
+   #contact li {
+       list-style: none;
+       margin-bottom: 1em;
+   }
+ 
+   .close {
+       position: absolute;
+       right: 10px;
+       top: 10px;
+       font-weight: bold;
+       font-family: sans-serif;
+       cursor: pointer;
+   }
+ 
+   input, textarea {width: 100%; line-height: 2em;}
+   input[type=submit] {width: auto;}
+   label{display: block; text-align: left;}
+ 
+</style>
+</head>
+ 
+<body>
+  <article>
+      <h1>My Summary</h1>
+      <p>
+       Ten-year-old Harry Potter is an orphan who lives in the fictional London 
+       suburb of Little Whinging, Surrey, with the Dursleys: his uncaring Aunt 
+       Petunia, loathsome Uncle Vernon, and spoiled cousin Dudley. The Dursleys 
+       barely tolerate Harry, and Dudley bullies him. One day Harry is astonished 
+       to receive a letter addressed to him in the cupboard under the stairs 
+       (where he sleeps). Before he can open the letter, however, Uncle Vernon 
+       takes it. Letters for Harry subsequently arrive each day, in increasing 
+       numbers, but Uncle Vernon tears them all up, and finally, in an attempt 
+       to escape the missives, the Dursleys go to a miserable shack on a small 
+       island. On Harry’s 11th birthday, a giant named Hagrid arrives and reveals 
+       that Harry is a wizard and that he has been accepted at the Hogwarts 
+       School of Witchcraft and Wizardry. He also sheds light on Harry’s past, 
+       informing the boy that his parents, a wizard and a witch, were killed 
+       by the evil wizard Voldemort and that Harry acquired the lightning-bolt 
+       scar on his forehead during the fatal confrontation.
+      </p>
+      <p>
+          <span class=co><image src="images/favicon.ico" style="width:100px;height:100px;"></image></span>
+          Upon arrival at the school, the students are sorted into one of four houses—Gryffindor, Hufflepuff, Ravenclaw, or 
+          Slytherin. Harry ends up in Gryffindor, and during his eventful first year at Hogwarts he becomes close friends with 
+          two other members of the house, Ron Weasley, who comes from an old wizarding family, and Hermione Granger, whose parents 
+          are Muggles (those who are not magical). Harry also finds that he has an enemy in Draco Malfoy (Slytherin). In addition, 
+          Harry’s prowess in flying on a broomstick makes him a star of Gryffindor’s Quidditch team. Hoping to get Harry and his 
+          friends into trouble, Draco tricks them into leaving their rooms one night, a violation of school rules. While trying to 
+          avoid being caught, 
+          My friend once called a few house painters to his house for some work. 
+          He wanted them to paint his porch. After a few hours, the house painters 
+          came back for the payment as their work was complete. Before leaving they 
+          told my friend that they had enjoyed painting his car, but it is not really a Porsche.
+          </p>
+  </article>
+ 
+  <div id="contact">
+      <h2>Contact Me</h2>
+      <form action="#">
+          <ul>
+              <li>
+                  <label for="name">Name: </label>
+                  <input name="name" id="name">
+              </li>
+ 
+              <li>
+               <label for="email">Email Address: </label>
+               <input name="email" id="email">
+           </li>
+ 
+           <li>
+               <label for="comments">Hi?</label>
+               <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+           </li>
+       </li>
+       <input type="submit" value="Submit">
+   </li>
+          </ul>
+      </form>
+  </div>
+ 
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+ 
+  <script>
+      (function(){
+          $('html').addClass('js');
+          var contactform = {
+              init: function() {
+                  $('<button></button>', {
+                      text: 'Contact Me'
+ 
+              })
+                   .insertAfter('article:first');
+ 
+           }
+ 
+        };
+           contactform.init();
+ 
+       })();
+ 
+   </script>
+</body>
+</html>
