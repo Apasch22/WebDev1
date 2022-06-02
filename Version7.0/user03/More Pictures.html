@@ -21,121 +21,117 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <!-- Animate -->
-    <link rel="stylesheet" href="CSS/style.css">
+    
 
+    
     <!-- JavaScript -->
     <!-- These are needed to get the responsive menu to work -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
    
-    <script>
-        function bigImg(x) {
-          x.style.height = "375px";
-          x.style.width = "400px";
-        }
-        
-        function normalImg(x) {
-          x.style.height = "225px";
-          x.style.width = "250px";
-        }
-        </script>
+   
 
     <style>
         /* Internal Styling Here */
-        img {
-    display: block;
-    height: 150px;
-    width: 250px;
+body {
+    width: 600px;
+margin:100px auto 0;
 }
+* { margin: 0; padding: 0; }
     </style>
+    <link rel="stylesheet" href="slider.css">
 </head>
 
 <body>
- <!-- Navbar -->
- <div class="menu">
-    <nav class="nav navbar-dark bg-dark">
-        
-
-        <a href="index.html" class="nav-item nav-link active">Home</a>
-        <a href="Critically_Endangered.html" class="nav-item nav-link active">Critically Endangered</a>
-        <a href="Endangered.html" class="nav-item nav-link active">Endangered</a>
-        <a href="Vulnerable.html" class="nav-item nav-link active">Vulnerable</a>
-        <a href="Near_Threatend.html" class="nav-item nav-link active">Near Threatend</a>
-        <a href="Least_concerned.html" class="nav-item nav-link active">Least concerned</a>
-</nav>
-</div>
-    <!-- Navbar --> 
-
    <h4>Amur Leopard</h4>
+   <div classs="slider">
+       <ul>
+   <li><img src="images/Amur Leopard.jpeg" alt="Amur Leopard"></li>
 
-   <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/Amur Leopard.jpeg">
-
-    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0KF_5BivJSBHSLfbGiHjYpkBTBouPuEVBTA&usqp=CAU">
+    <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0KF_5BivJSBHSLfbGiHjYpkBTBouPuEVBTA&usqp=CAU" alt="Amur Leopard"></li>
     
-    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUb5EDlEgTYeSQlsrr_FZPphe7RZEvV37BPQ&usqp=CAU">
+    <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUb5EDlEgTYeSQlsrr_FZPphe7RZEvV37BPQ&usqp=CAU" alt="Amur Leopard"></li>
+    </ul>
+</div>
+
+<div id="slider-nav">
+    <button data-dir="prev">Previous</button>
+    <button data-dir="next">Next</button>
+</div>
 
    <h4>Blue Whale</h4>
-   <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/Blue Whale 2.jpeg">
+   <div classs="slider">
+   <ul>
+    <li><img src="images/Blue Whale 2.jpeg"></li>
 
-   <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/Blue Whale 3.jpeg">
+        <li><img src="images/Blue Whale 3.jpeg"></li>
 
-   <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/Blue Whale 4.jpeg">
+            <li><img src="images/Blue Whale 4.jpeg"></li>
 
-   <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/Blue Whale 5.jpeg">
+                <li><img src="images/Blue Whale 5.jpeg"></li>
+                </ul>
+            </div>
+
+            <div id="slider-nav">
+                <button data-dir="prev">Previous</button>
+                <button data-dir="next">Next</button>
+            </div>
+
    <h4>Giant Panda</h4>
-   <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/Giant Panda 3.jpg"
-   width="30%">
+   <div classs="slider">
+   <ul>
+   <li><img src="images/Giant Panda 3.jpg"></li>
 
-   <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/Giant Panda 4.jpg"
-       width="20%">
+   <li><img src="images/Giant Panda 4.jpg"></li>
 
-       <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/Giant panda.jpeg">
+    <li><img src="images/Giant panda.jpeg"></li>
+    </ul>
+</div>
+
+<div id="slider-nav">
+    <button data-dir="prev">Previous</button>
+    <button data-dir="next">Next</button>
+</div>
+
    <h4>White Rhino</h4>
-   <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/White rhino 3.jpg"
-   width="30%">
+   <div classs="slider"></div>
+   <ul>
+    <li><img src="images/White rhino 3.jpg"></li>
    
-   <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/White rhino 4.jpg"
-   width="30%">
+        <li><img src="images/White rhino 4.jpg"></li>
    
-   <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/White rhino 5.jpg"
-   width="30%">
+            <li><img src="images/White rhino 5.jpg"></li>
    
-   <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/White rhino.jpeg">
+                <li><img src="images/White rhino.jpeg"></li>
+                </ul>
+            </div>
+
+            <div id="slider-nav">
+                <button data-dir="prev">Previous</button>
+                <button data-dir="next">Next</button>
+            </div>
+
    <h4>Arctic Wolf</h4>
-   <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/Arctic Wolf 3.jpg"
-   width="30%">
+   <div classs="slider">
+   <ul>
+    <li><img src="images/Arctic Wolf 3.jpg"></li>
    
-   <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/Arctic Wolf 4.jpg"
-   width="30%">
+        <li><img src="images/Arctic Wolf 4.jpg"></li>
    
-   <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/Arctic Wolf.jpeg">
-<!-- Footer -->
-    <footer class="page-footer">
-        <style>
-            footer{background-color: rgb(10, 20, 54);}
-            footer{color: rgb(56, 239, 138);}
-            p{text-align: center;}
-        </style>
-        <section class="container-fluid text-center text-md-left">
-            <section class="row">
-                <section class="col-md-6 mt-md-0 mt-3">
-                    <h4 class="text-uppercase">More Information:</h4>
-                    <hr class="clearfix w-100 d-md-mnone pb-3" />
-                    <section class="col-md-3 mb-md-0 mb-3">
-                    </section>
-                        <h5 class="text-uppercase">Links</h5>
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="https://www.worldwildlife.org/">Help Animals</a>
-                            </li>
-                        </ul>
-                       </section>
-                    </section>
-                </section>
-                <p>
-                    Webpage made by [Tim Latzelsberger]</a>
-                </p>
-    </footer>
+            <li><img src="images/Arctic Wolf.jpeg"></li>
+            </ul>
+</div>
+
+<div id="slider-nav">
+    <button data-dir="prev">Previous</button>
+    <button data-dir="next">Next</button>
+</div>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+   <script src="slider.js"></script>
+   
+
+
 </body>
 </html>
