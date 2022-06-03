@@ -1,3 +1,5 @@
+
+   
 $(function(){
 	
 	//This is to remove the validation message if no poster image is present
