@@ -1,5 +1,5 @@
 <?php
-$apiKey = "API KEY"; //You will need to add in the 
+$apiKey = "ee18a637da42a5f3d5653b68ce3f7dca"; //You will need to add in the 
 $cityId = "5046997"; //5046997 Shakopee City Id
 $units = "metric";//metric-Celcius  imperial-Farhenheit
 if ($units == 'metric'){//Changes the $temp varaible to match 
@@ -51,7 +51,7 @@ body {
 }
 
 .weather-forecast {
-    color: #212121;
+    color: black;
     font-size: 1.2em;
     font-weight: bold;
     margin: 20px 0px;
