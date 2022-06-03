@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Appending content</title>
+    <style>
+      article {
+        width: 600px;
+        margin: auto;
+      }
+      blockquote.co {
+        float: right;
+        background: #e3e3e3;
+        font-size: 2em;
+        width: 25%;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <h1>My Awesome Post</h1>
+      <p>Words that hold no meaning are words that hit people the hardest.</p>
+      <p>
+        Shower thoughts are thoughts that are usually thought about when one is
+        in the shower, but is it still considered a shower thought if it's
+        outside of the shower,
+        <span class="co"
+          >Now this is a shower thought worth thinking about.</span
+        >
+      </p>
+      <p>
+        Shower thoughts are thoughts that are usually thought about when one is
+        in the shower, but <span class=co>is it still considered a shower thought if it's
+        outside of the shower</span>, Now this is a shower thought worth thinking about.
+      </p>
+      <p>
+        <span class=co>Shower thoughts are thoughts that are usually thought about when one is
+        in the shower</span>, but is it still considered a shower thought if it's
+        outside of the shower, now this is a shower thought worth thinking about.
+      </p>
+      <span class="co">
+          <img
+          src=https://i.ytimg.com/vi/Q9iZ5fKFMQw/maxresdefault.jpg
+          style="width: 300px; height: 150px"
+          />
+      </span>
+    </article>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>
+      (function () {
+        var co = $("span.co").each(function () {
+          var $this = $(this);
+
+          $("<blockquote></blockquote>", {
+            class: "co",
+            text: $this.text(),
+          }).prependTo($this.closest("p"));
+        });
+      })();
+    </script>
+  </body>
+</html>
