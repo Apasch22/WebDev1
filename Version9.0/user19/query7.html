@@ -1,0 +1,76 @@
+<html lang="en">
+
+    <head>
+        
+        <title>Web Development User #19</title>
+        
+        <style type="text/css">
+            article {
+                width: 600px;
+                margin: auto;
+            }
+
+            blockquote.co {
+                float: right;
+                color: blueviolet;
+                background: pink;
+                font-size: 2em;
+            }
+        </style>
+    </head>
+    
+    <body>
+        
+        <article>
+            <h1>Generic Blog Post</h1>
+            
+            <image src=https://ih1.redbubble.net/image.1601900812.3618/st,small,507x507-pad,600x600,f8f8f8.jpg></image>
+            
+            <p>
+                <span class=co>Lorem ipsum dolor sit amet</span>, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                <span class=co>ad minim veniam</span>, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa <span class=co>qui officia deserunt mollit</span> anim id est laborum.
+            </p>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    
+        <script>
+            (function() {
+                var co = $('article').find("span.co").each(function() {
+                    var $this = $(this);
+                    $('<blockquote></blockquote>', {
+                        class: 'co',
+                        text: $this.text()
+                    }).prependTo( $this.closest('p') );
+
+                });
+            }) ();
+
+        </script>
+    </body>
+
+</html>

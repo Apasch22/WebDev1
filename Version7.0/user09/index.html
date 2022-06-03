@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 7.0 
-    Name:  
-    Date Completed: 
+    Name: Hoa Pham 
+    Date Completed: May 10
 -->
 
 <head>
-    <title>Dynamic Webpage</title>
+    <title>Things Around The World</title>
 
     <!-- Bootstrap meta data -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Introduction to JavaScript">
+    <meta name="description" content="The world food">
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" type="image/x-icon" href="https://iconifier.net/iconified/20220511003620_1f30e/apple-touch-icon-180x180.png"/>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Font Awesome -->
@@ -29,193 +30,131 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <style>
-        /* Internal Styling Here */
-    </style>
+    <style type="text/css">
+     
+     h1 {
+         padding: 65px 0px 25px 0px;
+        }
 
+     body {
+          background-image: url('https://t4.ftcdn.net/jpg/02/81/44/35/360_F_281443558_NFBx7UxLsStZfq7mg9Lhpn9iVD5CF6cT.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+        }
+    </style>
 </head>
 
 <body>
-    <main>
-        <div id="built-in-functions">
-            <!-- ALERT-->
-            <script>
-                alert('Go Sabers!');
-            </script>
-            <!--PRINT-->
-            <script>
-                function printWindow(){
-                    window.print();
-                }
-            </script>
-            <!--LENGTH-->
-            <script>
-                function getLength() {
-                    document.getElementById("length").innerHTML = document.title.length;
-                }
-            </script>
-            <!-- FOCUS-->
-            <script>
-                function getFocus() {
-                    document.getElementById("focusButton").focus();
-                }
-            </script>
-            <!-- CLICK-->
-            <script>
-                function clickSimulation() {
-                    document.getElementById("Check").click();
-                }
-            </script>
-            <script>
-                function getDate() {
-                    document.getElementById("date").innerHTML = Date();
-                }
-            </script>
+    <div class="menu">
+      <nav class="navbar navbar-dark bg-dark">
+          <title class="navbar-brand">Global Goods</title>
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+              <div class="navbar-nav">
+                  <a href="Food.html" class="nav-item nav-link active">Food</a>
+                  <a href="Fashion.html" class="nav-item nav-link active">Fashion</a>
+                  <a href="Place.html" class="nav-item nav-link active">Place</a>
+          </div>
+      </nav>
+  </div>
 
-            <div class="container-fluid mt-3 mb-3">
-                <div class="row">
-                    <!--PRINT-->
-                    <div class="col-md-1">
-                        <button class="btn btn-dark btn-md" value="print this page" onclick="printWindow()">Print this
-                            page</button>
-                    </div>
-                    <!--LENGTH-->
-                    <div class="col-md-3">
-                        <button class="btn btn-dark btn-md" onclick="getLength()">The title has this many
-                            characters</button>
-                    </div>
-                    <div class="col-md-1">
-                        <p id="length"></p>
-                    </div>
-                    <!--FOCUS-->
-                    <div class="col-md-1">
-                        <button class="btn btn-dark btn-md" onclick="getFocus()">Focus</button>
-                    </div>
-                    <!-- CLICK-->
-                    <div class="col-md-1">
-                        <form>
-                            <input type="checkbox" id="Check" onmouseover="clickSimulation()">
-                            <input type="checkbox" id="Check" onmouseover="clickSimulation()">
-                        </form>
-                    </div>
-                    <!--DATE-->
-                    <div class="col-md-1">
-                        <button class="btn btn-dark btn-md" onclick="getDate()">Get Date</button>
-                    </div>
-                    <div class="col-md-3">
-                        <p id="date"></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-5">
-                    <h1>Heading for a long list</h1>
-                    <ol>
-                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                        <li>Aliquam tincidunt mauris eu risus.</li>
-                        <li>Vestibulum auctor dapibus neque.
-                            <ol>
-                                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                                <li>Aliquam tincidunt mauris eu risus.
-                                    <ol>
-                                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                            <ol>
-                                                <li>Lorem ipsum dolor sit amet, consectetuer.</li>
-                                            </ol>
-                                        </li>
-                                        <li>Aliquam tincidunt mauris eu risus.</li>
-                                        <li>Vestibulum auctor dapibus neque.</li>
-                                    </ol>
-                                </li>
-                                <li>Vestibulum auctor dapibus neque.</li>
-                                <li>Aliquam tincidunt mauris eu risus.</li>
-                            </ol>
-                        </li>
-                        <li>Aliquam tincidunt mauris eu risus.</li>
-                        <li>Vestibulum auctor dapibus neque.</li>
-                    </ol>
+  <main class="Introduction">
+      
+    <h1 class="Food text-center"><span style="background-image: url('https://cdn.pixabay.com/photo/2017/08/12/10/13/background-2633962_1280.jpg')">Introduction</span></h1>
 
-                </div>
+    <p class="Webpage text-center">In this webpage, I will introduce the goods from the countries below</p>
 
-                <div class="col-md-2 text-center">
-                    <button class="btn btn-danger btn-lg mt-3 container" onclick="firstSelector()">Try it
-                        1</button>
+    <table id="Maintable">
+        <thead>
+            <tr>
+                <th style="padding: 50px 100px 17px 100px;">United State</th>
+                <th style="padding: 50px 100px 17px 100px;">Japan</th>
+            </tr>
+        </thead>
 
-                    <button class="btn btn-info btn-lg mt-3 container" onclick="secondSelector()">Try it
-                        2</button>
+        <tr>
+            <td style="padding: 0px 100px 30px 100px;">
+              <a href="https://en.wikipedia.org/wiki/United_States"><img src="images/1200px-Flag_of_the_United_States.svg.webp" alt="US" width="350" height="250"/></a></td>
+            <td style="padding: 0px 100px 30px 100px;">
+              <a href="https://en.wikipedia.org/wiki/Japan"><img src="images/Flag_of_Japan.svg.png" alt="Jap" width="350" height="250"/></a></td>
+        </tr>
 
-                    <button class="btn btn-secondary btn-lg mt-3 container" onclick="thirdSelector()">Try it
-                        3</button>
+        <thead>
+            <tr>
+                <th style="padding: 70px 100px 17px 100px;" >China</th>
+                <th style="padding: 70px 100px 17px 100px;">Mexico</th>
+            </tr>
+        </thead>
 
-                    <button class="btn btn-primary btn-lg mt-3 container" onclick="window.location.reload()">Try
-                        it
-                        4</button>
-                </div>
-
-                <div class="col-md-5">
-                    <h1>My shopping list</h1>
-
-                    <div>
-                        <label for="item">Enter a new item:</label>
-                        <input type="text" name="item" id="item">
-                        <button id="aggregating-list">Add item</button>
-                    </div>
-
-                    <ul>
-
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-        <script id="lists">
-            function firstSelector() {
-                document.querySelector("li").style.backgroundColor = "#dc3545";
-            }
-            function secondSelector() {
-                var x = document.querySelectorAll("li");
-                var i;
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.backgroundColor = "#17a2b8";
-                }
-            }
-            function thirdSelector() {
-                document.querySelector("ol ol li").style.backgroundColor = "#6c757d";
-            }
-        </script>
-        <script id="shopping">
-            const list = document.querySelector('ul');
-            const input = document.querySelector('input');
-            const button = document.getElementById('aggregating-list');
-
-            button.onclick = function () {
-                let myItem = input.value;
-                input.value = '';
-
-                const listItem = document.createElement('li');
-                const listText = document.createElement('span');
-                const listBtn = document.createElement('button');
-
-                listItem.appendChild(listText);
-                listText.textContent = myItem;
-                listItem.appendChild(listBtn);
-                listBtn.textContent = 'Delete';
-                list.appendChild(listItem);
-
-                listBtn.onclick = function (e) {
-                    list.removeChild(listItem);
-                }
-
-                input.focus();
-            }
-        </script>
-    </main>
-    <div id="container" style="height: 3000px; width: 1000px;">
-        <a href="#"><button type="button" id="focusButton" style="margin-top: 3000px;">You focused on me!</button></a>
-    </div>
+        <tr>
+            <td style="padding: 0px 100px 37px 100px;">
+              <a href="https://en.wikipedia.org/wiki/China"><img src="images/Flag_of_the_People's_Republic_of_China.svg.png" alt="Chi" width="350" height="250"/></a></td>
+            <td style="padding: 0px 100px 30px 100px;">
+              <a href="https://en.wikipedia.org/wiki/Mexico"><img src="images/Flag_of_Mexico.svg.webp" alt="Mex"width="350" height="250"/></a></td>
+        </tr>
+    </table>
+</main>
 </body>
 
+<footer>
+    <div class="title pb-5">Information</div>
+    <div class="container-md">
+      <div class="row">
+        <div class="col-md-6">
+          <form class="form-inline">
+            <input
+              class="form-control form-control-sm mr-3 w-75"
+              type="text"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </form>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <form class="input-group">
+            <input
+              type="text"
+              class="form-control form-control-sm mr-1"
+              placeholder="Add More Countries"
+              aria-label="Add More Countries"
+              aria-describedby="basic-addon2"
+            />
+            <button class="button button1" type="button">Add</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12 py-5">
+            <div class="mb-5 flex-center">
+    
+              <a class="facebook">
+                <i class="fa fa-facebook text-black-50 mr-md-5 mr-3 fa-2x" aria-hidden="true"> </i>
+              </a>
+              <a class="twitter">
+                <i class="fa fa-twitter text-black-50 mr-md-5 mr-3 fa-2x" aria-hidden="true"> </i>
+              </a>
+              <a class="google">
+                <i class="fa fa-google text-black-50 mr-md-5 mr-3 fa-2x" aria-hidden="true"> </i>
+              </a>
+              </a>
+              <a class="instagram">
+                <i class="fa fa-instagram text-black-50 mr-md-5 mr-3 fa-2x" aria-hidden="true"> </i>
+              </a>
+              <a class="pintrest">
+                <i class="fa fa-pinterest text-black-50 mr-md-5 mr-3 fa-2x" aria-hidden="true"> </i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </footer>
 </html>

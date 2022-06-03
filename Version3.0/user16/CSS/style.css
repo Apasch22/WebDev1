@@ -1,3 +1,5 @@
+@import url(rainbow.css);
+
 table {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
 	color: #003366;
@@ -6,7 +8,10 @@ table {
 	text-align: left;
 	border-collapse: collapse;
 	cellspacing: 0px;
+	font-size: 100px;
+	padding: 500px;
 }
+
 
 tr {
 	border: 1px solid #ffffff;

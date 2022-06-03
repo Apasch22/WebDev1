@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Animate</title>
+
+        <style>
+            .box {
+                width: 400px;
+                background: rgb(111, 81, 170);
+                padding: 2em;
+                position: relative;
+            }
+
+            h2 {
+                color: rgb(255, 255, 255);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box">
+            <h2>Watch Me</h2>  
+        </div>
+
+        <p><button>Animation</button></p>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <script> 
+            $(document).ready(function(){
+              $("button").click(function(){
+                var div = $("div");
+                div.animate({height: '300px', opacity: '0.4'}, "slow");
+                div.animate({width: '300px', opacity: '0.8'}, "slow");
+                div.animate({height: '100px', opacity: '0.4'}, "slow");
+                div.animate({width: '100px', opacity: '0.8'}, "slow");
+              });
+            });
+            </script> 
+    </body>
+</html>
+

@@ -1,43 +1,85 @@
-.body-wideMargin {
-    margin: 50px;
-    font-size: 100%;
-    line-height: 1.5;
-    font-family: Roboto;
+table {
+  font-family: "Marker Felt", "Comic Sans MS";
+  font-weight: bold;
+  color: #003366;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  border-collapse: collapse;
+  border-spacing: 0px;
 }
 
-button {
-    padding: 5px;
+tr {
+  border: 1px solid #ffffff;
+  text-align: center;
+  background-color: #9fb6cd;
 }
 
-ol {
-    list-style-type: decimal-leading-zero;
+th {
+  text-align: center;
+  color: #ffffff;
+  background-color: #003366;
+}
+* {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-ol ol {
-    margin-left: 0.9em;
+body {
+  background-color: bisque;
+}
+.demo-content {
+  padding: 15px;
+  font-size: 18px;
+  background: #67a1f7;
+  margin-bottom: 15px;
 }
 
-ol li {
-    line-height: 1.5;
+.demo-content.bg-alt {
+  background: #fa795f;
 }
-
-li li {
-    list-style-type: lower-alpha;
+footer {
+  font-size: 16px;
+  text-align: center;
+  background-color: rgb(202, 195, 195);
 }
-
-li li li {
-    list-style-type: square;
+li {
+  font-weight: bolder;
+  font-size: large;
 }
-
-li li li li {
-    list-style-type: circle;
+#FR ul#places {
+  height: 250px;
+  width: 350px;
+  margin-left: 25px;
 }
-
-h1 {
-    font-family: "Fjalla One", sans-serif;
-    font-size: 2em;
-    text-transform: uppercase;
-    font-weight: 400;
-    border-bottom: 1px solid black;
-    margin-bottom: 1em;
+#places li#Olive {
+  list-style-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpjMp4-ATgMUOr5eNuA7krwsncwjYAU_l6-W7H6Wec-meAN0RzuB_a28NW4u3pTnHRChQ:https://media.olivegarden.com/en_us/images/product/exterior-olive-garden_599x430.jpg&usqp=CAU);
+  list-style-position: inside;
 }
+#places li#Sapporo {
+  list-style-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuTfHrfsipO_U9MrSdU8yGKCWysMmu0PhyhPSp2QFqZr7vq_n1u708I2VzvOr36IOraVk:https://cdn.usarestaurants.info/assets/uploads/db82c2fcb1a9917a7cd06d2390220f89_-united-states-minnesota-scott-county-shakopee-sapporo-sushi-restaurant-952-233-8800htm.jpg&usqp=CAU);
+  list-style-position: inside;
+}
+#places li#Kyoto {
+  list-style-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxeuqV3yILuGpF6WHX-7YLdehuEi_Ue17JBQ:https://heavytable.com/wp-content/uploads/2013/01/kyoto-sushi-exterior-sign-325.jpg&usqp=CAU);
+  list-style-position: inside;
+}
+#places li#Apple {
+    list-style-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH95tYbRer_51ueVJLlwl_sZQaAVi4npnlnlM34VWUL1HlhOKolTPJXFdilCunALWiuGA:https://media-cdn.tripadvisor.com/media/photo-p/1b/b8/7a/72/applebee-s-neighborhood.jpg&usqp=CAU);
+    list-style-position: inside;
+  }
+  #Foods li#sushi {
+    list-style-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8tvWLavzNA_6_pvDTc8GG-krlkFJbddxYzUARk297lCowykBujBGZ4dsAvI64t_BcVpI:https://properfoodie.com/wp-content/uploads/2020/07/featured-sushi-2b-feature-sushi-2b-1.jpg&usqp=CAU);
+    list-style-position: inside;
+  }
+  #Foods li#spaghetti {
+    list-style-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNA2q_VsVebGgNU8o-oDAp3O5lNYMkFZgEoX-18BZjZzcP_T2X-_zoaRd_eQDkhI1NUYA:https://www.onceuponachef.com/images/2019/09/Spaghetti-and-Meatballs.jpg&usqp=CAU);
+    list-style-position: inside;
+  }
+  #Foods li#fries {
+    list-style-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_FbEV_gm1-wvf6bIXR1Cewyl4Np78CSbZzqW32EweBD4pIbN6ncD5MaV1dzVblrEv46w:https://www.seriouseats.com/thmb/_BkW9V2wK3Zed-zQAETkRSJS8ac%3D/1500x1125/filters:fillauto,1);
+    list-style-position: inside;
+  }
+  #Foods li#pizza {
+    list-style-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUnfL1p95KsbDp8MOCk1cSTtc_ni4lvORn77Xch3Xb4S56hALL__FCZZGrinsiPSTEVN0:https://www.simplyrecipes.com/thmb/8caxM88NgxZjz-T2aeRW3xjhzBg%3D/2000x1125/smart/filters:no_upscale);
+    list-style-position: inside;
+  }
