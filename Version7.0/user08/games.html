@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--Version 3.0
+        Name: William Baker
+        Date Completed: 4/20/22
+    -->
+
+  <head>
+    <title>Favorites for Web Dev User 08</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="My Favorite Music" />
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://iconifier.net/iconified/20220511235938_IMG-1503/favicon.ico"
+    />
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="JS/Script.js"></script>
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+      menu {
+        margin: 0;
+        padding: 0;
+      }
+
+      .wideMargin {
+        margin: 15px;
+      }
+      footer {
+        font-size: 16px;
+        text-align: center;
+        background-color: rgb(202, 195, 195);
+      }
+
+      td {
+        color: #000000;
+      }
+      .jumbotron {
+        background-color: rgb(202, 195, 195);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!---------------------------------- Begin the nav-bar ------------->
+    <div class="menu">
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav">
+            <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+            <a href="index.html" class="nav-item nav-link active">Home</a>
+
+            <a href="Favorites.html" class="nav-item nav-link active"
+              >Favorites</a
+            >
+
+            <a href="games.html" class="nav-item nav-link active" tabindex="-1"
+              >Games</a
+            >
+            <a
+              href="hobbies.html"
+              class="nav-item nav-link active"
+              tabindex="-1"
+              >My Hobbies</a
+            >
+            <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+          </div>
+          <div class="navbar-nav ml-auto">
+            <a href="login.html" class="nav-item nav-link active">Login</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!---------------------------------- End the nav-bar ------------->
+
+    <main class="wideMargin">
+      <div class="jumbotron">
+        <h1 class="text-left my-3">Video Games</h1>
+        <h2>My Top 5 Favorite Video Games</h2>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Creator</th>
+            <th>Game</th>
+            <th>Game Art</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>1</td>
+          <td>FromSoftware</td>
+          <td>Elden Ring</td>
+          <td>
+            <img
+              onmouseover="bigImg(this)"
+              onmouseout="normalImg(this)"
+              border="0"
+              src="images/EldenRing.jpg"
+              alt="Elden Ring Front cover with a man on the ground with a sword and giant rings in the sky"
+              style="width: 175px; height: 150px"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Mojang</td>
+          <td>Minecraft</td>
+          <td>
+            <img
+              onmouseover="bigImg(this)"
+              onmouseout="normalImg(this)"
+              border="0"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwCqZBBVImvlMwm6V-bMElI5nWFvkiK2tlWAnHPZW1JlibrfsiD8ezrlzvYH2VooPFsVI:https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png&usqp=CAU.jpg"
+              alt="Minecraft front cover-blocky man running with a pickaxe and animals in the background"
+              style="width: 175px; height: 150px"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Game Freak</td>
+          <td>Pokemon Red</td>
+          <td>
+            <img
+              onmouseover="bigImg(this)"
+              onmouseout="normalImg(this)"
+              border="0"
+              src="images/Pokemon Red.jpg"
+              alt="Pokemon Red cover-contains a pokemon (charizard)"
+              style="width: 175px; height: 150px"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Treyarch</td>
+          <td>Call of Duty Cold War</td>
+          <td>
+            <img
+              onmouseover="bigImg(this)"
+              onmouseout="normalImg(this)"
+              border="0"
+              src="images/Cold War COD.jpg"
+              alt="Cold war COD cover-Contains a person that has two sides to them"
+              style="width: 175px; height: 150px"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td
+            onmousedown="mouseclicking(this,'blue')"
+            onmouseup="mouseclicking(this,'black')"
+          >
+            Ubisoft
+          </td>
+          <td onmouseover="style.color='blue'" onmouseout="style.color='black'">
+            Rainbow Six Siege
+          </td>
+          <td>
+            <img
+              onmouseover="bigImg(this)"
+              onmouseout="normalImg(this)"
+              border="0"
+              src="images/R6 Siege.jpg"
+              alt="Rainbow Six Siege cover-Man has a sledge hammer and is about to swing it"
+              style="width: 175px; height: 150px"
+            />
+          </td>
+        </tr>
+      </table>
+    </main>
+    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+
+    <!---------------------------------- Begin the footer ------------->
+    <footer class="page-footer font-small blue pt-4">
+      <!-- Footer Links -->
+      <div class="container-fluid text-center text-md-left">
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-6 mt-md-0 mt-3">
+            <!-- Content -->
+            <h4 class="text-uppercase">About Me</h4>
+            <p>
+              Hello! My name is William Baker and this is my first "real"
+              website and there are a few things that I can improve on, but I'm
+              working on it. I use a variety of social medias, which are located
+              on this footer, but that is not all of them. If you have any
+              further questions contact me using one of the contact informations
+              that are given or use one of the social medias provided.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="clearfix w-100 d-md-none pb-3" />
+
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+            <!-- Links -->
+            <h5 class="text-uppercase">Social Media</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Instagram</a>
+                <i class="fa fa-instagram"></i>
+              </li>
+              <li>
+                <a href="#!">Facebook</a>
+                <i class="fa fa-facebook"></i>
+              </li>
+              <li>
+                <a href="#!">Twitter</a>
+                <i class="fa fa-twitter"></i>
+              </li>
+              <li>
+                <a href="#!">Twitch</a>
+                <i class="fa fa-twitch"></i>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+            <!-- Links -->
+            <h5 class="text-uppercase">Contact Me</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a>231143@shakopeeschools.org</a>
+              </li>
+              <li>
+                <a>Mail-address</a>
+              </li>
+              <li>
+                <a>Homeexample@example.com</a>
+              </li>
+              <li>
+                <a>763-596-7000 (not actual number)</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+      <!-- Footer Links -->
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">
+        © 2022 Copyright:
+        <a href="index.html"> William Baker</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!---------------------------------- End the footer ------------->
+  </body>
+</html>

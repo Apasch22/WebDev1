@@ -1,3 +1,4 @@
+@import url(rainbow.css);
 table {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
 	color: #003366;
@@ -19,3 +20,51 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
+.button1 {
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s; /* Safari */
+}
+
+.button:hover {
+    background-color: #dfee11;
+    color: rgb(0, 195, 255);
+}
+.button1 {
+    box-shadow: 0 9px 17px 0 rgba(0,0,0,0.3), 0 7px 21px 0 rgba(0,0,0,0.20);
+}
+.button2:hover {
+    box-shadow: 0 13px 17px 0 rgba(0,0,0,0.25), 0 18px 51px 0 rgba(0,0,0,0.20);
+}
+.title{
+	color: red;
+	font-family: 'Trebuchet MS', sans-serif; 
+  }
+  
+  .title-large {
+	font-size: 2rem;
+  }
+  
+  .title-small {
+	font-size: .5rem;
+  }
+  #morecontent {
+	background-color: yellow;
+}
+*{
+    text-decoration-color: aquamarine;
+}
+#knowledge > * {
+	border: 3px red solid;
+  }
+  p + * {
+	background-color: #FFFF00;
+  }
+  div li::marker{
+	color: red;
+  }
+  div li::marker{
+	content:"😜 ";
+  }
+  td:hover {
+	background-color: rgb(0, 0, 0);
+  }

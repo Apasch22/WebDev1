@@ -1,0 +1,83 @@
+<!DOCTYPE = html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Custom Effects</title> 
+    <style>
+        p {
+        margin-top: 0;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Heading</h1>
+    <div class="content">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Volutpat sed cras
+        ornare arcu dui vivamus arcu felis bibendum. Posuere morbi leo urna
+        molestie at elementum eu.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Volutpat sed cras
+        ornare arcu dui vivamus arcu felis bibendum. Posuere morbi leo urna
+        molestie at elementum eu.
+      </p>
+    </div>
+    <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Tordz4KUbCmgm3Rnx6SkHTmtXrHucdF1HzmCORGHfLRnKCJgUXf34FJwcNWwCTSz8-8&usqp=CAU" />
+    <ul class="list">
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+    </ul>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <script>
+    (function() {
+      jQuery.fn.flash = function() {
+          var $this = $(this);
+        return $this.slideDown(500, function() {
+          $(this).delay(2000).slideUp(500);
+        });
+      };
+
+      var content = $('div.content').hide();
+
+      $('h1').on('click', function() {
+        content.flash();
+      });
+    })();
+
+    (function() {
+        jQuery.fn.fade = function() {
+            var $this = $(this);
+            return $this.fadeOut(1000);
+        };
+
+        $('ul.list').on('click', function() {
+            $('ul.list').fade();
+        });
+    })();
+
+    (function() {
+        jQuery.fn.slide = function() {
+            var $this = $(this);
+            return $this.slideUp(250, function() {
+                $(this).delay(250).slideDown(250, function() {
+                    $(this).delay(250).slideUp(250, function() {
+                        $(this).delay(250).slideDown(250);
+                    });
+                });
+            });
+        };
+
+        $('img.image').on('click', function() {
+            $('img.image').slide();
+        });
+    })();
+    </script>
+  </body>
+</html>

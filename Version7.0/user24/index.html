@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 7.0 
-    Name:  
+    Name:Easton Raboin  
     Date Completed: 
 -->
 
 <head>
-    <title>Dynamic Webpage</title>
+    <title>MJ V.S. James</title>
 
     <!-- Bootstrap meta data -->
     <meta charset="utf-8">
@@ -15,6 +15,7 @@
     <meta name="description" content="Introduction to JavaScript">
 
     <!-- CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -25,197 +26,76 @@
 
     <!-- JavaScript -->
     <!-- These are needed to get the responsive menu to work -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Navbar</title>
+    <meta charset="utf-8">
+    
+ </head>
+ <link rel="icon" type="image/x-icon" href="images/ejlogo.ico"/>
+ <body class="page">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a href="http://shakonet.isd720.com" class="navbar-brand">MJ V.S. James</a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+     <menu>
+        <nav class="navbar navbar-custom">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light ">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="offense.html">Offense</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Clutch.html">Championships and clutch</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="overall.html">Overall stats</a>
+            </li>
+            </ul>
+          </div>
+        </nav>
+      </menu>
+      
 
-    <style>
-        /* Internal Styling Here */
-    </style>
+        <h1 id="topHeading">Michael Jordan V.S. LeBron James</h1>
 
-</head>
-
-<body>
-    <main>
-        <div id="built-in-functions">
-            <!-- ALERT-->
-            <script>
-                alert('Go Sabers!');
-            </script>
-            <!--PRINT-->
-            <script>
-                function printWindow(){
-                    window.print();
-                }
-            </script>
-            <!--LENGTH-->
-            <script>
-                function getLength() {
-                    document.getElementById("length").innerHTML = document.title.length;
-                }
-            </script>
-            <!-- FOCUS-->
-            <script>
-                function getFocus() {
-                    document.getElementById("focusButton").focus();
-                }
-            </script>
-            <!-- CLICK-->
-            <script>
-                function clickSimulation() {
-                    document.getElementById("Check").click();
-                }
-            </script>
-            <script>
-                function getDate() {
-                    document.getElementById("date").innerHTML = Date();
-                }
-            </script>
-
-            <div class="container-fluid mt-3 mb-3">
-                <div class="row">
-                    <!--PRINT-->
-                    <div class="col-md-1">
-                        <button class="btn btn-dark btn-md" value="print this page" onclick="printWindow()">Print this
-                            page</button>
-                    </div>
-                    <!--LENGTH-->
-                    <div class="col-md-3">
-                        <button class="btn btn-dark btn-md" onclick="getLength()">The title has this many
-                            characters</button>
-                    </div>
-                    <div class="col-md-1">
-                        <p id="length"></p>
-                    </div>
-                    <!--FOCUS-->
-                    <div class="col-md-1">
-                        <button class="btn btn-dark btn-md" onclick="getFocus()">Focus</button>
-                    </div>
-                    <!-- CLICK-->
-                    <div class="col-md-1">
-                        <form>
-                            <input type="checkbox" id="Check" onmouseover="clickSimulation()">
-                            <input type="checkbox" id="Check" onmouseover="clickSimulation()">
-                        </form>
-                    </div>
-                    <!--DATE-->
-                    <div class="col-md-1">
-                        <button class="btn btn-dark btn-md" onclick="getDate()">Get Date</button>
-                    </div>
-                    <div class="col-md-3">
-                        <p id="date"></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-5">
-                    <h1>Heading for a long list</h1>
-                    <ol>
-                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                        <li>Aliquam tincidunt mauris eu risus.</li>
-                        <li>Vestibulum auctor dapibus neque.
-                            <ol>
-                                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                                <li>Aliquam tincidunt mauris eu risus.
-                                    <ol>
-                                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                            <ol>
-                                                <li>Lorem ipsum dolor sit amet, consectetuer.</li>
-                                            </ol>
-                                        </li>
-                                        <li>Aliquam tincidunt mauris eu risus.</li>
-                                        <li>Vestibulum auctor dapibus neque.</li>
-                                    </ol>
-                                </li>
-                                <li>Vestibulum auctor dapibus neque.</li>
-                                <li>Aliquam tincidunt mauris eu risus.</li>
-                            </ol>
-                        </li>
-                        <li>Aliquam tincidunt mauris eu risus.</li>
-                        <li>Vestibulum auctor dapibus neque.</li>
-                    </ol>
-
-                </div>
-
-                <div class="col-md-2 text-center">
-                    <button class="btn btn-danger btn-lg mt-3 container" onclick="firstSelector()">Try it
-                        1</button>
-
-                    <button class="btn btn-info btn-lg mt-3 container" onclick="secondSelector()">Try it
-                        2</button>
-
-                    <button class="btn btn-secondary btn-lg mt-3 container" onclick="thirdSelector()">Try it
-                        3</button>
-
-                    <button class="btn btn-primary btn-lg mt-3 container" onclick="window.location.reload()">Try
-                        it
-                        4</button>
-                </div>
-
-                <div class="col-md-5">
-                    <h1>My shopping list</h1>
-
-                    <div>
-                        <label for="item">Enter a new item:</label>
-                        <input type="text" name="item" id="item">
-                        <button id="aggregating-list">Add item</button>
-                    </div>
-
-                    <ul>
-
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-        <script id="lists">
-            function firstSelector() {
-                document.querySelector("li").style.backgroundColor = "#dc3545";
-            }
-            function secondSelector() {
-                var x = document.querySelectorAll("li");
-                var i;
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.backgroundColor = "#17a2b8";
-                }
-            }
-            function thirdSelector() {
-                document.querySelector("ol ol li").style.backgroundColor = "#6c757d";
-            }
-        </script>
-        <script id="shopping">
-            const list = document.querySelector('ul');
-            const input = document.querySelector('input');
-            const button = document.getElementById('aggregating-list');
-
-            button.onclick = function () {
-                let myItem = input.value;
-                input.value = '';
-
-                const listItem = document.createElement('li');
-                const listText = document.createElement('span');
-                const listBtn = document.createElement('button');
-
-                listItem.appendChild(listText);
-                listText.textContent = myItem;
-                listItem.appendChild(listBtn);
-                listBtn.textContent = 'Delete';
-                list.appendChild(listItem);
-
-                listBtn.onclick = function (e) {
-                    list.removeChild(listItem);
-                }
-
-                input.focus();
-            }
-        </script>
-    </main>
-    <div id="container" style="height: 3000px; width: 1000px;">
-        <a href="#"><button type="button" id="focusButton" style="margin-top: 3000px;">You focused on me!</button></a>
-    </div>
-</body>
-
+        <img src="https://cdn.nba.com/manage/2021/08/michael-jordan-looks.jpg"
+            alt="Michael Jordan" style="width:50%;">
+        <img src="https://imageio.forbes.com/specials-images/imageserve/6217d2232a05f46858a3c8f0/LeBron-James-during-a-Lakers-game-versus-the-Jazz/0x0.jpg?fit=crop&format=jpg&crop=3840,2160,x0,y0,safe"
+            alt="LeBron James" id="lebron">
+        
+            <h2 id="TheBest">Who truly is the BEST...</h2>
+    </body>
+    <footer>
+      <div id="demobox"><link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+          <div class="container">
+                  <div class="text-center center-block">
+                          <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fmuc.fandom.com%2Fwiki%2FDora_the_Explorer&psig=AOvVaw15g8Axy6CMAc72SmAAjVU2&ust=1651675852654000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCMjYhZbKw_cCFQAAAAAdAAAAABAD"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+                          <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fmuc.fandom.com%2Fwiki%2FDora_the_Explorer&psig=AOvVaw15g8Axy6CMAc72SmAAjVU2&ust=1651675852654000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCMjYhZbKw_cCFQAAAAAdAAAAABAD"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+                          <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fmuc.fandom.com%2Fwiki%2FDora_the_Explorer&psig=AOvVaw15g8Axy6CMAc72SmAAjVU2&ust=1651675852654000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCMjYhZbKw_cCFQAAAAAdAAAAABAD"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+              </div>
+          </div>
+          </section>
+          
+          <div class="text-center center-block"><p id="mjfoot">This is an article about MJ and Lebron</br>
+          if you want to know more you can contact me here</p>
+        <div class="footer-copyright text-center py-3">
+          © 2022 Copyright:
+          <a href="/"> Easton Raboin</a>
+        </div></div>
+          
+          <style id="foot"></style>
+      
+      </footer>
 </html>
+

@@ -11,11 +11,19 @@ table {
 tr {
 	border: 1px solid #ffffff;
 	text-align: center;
-	background-color:#9FB6CD; 
+	background-color:#011d39; 
 }
 
 th {
 	text-align: center;
 	color: #ffffff;
-	background-color: #003366;
+	background-color: #4d5ef6;
 }
+
+body {
+	background-color: rgb(194, 192, 191);
+  }
+
+  ul {
+	list-style-image: url('sqaureicon.ico');
+  }

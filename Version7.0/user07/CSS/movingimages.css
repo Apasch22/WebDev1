@@ -1,0 +1,16 @@
+body, html {
+    height: 100%;
+  }
+  
+  .parallax {
+    /* The image used */
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUl41YS5DLccdi3nOs6QxpIScmz2yXTuYul3SXKK11MYsAz850x72fSg5gJhtQpy32LM0:https://ychef.files.bbci.co.uk/976x549/p0202jwh.jpg&usqp=CAU");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
