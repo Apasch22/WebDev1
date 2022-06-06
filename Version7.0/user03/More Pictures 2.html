@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Azur leopard slider</title>
+    <style>
+      #slider-nav {
+        display: none;
+        margin-top: 1em;
+      }
+
+      #slider-nav button {
+        padding: 1em;
+        margin-right: 1em;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+
+      .slider {
+        width: inherit;
+        height: 300px;
+        overflow: scroll;
+      }
+
+      .slider ul {
+        width: 10000px;
+        list-style: none;
+      }
+
+      .slider li {
+        float: left;
+      }
+      body {
+        width: 600px;
+        margin: 100px auto 0;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .image {
+        width: 600px;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slider">
+      <ul>
+        <li><img src="images/Amur Leopard 2.jpeg" alt="Amur Leopard" /></li>
+        <li><img src="images/Amur Leopard 3.jpeg" alt="Amur Leopard" /></li>
+        <li><img src="images/Amur Leopard.jpeg" alt="Amur Leopard" /></li>
+      </ul>
+    </div>
+
+    <div id="slider-nav">
+      <button data-dir="prev">Previous</button>
+      <button data-dir="next">Next</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <script>
+      (function ($) {
+        var sliderUL = $("div.slider").css("overflow", "hidden").children("ul"),
+          imgs = sliderUL.find("img"),
+          imgWidth = imgs[0].width,
+          imgsLen = imgs.length,
+          current = 1;
+        totalImgsWidth = imgsLen * imgWidth;
+
+        $("#slider-nav")
+          .show()
+          .find("button")
+          .on("click", function () {
+            var direction = $(this).data("dir"),
+              loc = imgWidth;
+
+            direction === "next" ? ++current : --current;
+
+            if (current === 0) {
+              current = imgsLen;
+              loc = totalImgsWidth - imgWidth;
+              direction = "next";
+            } else if (current - 1 === imgsLen) {
+              current = 1;
+              loc = 0;
+            }
+
+            transition(sliderUL, loc, direction);
+          });
+        function transition(container, loc, direction) {
+          var unit;
+
+          if (direction && loc !== 0) {
+            unit = direction == "next" ? "-=" : "+=";
+          }
+
+          container.animate({
+            "margin-left": unit ? unit + loc : loc,
+          });
+        }
+      })(JQuery);
+    </script>
+  </body>
+</html>

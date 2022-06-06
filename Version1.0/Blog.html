@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>My Blog</title>
+  </head>
+  <body>
+    <script id=blogTemplate type=tuts/template>
+      <h1> {{title}} </h1>
+      <img src= {{thumbnail}} alt= {{title}}
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <script>
+    (function() {
+              var content = [
+                  {
+                      title: 'The coolest animals'
+                     thumbnail: ''
+                  },
+                  {
+                      title: 'The rarest animals'
+                      
+                  },
+                  {
+                      title: 'The flufiest animals'
+                     
+                  },
+              ],
+              template = $.trim( $('#blogTemplate').html() );
+                  $.each(content, function( index, obj) {
+                      var temp =
+                      template.replace( /{{title}}/ig, obj.title );
+      $(document.body).append(temp)
+                  });
+            })();
+    </script>
+  </body>
+</html>

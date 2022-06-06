@@ -1,21 +1,147 @@
+@import url(rainbow.css);
+.button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button-smallRadius {
+  border-radius: 8px;
+}
+
+.button-largeRaius {
+  border-radius: 30%;
+}
+
+.red {
+  background-color: #ff0000;
+}
+
+.blue {background-color: #00aeff;
+    border: none;
+    color: #FFFFFF;
+    padding: 15px 32px!important;
+    text-align: center;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 250px;
+}
+
+.blue span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.7s;
+}
+.blue span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -25px;
+    transition: 0.7s;
+}
+.blue:hover span {
+    padding-right: 30px;
+}
+.blue:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.green {
+    background-color: rgb(90, 255, 7);
+    border: none;
+    color: #FFFFFF;
+    padding: 15px 32px!important;
+    text-align: center;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    opacity: 0.3;
+}
+.green:hover {
+    opacity: 1;
+}
+.orange {
+    background-color: rgb(251, 117, 0);
+    border: none;
+    color: #FFFFFF;
+    padding: 25px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.orange:after {
+    content: "";
+    background: #f441f1;
+    display: block;
+    position: absolute;
+    padding-top: 290%;
+    padding-left: 340%;
+    margin-left: -25px !important;
+    margin-top: -130%;
+    opacity: 0;
+    transition: all 0.9s
+}
+.orange:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+}
+.title{
+	color: red;
+	font-family: 'Trebuchet MS', sans-serif; 
+  }
+  
+  .title-large {
+	font-size: 2rem;
+  }
+  
+  .title-small {
+	font-size: .5rem;
+  }
+  #morecontent {
+	background-color: yellow;
+  }
+  *{
+    border: 10% solid rgb(10, 6, 250);
+}
+<table id="hireButtons">
+
+<table id="footerTable">
+td {
+  padding: 20px;
+}
+
 table {
-	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: left;
-	border-collapse: collapse;
-	cellspacing: 0px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-tr {
-	border: 1px solid #ffffff;
-	text-align: center;
-	background-color:#9FB6CD; 
-}
-
-th {
-	text-align: center;
-	color: #ffffff;
-	background-color: #003366;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
 }

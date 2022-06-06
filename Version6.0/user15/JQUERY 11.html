@@ -1,0 +1,75 @@
+<html>
+<head>
+   <meta charset=utf-8>
+   <title>Web</title>
+   <style>
+       p { margin-top: 0;}
+   </style>
+</head>
+<body>
+<h1>Click</h1>
+<div class=content>
+<p>
+    Twelve-year-old Percy Jackson is on the most dangerous quest of his life. With the help of a satyr and a daughter of Athena, Percy must journey across the United States to catch a thief who has stolen the original weapon of mass destruction — Zeus’ master bolt. Along the way, he must face a host of mythological enemies determined to stop him. Most of all, he must come to terms with a father he has never known, and an Oracle that has warned him of betrayal by a friend.When Thalia’s tree is mysteriously poisoned, the magical borders of Camp Half-Blood begin to fail. Now Percy and his friends have just days to find the only magic item powerful to save the camp before it is overrun by monsters. The catch: they must sail into the Sea of Monsters to find it. Along the way, Percy must stage a daring rescue operation to save his old friend Grover, and he learns a terrible secret about his own family, which makes him question whether being the son of Poseidon is an honor or a curse. When Percy Jackson gets an urgent distress call from his friend Grover, he immediately prepares for battle. He knows he will need his powerful demigod allies at his side, his trusty bronze sword Riptide, and… a ride from his mom.
+
+    The demigods rush to the rescue to find that Grover has made an important discovery: two powerful half-bloods whose parentage is unknown. But that’s not all that awaits them. The titan lord Kronos has devised his most treacherous plot yet, and the young heroes have just fallen prey.
+    
+    They’re not the only ones in danger. An ancient monster has arisen — one rumored to be so powerful it could destroy Olympus — and Artemis, the only goddess who might know how to track it, is missing. Now Percy and his friends, along with the Hunters of Artemis, have only a week to find the kidnapped goddess and solve the mystery of the monster she was hunting. Along the way, they must face their most dangerous challenge yet: the chilling prophecy of the titan’s curse.
+
+
+
+
+ 
+</p>
+<p>
+    Percy Jackson isn’t expecting freshman orientation to be any fun, but when a mysterious mortal acquaintance appears, pursued by demon cheerleaders, things quickly go from bad to worse.
+
+    Time is running out for Percy. War between the gods and the Titans is drawing near. Even Camp Half-Blood isn’t safe, as Kronos’ army prepares to invade its once impenetrable borders. To stop them, Percy and his friends must set out on a quest through the Labyrinth — a sprawling underground world with surprises and danger at every turn.
+    
+    Along the way Percy will confront powerful enemies, find out the truth about the lost god Pan, and face the Titan lord Kronos’ most terrible secret. The final war begins… with the Battle of the Labyrinth.All year the half-bloods have been preparing for battle against the Titans, knowing the odds of victory are grim. Kronos’s army is stronger than ever, and with every god and half-blood he recruits, the evil Titan’s power only grows.
+
+    While the Olympians struggle to contain the rampaging monster Typhon, Kronos begins his advance on New York City, where Mount Olympus stands virtually unguarded. Now it’s up to Percy Jackson and an army of young demigods to stop the Lord of Time. In this momentous final book in the New York Times best-selling Percy Jackson and the Olympians series, the long-awaited prophecy surrounding Percy’s sixteenth birthday unfolds. And as the battle for Western civilization rages on the streets of Manhattan, Percy faces a terrifying suspicion that he may be fighting against his own fate.
+ 
+</p>
+ 
+</div>
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+ 
+<script>
+(function() {
+    var content = $('div.content').hide();
+ 
+       jQuery.fn.flash = function( speed, easing, callback ) {
+           var $this = $(this);
+ 
+       return $this.slideDown(1000, function() {
+           $this.delay(1000).slideUp(100);
+       });
+   };
+ 
+   $('h1').on('click', function() {
+       content.flash();
+   });
+})();
+</script>
+ 
+<div class="container">
+    <h2>Image</h2>
+    <h2><image src="images/favicon.ico" style="width:100px;height:100px;"></image></h2>
+   
+    </div>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>
+        (function() {
+            $('div.container').delegate('h2', 'click', function() {
+                console.log('clicked');
+                $(this).clone().appendTo('.container');
+            });
+        })();
+    </script>
+ </body>
+ </html>
+ 
+ 

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 6.0
+    Name: Tim Latzelsberger
+    Date Completed:
+-->
+
+<head>
+
+
+    <title>JavaScript</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SHS WebDev JavaScript Practice">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="JS/script.js"></script>
+
+    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Put your .js files here ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+    <script>
+        function myFunction(e) {
+          x = e.clientX;
+          y = e.clientY;
+          coor = "Coordinates: (" + x + "," + y + ")";
+          document.getElementById("demo").innerHTML = coor
+        }
+        
+        function clearCoor() {
+          document.getElementById("demo").innerHTML = "";
+        }
+        </script>
+
+
+<script>
+    function displayDate() {
+      document.getElementById("demo").innerHTML = Date();
+    }
+    </script>
+
+
+<script>
+    function whichButton(event) {
+      document.getElementById("demo").innerHTML = event.keyCode;
+    }
+    </script>
+
+
+<script>
+    function show_coords(event) {
+      document.getElementById("demo").innerHTML = "X= " + event.clientX + "<br>Y= " + event.clientY;
+    }
+    </script>
+
+
+<script type="text/javascript">  
+    function msg(){  
+     alert("Hello Javatpoint");  
+    }  
+    </script>  
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        .menu {
+            margin: 0px;
+        }
+
+        .wideMargin {
+            margin: 15px;
+        }
+
+        #footer {
+            font-size: 12px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!---------------------------------- Begin the nav-bar ------------->
+    <div class="menu">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="http://shakonet.isd720.com/WebDev" class="navbar-brand">WebDev</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="#" class="nav-item nav-link">About Me</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Music</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
+                    <a href="script.html" class="nav-item nav-link active" tabindex="-1">JavaScript</a>
+                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
+                        tabindex="-1">Contact</a>
+                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a href="#" class="nav-item nav-link disabled">Login</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!---------------------------------- End the nav-bar ------------->
+
+    <div class="wideMargin" id="content">
+        <h1 class="text-left my-3">My JavaScript Examples</h1><!-- Edit this line for the title of your page -->
+        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4" style="background-color:yellow;"><center><p id="textChange"> My name is User 03</p></center></div>
+                <div class="col-sm-4" style="background-color:orange;"><center><button type="button" onclick="changeText()">Click if you like</button></center></div>
+                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE</div>
+            </div>
+        </div>
+    </div>
+    <!--↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑-->
+    <div class="wideMargin" id="content">
+    <div class="container-fluid">
+    <div class="row">
+    <div class="col-sm-3">
+        <title>Multiplication Table</title>
+        <script type="text/javascript">
+          var rows = prompt("How many rows for your multiplication table?");
+          var cols = prompt("How many columns for your multiplication table?");
+          if(rows == "" || rows == null)
+                  rows = 10;
+          if(cols== "" || cols== null)
+                  cols = 10;
+          createTable(rows, cols);
+          function createTable(rows, cols)
+          {
+            var j=1;
+            var output = "<table border='1' width='500' cellspacing='0'cellpadding='5'>";
+            for(i=1;i<=rows;i++)
+            {
+              output = output + "<tr>";
+              while(j<=cols)
+              {
+                  output = output + "<td>" + i*j + "</td>";
+                   j = j+1;
+                 }
+                  output = output + "</tr>";
+                  j = 1;
+          }
+          output = output + "</table>";
+          document.write(output);
+          }
+        </script>    
+    </div>
+    <div class="col-sm-3"> 
+        <body style="margin:0px;">
+            <div id="coordiv" style="width:199px;height:99px;border:1px solid" onmousemove="myFunction(event)" onmouseout="clearCoor()"></div>
+            <p>Mouse over the rectangle above, and get the coordinates of your mouse pointer.</p>
+            <p id="demo"></p>
+            </body>
+
+           
+            
+    </div>
+    <div class="col-sm-3">
+        <p onmousedown="show_coords(event)">
+            Click this paragraph to display the x and y coordinates of the mouse pointer.</p>
+            
+            <p id="demo"></p>
+
+<button type="button" onclick="displayDate()">Display Date</button>
+    
+
+<p>Welcome to JavaScript</p>  
+<form>  
+<input type="button" value="click" onclick="msg()"/>  
+</form>  
+
+
+<title>My Example</title>
+
+
+<time id="date"></time>
+
+<script>
+  /* 
+  Create a JavaScript Date object for the current date and time,
+  then extract the desired parts, then join them again in the desired format.
+  */
+  var currentDate = new Date(),
+      month = currentDate.getMonth() + 1,
+      day = currentDate.getDate(),
+      year = currentDate.getFullYear(),
+      date = month + "/" + day + "/" + year;
+      
+  // Output the date to the above HTML element
+  document.getElementById("date").innerHTML = date;
+</script>
+
+
+<title>My Example</title>
+
+
+<time id="msg"></time>
+
+<script>
+  // Create a JavaScript Date object for the current date and time, and set the desired options.
+  var date = new Date(),
+      options = { weekday: "long", month: "long", day: "numeric", year: "numeric" };
+ 
+  // Convert to locale string and add a locale and the options
+  date = date.toLocaleString( "en-US", options );
+ 
+  // Output the date to the above HTML element
+  document.getElementById("msg").innerHTML = date;
+</script>
+</div>
+    <div class="col-sm-3"> 
+        <body onkeyup="whichButton(event)">
+
+            <p><b>Note:</b> Make sure the right frame has focus when trying this example!</p>
+            
+            <p>Click on this page, and press a key on your keyboard.</p>
+            
+            <p id="demo"></p>
+            
+            </body>
+    </div>
+    
+    <!---------------------------------- Begin the footer ------------->
+    <div class="wideMargin" id="footer">
+        <p>
+            Webpage made by <a href="index.html" target="_blank">[Tim Latzelsberger]</a>
+        </p>
+    </div>
+    <!---------------------------------- Begin the footer ------------->
+    <div class="wideMargin" id="footer">
+        <p>
+            Webpage made by <a href="index.html" target="_blank">[Tim Latzelsberger]</a>
+        </p>
+    </div>
+    <!---------------------------------- End the footer ------------->
+</body>
+<!-- Websites used for the 8 features-->
+<!-- https://www.guru99.com/practical-code-examples-using-javascript.html -->
+<!--https://www.javatpoint.com/javascript-example -->
+<!-- https://www.quackit.com/javascript/examples/-->
+
+</html>

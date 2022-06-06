@@ -1,43 +1,61 @@
-.body-wideMargin {
-    margin: 50px;
-    font-size: 100%;
-    line-height: 1.5;
-    font-family: Roboto;
+#foodsection {
+	font-family: "Marker Felt", "Comic Sans MS", fantasy;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	border-collapse: collapse;
+	border: 1px solid #c2c2c2;
+	text-align: center;
+	background-color:#9FB6CD;
+	text-align: center;
+	color: #1e1e1e;
+	background-color: #d1ce72;
 }
 
-button {
-    padding: 5px;
+#Maintable {
+	font-size: 25px;
+	font-family: Georgia, serif;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.0) !important;
 }
 
-ol {
-    list-style-type: decimal-leading-zero;
+#Maintable td:hover {
+	background-color: rgb(227, 227, 227);
 }
 
-ol ol {
-    margin-left: 0.9em;
+p {
+	font-family: Georgia, serif;
+	font-size: 30px;
 }
 
-ol li {
-    line-height: 1.5;
+main {
+	font-family: Georgia, serif;
+}
+  
+footer {
+	font-family: Georgia, serif;
+	padding: 70px;
+	font-size: 30px;
+	text-align: center;
+	color:#292929
 }
 
-li li {
-    list-style-type: lower-alpha;
+  .button1 {
+	font-size: 20px;
+	background-color: #ffffff;
+	border-radius: 10%;
 }
 
-li li li {
-    list-style-type: square;
+h2 {
+	font-size: 40px;
+	padding: 40px 0px 0px 0px;
+	text-align: center;
 }
 
-li li li li {
-    list-style-type: circle;
-}
-
-h1 {
-    font-family: "Fjalla One", sans-serif;
-    font-size: 2em;
-    text-transform: uppercase;
-    font-weight: 400;
-    border-bottom: 1px solid black;
-    margin-bottom: 1em;
+ul {
+	font-size: 27px;
+	padding: 20px 0px 0px 0px;
+	text-align: center;
 }
