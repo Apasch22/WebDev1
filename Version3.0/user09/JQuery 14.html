@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>The Obligatory Slider</title>
+
+        <style>
+            body {
+                width: 430px;
+                margin: 100px auto 0;
+            }
+
+            * { margin: 0; padding: 0; }
+        </style>
+
+        <link rel="stylesheet" href="CSS/Slider.css">
+    </head>
+
+    <body>
+
+        <div class="slider">
+            <ul>
+                <li><img src="images/Calico.jpeg" alt="Calico" width="430" height="300"></li>
+            </ul>
+            <ul>
+                <li><img src="images/Birman.jpeg" alt="Birman" width="430" height="300"></li>
+            </ul>
+            <ul>
+                <li><img src="images/Alaskan.jpeg" alt="Alaskan" width="430" height="300"></li>
+            </ul>
+            <ul>
+                <li><img src="images/Samoyed.jpeg" alt="Samoyed" width="430" height="300"></li>
+            </ul>
+        </div>
+
+        <div id="slider-nav">
+            <button data-dir="prev">Previous</button>
+            <button data-dir="next">Next</button>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+        <script src="JS/Slider.js"></script>
+
+    </body>
+</html>

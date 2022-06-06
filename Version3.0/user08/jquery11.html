@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8" />
+  <title>Effects</title>
+</head>
+<style>
+p {
+    margin-top: 0;
+}
+</style>
+<body>
+  <h1>Click Me</h1>
+  <div class="content">
+  <p>Words that hold no meaning are words that hit people the hardest.</p>
+  <p>
+    Shower thoughts are thoughts that are usually thought about when one is in
+    the shower, but is it still considered a shower thought if it's outside of
+    the shower, now this is a shower thought worth thinking about.
+  </p>
+  <p>
+    Shower thoughts are thoughts that are usually thought about when one is in
+    the shower, but is it still considered a shower thought if it's outside of
+    the shower, now this is a shower thought worth thinking about.
+  </p>
+  <p>
+    Shower thoughts are thoughts that are usually thought about when one is in
+    the shower, but is it still considered a shower thought if it's outside of
+    the shower, now this is a shower thought worth thinking about.
+  </p>
+  </div>
+  <h2>Click for surprise</h2>
+  <div class="woah">
+    <img
+    src=https://i.ytimg.com/vi/Q9iZ5fKFMQw/maxresdefault.jpg
+    style="width: 300px; height: 150px"
+    />
+    <p>
+        Shower thoughts are very powerful, yet very weak at the same time.
+    </p>
+    <table>
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Creator</th>
+            <th>Game</th>
+            <th>Game Art</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>1</td>
+          <td>FromSoftware</td>
+          <td>Elden Ring</td>
+          <td>
+            <img
+              src="images/EldenRing.jpg"
+              alt="Elden Ring Front cover with a man on the ground with a sword and giant rings in the sky"
+              style="width: 150px; height: 150px"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Mojang</td>
+          <td>Minecraft</td>
+          <td>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwCqZBBVImvlMwm6V-bMElI5nWFvkiK2tlWAnHPZW1JlibrfsiD8ezrlzvYH2VooPFsVI:https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png&usqp=CAU.jpg"
+              alt="Minecraft front cover-blocky man running with a pickaxe and animals in the background"
+              style="width: 125px; height: 150px"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Game Freak</td>
+          <td>Pokemon Red</td>
+          <td>
+            <img
+              src="images/Pokemon Red.jpg"
+              alt="Pokemon Red cover-contains a pokemon (charizard)"
+              style="width: 150px; height: 150px"
+            />
+          </td>
+          </tr>
+          </table>
+  </div>
+  <h3>Click for the Stats</h3>
+  <div class="stats">
+      <p>Me after making an entire blog post about shower thoughts and selling it for 1 cent</p>
+    <img
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGqf9ln4_4rbAhfkX3gErKy7wVIDiEDPTOUPz2GFPVc0VAMeeY6AXHikOxo3ulfJRbKjU:https://i.kym-cdn.com/photos/images/newsfeed/001/499/826/2f0.png&usqp=CAU"
+    />
+<img
+src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwTpqu41JD-WqpLzol9n2Qf9_8hutMFSI8rg:https://paintfile.com/coloring-pages/wp-content/uploads-webp/sites/2/2021/11/Among-us-Dragon-Ball-goku-super-blue-colored-570x570.webp&usqp=CAU"
+/>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>
+(function () {
+    var content = $('div.content').hide();
+
+    jQuery.fn.flash = function( speed, easing, callback ) {
+        var $this = $(this);
+        return $this.slideDown(500, function(){
+            $this.delay(2000).slideUp(500);
+        });
+      };
+      $('h1').on('click', function() {
+          content.flash();
+      });
+})();
+(function () {
+    var woah = $('div.woah').hide();
+
+    jQuery.fn.flash = function( speed, easing, callback ) {
+        var $this = $(this);
+        return $this.slideDown(500, function(){
+            $this.delay(2000).slideUp(500);
+        });
+      };
+      $('h2').on('click', function() {
+          woah.flash();
+      });
+})();
+(function () {
+    var stats = $('div.stats').hide();
+
+    jQuery.fn.flash = function( speed, easing, callback ) {
+        var $this = $(this);
+        return $this.slideDown(500, function(){
+            $this.delay(2000).slideUp(500);
+        });
+      };
+      $('h3').on('click', function() {
+          stats.flash();
+      });
+})();
+
+
+  </script>
+</body>
+</html>

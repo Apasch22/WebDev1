@@ -1,0 +1,41 @@
+<!DOCTYPE = html>
+<html = "lang">
+    <head>
+        <meta charset="utf-8">
+        <title>Guess the Number</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <style>
+
+            main {
+                margin: 0 25vw;
+                text-align: center;
+            }
+
+            .text {
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: large;
+                font-weight: 550;
+            }
+
+        </style>
+    </head>
+    <body>
+        <main>
+            <p class="text">Guess a number between 1 - 100</p>
+            <input type="text" class="input">
+            <button class="reset" type="submit">Reset the number</button>
+        </main>
+        <script>
+            (function() {
+            var min = 1,
+            max = 100,
+            num = Math.floor(Math.random() * (max - min) ) + min;
+            $("button.reset").on("submit", function getRndInteger() {
+            return num = Math.floor(Math.random() * (max - min) ) + min;
+            console.log(num);
+            console.log(Math.floor(Math.random() * (max - min) ) + min)
+            });
+            })();
+        </script>
+    </body>
+</html>

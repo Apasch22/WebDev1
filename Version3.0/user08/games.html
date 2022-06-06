@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset=utf-8>
+    <title>Bind...live...delegte...on...dang that's confusing</title>
+</head>
+<body>
+<div>
+    <img
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwCqZBBVImvlMwm6V-bMElI5nWFvkiK2tlWAnHPZW1JlibrfsiD8ezrlzvYH2VooPFsVI:https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png&usqp=CAU.jpg"
+    alt="Minecraft front cover-blocky man running with a pickaxe and animals in the background"
+    style="width: 125px; height: 150px"
+  />
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script>
+
+(function() {
+
+    $('img').bind('click', function() {
+        console.log('clicked');
+        $(this).clone(true).appendTo('body');
+    });
+
+})();
+
+</script>
+
+</body>
+</html>

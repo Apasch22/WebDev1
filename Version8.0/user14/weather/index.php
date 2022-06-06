@@ -1,7 +1,8 @@
 <?php
-$apiKey = "API KEY"; //You will need to add in the 
+$apiKey = "cdd79c681586f1aadf1eeb70e91d9977"; //You will need to add in the 
 $cityId = "5046997"; //5046997 Shakopee City Id
-$units = "metric";//metric-Celcius  imperial-Farhenheit
+$units = "imperial";//metric-Celcius  imperial-Farhenheit
+
 if ($units == 'metric'){//Changes the $temp varaible to match 
     $temp = "C";
 }
@@ -25,8 +26,8 @@ $data = json_decode($response);
 $currentTime = time();
 ?>
 
-<!doctype html>
-<html>
+<!DOCTYPE = html>
+<html lang='en'>
 <head>
 <title>Forecast Weather using OpenWeatherMap with PHP</title>
 
@@ -88,7 +89,19 @@ span.min-temperature {
             <div>Wind: <?php echo $data->wind->speed; ?> km/h</div>
         </div>
     </div>
-
+<script>
+    if ($temp <= 40); {
+    $('.report-container').css = 'background-color' = 'black';
+} elseif ($temp <= 50 && $temp >= 41); {
+    $('.report-container').css = 'background-color' = 'darkblue';
+} elseif ($temp <= 60 && $temp >= 51); {
+    $('.report-container').css = 'background-color' = 'blue';
+} elseif ($temp <= 70 && $temp >= 61); {
+    $('.report-container').css = 'background-color' = 'lightblue';
+} elseif ($temp >= 71); {
+    $('.report-container').css = 'background-color' = 'white';
+}
+</script>
 
 </body>
 </html>

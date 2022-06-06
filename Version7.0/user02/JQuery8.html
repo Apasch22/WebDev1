@@ -1,0 +1,51 @@
+
+<html>
+    <head>
+        <meta charset=utf-8>
+        <title>Q&A</title>
+    </head>
+<body>
+
+<a href="http://tutsplus.com" class="myClass">Click Me</a> 
+
+<script id=blogTemplate type=tuts/template>
+    <h2> {{title}} </h2>
+    <img src={{thumbnail}} alt={{title}}>
+    </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script>
+
+(function() {
+    var content = [
+        {
+            title: 'Blog thing 1',
+            thumbnail: 'https://hughstephensblog.files.wordpress.com/2021/04/caillou-clipart.png',
+        },
+        {
+            title: 'Blog thing 2', 
+            thumbnail: 'https://images.thdstatic.com/productImages/fe3bf6da-0eba-49ad-9317-080fdbf265d6/svn/clorox-bleach-4460032464-64_600.jpg',
+        },
+        {
+            title: 'Blog thing 3',
+            thumbnail: 'https://upload.wikimedia.org/wikipedia/en/d/dc/Thomas_Tank_Engine_1.JPG',
+        }
+    ],
+        template = $.trim( $('#blogTemplate').html() ),
+        frag =""
+
+
+    $.each( content, function( index, obj ) {
+        frag +=
+            template.replace( /{{title}}/ig, obj.title )
+                    .replace( /{{thumbnail}}/ig, obj.thumbnail );
+    
+    });
+
+    $('body').append(frag);
+})();
+
+</script>
+</body>
+</html>

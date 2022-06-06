@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(40, 156, 131);
+    color: azure;
+    font-size: 1.1em;
+}
+h1 {
+    color: coral;
+}
+#intro {
+    font-size: 1.3em;
+}
+.colorful {
+    color: orange;
+}
+table {
+	font-family: "Marker Felt", "Comic Sans MS", fantasy;
+	color: #054483;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	border-collapse: collapse;
+	letter-spacing: 0px;
+}
+
+tr {
+	border: 1px solid #ffffff;
+	text-align: center;
+	background-color:#9FB6CD; 
+}
+
+th {
+	text-align: center;
+	color: #ffffff;
+	background-color: #012a54;
+}

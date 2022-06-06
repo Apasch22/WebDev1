@@ -1,21 +1,120 @@
+@import url(rainbow.css);
+
 table {
-	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: left;
-	border-collapse: collapse;
-	cellspacing: 0px;
+  font-family: "Marker Felt", "Comic Sans MS", fantasy;
+  color: #003366;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  border-collapse: collapse;
+  cellspacing: 0px;
 }
 
 tr {
-	border: 1px solid #ffffff;
-	text-align: center;
-	background-color:#9FB6CD; 
+  border: 1px solid #ffffff;
+  text-align: center;
+  background-color: #9fb6cd;
 }
 
 th {
-	text-align: center;
-	color: #ffffff;
-	background-color: #003366;
+  text-align: center;
+  color: #ffffff;
+  background-color: #003366;
 }
+
+.button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {
+  border-radius: 8px;
+}
+
+.button2 {
+  border-radius: 30%;
+}
+
+.red {
+  background-color: #ff0000;
+}
+
+td {
+  padding: 20px;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
+
+.buttonhover {
+	transition-duration:0.25s;
+}
+
+.buttonhover:hover {
+	background-color:#4caf50;
+}
+
+.buttonfontsize {
+	font-size: 1.5rem;
+}
+
+.buttonugly {
+	background-color:chartreuse;
+	color:mediumvioletred;
+}
+
+.title{
+	color: red;
+	font-family: 'Trebuchet MS', sans-serif; 
+  }
+  
+  .title-large {
+	font-size: 2rem;
+  }
+  
+  .title-small {
+	font-size: .5rem;
+  }
+
+  .buttonugly-textcolor {
+	color:mediumvioletred;
+  }
+
+  .buttonugly-backgroundcolor {
+	  background-color:chartreuse;
+  }
+
+  #hirebuttons{
+	  background-color:fuchsia;
+  }
+
+  #footerTable{
+	text-align:left;
+  }
+
+  *{
+	font-family: "Comic Sans MS";
+  }
+
+  #knowledge > * {
+    border: 3px solid red;
+  }

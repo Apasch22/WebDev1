@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Q&A</title>
+
+    </head>
+
+    <body>
+
+        <script id=blogTemplate type=tuts/template>
+            <h2> {{title}} </h2>
+            <img src={{thumbnail}} alt={{title}}>
+        </script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+        <script>
+            (function() {
+                var content = [
+                    {
+                        title: 'My awsome blog post',
+                        thumbnail: 'https://www.farmersalmanac.com/wp-content/uploads/2021/04/forget-me-not-flower-as309740666.jpeg'
+                    },
+
+                    {
+                        title: 'My second awsome blog post',
+                        thumbnail: 'https://happy-petals.com/wp-content/uploads/2021/06/dark-9.jpg'
+                    },
+
+                    {
+                        title: 'My third awsome blog post',
+                        thumbnail: 'https://www.backyardgardenlover.com/wp-content/uploads/2018/06/blue-columbine-flower.jpg.webp'
+                    }
+
+                ],
+                    template = $.trim( $('#blogTemplate').html() ),
+                    frag = '';
+
+                $.each( content, function( index, obj ) {
+                    frag +=
+                        template.replace( /{{title}}/ig, obj.title )
+                                .replace( /{{thumbnail}}/ig, obj.thumbnail );
+
+                });
+                
+                $('body').append(frag);
+
+            })();
+        </script>
+    </body>
+</html>
