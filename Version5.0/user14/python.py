@@ -1,3 +1,4 @@
+from msvcrt import kbhit
 import random
 
 dict = {"make" : "Toyota", "model" : "Supra", "year" : "1987"}
@@ -48,24 +49,22 @@ print(f"{lowercase(name)} is {age} years old")
 
 def upperlower(string):
     string.upper() if len(string) % 2 == 0 else ""
-    string.lower() if len(string) % 2 !== 0 else ""
+    string.lower() if len(string) % 2 != 0 else ""
 
 upperlower("This is a string")
 
 r = random.randrange(1,100)
-    even = " is an even number and is" if r % 2 == 0 else ""
-    odd = " is as odd number and is" if r % 2 !== 0 else ""
-    above = " greater than 50." if r > 50 else ""
-    below = " less than 50." if r < 50 else ""
-    equal = " equal to 50." if r == 50 else ""
+even = " is an even number and is" if r % 2 == 0 else ""
+odd = " is as odd number and is" if r % 2 != 0 else ""
+above = " greater than 50." if r > 50 else ""
+below = " less than 50." if r < 50 else ""
+equal = " equal to 50." if r == 50 else ""
 print (f"{r}{even}{odd}{above}{below}{equal}" or "bruh")
 
-def upperfirst(string)
+def upperfirst(string):
     for letter in string:
         if letter == string[0]:
-        letter.upper()
+            letter.upper()
     print(string)
 
 upperfirst("string")
-
-x = lambda k : if(k > 0): result = k + lambda(k - 1) print(result) else: result = 0 return result
