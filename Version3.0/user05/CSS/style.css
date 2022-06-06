@@ -23,3 +23,7 @@ th {
 body {
 	background-color: rgb(194, 192, 191);
   }
+
+  ul {
+	list-style-image: url('sqaureicon.ico');
+  }

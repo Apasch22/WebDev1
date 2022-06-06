@@ -1,0 +1,59 @@
+<html>
+<head>
+   <meta charset=utf-8>
+   <title>Hello There</title>
+   <style>
+       p { margin-top: 0;}
+   </style>
+</head>
+<body>
+<h1>button</h1>
+<div class=content>
+<p>
+   What Should I put here
+ 
+</p>
+<p>
+  I dunno
+ 
+</p>
+ 
+</div>
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+ 
+<script>
+(function() {
+    var content = $('div.content').hide();
+ 
+       jQuery.fn.flash = function( speed, easing, callback ) {
+           var $this = $(this);
+ 
+       return $this.slideDown(1000, function() {
+           $this.delay(1000).slideUp(100);
+       });
+   };
+ 
+   $('h1').on('click', function() {
+       content.flash();
+   });
+})();
+</script>
+ 
+<div class="container">
+   <h2>Image</h2>
+   <h2><image src="images/brrrr.jpeg" style="width:100px;height:50px;"></image></h2>
+  
+   </div>
+  
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+   <script>
+       (function() {
+           $('div.container').delegate('h2', 'click', function() {
+               console.log('clicked');
+               $(this).clone().appendTo('.container');
+           });
+       })();
+   </script>
+</body>
+</html>

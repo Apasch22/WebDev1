@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset=utf-8>
+    <title>QWERTYUIOP</title>
+</head>
+
+<body>
+
+    <ul class="tweets">
+        <script id="template" type="text/x-handlebars-template">
+        {{#each this}}
+            <li> 
+            <h2> {{author`}} </h2>
+           <p> {{{tweet}}} </p>
+        </li>
+    {{/each}}
+    </script>
+    </ul>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <script src="file:///Users/231174/Downloads/handlebars.runtime-v4.7.7.js"></script>
+
+    <script>
+        (fuction() {
+
+            var data = [
+                {
+                author: '',
+                tweet: '30 days to learn jQuery',
+                age: 27,
+            },
+            {
+                author: 'John Doe',
+            tweet: '31 days to learn jQuery',
+            }
+            ];
+            
+            Handlebars.registerHelper('full name', function(author) {
+                return author.first + ' ' + author.last + ' ' + author.age
+            });
+
+            var template = Handlebars.compile($('#template').html());
+
+           $('ul.tweets').append( template(data) );
+
+})();
+    </script>
+
+</body>
+
+</html>
