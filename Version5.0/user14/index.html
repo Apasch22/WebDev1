@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 5.0
-    Name:
-    Date Completed:
+    Name: Derrick Damjanovic
+    Date Completed: Apr 29 2022
 -->
 
 <head>
@@ -38,6 +38,66 @@
             font-size: 12px;
             text-align: center;
         }
+
+        .spacer {
+            padding: 12.5vw 0px;
+        }
+
+        .slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 70%; 
+  height: 25px;
+  background: #d3d3d3; 
+  outline: none;
+  opacity: 0.6;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1; 
+}
+
+        .slider::-webkit-slider-thumb {
+  -webkit-appearance: none; 
+  appearance: none;
+  width: 50px; 
+  height: 25px; 
+  background:cornflowerblue; 
+  cursor: pointer; 
+}
+.slidecontainer {
+  width: 100%; 
+}
+
+.img-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    justify-content: center;
+}
+
+.img1 {
+    width: 200px;
+    height: auto;
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+.img2 {
+    width: 350px;
+    height: auto;
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+.img3 {
+    width: 600px;
+    height: auto;
+    margin-top: 8px;
+    vertical-align: middle;
+}
     </style>
 </head>
 
@@ -60,7 +120,7 @@
                     <a href="games.html" class="nav-item nav-link" tabindex="-1">Games</a>
                     <a href="bootstrap.html" class="nav-item nav-link" tabindex="-1">Bootstrap</a>
                     <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
-                        tabindex="-1">Contact</a>
+                    tabindex="-1">Contact</a>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
                 <div class="navbar-nav ml-auto">
@@ -68,6 +128,141 @@
                 </div>
             </div>
         </nav>
+    </div>
+    
+    <div class="img-container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3oPheAdCc6NJrHvPoUbBwVA2eu4a9Pgs0jrgQhn2c4C3pc6rRHcCbJC-6lpNlxAYnqD8:https://images.pexels.com/photos/1072824/pexels-photo-1072824.jpeg%3Fcs%3Dsrgb%26dl%3Dpexels-akil-mazumder-1072824.jpg%26fm%3Djpg&usqp=CAU" class="img3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPgt16hQQT23AywlbwAO0djLSUHvFT6ipbE1iSMOjGjP9r0DVWCLnnWH0tCtKEPfnE9H4:https://www.gardeningknowhow.com/wp-content/uploads/2008/05/rubber-plant.jpg&usqp=CAU" class="img2">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8skIYUAl8i723Cij83OUoIINGGCCgON99aGvRfWE7oHvpCcUnM_7hwuxtDzidu-KBoI:https://st.depositphotos.com/1055085/3389/i/600/depositphotos_33897773-stock-photo-artificial-tree.jpg&usqp=CAU" class="img1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPgt16hQQT23AywlbwAO0djLSUHvFT6ipbE1iSMOjGjP9r0DVWCLnnWH0tCtKEPfnE9H4:https://www.gardeningknowhow.com/wp-content/uploads/2008/05/rubber-plant.jpg&usqp=CAU" class="img2">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3oPheAdCc6NJrHvPoUbBwVA2eu4a9Pgs0jrgQhn2c4C3pc6rRHcCbJC-6lpNlxAYnqD8:https://images.pexels.com/photos/1072824/pexels-photo-1072824.jpeg%3Fcs%3Dsrgb%26dl%3Dpexels-akil-mazumder-1072824.jpg%26fm%3Djpg&usqp=CAU" class="img3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8skIYUAl8i723Cij83OUoIINGGCCgON99aGvRfWE7oHvpCcUnM_7hwuxtDzidu-KBoI:https://st.depositphotos.com/1055085/3389/i/600/depositphotos_33897773-stock-photo-artificial-tree.jpg&usqp=CAU" class="img1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3oPheAdCc6NJrHvPoUbBwVA2eu4a9Pgs0jrgQhn2c4C3pc6rRHcCbJC-6lpNlxAYnqD8:https://images.pexels.com/photos/1072824/pexels-photo-1072824.jpeg%3Fcs%3Dsrgb%26dl%3Dpexels-akil-mazumder-1072824.jpg%26fm%3Djpg&usqp=CAU" class="img3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPgt16hQQT23AywlbwAO0djLSUHvFT6ipbE1iSMOjGjP9r0DVWCLnnWH0tCtKEPfnE9H4:https://www.gardeningknowhow.com/wp-content/uploads/2008/05/rubber-plant.jpg&usqp=CAU" class="img2">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPgt16hQQT23AywlbwAO0djLSUHvFT6ipbE1iSMOjGjP9r0DVWCLnnWH0tCtKEPfnE9H4:https://www.gardeningknowhow.com/wp-content/uploads/2008/05/rubber-plant.jpg&usqp=CAU" class="img2">
+    </div>
+
+<center>
+    <h1 style="margin-top: 50px;">Slider</h1>
+    <div class="slidecontainer">
+    <input type="range" min="1" max="100" value="50" class="slider" id="myRange" style="margin-bottom: 150px; margin-top: 50px;">
+    </div>
+</center>
+
+    <h1 style="text-align:center;">The 7 Continents</h1>
+
+    <h4 style="text-align:center;">&#10148; Click on the dots</h4>
+    
+    <map name="continents_map">
+    
+     <area shape="circle" coords="70,70,10" href="#north_america">
+    
+     <area shape="circle" coords="133,185,10" href="#south_america">
+    
+     <area shape="circle" coords="270,137,10" href="#africa">
+    
+     <area shape="circle" coords="292,44,10" href="#europe">
+    
+     <area shape="circle" coords="469,201,10" href="#australia">
+    
+     <area shape="circle" coords="374,65,10" href="#asia">
+    
+     <area shape="circle" coords="340,267,10" href="#antarctica">
+    
+    </map>
+
+    <figure style="text-align:center;">
+    
+        <img usemap="#continents_map" src=https://bit.ly/2bgFrvL width="600px" />
+    
+        <figcaption>World Map</figcaption>
+    
+    </figure>
+    
+<p style="margin: 30vw 0px;"></p>
+
+    <div id="africa">
+
+        <p class="spacer"></p>
+
+        <h3>You clicked on Africa</h3>
+
+        <p>Scroll up and click another one.</p>
+    
+        <p style="margin: 30vw 0px;"></p>
+    
+    </div>
+    
+    <div>
+
+        <p class="spacer"></p>
+    
+        <h3 id="asia">You clicked on Asia</h3>
+
+        <p>Scroll up and click another one.</p>
+    
+        <p style="margin: 30vw 0px;"></p>
+    
+    </div>
+    
+    <div>
+
+        <p class="spacer"></p>
+    
+        <h3 id="europe">You clicked on Europe</h3>
+
+        <p>Scroll up and click another one.</p>
+    
+        <p style="margin: 30vw 0px;"></p>
+    
+    </div>
+    
+    <div>
+
+        <p class="spacer"></p>
+    
+        <h3 id="south_america">You clicked on South America</h3>
+
+        <p>Scroll up and click another one.</p>
+    
+        <p style="margin: 30vw 0px;"></p>
+    
+    </div>
+    
+    <div>
+
+        <p class="spacer"></p>
+    
+        <h3 id="north_america">You clicked on North America</h3>
+
+        <p>Scroll up and click another one.</p>
+    
+        <p style="margin: 30vw 0px;"></p>
+    
+    </div>
+    
+    <div>
+
+        <p class="spacer"></p>
+    
+        <h3 id="antarctica">You clicked on Antarctica</h3>
+
+        <p>Scroll up and click another one.</p>
+    
+        <p style="margin: 30vw 0px;"></p>
+    
+    </div>
+    
+    <div>
+
+        <p class="spacer"></p>
+    
+        <h3 id="australia">You clicked on Australia</h3>
+
+        <p>Scroll up and click another one.</p>
+    
+        <p style="margin: 30vw 0px;"></p>
+    
     </div>
     <!---------------------------------- End the nav-bar ------------------------------------->
 
@@ -85,7 +280,7 @@
     <!---------------------------------- Begin the footer ------------------------------------->
     <div class="wideMargin" id="footer">
         <p>
-            Webpage made by <a href="index.html" target="_blank">[your name]</a>
+            Webpage made by <a href="index.html" target="_blank">WebDev14</a>
         </p>
     </div>
     <!---------------------------------- End the footer --------------------------------------->

@@ -1,3 +1,9 @@
+@import url(rainbow.css);
+
+#morecontent {
+	background-color: yellow;
+  }
+
 table {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
 	color: #003366;
@@ -7,6 +13,10 @@ table {
 	border-collapse: collapse;
 	cellspacing: 0px;
 }
+
+<table id="hireButtons">
+
+<table id="footerTable">
 
 tr {
 	border: 1px solid #ffffff;
@@ -18,4 +28,190 @@ th {
 	text-align: center;
 	color: #ffffff;
 	background-color: #003366;
+}
+
+.title{
+	color: red;
+	font-family: 'Trebuchet MS', sans-serif; 
+  }
+  
+  .title-large {
+	font-size: 2rem;
+  }
+  
+  .title-small {
+	font-size: .5rem;
+  }
+
+.button { 
+	
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.betterbutton {
+	border-radius: 8px;
+}
+
+.bestbutton {
+	border-radius: 30%;
+}
+
+.red {
+	background-color: #ff0000;
+}
+
+td{
+	padding:20px;
+}
+
+table{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1, h2, h3, h4, h5, h6{
+	text-align:center;
+}
+
+.button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.button1 {
+	border-radius: 8px;
+}
+
+.button2 {
+	border-radius: 30%;
+}
+
+.red {
+	background-color: #ff0000;
+}
+
+td{
+	padding:20px;
+}
+
+table{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.pinkbutton {
+	background-color:#ff5bb0;
+	border-radius:42px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:15px 15px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #c70067;
+}
+.pinkbutton:hover {
+	background-color:#ef027d;
+}
+.pinkbutton:active {
+	position:relative;
+	top:1px;
+}
+
+.cliccythiccy {
+	background-color:#d0451b;
+	border:12px solid #942911;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:28px;
+	font-style:italic;
+	padding:7px 5px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #854629;
+}
+.cliccythiccy:hover {
+	background-color:#bc3315;
+}
+.cliccythiccy:active {
+	position:relative;
+	top:1px;
+}
+
+.frenchbutton {
+	box-shadow: 0px 0px 0px 0px #9fb4f2;
+	background-color:#7892c2;
+	border-radius:12px;
+	border:6px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:28px;
+	font-style:italic;
+	padding:0px 0px;
+	text-decoration:none;
+}
+
+/**{
+    text-align:center;
+    background-color: orange;
+	This is horrible, I love it 
+}*/
+
+p + * {
+	background-color: #FFFF00;
+}
+
+.background-red:hover {
+	background-color: darkred;
+  }
+
+.background-orange:hover {
+	background-color: rgb(209, 136, 0);
+  }
+
+.background-yellow:hover {
+	background-color: rgb(169, 169, 0);
+  }
+
+.background-green:hover {
+	background-color: darkgreen;
+  }
+
+.background-blue:hover {
+	background-color: darkblue;
+  }
+
+.background-indigo:hover {
+	background-color: rgb(42, 0, 71);
+  }
+
+.background-violet:hover {
+	background-color: darkviolet;
+  }
+
+h1, h2, h3, h4, h5, h6{
+	text-align:center;
+}
+
 }

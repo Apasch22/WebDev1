@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JQuery 19</title>
+    </head>
+    <body>
+        <ul class="tweets">
+<script id="tweets-template" type=""text/x-handlebars-template>
+<li>
+    {{#each this}}
+    <img scr="{{thumb}}" alt="{{author}}">
+    <p><a href="{{url}}">{{tweet}}</a></p>
+</li>
+{{/each}}
+</script>
+        </ul>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+        <script src="Downloads/handlebars-v4.7.7.js"></script>
+
+<script>
+    (function() {
+        
+        var Tweitter = {
+            init: function( config ) {
+                this.url ='http://search.twitter.com/search.json?q=' +config.query +'&callback=?';
+                
+                this.template = config.template;
+                this.container = config.container;
+                this.fetch();
+
+            },
+            attachTemplate: function(){
+                var template = Handlebars.compile( this.template);
+
+                this.container.append((this.tweets));
+
+            },
+
+            fetch: function() {
+                var self = this;
+
+                $.getJSON( this.url, function( data ){
+                    var tweets = $.map (data.results, function(tweet){
+                        return {
+                            author: tweet.from_user,
+                            tweet: tweet.text,
+                            thumb: tweet.profile_image_url,
+                            url: 'http://twitter.com/' +tweet.from_user + '/status/' + tweet.id_str
+
+                        };
+                    });
+                    self.attachTemplate()
+                });
+            }
+        };
+        Twiter.init({
+            template: $('#tweets-template').html(),
+        container: $('ul.tweets'),
+        query: 'Justin Bieber'
+        });
+    })();
+</script>
+
+    </body>
+    </html>

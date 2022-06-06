@@ -1,0 +1,43 @@
+<!DOCTYPE = html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Animation</title>
+  </head>
+  <body>
+      <h1>Animation</h1>
+      <div class="animate" style="border: solid 1px black; text-align: center; margin: 20px 20px;">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <button>Click To Animate</button>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+      <script>
+        (function() {
+            var animate = $('div.animate');
+
+          $('button').on('click', function() {
+            animate
+                .animate({
+                    'fontSize': '-=1'
+                }, {duration : 1000})
+                .animate({
+                    'fontSize': '+=2'
+                }, {duration : 1000})
+                .animate({
+                    'fontSize': '-=2'
+                }, {duration : 1000})
+                .animate({
+                    'fontSize': '+20'
+                }, {duration : 1000})
+                .animate({
+                    'fontSize': '-10'
+                }, {duration : 1000})
+                .animate({
+                    'fontSize': '+30'
+                }, {duration : 1000});
+          });
+        })();
+      </script>
+  </body>
+</html>

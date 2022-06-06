@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 2.0
-        Name:
-        Date Completed:
+        Name: Max Watts
+        Date Completed: 4/19/22
     -->
 
 <head>
+   
 
-    <title>User ## Version 2.0 </title>
+
+    <title>User 20 Version 2.0 </title>
 
     <!-- Meta -->
     <meta charset="utf-8">
@@ -19,7 +21,63 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
+       
+    #banner {
+    border: 5px outset red;
+    background-color: lightblue;
+    text-align: center;
+    }
 
+    div#face {
+    width:20vw;
+    height: 20vw;
+    max-width: 200px;
+    max-height: 200px;
+    margin: 0 auto;
+    position: relative;
+    background: rgb(38, 168, 94);
+    margin-top: 2rem;
+}
+
+div#face, div#face * {
+    border-radius: 25%;
+}
+
+.eye {
+    width: 25%;
+    height: 25%;
+    background: #fff;
+    position: absolute;
+    top: 10%;
+}
+
+.left.eye {
+    left: 10%;
+}
+
+.right.eye {
+    right: 10%;
+}
+
+.pupil {
+    background: rgb(255, 255, 255);
+    width: 25%;
+    height:25%;
+    position: relative;
+    left: 12.5%;
+    transform-origin: bottom;
+}
+
+#mouth {
+    position: relative;
+    width: 30%;
+    left: 10%;
+    height: 12.5%;
+    border: 1vw solid transparent;
+    border-radius: 25%;
+    top: 25%;
+    border-bottom-color: rgb(230, 223, 223);
+}
     </style>
 </head>
 
@@ -37,27 +95,61 @@
             <h2>Heading Examples</h2>
 
             <!-- Put your Headings ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-
+            <h1>Vikes</h1>
+            <h2>Pack</h2>
+            <h3>Lions</h3>
+            <h4>Bears</h4>
+            <h5>Bucs</h5>
+            <h6>Saints</h6>
             <!-- Put your Headings ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
 
             <h2>Examples of "Other" HTML elements</h2>
 
             <!-- Put your 8 examples of other elements ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-
+            <del>Go Pack Go</del>
+            <small>Who Dat</small>
+            <sub>Da Bears</sub>
+            <sup>Skol Vikes</sup>
+            <hr>Gridiron Heroes
+            <ins>Siege The Day</ins>
+            <progress value="1965" max="2022" > </progress >
+            <abbr title="Minnesota Vikings" > MN </abbr>
             <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
         </div>
         <div id="banner">
         </div>
         <div id="face">
+            <div class="left eye">
+                <div class="pupil">
+                </div>
+           </div>
+           <div class="right eye">
+                <div class="pupil">
+                </div>
+           </div>
+           <div id="mouth">
+           </div>
 
         </div>
+
+        <h1>Duis at tellus at urna</h1>
+<section>
+    <h2>feugiat pretium nibh ipsum consequat nisl vel pretium lectus quam id leo in vitae turpis massa sed elementum tempus</h2>
+    <p>aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum posuere urna nec tincidunt praesent semper feugiatt</p>
+</section>
+
+<section>
+    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+    <p>CLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</section>
+
     </main>
 
 
     <footer>
 
         <p>
-            <center> Webpage made by <a href="#" target="_blank">[your name]</a></center>
+            <center> Webpage made by <a href="#" target="_blank">[Max]</a></center>
         </p>
 
     </footer>

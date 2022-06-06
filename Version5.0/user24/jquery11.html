@@ -1,0 +1,29 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1>reveal</h1>
+    <div class="content">
+    <p style="text-align: center; font-size: 25px;">
+        Hello I have no idea what to say but this is <br> still my article
+        and my form button project<br>Hello I have no idea what to say but this is <br> still my article
+        and my form button project <br> Hello I have no idea what to say but this is <br> still my article
+        and my form button project
+    </p>
+</div>
+
+<script>
+
+jQuery.fin.flash = function( speed, easing, callback ) {
+    console.log('hi there');
+    //return this.animate( props, speed, easing, callback );
+};
+
+$('h1').on('click', function() {
+    $(this).next('div.content').flash();
+})
+
+
+</script>

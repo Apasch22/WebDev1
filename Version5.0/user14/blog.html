@@ -1,0 +1,53 @@
+<!DOCTYPE = html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Blog</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <script id="blogTemplate" type="template">
+      <h2> {{title}} </h2>
+      <img src={{thumbnail}} alt={{title}} style="width: 250px; height: auto;">
+      <p> {{paragraph}} </p>
+    </script>
+
+    <script>
+      (function () {
+        var content = [
+            {
+              title: "My blog",
+              thumbnail:
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREfpkbMiITskuizlWAIqJhX1V9GCzvlF8Wvw:https://image.shutterstock.com/image-photo/portrait-normal-boy-smiling-over-260nw-135283244.jpg&usqp=CAU",
+                paragraph: 'Lorem ipsum dolor sit amet',
+            },
+            {
+              title: "My other blog",
+              thumbnail:
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB1nYKYROPQJxqvPdHZFin5fD6r5Cc0ZHt3AnFaPrMU4ldQCu8HnNUtDp4KA4-IfJG8is:https://media.istockphoto.com/photos/vegetable-soup-picture-id1092632852%3Fk%3D20%26m%3D1092632852%26s%3D612x612%26w%3D0%26h%3DewsOVIVzqVKQcapu14UluNDwoIyf3Yq_R6U2Q8Xt2CY%3D&usqp=CAU",
+                paragraph: 'Lorem ipsum dolor sit amet',
+            },
+            {
+              title: "My other other blog",
+              thumbnail:
+                "https://i.pinimg.com/550x/5f/b6/d7/5fb6d751b4c0b52367e57ae3fa182111.jpg",
+                paragraph: 'Lorem ipsum dolor sit amet',
+            },
+          ],
+          template = $.trim($("#blogTemplate").html());
+          frag = '';
+
+        $.each(content, function (index, obj) {
+            frag += 
+            template
+            .replace(/{{title}}/ig, obj.title)
+            .replace(/{{thumbnail}}/ig, obj.thumbnail)
+            .replace(/{{paragraph}}/ig, obj.paragraph);
+        });
+
+        $('body').append(frag);
+
+      })();
+    </script>
+  </body>
+</html>
