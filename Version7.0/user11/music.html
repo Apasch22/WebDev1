@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 7.0
+        Name: QUang Vinh Vo 
+        Date Completed: 05/09/2022
+    -->
+
+ <head>
+
+    <title>Web Dev User 11 </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <style>
+        footer {
+            font-size: 15px;
+            text-align: center;
+        }
+    </style>
+ </head>
+
+ <body>
+    <!---------------------------------- Begin the nav-bar ------------->
+    <div class="menu">
+        <nav class="navbar navbar-expand-md-flex-flow: row nowrap navbar-dark bg-dark">
+            <a href="http://shakonet.isd720.com" class="navbar-brand">Menu</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="aboutThem.html" class="nav-item nav-link active">About them</a>
+                    <a href="footballMatches.html" class="nav-item nav-link active">Matches</a>
+                    <a href="Salary.html" class="nav-item nav-link active">Salary</a>
+                    <a href="games.html" class="nav-item nav-link active">Games</a>
+                    <a href="music.html" class="nav-item nav-link active">Music</a>
+                    <a href="JavaScript.html" class="nav-item nav-link active">JavaScript</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!---------------------------------- End the nav-bar ------------->
+
+    <main class="wideMargin">
+
+        <h1 class="text-left my-3">Music</h1><!-- Edit this line for the title of your page -->
+
+        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+        <p>
+          Here is the place that you can listening to muscic or you can try listen musics that I usually listen. (You don't need to listen if you don't have to.)
+        </p>
+        <p>
+         I provide the link youtube so you can easily open and listen. (Your Welcom.)
+        </p>
+        <p>(I think it's good in my opininon so no judgement, you can listen to your own music, you can opening the Spotify link below to pick your own music.)</p>
+
+        <h5>
+            Click here 
+        </h5>
+
+        <table class=" table table-hover table-bordered">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Artist</th>
+                    <th>Songs</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>1</td>
+                <td>Alan Walker</td>
+                <td>Hymn for the weekend</td>
+                <td><a class="btn btn-default" href="https://www.youtube.com/watch?v=mOivOlP9GRk" role="button">Right click and open in new tab or you don't mind, you can click straight forward and then go back to open new one.</a>
+            </tr>
+                
+            <tr>
+                <td>2</td>
+                <td>Gabry Ponte x Lum!x x Prezioso</td>
+                <td>Thunder</td>
+                <td><a class="btn btn-default" href="https://www.youtube.com/watch?v=yCTxqM-aLtE" role="button">Right click and open in new tab or you don't mind, you can click straight forward and then go back to open new one.</a>
+            </tr>
+
+            <tr>
+                
+                <td>3</td>
+                <td>Alan Walker</td>
+                <td>The Spectre</td>
+                <td><a class="btn btn-default" href="https://www.youtube.com/watch?v=wJnBTPUQS5A" role="button">Right click and open in new tab or you don't mind, you can click straight forward and then go back to open new one.</a>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Teriyaki Boyz</td>
+                <td>Tokyo drift</td>
+                <td><a class="btn btn-default" href="https://www.youtube.com/watch?v=3ix92975nN8" role="button">Right click and open in new tab or you don't mind, you can click straight forward and then go back to open new one.</a> 
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>Alan Walker</td>
+                <td>Lily</td>
+                <td><a class="btn btn-default" href="https://www.youtube.com/watch?v=C2Uconj2F1g" role="button">Right click and open in new tab or you don't mind, you can click straight forward and then go back to open new one.</a> 
+            </tr>
+        </table>
+        <p>
+            If you don't interest the top 5 songs above, feel free to visit Spotify link below that I provide for you and find the best music you comfortable the most.
+        </p>
+        
+        
+        <script>
+            (function() {
+             var table = $('table').hide();
+             jQuery.fn.flash = function( speed,easing, callback ) {
+                 var $this = $(this);
+                 
+                 return $this.slideToggle(500, function() {
+                     $this.delay(3000).slideToggle(500);
+                 });
+             };
+             $('h5').on('click', function() {
+                 table.flash();
+             });
+             })();
+         </script>
+
+        <style>
+            a{color: turquoise;}
+        </style>
+
+        <div>
+            <p class="bg-success">Music can be found here <a href="https://open.spotify.com/">Spotify</a></p>
+        </div>
+    </main>
+    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+
+
+    <!---------------------------------- Begin the footer ------------->
+    <footer class="wideMargin">
+        <p>
+            Webpage made by <a href="#" target="_blank">[Quang Vinh Vo]</a>
+        </p>
+    </footer>
+    <!---------------------------------- End the footer ------------->
+</body>
+
+</html>

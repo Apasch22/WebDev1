@@ -1,0 +1,27 @@
+<html lang="en">
+
+    <head>
+        
+        <title>Web Development User #19</title>
+    
+    </head>
+    
+    <body>
+        
+        <img src=https://upload.wikimedia.org/wikipedia/en/thumb/b/bd/Click_film.jpg/220px-Click_film.jpg>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    
+        <script>
+            (function() {
+                $('img').click (function() {
+                    console.log('clicked');
+                    $(this).clone(true).appendTo('body');
+                    console.log(cloned);
+                });
+            }) ();
+
+        </script>
+    </body>
+
+</html>

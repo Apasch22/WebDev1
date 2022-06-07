@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 3.0
+        Name:
+        Date Completed:
+    -->
+
+
+<head>
+<style>
+article {
+    width:600px;
+    margin:auto; 
+}
+
+blockquote.co {
+    float:right;
+     background:#918f8f
+    font-size 2em;
+    width:35%;
+    text-align: center;
+}
+
+</style>
+
+</head>
+
+
+
+<body>
+<article>
+    <h1>WOW I din't now that!</h1>
+<p> Random words so thst i can be someway orgnized
+
+</p>
+    <p><span class=co>same thing as beafore heba jeba</span>wowRandom words so thst i can be someway or
+        gnizedRandom words so thst i can be someway orgnized
+        Random words so thst i can be someway orgnized
+        Random words so thst i can be somewa
+        y orgnizedRandom words so thst i can be someway orgnized
+    </p> 
+ 
+</article>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script>
+    (function() {
+    
+        var co = $('article').find('span.co').each(function() {
+            var $this = $(this);
+            
+            $('<blockquote></blockquote', {
+                class: 'co',
+                text: $this.text()
+            }).prependTo( $this.closest('p') );
+        });
+
+})();
+    
+    </script>
+
+
+
+
+</body>
+
+</html>

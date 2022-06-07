@@ -1,21 +1,123 @@
-table {
-	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
+@import url(rainbow.css);
+.button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+.button1 {
+	border-radius: 8px;
+}
+
+.button2 {
+	border-radius: 30%;
+}
+
+.red {
+	background-color: #ff0000;
+}
+
+.purple {
+	display: inline-block;
+	padding: 17px 27px;
+	font-size: 16px;
+	cursor: pointer;
+	color: white;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	background-color: purple;
+	border: none;
+	border-radius: 8px;
+	box-shadow: 0 10px #998;
+}
+  
+.purple:active {
+	background-color: #8842d5;
+	box-shadow: 0 6px #667;
+	transform: translateY(5px);
+}
+
+.hover {
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s; /* Safari */
+}
+
+.hover:hover {
+    background-color: #f44141;
+}
+.button3 {
+	background-color: #4c75af;
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.button4 {
+    width: 100px;
+    height: 50px;
+    background-color: pink;
+    color: red;
+    border: 3px solid coral;
+}
+td{
+	padding:20px;
+}
+
+table{
 	margin-left: auto;
 	margin-right: auto;
-	text-align: left;
-	border-collapse: collapse;
-	cellspacing: 0px;
 }
 
-tr {
-	border: 1px solid #ffffff;
-	text-align: center;
-	background-color:#9FB6CD; 
+h1, h2, h3, h4, h5, h6{
+	text-align:center;
 }
+.title{
+	color: red;
+	font-family: 'Trebuchet MS', sans-serif; 
+ }
+  
+  .title-large {
+	font-size: 4rem;
+  }
+  
+  .title-small {
+	font-size: .5rem;
+  }
+  #morecontent {
+	background-color: yellow;
+  }
+table id="hireButtons">
 
-th {
-	text-align: center;
-	color: #ffffff;
-	background-color: #003366;
+<table id="footerTable">
+*{
+    text-align:right;
+    border: 2px solid black;
+} 
+.card{
+      width: 33%;
+	 display: inline-block;
+}
+#knowledge > * {
+	border: 3px red solid;
+}
+p + * {
+	background-color: #00eeff;
+}
+li::marker {
+    color: green;   
+}
+td:hover {
+	background-color: rgb(165, 42, 42);
 }

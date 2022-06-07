@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8>
+    <title>Animation</title>
+    <style>
+        .box {
+            width: 400px;
+            background: red;
+            padding: 2em;
+            position: relative;
+            -webkit-transition: border-radius 1s;
+        }
+
+        .rounded {border-radius: 50px; }
+
+    </style>
+</head>
+<body>
+ 
+<div class="box">
+    <h2>Content Here</h2>
+    <p>
+        The act of summarizing is much like stating the plot of a play. For instance, if you were asked to summarize the story of Shakespeare's 'Hamlet,' you might say: It's the story of a young prince of Denmark who discovers that his uncle and his mother have killed his father, the former king. Adaptation of the first of J.K. Rowling's popular children's novels about Harry Potter, a boy who learns on his eleventh birthday that he is the orphaned son of two powerful wizards and possesses unique magical powers of his own. He is summoned from his life as an unwanted child to become a student at Hogwarts, an English boarding school for wizards. There, he meets several friends who become his closest allies and help him discover the truth about his parents' mysterious deaths.
+    </p>
+</div>
+
+<p><button>Increase</button></p>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script>
+
+    (function() {
+        var box= $('div.box');
+
+        $('button').on('click', function() {
+            box.animate({
+                'fontsize': '+=5',
+                'width': '+=300'
+            }, 500, 'swing', function() {
+                console.log('completed');
+            });
+        });
+    })();
+
+    </script>
+    </body>
+    </html>
+
+
+
+
+
+

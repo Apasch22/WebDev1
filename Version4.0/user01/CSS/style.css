@@ -1,21 +1,166 @@
+@import url(rainbow.css);
+
+.button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {
+  border-radius: 8px;
+  background-color: aliceblue;
+  border:#000;
+  color: mintcream;
+}
+
+.button2 {
+  border-radius: 30%;
+}
+
+.red {
+  background-color: #ff0000;
+}
+
+td {
+  padding: 20px;
+}
+
 table {
-	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: left;
-	border-collapse: collapse;
-	cellspacing: 0px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-tr {
-	border: 1px solid #ffffff;
-	text-align: center;
-	background-color:#9FB6CD; 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
+.title {
+  color: green;
+  font-family: "Trebuchet MS", sans-serif;
 }
 
-th {
-	text-align: center;
-	color: #ffffff;
-	background-color: #003366;
+.title-large {
+  font-size: 2rem;
+}
+
+.title-small {
+  font-size: 0.5rem;
+}
+
+.nameplate {
+  height: 150px;
+}
+
+
+ 
+.myButton1 {
+  background-color: #141615;
+  border: dotted;
+  color: rgb(152, 51, 51);
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;  
+}
+
+.myButton1:hover {
+           background:linear-gradient(to bottom, #e3aeae 5%, #ffffff 100%);
+           background-color:#f6f6f6;
+}
+  
+.myButton1:active {
+           position:relative;
+           top:1px;
+}
+
+.myButton2 {
+  background-color: #a47b39;
+  border: dotted;
+  color: rgba(255, 255, 255, 0.757);
+  padding: 60px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;  
+}
+
+.myButton2:hover {
+           background:linear-gradient(to bottom, #597a59 5%, #c13f3f 100%);
+           background-color:#f6f6f6;
+}
+
+.myButton3 {
+  background-color: #99d4b6;
+  border: dotted;
+  color: rgba(68, 110, 133, 0.757);
+  padding: 40px;
+  border-radius: 15%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;  
+}
+
+.myButton3:hover {
+           background:linear-gradient(to bottom, #e3aeae 5%, #ffffff 100%);
+           background-color:#f6f6f6;
+}
+  
+.myButton3:active {
+           position:relative;
+           top:1px;
+}
+
+#knowledge > * {
+  border: 3px red solid;
+}
+
+p + * {
+  background-color: #FFFF00;
+}
+
+div li::marker{
+  color: red;
+}
+
+div li::marker{
+  content:"🗿 ";
+}
+
+td:hover {
+  background-color: black;
+}
+
+/* unvisited link */
+a:link {
+  color: #0073ff;
+}
+
+/* visited link */
+a:visited {
+  color: #ab7eff;
+}
+
+/* mouse over link */
+a:hover {
+  color: #bababa;
 }

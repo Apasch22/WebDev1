@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <meta charset=utf-8>
+    <title>Missile</title>
+    <style>
+        article {
+            width: 500px;
+            margin: auto;
+        }
+
+        blockquote.co {
+            float: right;
+            background: #ffffff;
+            font-size: 3em;
+            width: 20%
+        }
+    </style>
+</head>
+
+<body>
+
+    <article>
+        <h1>Missile go Brrrrrrrrrrrrrr</h1>
+        <p>
+            The missile knows where it is at all times.
+            It knows this because it know where it isn't.
+            By subtracting where it is from where it isn't,
+            or where it isn't from where it is, whichever
+            is greater, it obtains a difference, or deviation.
+        </p>
+        <p>
+            <span class=co><image src="images/brrrr.jpeg" style="width:100px;height:50px;"></image>
+            </span>
+            Missile Go brrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+            rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+            rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+            rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+            rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+            rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+            rrrrrrrrrrrrr
+        </p>
+        <p>
+            How much wood would a woodchuck chuck
+            if a woodchuck could chuck wood?
+            He would chuck, he would, as much as he could,
+            and chuck as much wood as a woodchuck would
+            if a woodchuck could chuck wood.
+        </p>
+    </article>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+    </script>
+
+    <script>
+        (function () {
+            var co = $('article').find('span.co').each(function () {
+                var $this = $(this);
+
+                $('<blockquote></blockquote>', {
+                    class: 'co',
+                    text: $this.text()
+                }).prependTo($this.closest('p'));
+
+            });
+        })();
+    </script>
+</body>
+
+</html>
