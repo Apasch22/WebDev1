@@ -68,3 +68,15 @@ def upperfirst(string):
     print(string)
 
 upperfirst("string")
+
+for i in range(1,101):
+    two = "A" if i % 2 == 0 else ""
+    three = "B" if i % 3 == 0 else ""
+    five = "C" if i % 5 == 0 else ""
+    seven = "D" if i % 7 == 0 else ""
+    nine = "E" if i % 9 == 0 else ""
+    eleven = "F" if i % 11 == 0 else ""
+    thirteen = "G" if i % 13 == 0 else ""
+    seventeen = "H" if i % 17 == 0 else ""
+    nineteen = "I" if i % 19 == 0 else ""
+print(f"{two}{three}{five}{seven}{nine}{eleven}{thirteen}{seventeen}{nineteen}" or i)
