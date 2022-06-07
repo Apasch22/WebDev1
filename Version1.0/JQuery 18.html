@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JQuery 18</title>
+    <yarn add handlebars/>
+  </head>
+  <body>
+    <ul class="tweets">
+      <script id="template" type="text/x-handlebars-template">
+        {{#each this}}
+          <li>
+            <h2>{{fullName}}</h2>
+            <p>{{{tweet}}}</p>
+            <p>{{story}}</p>
+          </li>
+        {{/each}}
+      </script>
+    </ul>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="Downloads/handlebars-v4.7.7.js"></script>
 
+    <script>
+      (function () {
+        var data = [
+          {
+            author: { first: "Tim", last: "Latzelsberger", age: 18 },
+            tweet: "18th day of learning jQuery",
+            story: "The best thing in the world is food",
+          },
+          {
+            author: { first: "Kevin", last: "Strong", age: 20 },
+            tweet: "<strong>18th day</strong> of learning jQuery",
+            story: "The best thing in the world is food",
+          },
+        ];
+
+        Handlebars.registerHelper("fullName", function (author) {
+          return author.first + " " + author.last + " - " + author.age;
+        });
+        var template = Handlebars.compile($("#template").html());
+        $("ul.tweets").append(template(data));
+        var content = 
+        {
+          story: "The best thing in the world is food"
+        };
+
+      })();
+    </script>
+  </body>
+</html>
