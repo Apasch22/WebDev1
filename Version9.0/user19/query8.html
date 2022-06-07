@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Web Development User #19</title>
+        
+        <style type="text/css">
+           body {
+               width: 600px;
+               margin: auto;
+               font-family: sans-serif;
+           }
+           
+           #contact {
+               background: #e3e3e3;
+               padding: 1em 2em;
+               position: relative;
+           }
+
+           .js #contact {
+               position: absolute;
+               top: 0;
+               width: inherit;
+               display: none;
+           }
+           
+           #contact h2 {margin-top: 0;}
+           #contact ul {padding: 0;}
+           #contact li {
+               list-style: none;
+               margin-bottom: 1em;
+           }
+           
+           .close {
+               position: absolute;
+               right: 10px;
+               top: 10px;
+               font-weight: bold;
+               font-family: sans-serif;
+               cursor: pointer;
+           }
+
+           input, textarea {width: 100%; line-height: 2em;}
+           input[type=submit] {width: auto;}
+           label {display: block; text-align: left;}
+        </style>
+    </head>
+    
+    <body>
+        <p>
+            Oh the world is signing off, the second hour tells your audience you've had
+            enough. And all the colors of my loneliness arranged across the screen.
+            I think your audience has seen enough-h-h-h-h-h-h-h-h. Oh yes, your audience
+            has seen enough. Oh, the world’s gone silent. Here’s to loving life! Soon
+            we’ll televise our C-O-L-O-R now leave me blinded and erase my memories.
+            Soon you’ll be a part of C-O-L-O-R will leave you nauseous and it changes
+            everything. And in a moment you will notice nothing’s quite the same, When
+            my COLORBARS are mixing frequencies. Turn the signal down and spin around
+            in the opposite direction. And now, will you please applaud? Turn the 
+            volume up, folks!. Listen to the words I say, now, you’re a f▬king idiot
+            and static’s pouring out of your mouth. There’s nothing here for you to see
+            (For you to see, to see you). There’s nothing here. Oh, the days are
+            getting shorter. There’s a voice inside my head that says you’ve had enough
+            (And now you’ll turn your eyes towards the screen). See, all the limits of
+            the televised have gone erratic (Oh yes, now turn your eyes and scream).
+            I’m already here (For you to see, for you to see, to see you). I’ve always
+            been here (For you to see, for you to see, to see you). I’ve lost control
+            of my imagination, tell me a solution, it’s sweeping ‘cross the nation
+            Finally, I- My imagination, tell me a solution, it’s sweeping ‘cross the
+            nation. Finally- Soon we’ll televise our C-O-L-O-R, now leave me blinded
+            and erase my memories. Soon you’ll be a part of C-O-L-O-R will leave you
+            nauseous and it changes everything. I’m already here (For you to see, for
+            you to see, I see you) I’ve always been here (For you to see, for you to
+            see, I see you) And in a moment you will notice nothing’s been the same.
+            Now your f▬king lies are mixing frequencies. Turn the signal down and spin
+            around in the opposite direction. And. Now. You. Will. Applaud!
+            For you to see, to see you
+            For you to see, to see you
+            For you to see, to see you
+            For you to see, I see you
+        </p>
+
+        <div id="contact">
+            <h2>Any Questions?</h2>
+            <form action="#">
+                <ul>
+                    <li>
+                        <label for="name">Name: </label>
+                        <input name="name" id="name">
+                    </li>
+                    <li>
+                        <label for="email">Email Address</label>
+                        <input name="email" id="email">
+                    </li>
+                    <li>
+                        <label for="comments">Additonal</label>
+                        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                    </li>
+                    <li>
+                        <input type="submit" value="Submit">
+                    </li>
+                </ul>
+            </form>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    
+        <script>
+            (function() {
+                $('html').addClass('js');
+
+                var contactForm = {
+                    /*container: $('#contact'),*/
+                    init: function() {
+                        $('<button></button>', {
+                            text: 'Any Questions?'
+                        })
+                        .insertAfter('article');
+                        /*.on ('click', this.show)
+                    },
+
+                    show function(){
+                        this.container.show();*/
+                    }
+                };
+
+                contactForm.init();
+
+            }) ();
+
+        </script>
+    </body>
+
+</html>
