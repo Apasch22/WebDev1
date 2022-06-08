@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>POST</title>
+</head>
+
+<script type="text/javascript" src=https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js> </script>
+
+
+<script>
+(function() { 
+    var Twitter = { 
+        init: function() {
+            this.url = https://twitter.com/home ;
+            this.fetch();
+            console.log(this.tweets);
+        },
+        fetch: function() {
+            var self = this;
+
+            $.getJSON( this.url, function ( data ) {
+                self.tweets = $.map( data.results, function ( tweet )
+                return {
+                    author: Tweet.from_user,
+                    tweet: tweet.text
+                    thumb: tweet.profile_image_url,
+                    url: https://twitter.com/home
+               
+                })})}}})
+
+
+</script>
+</html>
