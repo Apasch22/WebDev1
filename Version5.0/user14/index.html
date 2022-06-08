@@ -117,6 +117,27 @@ input {
     background-color: darkslategray;
     color: white;
 }
+
+.loading {
+    display: flex;
+    justify-content: center;
+}
+
+.loading::after {
+    content: "";
+    width: 100px;
+    height: 100px;
+    border: 20px  solid #dddddd;
+    border-top-color: dodgerblue;
+    border-radius: 50%;
+    animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+    to {
+        transform: rotate(1turn);
+    }
+}
     </style>
 </head>
 
@@ -149,6 +170,10 @@ input {
         </nav>
     </div>
     
+    <p style="margin-bottom: 50px;"></p>
+    
+    <div class="loading"></div>
+
     <p style="margin-bottom: 50px;"></p>
 
     <form class="form">
