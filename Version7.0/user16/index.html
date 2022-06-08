@@ -4,9 +4,9 @@
     Name:  
     Date Completed: 
 -->
-
-<head>
-    <title>Dynamic Webpage</title>
+<h8>
+<head>   
+    <title>DynamiC Webpage</title>
 
     <!-- Bootstrap meta data -->
     <meta charset="utf-8">
@@ -30,192 +30,348 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <style>
-        /* Internal Styling Here */
+ 
+
+ h3 {
+    background-color: rgba(77, 79, 81, 0.848)
+
+}
+
+body {
+
+height:5%
+
+
+}
+
+body {
+
+  background-color: rgba(24, 217, 104, 0.307);
+}
+
+footer {
+
+    background-color: rgb(77, 79, 81);
+
+
+}
+
+
+
+
+
     </style>
 
+
+
 </head>
-
+<div></div>
 <body>
+    <div class="row">
+        <div class="col-xl-12">
+    
+        <nav class="demo-content"  >
+        <a href="index.html" style="color:#ffffff" style="font-size: 30px;">
+          <div></div>
+            <h3>
+            Home</a>
+        
+            <a href="aboutMe.html" style="color:#ffffff" style="font-size: 30px;">
+                About Me</a>
+                
+                <a href="test.html"  style="color:#ffffff" style="font-size: 30px;">
+                    Help</a>
+                    <a href="#" style="color:#ffffff" style="font-size: 30px;"
+                                 tabindex="-1">Email</a>
+               
+                <a
+                class="btn btn-outline-light btn-floating m-1"
+                href="#!"
+                role="button"
+                ><i class="fa fa-google"></i
+              ></a>
+              <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="#!"
+              role="button"
+              ><i class="fa fa-twitter"></i
+            ></a>
+            <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+          <a
+          class="btn btn-outline-light btn-floating m-1"
+          href="#!"
+          role="button"
+          ><i class="fa fa-youtube-play"></i
+        ></a>
+        <a
+        class="btn btn-outline-light btn-floating m-1"
+        href="#!"
+        role="button"
+        ><i class="fa fa-instagram"></i
+      ></a>
+        </h3>
     <main>
-        <div id="built-in-functions">
-            <!-- ALERT-->
-            <script>
-                alert('Go Sabers!');
-            </script>
-            <!--PRINT-->
-            <script>
-                function printWindow(){
-                    window.print();
-                }
-            </script>
-            <!--LENGTH-->
-            <script>
-                function getLength() {
-                    document.getElementById("length").innerHTML = document.title.length;
-                }
-            </script>
-            <!-- FOCUS-->
-            <script>
-                function getFocus() {
-                    document.getElementById("focusButton").focus();
-                }
-            </script>
-            <!-- CLICK-->
-            <script>
-                function clickSimulation() {
-                    document.getElementById("Check").click();
-                }
-            </script>
-            <script>
-                function getDate() {
-                    document.getElementById("date").innerHTML = Date();
-                }
-            </script>
 
-            <div class="container-fluid mt-3 mb-3">
-                <div class="row">
-                    <!--PRINT-->
-                    <div class="col-md-1">
-                        <button class="btn btn-dark btn-md" value="print this page" onclick="printWindow()">Print this
-                            page</button>
-                    </div>
-                    <!--LENGTH-->
-                    <div class="col-md-3">
-                        <button class="btn btn-dark btn-md" onclick="getLength()">The title has this many
-                            characters</button>
-                    </div>
-                    <div class="col-md-1">
-                        <p id="length"></p>
-                    </div>
-                    <!--FOCUS-->
-                    <div class="col-md-1">
-                        <button class="btn btn-dark btn-md" onclick="getFocus()">Focus</button>
-                    </div>
-                    <!-- CLICK-->
-                    <div class="col-md-1">
-                        <form>
-                            <input type="checkbox" id="Check" onmouseover="clickSimulation()">
-                            <input type="checkbox" id="Check" onmouseover="clickSimulation()">
-                        </form>
-                    </div>
-                    <!--DATE-->
-                    <div class="col-md-1">
-                        <button class="btn btn-dark btn-md" onclick="getDate()">Get Date</button>
-                    </div>
-                    <div class="col-md-3">
-                        <p id="date"></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-5">
-                    <h1>Heading for a long list</h1>
-                    <ol>
-                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                        <li>Aliquam tincidunt mauris eu risus.</li>
-                        <li>Vestibulum auctor dapibus neque.
-                            <ol>
-                                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                                <li>Aliquam tincidunt mauris eu risus.
-                                    <ol>
-                                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                            <ol>
-                                                <li>Lorem ipsum dolor sit amet, consectetuer.</li>
-                                            </ol>
-                                        </li>
-                                        <li>Aliquam tincidunt mauris eu risus.</li>
-                                        <li>Vestibulum auctor dapibus neque.</li>
-                                    </ol>
-                                </li>
-                                <li>Vestibulum auctor dapibus neque.</li>
-                                <li>Aliquam tincidunt mauris eu risus.</li>
-                            </ol>
-                        </li>
-                        <li>Aliquam tincidunt mauris eu risus.</li>
-                        <li>Vestibulum auctor dapibus neque.</li>
-                    </ol>
+     
+      
+      
+      </body>
 
-                </div>
-
-                <div class="col-md-2 text-center">
-                    <button class="btn btn-danger btn-lg mt-3 container" onclick="firstSelector()">Try it
-                        1</button>
-
-                    <button class="btn btn-info btn-lg mt-3 container" onclick="secondSelector()">Try it
-                        2</button>
-
-                    <button class="btn btn-secondary btn-lg mt-3 container" onclick="thirdSelector()">Try it
-                        3</button>
-
-                    <button class="btn btn-primary btn-lg mt-3 container" onclick="window.location.reload()">Try
-                        it
-                        4</button>
-                </div>
-
-                <div class="col-md-5">
-                    <h1>My shopping list</h1>
-
-                    <div>
-                        <label for="item">Enter a new item:</label>
-                        <input type="text" name="item" id="item">
-                        <button id="aggregating-list">Add item</button>
-                    </div>
-
-                    <ul>
-
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-        <script id="lists">
-            function firstSelector() {
-                document.querySelector("li").style.backgroundColor = "#dc3545";
-            }
-            function secondSelector() {
-                var x = document.querySelectorAll("li");
-                var i;
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.backgroundColor = "#17a2b8";
-                }
-            }
-            function thirdSelector() {
-                document.querySelector("ol ol li").style.backgroundColor = "#6c757d";
-            }
-        </script>
-        <script id="shopping">
-            const list = document.querySelector('ul');
-            const input = document.querySelector('input');
-            const button = document.getElementById('aggregating-list');
-
-            button.onclick = function () {
-                let myItem = input.value;
-                input.value = '';
-
-                const listItem = document.createElement('li');
-                const listText = document.createElement('span');
-                const listBtn = document.createElement('button');
-
-                listItem.appendChild(listText);
-                listText.textContent = myItem;
-                listItem.appendChild(listBtn);
-                listBtn.textContent = 'Delete';
-                list.appendChild(listItem);
-
-                listBtn.onclick = function (e) {
-                    list.removeChild(listItem);
-                }
-
-                input.focus();
-            }
-        </script>
+          
+    <div></div>        
+    
     </main>
-    <div id="container" style="height: 3000px; width: 1000px;">
-        <a href="#"><button type="button" id="focusButton" style="margin-top: 3000px;">You focused on me!</button></a>
+    <div id="container" style="height: 0px; width: 0px;">
+       
     </div>
+<table style="width:100%">
+
+<td>
+   <a href="WestTeams.html">
+    <img src="images/Suns.jpg" alt="Nice Picture of a handsome man named Karl Anthony-Towns" style="width:275px;height:250px;">
+<h2>Top 5 West Teams..</h2>
+</a>
+
+
+</td>
+<td>
+    <a href="WestPlayers.html">
+    
+    <img src="images/karltowns.jpg" alt="Nice Picture of a handsome man named Karl Anthony-Towns" style="width:300px;height:250px;">
+<h2>Top 5 West Players</h2>
+</a>
+
+</td>
+<tr>
+
+<td>
+    <a href="EastTeams.html">
+    <img src="images/Bucks.jpg" alt="Nice Picture of a handsome man named Karl Anthony-Towns" style="width:275px;height:250px;">
+<h4>Top 5 East Teams</h4>
+
+</a>
+
+
+</td>
+
+
+
+<td>
+
+<a href="EastPlayers.html">
+
+    <img src="images/Durant.jpg" alt="Nice Picture of a handsome man named Karl Anthony-Towns" style="width:400px;height:250px;">
+<h4>Top 5 East Players</h4>
+</a>
+
+
+</td>
+
+
+
+</tr>
+
+
+
+</table>
+
+
+
+
+<script>
+  function Function3() {
+    alert("Thank you for visitng my website");
+  }
+  </script>
+  
+  
+  <body onload="Function3()">
+
 </body>
 
+
+
+
+ <footer class="forty text-center text-white" >
+   
+    <div class="container p-4" style="background-color: rgb(18, 121, 217)">
+      <section class="mb-4" style="background-color: rgb(18, 121, 217)">
+       
+        <a href="#" class="btn btn-outline-light btn-floating m-1">
+            <i class="fa fa-facebook" aria-hidden="true"></i> 
+
+        <a
+          class="btn btn-outline-light btn-floating m-1"
+          href="#!"
+          role="button"
+          ><i class="fa fa-twitter"></i
+        ></a>
+
+        <a
+          class="btn btn-outline-light btn-floating m-1"
+          href="#!"
+          role="button"
+          ><i class="fa fa-google"></i
+        ></a>
+
+        <a
+          class="btn btn-outline-light btn-floating m-1"
+          href="#!"
+          role="button"
+          ><i class="fa fa-instagram"></i
+        ></a>
+
+        <a
+          class="btn btn-outline-light btn-floating m-1"
+          href="#!"
+          role="button"
+          ><i class="fa fa-linkedin"></i
+        ></a>
+
+        <a
+          class="btn btn-outline-light btn-floating m-1"
+          href="#!"
+          role="button"
+          ><i class="fa fa-youtube-play"></i
+        ></a>
+      </section>
+
+      <section class="">
+        <form action="">
+          <div class="row d-flex justify-content-center">
+            <div class="col-auto">
+              <p class="pt-2">
+                <rergf>Subscribe for daily news takes</rergf>
+              </p>
+            </div>
+
+            <div class="col-md-5 col-12">
+              <div class="form-outline form-white mb-4" style="background-color: rgb(18, 121, 217)">
+                <input type="email" id="form5Example21" class="form-control" />
+                <label class="form-label" for="form5Example21"
+                  >Email address</label
+                >
+              </div>
+            </div>
+
+            <div class="col-auto">
+            
+            <script>
+            
+              function Function2() {
+                alert("Thank You!");
+              }
+            
+            </script>
+              <button onclick="Function2()" type="submit" class="btn btn-outline-light mb-4" style="background-color: rgb(115, 113, 113)">
+                Subscribe
+              </button>
+        
+         
+              
+      
+              
+              <p id="demo"></p>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <section class="mb-4" style="background-color: rgb(18, 121, 217)">
+        <p>This is the main text. Blah blah blah. Something Something mission statement. We vow to do this and this. I am just speaking words. More filler. I feel like this needs more text so I will keep speaking random words. Is it called a glue stick because the glue sticks or because it is a stick of glue?</p>
+      </section>
+
+      <section class="">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="background-color: rgb(18, 121, 217)">
+            <h5 class="text-uppercase">Links</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Yes</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Google</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Other</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Youtube</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="background-color: rgb(18, 121, 217)">
+            <h5 class="text-uppercase">Links</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Um</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">No</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">ƒ</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">More links</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="background-color: rgb(18, 121, 217)">
+            <h5 class="text-uppercase">Links</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Names</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Something</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Yes</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Again</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="background-color: rgb(18, 121, 217)">
+            <h5 class="text-uppercase">Links</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">What</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Do</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">I</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Write</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="text-center p-3" style="background-color: rgb(34, 148, 219)">
+      © 2022 Copyright:
+      <a onmouseover="style.color='orange'" onmouseout="style.color='white'"  href="https://www.google.com/search?q=carrot&bih=821&biw=1440&hl=en&ei=4_yCYvToM9WhptQP5-eU8A8&ved=0ahUKEwi05q66s-X3AhXVkIkEHeczBf4Q4dUDCA4&uact=5&oq=carrot&gs_lcp=Cgdnd3Mtd2l6EAMyCAguEIAEELEDMggIABCABBCxAzIICC4QgAQQsQMyCAguEIAEELEDMg4ILhCxAxCDARDHARCjAjIICC4QgAQQsQMyCAgAEIAEELEDMggIABCABBCxAzIICAAQgAQQsQMyBQgAEIAEOgQILhBDOgQIABBDOhAILhCxAxCDARDHARDRAxBDOgcILhDUAhBDOg0ILhCxAxDHARDRAxBDOg4ILhCABBDHARDRAxDUAjoKCC4QxwEQ0QMQQzoKCC4QxwEQowIQQzoNCC4QsQMQgwEQ1AIQQzoICC4QsQMQgwE6DgguEIAEELEDEMcBEKMCOgcILhCxAxBDOgsILhCABBCxAxCDAToLCAAQgAQQsQMQgwE6BwgAELEDEENKBAhBGABKBAhGGABQAFihCWDOC2gAcAF4AYABggSIAbQLkgEJMC40LjEuNS0xmAEAoAEBwAEB&sclient=gws-wiz&surl=1&safe=active&ssui=on">Carrot.com</a>
+    </div>
+
+</footer>
+</h8>
 </html>

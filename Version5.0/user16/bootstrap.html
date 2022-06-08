@@ -74,6 +74,29 @@ h3 {
 
 <body>
 
+
+
+ 
+    <video id="video1" width="620" height="476" controls="controls">
+      <source src="CP.mp4" type="video/mp4">
+      <source src="mov_bbb.ogg" type="video/ogg">
+      Your browser does not support HTML5 video.
+    </video>
+    
+    <script>
+    var vid = document.getElementById("video1");
+    
+    function myFunction() { 
+      var text1 = vid.addTextTrack("caption");
+   
+    } 
+    </script> 
+    
+    <p>Video is of <a href="https://en.wikipedia.org/wiki/Chris_Paul" target="_blank">CP</a>.</p>
+
+
+
+
 <div class="row">
     <div class="col-xl-12">
 

@@ -26,7 +26,40 @@
 
     <!-- Custom styles for this template -->
     <style type="text/css">
-        .menu {
+       
+       .hidden {
+    display: none;
+}
+
+a.skip-main {
+    left: -999px;
+    position: absolute;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -999;
+}
+
+a.skip-main:focus,a.skip-main:active {
+    color: #fff;
+    background-color: #000;
+    left: auto;
+    top: auto;
+    width: 30%;
+    height: auto;
+    overflow: auto;
+    margin: 10px 35%;
+    padding: 5px;
+    border-radius: 15px;
+    border: 4px solid red;
+    text-align: center;
+    font-size: 1.2em;
+    z-index: 999;
+}
+       
+       
+       .menu {
             margin: 0px;
         }
 
@@ -43,9 +76,12 @@
 
 <body>
     <!---------------------------------- Begin the nav-bar ----------------------------------->
+    <a class="skip-main" tabindex="0" href="#main">Skip to main content</a>
+
+   
     <div class="menu">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+            <a tabindex="0" href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -53,18 +89,18 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="#" class="nav-item nav-link">About Me</a>
-                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Music</a>
-                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
-                    <a href="games.html" class="nav-item nav-link" tabindex="-1">Games</a>
-                    <a href="bootstrap.html" class="nav-item nav-link" tabindex="-1">Bootstrap</a>
-                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
+                    <a tabindex="0" href="index.html" class="nav-item nav-link active">Home</a>
+                    <a tabindex="0" href="#" class="nav-item nav-link">About Me</a>
+                    <a tabindex="0" href="#" class="nav-item nav-link disabled" tabindex="-1">Music</a>
+                    <a tabindex="0" href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
+                    <a tabindex="0" href="games.html" class="nav-item nav-link" tabindex="-1">Games</a>
+                    <a tabindex="0" href="bootstrap.html" class="nav-item nav-link" tabindex="-1">Bootstrap</a>
+                    <a tabindex="0" href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
                         tabindex="-1">Contact</a>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
                 <div class="navbar-nav ml-auto">
-                    <a href="#" class="nav-item nav-link disabled">Login</a>
+                    <a tabindex="0" href="#" class="nav-item nav-link disabled">Login</a>
                 </div>
             </div>
         </nav>
@@ -72,19 +108,36 @@
     <!---------------------------------- End the nav-bar ------------------------------------->
 
     <div class="wideMargin" id="content">
-
-        <h1 class="text-left my-3">Home</h1><!-- Edit this line for the title of your page -->
+       
+        <div id="main" class="hidden" tabindex="-1"></div>
+       
+        <main class="wideMargin">
+       
+       
+       
+            <h1 tabindex="0" class="text-left my-3">Home</h1><!-- Edit this line for the title of your page -->
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-        <p>
+        <p tabindex="0">
             This is my Home page!
         </p>
+        <p tabindex="0">
+
+            This is my first webpage! I was able to code all the HTML and CSS in order to make it. Watch out world of
+            web design here I come!
+        </p>
+        <p tabindex="0">
+
+            I can use my skills here to create websites for my business, my friends and family, my C.V, blog or
+            articles. As well as any games or more experiment stuff (which is what the web is really all about).
+        </p>
+    </main>
         <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑-->
     </div>
 
     <!---------------------------------- Begin the footer ------------------------------------->
     <div class="wideMargin" id="footer">
-        <p>
+        <p tabindex="0">
             Webpage made by <a href="index.html" target="_blank">[your name]</a>
         </p>
     </div>
