@@ -1,43 +1,50 @@
 .body-wideMargin {
-    margin: 50px;
-    font-size: 100%;
-    line-height: 1.5;
-    font-family: Roboto;
+  margin: 50px;
+  font-size: 100%;
+  line-height: 1.5;
+  font-family: Roboto;
 }
 
 button {
-    padding: 5px;
+  padding: 5px;
 }
 
 ol {
-    list-style-type: decimal-leading-zero;
+  list-style-type: decimal-leading-zero;
 }
 
 ol ol {
-    margin-left: 0.9em;
+  margin-left: 0.9em;
 }
 
 ol li {
-    line-height: 1.5;
+  line-height: 1.5;
 }
 
 li li {
-    list-style-type: lower-alpha;
+  list-style-type: lower-alpha;
 }
 
 li li li {
-    list-style-type: square;
+  list-style-type: square;
 }
 
 li li li li {
-    list-style-type: circle;
+  list-style-type: circle;
 }
 
 h1 {
-    font-family: "Fjalla One", sans-serif;
-    font-size: 2em;
-    text-transform: uppercase;
-    font-weight: 400;
-    border-bottom: 1px solid black;
-    margin-bottom: 1em;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: 400;
+  border-bottom: 1px solid black;
+  margin-bottom: 1em;
+}
+
+body {
+  background-color: #d6baff;
+  font-family: Georgia;
+  font-size: 15px;
+  line-height: 1.5;
 }
