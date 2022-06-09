@@ -5,7 +5,7 @@
    <meta name="description" content="A responsive movie poster grabber">
    <title>Front Row by Ben Howdle</title>
    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
-   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.2.min.js"></script>
         <!--jQuery, linked from a CDN-->
    <script src="scripts.js"></script>
    <script type="text/javascript" src="https://use.typekit.com/oya4cmx.js"></script>
