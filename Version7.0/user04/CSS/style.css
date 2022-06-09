@@ -32,7 +32,9 @@ li li li {
 li li li li {
     list-style-type: circle;
 }
-
+body {
+    background-color: #FEFAE0;
+}
 h1 {
     font-family: "Fjalla One", sans-serif;
     font-size: 2em;
@@ -40,4 +42,42 @@ h1 {
     font-weight: 400;
     border-bottom: 1px solid black;
     margin-bottom: 1em;
+}
+
+nav {
+    background-color: #D4A373;
+}
+
+a {
+    color: #D4A373;
+}
+
+.madeby {
+    color: #CCD5AE;
+}
+.btn-outline-white {
+    color: #D4A373;
+}
+
+footer {
+    color: #FAEDCD;
+    background-color: #E9EDC9;
+}
+
+.footer-copyright {
+background-color: #CCD5AE;
+}
+
+.slides {
+    background-color: aqua;
+}
+
+
+#slider {
+  position: relative;
+  width: 100vw;
+  height: 30vw;
+
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
 }
