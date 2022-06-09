@@ -1,26 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--Version 7.0 
-    Name:  
-    Date Completed: 
--->
+<!--Version 6.0
+        Name: Max Watts
+        Date Completed:
+    -->
 
 <head>
-    <title>Dynamic Webpage</title>
 
-    <!-- Bootstrap meta data -->
+    <title>Watts' Wicked Website</title>
+    <link rel="icon" type="favicon" href="images/favicon2.ico" />
+    <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Introduction to JavaScript">
-
+    <meta name="description" content="WebDev Version 4.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+    <title>Untitled</title>
+
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Custom -->
     <link rel="stylesheet" href="CSS/style.css">
 
     <!-- JavaScript -->
@@ -29,193 +41,195 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <style>
-        /* Internal Styling Here */
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        menu {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .wideMargin {
+            margin: 15px;
+        }
+        
+        footer {
+            font-size: 12px;
+            text-align: center;
+        }
+        
+        .dark-footer p {
+            color: rgb(221, 215, 215);
+            ;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        h3 {
+            color: rgb(221, 215, 215);
+        }
+        
+        .header-paragraph {
+            padding: 5px 50px 30px 5px;
+            margin-top: 25px;
+            margin-bottom: 50px;
+        }
+        
+        * {
+            margin: 0;
+        }
+        
+        .dark-footer {
+            position: bottom;
+            color: rgb(221, 215, 215);
+            text-align: center;
+        }
+        
+        .menu {
+            margin: 0;
+            padding: 0;
+        }
+        
+        footer {
+            font-size: 12px;
+            text-align: center;
+        }
+        
+        .wideMargin {
+            margin-top: auto;
+        }
+        
+        .content {
+            padding: 5px 50px 30px 5px;
+            background-color: rgb(216, 107, 67);
+            margin-top: 25px;
+            margin-bottom: 50px;
+        }
+        
+        .logo {
+            color: rgb(255, 255, 255)
+        }
+        
+        .header {
+            background-color: rgb(43, 42, 42);
+        }
     </style>
 
+
+
+
+    <div class="header">
+        <a class="logo">Watts' Wicked Website</a>
+        <div class="header-right">
+            <a href="index.html" class="nav-item nav-link active">Home</a>
+            <a href="bowl_of_fame.html" class="nav-item nav-link active">BoF</a>
+            <a href="About_Me.html" class="nav-item nav-link active">Ratings</a>
+            <a href="http://localhost:80\C:\Users\MW\Documents\GitHub\WebDev1\Version7.0\user20\index.php" class="nav-item nav-link active">weather</a>
+        </div>
+    </div>
 </head>
 
 <body>
-    <main>
-        <div id="built-in-functions">
-            <!-- ALERT-->
-            <script>
-                alert('Go Sabers!');
-            </script>
-            <!--PRINT-->
-            <script>
-                function printWindow(){
-                    window.print();
-                }
-            </script>
-            <!--LENGTH-->
-            <script>
-                function getLength() {
-                    document.getElementById("length").innerHTML = document.title.length;
-                }
-            </script>
-            <!-- FOCUS-->
-            <script>
-                function getFocus() {
-                    document.getElementById("focusButton").focus();
-                }
-            </script>
-            <!-- CLICK-->
-            <script>
-                function clickSimulation() {
-                    document.getElementById("Check").click();
-                }
-            </script>
-            <script>
-                function getDate() {
-                    document.getElementById("date").innerHTML = Date();
-                }
-            </script>
 
-            <div class="container-fluid mt-3 mb-3">
-                <div class="row">
-                    <!--PRINT-->
-                    <div class="col-md-1">
-                        <button class="btn btn-dark btn-md" value="print this page" onclick="printWindow()">Print this
-                            page</button>
-                    </div>
-                    <!--LENGTH-->
-                    <div class="col-md-3">
-                        <button class="btn btn-dark btn-md" onclick="getLength()">The title has this many
-                            characters</button>
-                    </div>
-                    <div class="col-md-1">
-                        <p id="length"></p>
-                    </div>
-                    <!--FOCUS-->
-                    <div class="col-md-1">
-                        <button class="btn btn-dark btn-md" onclick="getFocus()">Focus</button>
-                    </div>
-                    <!-- CLICK-->
-                    <div class="col-md-1">
-                        <form>
-                            <input type="checkbox" id="Check" onmouseover="clickSimulation()">
-                            <input type="checkbox" id="Check" onmouseover="clickSimulation()">
-                        </form>
-                    </div>
-                    <!--DATE-->
-                    <div class="col-md-1">
-                        <button class="btn btn-dark btn-md" onclick="getDate()">Get Date</button>
-                    </div>
-                    <div class="col-md-3">
-                        <p id="date"></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-5">
-                    <h1>Heading for a long list</h1>
-                    <ol>
-                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                        <li>Aliquam tincidunt mauris eu risus.</li>
-                        <li>Vestibulum auctor dapibus neque.
-                            <ol>
-                                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                                <li>Aliquam tincidunt mauris eu risus.
-                                    <ol>
-                                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                            <ol>
-                                                <li>Lorem ipsum dolor sit amet, consectetuer.</li>
-                                            </ol>
-                                        </li>
-                                        <li>Aliquam tincidunt mauris eu risus.</li>
-                                        <li>Vestibulum auctor dapibus neque.</li>
-                                    </ol>
-                                </li>
-                                <li>Vestibulum auctor dapibus neque.</li>
-                                <li>Aliquam tincidunt mauris eu risus.</li>
-                            </ol>
-                        </li>
-                        <li>Aliquam tincidunt mauris eu risus.</li>
-                        <li>Vestibulum auctor dapibus neque.</li>
-                    </ol>
+    <!---------------------------------- End the nav-bar ------------------------------------->
 
-                </div>
 
-                <div class="col-md-2 text-center">
-                    <button class="btn btn-danger btn-lg mt-3 container" onclick="firstSelector()">Try it
-                        1</button>
 
-                    <button class="btn btn-info btn-lg mt-3 container" onclick="secondSelector()">Try it
-                        2</button>
 
-                    <button class="btn btn-secondary btn-lg mt-3 container" onclick="thirdSelector()">Try it
-                        3</button>
+    <!-- Full-width images with number and caption text -->
 
-                    <button class="btn btn-primary btn-lg mt-3 container" onclick="window.location.reload()">Try
-                        it
-                        4</button>
-                </div>
+    <div style="padding-left:30px">
+        <h1>Welcome to The Right Opinions</h1>
+        <table>
+            <tr>
+                <td><img src="https://i.postimg.cc/h4CCb3VQ/beans.jpg' border='0' alt='beans'" width="300" height="200"></td>
+                <td><img src="https://i.postimg.cc/RVLwLWks/tomato.jpg' border='0' alt='tomato'" width="300" height="200"></td>
+                <td>
+                    <td><img src="https://i.postimg.cc/yxzSFKvC/slaw.jpg' border='0' alt='slaw'" width="300" height="200"></td>
+                </td>
+            </tr>
 
-                <div class="col-md-5">
-                    <h1>My shopping list</h1>
 
-                    <div>
-                        <label for="item">Enter a new item:</label>
-                        <input type="text" name="item" id="item">
-                        <button id="aggregating-list">Add item</button>
-                    </div>
 
-                    <ul>
-
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-        <script id="lists">
-            function firstSelector() {
-                document.querySelector("li").style.backgroundColor = "#dc3545";
-            }
-            function secondSelector() {
-                var x = document.querySelectorAll("li");
-                var i;
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.backgroundColor = "#17a2b8";
-                }
-            }
-            function thirdSelector() {
-                document.querySelector("ol ol li").style.backgroundColor = "#6c757d";
-            }
-        </script>
-        <script id="shopping">
-            const list = document.querySelector('ul');
-            const input = document.querySelector('input');
-            const button = document.getElementById('aggregating-list');
-
-            button.onclick = function () {
-                let myItem = input.value;
-                input.value = '';
-
-                const listItem = document.createElement('li');
-                const listText = document.createElement('span');
-                const listBtn = document.createElement('button');
-
-                listItem.appendChild(listText);
-                listText.textContent = myItem;
-                listItem.appendChild(listBtn);
-                listBtn.textContent = 'Delete';
-                list.appendChild(listItem);
-
-                listBtn.onclick = function (e) {
-                    list.removeChild(listItem);
-                }
-
-                input.focus();
-            }
-        </script>
-    </main>
-    <div id="container" style="height: 3000px; width: 1000px;">
-        <a href="#"><button type="button" id="focusButton" style="margin-top: 3000px;">You focused on me!</button></a>
+        </table>
+        <p class="header-paragraph" style=" background-color: rgb(216, 107, 67)"> In the photo above ive shown you one of the most uninviting foods and disgusting foods to mand kind otherwise known as,
+            <strong>Coleslaw</strong>. In this website we take a look at what foods just arent very good and what foods should be glorified.</p>
     </div>
+
+
+
+    <!-- Edit this line for the title of your page -->
+
+    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+
+
+    <!-- spacing div-->
+
+    <span class="title-large"> The Opinions Are 100% Factual</span>
+
+    <div class="content">
+
+        <p>Welcome to my blog. Contrary to most blogs everything said on this website should be taken 100% seriously as its all factual. Now you might be curious to what exactly we do on thihs website. Here I can share what i know to be the worst foods and
+            what are absolutley glorious. If the food is just that good it can make its way to the <strong>BOWL OF
+                FAME</strong>
+
+        </p>
+        <div style='padding-top: 1px'></div>
+        <p>If there is any disagreement about how a food is rated, just know you're wrong.</p>
+    </div>
+
+
+    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
+    </main>
+
+    <!---------------------------------- Begin the footer ------------->
+
+
+    <body>
+        <div class="footer-dark">
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3 item">
+                            <h3>Services</h3>
+                            <ul>
+                                <li><a href="#">Web design</a></li>
+                                <li><a href="#">Development</a></li>
+                                <li><a href="#">Hosting</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-md-3 item" style="color:rgb(255, 255, 255)">
+                            <h3>About</h3>
+                            <ul>
+                                <li><a href="#">Company</a></li>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Careers</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 item text " style="color:rgb(255, 255, 255)">
+                            <h3>Watts' Website</h3>
+                            <p>We always have the right Opinions</p>
+                        </div>
+                        <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i
+                                    class="icon ion-social-snapchat"></i></a><a href="#"><i
+                                    class="icon ion-social-instagram"></i></a></div>
+                    </div>
+                    <p class="copyright" style="color:rgb(255, 255, 255)">Watts' Wicked Website © 2022</p>
+                </div>
+            </footer>
+            <div class="push"></div>
+            <div class="footer">
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    </body>
+
+    <!---------------------------------- End the footer ------------->
 </body>
 
 </html>
